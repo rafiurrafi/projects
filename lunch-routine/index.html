@@ -30,7 +30,9 @@
           </tr>
           <tr>
             <td><input type="text" value="breakfast" /></td>
-            <td><button class="btn">Adjust time</button></td>
+            <td>
+              <button class="btn" onclick="openModal()">Adjust time</button>
+            </td>
             <td></td>
             <td></td>
             <td></td>
@@ -49,12 +51,61 @@
     <!-- Modal start -->
     <div class="modal">
       <div class="content">
-        <div class="close"></div>
-        <h1>Hello, World!</h1>
-        <p>
-          <a href="https://www.jqueryscript.net/tags.php?/Modal/">Modal</a>
-          Content Here
-        </p>
+        <h3>Choose day</h3>
+
+        <div class="day">
+          <div class="form-group">
+            <input type="checkbox" id="html" />
+            <label for="html">Saturday</label>
+          </div>
+          <input type="text" class="time-pickable" readonly />
+        </div>
+        <div class="day">
+          <div class="form-group">
+            <input type="checkbox" id="html" />
+            <label for="html">Sunday</label>
+          </div>
+          <input type="text" class="time-pickable" readonly />
+        </div>
+        <div class="day">
+          <div class="form-group">
+            <input type="checkbox" id="html" />
+            <label for="html">Monday</label>
+          </div>
+          <input type="text" class="time-pickable" readonly />
+        </div>
+        <div class="day">
+          <div class="form-group">
+            <input type="checkbox" id="html" />
+            <label for="html">Tuesday</label>
+          </div>
+          <input type="text" class="time-pickable" readonly />
+        </div>
+        <div class="day">
+          <div class="form-group">
+            <input type="checkbox" id="html" />
+            <label for="html">Wednesday</label>
+          </div>
+          <input type="text" class="time-pickable" readonly />
+        </div>
+        <div class="day">
+          <div class="form-group">
+            <input type="checkbox" id="html" />
+            <label for="html">Thursday</label>
+          </div>
+          <input type="text" class="time-pickable" readonly />
+        </div>
+        <div class="day">
+          <div class="form-group">
+            <input type="checkbox" id="html" />
+            <label for="html">Friday</label>
+          </div>
+          <input type="text" class="time-pickable" readonly />
+        </div>
+        <div class="modal-btns">
+          <button onclick="closeModal()">save</button>
+          <button onclick="closeModal()">cancel</button>
+        </div>
       </div>
     </div>
     <!-- Modal end  -->

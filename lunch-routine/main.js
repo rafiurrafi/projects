@@ -1,6 +1,7 @@
 const addButton = document.querySelector(".action__add-btn");
-
 const listContainer = document.querySelector("#table");
+const modal = document.querySelector(".modal");
+const container = document.querySelector(".container");
 
 addButton.addEventListener("click", (e) => {
   const list = document.createElement("tr");
@@ -17,32 +18,26 @@ addButton.addEventListener("click", (e) => {
 });
 
 // Get modal element
-var modal = document.getElementById("simpleModal");
-// Get open modal button
-var modalBtn = document.getElementById("modalBtn");
-// Get close button
-var closeBtn = document.getElementsByClassName("closeBtn")[0];
 
-// Listen for open click
-modalBtn.addEventListener("click", openModal);
-// Listen for close click
-closeBtn.addEventListener("click", closeModal);
-// Listen for outside click
-window.addEventListener("click", outsideClick);
-
-// Open modal
 function openModal() {
-  modal.style.display = "block";
+  modal.classList.add("open");
+  modal.style.display = "flex";
+  container.classList.add("blur");
 }
-
-// Close modal
-function closeModal() {
-  modal.style.display = "none";
-}
-
-// Click outside and close
-function outsideClick(e) {
-  if (e.target == modal) {
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    if (modal.classList.contains("open")) modal.classList.remove("open");
     modal.style.display = "none";
+    container.classList.remove("blur");
   }
-}
+};
+// $(".modal").addClass("open");
+
+// if ($(".modal").hasClass("open")) {
+//   $(".container").addClass("blur");
+// }
+// $(".close").click(function () {
+//   $(".modal").removeClass("open");
+//   $(".cont").removeClass("blur");
+// });

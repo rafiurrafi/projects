@@ -6,7 +6,7 @@ const container = document.querySelector(".container");
 addButton.addEventListener("click", (e) => {
   const list = document.createElement("tr");
   list.innerHTML = `<td><input type="text" value="breakfast" /></td>
-  <td><button  id="modalBtn" class="button" onclick = "openModal()">Adjust time</button></td>
+  <td><button  id="modalBtn" class="button" onclick = "openModal();addContent(this)">Adjust time</button></td>
   <td></td>
   <td></td>
   <td></td>
@@ -35,42 +35,15 @@ function closeModal() {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
-    if (modal.classList.contains("open")) modal.classList.remove("open");
-    modal.style.display = "none";
+    // if (modal.classList.contains("open")) modal.classList.remove("open");
+    // modal.style.display = "none";
+    // container.classList.remove("blur");
+    modal.classList.remove("open");
     container.classList.remove("blur");
   }
 };
 // Time picker
 function activate() {
-  //   document.head.insertAdjacentHTML(
-  //     "beforeend",
-  //     `
-  // 		<style>
-  // 			.time-picker {
-  // 				position: absolute;
-  // 				display: inline-block;
-  // 				padding: 10px;
-  // 				background: #eeeeee;
-  // 				border-radius: 6px;
-  // 			}
-
-  // 			.time-picker__select {
-  // 				-webkit-appearance: none;
-  // 				-moz-appearance: none;
-  // 				appearance: none;
-  // 				outline: none;
-  // 				text-align: center;
-  // 				border: 1px solid #dddddd;
-  // 				border-radius: 6px;
-  // 				padding: 6px 10px;
-  // 				background: #ffffff;
-  // 				cursor: pointer;
-  // 				font-family: 'Heebo', sans-serif;
-  // 			}
-  // 		</style>
-  // 	`
-  //   );
-
   document.querySelectorAll(".time-pickable").forEach((timePickable) => {
     let activePicker = null;
 
@@ -198,3 +171,64 @@ function numberToOption(number) {
 }
 
 activate();
+
+// Adjust time
+// const adjustBtn = document.querySelectorAll(".adjust-time-btn");
+
+// adjustBtn.forEach((btn) => {
+//   btn.addEventListener("click", (e) => {
+//     const mainParent = e.target.parentElement.parentElement;
+//     const dayIndex = mainParent.querySelectorAll("td");
+//     console.log(dayIndex);
+//     openModal();
+//     // working with modal value
+//     const checkboxInputs = document.querySelectorAll(
+//       ".modal .day input[type = 'checkbox']"
+//     );
+//     checkboxInputs.forEach((input) => {
+//       input.addEventListener("change", (e) => {
+//         if (input.checked) {
+//           const id = +e.target.id + 2;
+//           dayIndex[id].innerHTML = "Hello";
+//         }
+//       });
+//     });
+//   });
+// });
+
+function addContent(e) {
+  const mainParent = e.parentElement.parentElement;
+  const dayIndex = mainParent.querySelectorAll("td");
+
+  openModal();
+  // working with modal value
+  const checkboxInputs = document.querySelectorAll(
+    ".modal .day input[type = 'checkbox']"
+  );
+  // checkboxInputs.forEach((input) => {
+  //   input.checked = false;
+  //   mainParent.days = [1,2,6];
+  //   input.checked =
+  // });
+  for (let i = 0; i < checkboxInputs.length; i++) {
+    checkboxInputs[i].checked = false;
+    mainParent.days = [1, 2, 6];
+    mainParent.days.forEach((day) => {
+      checkboxInputs[day].checked = true;
+    });
+  }
+  modal.addEventListener("click", (e) => {
+    if (e.target.classList.contains("save-btn")) {
+      const selected = [];
+      for (let i = 0; i < checkboxInputs.length; i++) {
+        if (checkboxInputs[i].checked) selected.push(i);
+      }
+      dayIndex.forEach((day, index) => {
+        if (index > 1) day.textContent = "";
+      });
+      selected.forEach((item) => {
+        dayIndex[item + 2].textContent = "hello";
+      });
+    }
+  });
+}

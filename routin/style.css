@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 30px;
+  font-family: sans-serif;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: tomato;
+  padding: 20px;
+  color: white;
+}

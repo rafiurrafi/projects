@@ -30,3 +30,6 @@ body {
   opacity: 1;
   visibility: visible;
 }
+.day {
+  margin-bottom: 10px;
+}

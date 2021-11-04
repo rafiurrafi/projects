@@ -75,32 +75,32 @@ addRoutineBtn.addEventListener("click", () => {
     <div class="days-left">
         <div class="day">
             <div>
-                <input type="checkbox" />
-                <label for="">Saturday</label>
+                <input type="checkbox" id = "Saturday" />
+                <label for="Saturday">Saturday</label>
             </div>
             <div><input type="text" value = "09:30" /></div>
         </div>
 
         <div class="day">
             <div>
-                <input type="checkbox" />
-                <label for="">Sunday</label>
+                <input type="checkbox" id = "Sunday" />
+                <label for="Sunday">Sunday</label>
             </div>
             <div><input type="text" value = "09:30" /></div>
         </div>
 
         <div class="day">
             <div>
-                <input type="checkbox" />
-                <label for="">Monday</label>
+                <input type="checkbox" id = "Monday" />
+                <label for="Monday">Monday</label>
             </div>
             <div><input type="text" value = "09:30" /></div>
         </div>
 
         <div class="day">
             <div>
-                <input type="checkbox" />
-                <label for="">Tuesday</label>
+                <input type="checkbox" id = "Tuesday" />
+                <label for="Tuesday">Tuesday</label>
             </div>
             <div><input type="text" value = "09:30" /></div>
         </div>
@@ -110,22 +110,22 @@ addRoutineBtn.addEventListener("click", () => {
     <div class="days-right">
         <div class="day">
             <div>
-                    <input type="checkbox" />
-                    <label for="">Wednesday</label>
+                    <input type="checkbox" id = "Wednesday" />
+                    <label for="Wednesday">Wednesday</label>
             </div>
             <div><input type="text" value = "09:30" /></div>
         </div>
         <div class="day">
             <div>
-                <input type="checkbox" />
-                <label for="">Thursday</label>
+                <input type="checkbox" id = "Thursday" />
+                <label for="Thursday">Thursday</label>
             </div>
             <div><input type="text" value = "09:30" /></div>
         </div>
         <div class="day">
             <div>
-                <input type="checkbox" />
-                <label for="">Friday</label>
+                <input type="checkbox" id = "Friday" />
+                <label for="Friday">Friday</label>
             </div>
             <div><input type="text" value = "09:30" /></div>
         </div>

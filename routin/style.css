@@ -8,17 +8,27 @@ body {
 }
 .container-header {
   display: flex;
-  justify-content: space-between;
   background-color: tomato;
-  padding: 20px;
+  padding: 20px 0;
   color: white;
 }
 .routine {
   display: flex;
-  justify-content: space-between;
+}
+.routine input[type="text"] {
+  display: inline-block;
+  width: 80%;
+}
+.routine > div,
+.container-header > div {
+  flex: 0 0 11.11%;
+}
+.routine > div {
+  border: 1px solid #ddd;
 }
 .modal {
   position: fixed;
+  width: 60%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -32,6 +42,27 @@ body {
   opacity: 1;
   visibility: visible;
 }
+.days {
+  display: flex;
+  justify-content: space-between;
+}
 .day {
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* min-width: 50%; */
+}
+/* .day div:first-child {
+  margin-right: 30px;
+} */
+
+.day input[type="text"] {
+  width: 50px;
+}
+.days-left {
+  margin-right: 20px;
+}
+.days-left,
+.days-right {
+  flex: 0 0 35%;
 }

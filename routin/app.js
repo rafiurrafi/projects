@@ -44,7 +44,7 @@ routineContainer.addEventListener("click", (e) => {
       //close the modal
       modal.classList.remove("show");
     });
-    //close the modal cancel button
+    //close the modal - cancel button
     const cancelButton = modal.querySelector(".modal-cancel-btn");
     cancelButton.addEventListener("click", (e) => {
       modal.classList.remove("show");
@@ -72,54 +72,64 @@ addRoutineBtn.addEventListener("click", () => {
   <div id="myModal" class="modal">
     <h1>Choose day</h1>
     <div class="days">
-    <div class="day">
-      <div>
-        <input type="checkbox" />
-        <label for="">Saturday</label>
-      </div>
-      <div><input type="text" value = "09:30" /></div>
-    </div>
-    <div class="day">
-      <div>
-        <input type="checkbox" />
-        <label for="">Sunday</label>
-      </div>
-      <div><input type="text" value = "09:30" /></div>
-    </div>
-    <div class="day">
-      <div>
-        <input type="checkbox" />
-        <label for="">Monday</label>
-      </div>
-      <div><input type="text" value = "09:30" /></div>
-    </div>
-    <div class="day">
-      <div>
-        <input type="checkbox" />
-        <label for="">Tuesday</label>
-      </div>
-      <div><input type="text" value = "09:30" /></div>
-    </div>
-    <div class="day">
-      <div>
-        <input type="checkbox" />
-        <label for="">Wednesday</label>
-      </div>
-      <div><input type="text" value = "09:30" /></div>
-    </div>
-    <div class="day">
-      <div>
-        <input type="checkbox" />
-        <label for="">Thursday</label>
-      </div>
-      <div><input type="text" value = "09:30" /></div>
-    </div>
-    <div class="day">
-      <div>
-        <input type="checkbox" />
-        <label for="">Friday</label>
-      </div>
-      <div><input type="text" value = "09:30" /></div>
+    <div class="days-left">
+        <div class="day">
+            <div>
+                <input type="checkbox" />
+                <label for="">Saturday</label>
+            </div>
+            <div><input type="text" value = "09:30" /></div>
+        </div>
+
+        <div class="day">
+            <div>
+                <input type="checkbox" />
+                <label for="">Sunday</label>
+            </div>
+            <div><input type="text" value = "09:30" /></div>
+        </div>
+
+        <div class="day">
+            <div>
+                <input type="checkbox" />
+                <label for="">Monday</label>
+            </div>
+            <div><input type="text" value = "09:30" /></div>
+        </div>
+
+        <div class="day">
+            <div>
+                <input type="checkbox" />
+                <label for="">Tuesday</label>
+            </div>
+            <div><input type="text" value = "09:30" /></div>
+        </div>
+
+    </div> 
+
+    <div class="days-right">
+        <div class="day">
+            <div>
+                    <input type="checkbox" />
+                    <label for="">Wednesday</label>
+            </div>
+            <div><input type="text" value = "09:30" /></div>
+        </div>
+        <div class="day">
+            <div>
+                <input type="checkbox" />
+                <label for="">Thursday</label>
+            </div>
+            <div><input type="text" value = "09:30" /></div>
+        </div>
+        <div class="day">
+            <div>
+                <input type="checkbox" />
+                <label for="">Friday</label>
+            </div>
+            <div><input type="text" value = "09:30" /></div>
+        </div>
+
     </div>
     </div>
     

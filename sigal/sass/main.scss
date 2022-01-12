@@ -8,12 +8,16 @@
 @import "./base/utils";
 
 @import "./components/button";
+@import "./components/card";
 
 @import "./layout/footer";
 @import "./layout/grid";
 @import "./layout/header";
 
 @import "./pages/home";
+@import "./pages/home/category";
+@import "./pages/home/board";
+@import "./pages/home/upcoming-course";
 /*
 COLORS:
 

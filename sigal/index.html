@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- add slick style  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
@@ -12,11 +26,248 @@
   </head>
   <body>
     <div class="home-screen">
-      <header class="header">Header</header>
-      <section class="hero-section">Hero</section>
-      <section class="categories-section">Categories</section>
-      <section class="board-section">Board</section>
-      <section class="upcoming-course-section">Upcoming</section>
+      <header class="header">
+        <div class="header__logo">
+          <img src="img/logo-2.svg" />
+        </div>
+        <nav class="header__menu">
+          <a href="" class="header__menu-link">Home</a>
+          <a href="" class="header__menu-link">About</a>
+          <a href="" class="header__menu-link">Service</a>
+          <a href="" class="header__menu-link">Doctor</a>
+          <a href="" class="header__menu-link">Gallery</a>
+          <a href="" class="header__menu-link">Blog</a>
+          <a href="" class="header__menu-link">Contact</a>
+          <a href="" class="header__menu-link">Login</a>
+          <a href="" class="header__menu-link header__menu-link--btn"
+            >Sign up</a
+          >
+          <a href="" class="header__menu-link"><i class="fa fa-search"></i></a>
+          <a href="" class="header__menu-link">عربي</a>
+        </nav>
+      </header>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="heading__primary">Sigal Education</h1>
+          <p>Learn on your schedule</p>
+          <p>
+            Study any topic, anytime. explore thousands of courses for the
+            <br />
+            lowest price ever!
+          </p>
+        </div>
+        <div class="hero-img">
+          <img src="img/teeth.png" alt="" />
+        </div>
+      </section>
+      <section class="categories-section">
+        <div class="category-content">
+          <h2 class="heading__secondary mb-4">Top Categories</h2>
+          <div class="category-btns">
+            <a href="" class="category-btn">Orthodontic</a>
+            <a href="" class="category-btn">Endodontic</a>
+            <a href="" class="category-btn">Implantology</a>
+            <a href="" class="category-btn">Preventive Dentistry</a>
+            <a href="" class="category-btn">Surgery</a>
+            <a href="" class="category-btn">Pedodontics</a>
+            <a href="" class="category-btn">Prosthodontics</a>
+            <a href="" class="category-btn">Orthodontic</a>
+          </div>
+        </div>
+      </section>
+      <section class="board-section">
+        <div class="board-title">
+          <h2 class="heading__secondary mb-2">
+            A broad selection of courses & programs
+          </h2>
+          <p>
+            Choose from our online courses and programs with new additions
+            published every month
+          </p>
+        </div>
+        <div class="board-container">
+          <div class="board-plate board-plate--dark">
+            <h3 class="heading__tertiary mb-2">
+              <span>Browse </span> <br />
+              Programs
+            </h3>
+            <p class="board-plate__text">
+              Take the next step toward your personal and professional goals
+              with a bundle of intensive courses!
+            </p>
+            <a href="" class="board-plate__btn">Browse all program &rsaquo;</a>
+          </div>
+          <div class="board-plate board-plate--light">
+            <h3 class="heading__tertiary mb-2">
+              <span>Browse</span> <br />
+              Programs
+            </h3>
+            <p class="board-plate__text">
+              Take the next step toward your personal and professional goals
+              with a bundle of intensive courses!
+            </p>
+            <a href="" class="board-plate__btn">Browse all program &rsaquo;</a>
+          </div>
+        </div>
+      </section>
+      <section class="upcoming-course-section py-5">
+        <div class="home-title mb-4">
+          <h2 class="heading__tetra mb-2">Upcoming Courses</h2>
+          <p>Stay close, to explore our latest courses</p>
+        </div>
+        <div class="card-container">
+          <!-- single card  -->
+          <div class="card">
+            <div class="card__header">
+              <img src="img/top-course-1.png" class="card__img" alt="" />
+              <span class="card__tag">online</span>
+            </div>
+            <div class="card__content">
+              <div class="card__content-title mb-2">
+                <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                <p>Lorem Universit</p>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                minus esse? Maxime, tempora. Voluptatem.
+              </p>
+              <div class="card__content-feature">
+                <p>
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  15:33:00 Hours
+                </p>
+                <p>
+                  <!-- <img
+                    src="img/svg/clock-regular.svg"
+                    class="card__icon"
+                    alt=""
+                  /> -->
+                  <i class="fa fa-list" aria-hidden="true"></i>
+                  15 Lessons
+                </p>
+              </div>
+
+              <div class="card__content-feature">
+                <p>
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  11-01-2022
+                </p>
+              </div>
+              <div class="card__content-feature mb-2">
+                <p class="card__price">500.00 SAR</p>
+                <p class="card__level">Begininer</p>
+              </div>
+              <a href="" class="btn btn--primary d-block py-1">Join</a>
+            </div>
+          </div>
+          <!-- End of card  -->
+          <!-- single card  -->
+          <div class="card">
+            <div class="card__header">
+              <img src="img/top-course-1.png" class="card__img" alt="" />
+              <span class="card__tag">online</span>
+            </div>
+            <div class="card__content">
+              <div class="card__content-title mb-2">
+                <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                <p>Lorem Universit</p>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                minus esse? Maxime, tempora. Voluptatem.
+              </p>
+              <div class="card__content-feature">
+                <p>
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  15:33:00 Hours
+                </p>
+                <p>
+                  <!-- <img
+                    src="img/svg/clock-regular.svg"
+                    class="card__icon"
+                    alt=""
+                  /> -->
+                  <i class="fa fa-list" aria-hidden="true"></i>
+                  15 Lessons
+                </p>
+              </div>
+
+              <div class="card__content-feature">
+                <p>
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  11-01-2022
+                </p>
+              </div>
+              <div class="card__content-feature mb-2">
+                <p class="card__price">500.00 SAR</p>
+                <p class="card__level">Begininer</p>
+              </div>
+              <a href="" class="btn btn--primary d-block py-1">Join</a>
+            </div>
+          </div>
+          <!-- End of card  -->
+          <!-- single card  -->
+          <div class="card">
+            <div class="card__header">
+              <img src="img/top-course-1.png" class="card__img" alt="" />
+              <span class="card__tag">online</span>
+            </div>
+            <div class="card__content">
+              <div class="card__content-title mb-2">
+                <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                <p>Lorem Universit</p>
+              </div>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                minus esse? Maxime, tempora. Voluptatem.
+              </p>
+              <div class="card__content-feature">
+                <p>
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  15:33:00 Hours
+                </p>
+                <p>
+                  <!-- <img
+                    src="img/svg/clock-regular.svg"
+                    class="card__icon"
+                    alt=""
+                  /> -->
+                  <i class="fa fa-list" aria-hidden="true"></i>
+                  15 Lessons
+                </p>
+              </div>
+
+              <div class="card__content-feature">
+                <p>
+                  <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                  11-01-2022
+                </p>
+              </div>
+              <div class="card__content-feature mb-2">
+                <p class="card__price">500.00 SAR</p>
+                <p class="card__level">Begininer</p>
+              </div>
+              <a href="" class="btn btn--primary d-block py-1">Join</a>
+            </div>
+          </div>
+          <!-- End of card  -->
+        </div>
+
+        <!-- <div class="res" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+          <div>your content 1</div>
+          <div>your content 2</div>
+          <div>your content 3</div>
+          <div>your content 4</div>
+          <div>your content 5</div>
+          <div>your content</div>
+        </div> -->
+      </section>
       <section class="top-courses-section">Top courses</section>
       <section class="cta-section">CTA</section>
       <section class="top-program-section">Top program</section>
@@ -25,5 +276,15 @@
       <section class="contact-section">Contact</section>
       <footer class="footer">Footer</footer>
     </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/slick.custom.js"></script>
   </body>
 </html>

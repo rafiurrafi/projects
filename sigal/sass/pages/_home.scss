@@ -1,6 +1,6 @@
 .home-screen {
   display: grid;
-  grid-template-rows: 7rem 90vh repeat(4, min-content) 100vh min-content 40vw min-content min-content;
+  grid-template-rows: 10rem 90vh repeat(4, min-content) 100vh min-content 40vw min-content min-content;
   grid-template-columns:
     [full-start] minmax(6rem, 1fr) [center-start] repeat(
       8,
@@ -8,22 +8,29 @@
     )
     [center-end] minmax(6rem, 1fr) [full-end];
 }
-.header {
-  grid-column: center-start / center-end;
-  background-color: gray;
-}
+
 .hero-section {
-  grid-column: center-start / center-end;
+  grid-column: center-start / full-end;
+  box-sizing: border-box;
+  background-color: $color-white;
+  clip-path: ellipse(85% 100% at 50% 0%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .hero-content {
+    margin-top: -15vh;
+    p {
+      font-size: 2rem;
+    }
+  }
+  .hero-img {
+    width: 30rem;
+    img {
+      width: 100%;
+    }
+  }
 }
-.categories-section {
-  grid-column: center-start / center-end;
-}
-.board-section {
-  grid-column: center-start / center-end;
-}
-.upcoming-course-section {
-  grid-column: center-start / center-end;
-}
+
 .top-courses-section {
   grid-column: center-start / center-end;
 }
@@ -41,4 +48,10 @@
 }
 .contact-section {
   grid-column: center-start / center-end;
+}
+.home-title {
+  p {
+    font-weight: 700;
+    font-size: 2.7rem;
+  }
 }

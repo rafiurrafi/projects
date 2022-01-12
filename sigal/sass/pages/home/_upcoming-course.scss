@@ -1,0 +1,10 @@
+.upcoming-course-section {
+  grid-column: center-start / center-end;
+  @include grid-content;
+  .home-title {
+    grid-column: center-start / center-end;
+  }
+  .card-container {
+    grid-column: center-start / center-end;
+  }
+}

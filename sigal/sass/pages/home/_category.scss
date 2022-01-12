@@ -1,0 +1,27 @@
+.categories-section {
+  grid-column: full-start / full-end;
+  background-color: $color-gray-light-2;
+
+  @include grid-content;
+  .category-content {
+    grid-column: center-start / center-end;
+    padding: 4rem 0;
+    .category-btns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+      grid-gap: 2rem;
+      text-align: center;
+    }
+    .category-btn {
+      background-color: $color-white;
+      background-image: url("../../img/top-cat/MaskGroup.svg");
+      background-size: cover;
+      background-position: center;
+      text-decoration: none;
+      padding: 1rem;
+      color: $color-primary-dark;
+      font-weight: 700;
+      border-radius: 4px;
+    }
+  }
+}

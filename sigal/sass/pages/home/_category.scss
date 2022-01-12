@@ -1,7 +1,8 @@
 .categories-section {
   grid-column: full-start / full-end;
   background-color: $color-gray-light-2;
-
+  margin-top: -24vh;
+  padding-top: 26vh;
   @include grid-content;
   .category-content {
     grid-column: center-start / center-end;

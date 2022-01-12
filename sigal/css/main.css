@@ -9,7 +9,6 @@ html {
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
   line-height: 1.7;
   color: #444; }
 
@@ -196,7 +195,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto; }
   .row::after {
     content: "";
@@ -205,7 +203,6 @@ body {
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row [class^="col-"] {
-    background-color: red;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
@@ -222,52 +219,55 @@ body {
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 *6rem ); }
 
+.row--flex {
+  max-width: 114rem;
+  margin: 0 auto; }
+
 .header {
-  grid-column: center-start / center-end;
-  margin-left: -3rem;
-  margin-right: -3rem;
-  padding: 2rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  padding: 2rem 0; }
+  .header .row--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .header__logo {
-    width: 21rem; }
+    width: 21rem;
+    margin-left: -3rem; }
     .header__logo img {
       width: 100%; }
-  .header__menu-link {
-    text-decoration: none;
-    margin-left: 2rem;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 1.4rem;
-    color: #166589;
-    transition: color 0.3s; }
-    .header__menu-link:hover {
-      color: #00afdd; }
-    .header__menu-link--btn {
-      background-color: #166589;
-      border-radius: 5px;
-      color: white;
-      padding: 0.5rem 2rem; }
-
-.home-screen {
-  display: grid;
-  grid-template-rows: [header-start] 10rem [header-end hero-start] 90vh [hero-end] repeat(4, min-content) 100vh min-content 40vh min-content min-content;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .header__menu {
+    margin-right: -3rem; }
+    .header__menu-link {
+      text-decoration: none;
+      margin-left: 2rem;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: #166589;
+      transition: color 0.3s; }
+      .header__menu-link:hover {
+        color: #00afdd; }
+      .header__menu-link--btn {
+        background-color: #166589;
+        border-radius: 5px;
+        color: white;
+        padding: 0.5rem 2rem; }
 
 .hero-section {
-  grid-column: center-start / full-end;
+  grid-column: full-start / full-end;
   box-sizing: border-box;
   background-color: #fff;
-  clip-path: ellipse(85% 100% at 50% 0%);
-  display: flex;
+  clip-path: ellipse(75% 100% at 48.75% 0%);
   align-items: center;
-  justify-content: space-between; }
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  overflow: hidden; }
   .hero-section .hero-content {
-    margin-top: -15vh; }
+    margin-top: -15vh;
+    grid-column: center-start / col-end 5; }
     .hero-section .hero-content p {
       font-size: 2rem; }
   .hero-section .hero-img {
+    grid-column: col-end 7 / full-end;
     width: 30rem; }
     .hero-section .hero-img img {
       width: 100%; }
@@ -374,6 +374,8 @@ body {
 .categories-section {
   grid-column: full-start / full-end;
   background-color: #eeeeee;
+  margin-top: -24vh;
+  padding-top: 26vh;
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .categories-section .category-content {
@@ -478,9 +480,14 @@ body {
 .upcoming-course-section {
   grid-column: center-start / center-end;
   display: grid;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  overflow: hidden; }
   .upcoming-course-section .home-title {
     grid-column: center-start / center-end; }
+  .upcoming-course-section .owl-c {
+    grid-column: center-start / center-end;
+    background-color: red;
+    overflow: hidden; }
   .upcoming-course-section .card-container {
     grid-column: center-start / center-end; }
 

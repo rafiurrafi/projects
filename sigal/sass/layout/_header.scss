@@ -1,19 +1,19 @@
 .header {
-  grid-column: center-start / center-end;
-  margin-left: -3rem;
-  margin-right: -3rem;
   padding: 2rem 0;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .row--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__logo {
     width: 21rem;
+    margin-left: -3rem;
     img {
       width: 100%;
     }
   }
   &__menu {
+    margin-right: -3rem;
     &-link {
       text-decoration: none;
       margin-left: 2rem;

@@ -13,10 +13,7 @@
       rel="stylesheet"
     />
     <!-- add slick style  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
+    <link rel="stylesheet" href="vendors/owl.carousel.min.css" />
 
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -27,24 +24,28 @@
   <body>
     <div class="home-screen">
       <header class="header">
-        <div class="header__logo">
-          <img src="img/logo-2.svg" />
+        <div class="row--flex">
+          <div class="header__logo">
+            <img src="img/logo-2.svg" />
+          </div>
+          <nav class="header__menu">
+            <a href="" class="header__menu-link">Home</a>
+            <a href="" class="header__menu-link">About</a>
+            <a href="" class="header__menu-link">Service</a>
+            <a href="" class="header__menu-link">Doctor</a>
+            <a href="" class="header__menu-link">Gallery</a>
+            <a href="" class="header__menu-link">Blog</a>
+            <a href="" class="header__menu-link">Contact</a>
+            <a href="" class="header__menu-link">Login</a>
+            <a href="" class="header__menu-link header__menu-link--btn"
+              >Sign up</a
+            >
+            <a href="" class="header__menu-link"
+              ><i class="fa fa-search"></i
+            ></a>
+            <a href="" class="header__menu-link">عربي</a>
+          </nav>
         </div>
-        <nav class="header__menu">
-          <a href="" class="header__menu-link">Home</a>
-          <a href="" class="header__menu-link">About</a>
-          <a href="" class="header__menu-link">Service</a>
-          <a href="" class="header__menu-link">Doctor</a>
-          <a href="" class="header__menu-link">Gallery</a>
-          <a href="" class="header__menu-link">Blog</a>
-          <a href="" class="header__menu-link">Contact</a>
-          <a href="" class="header__menu-link">Login</a>
-          <a href="" class="header__menu-link header__menu-link--btn"
-            >Sign up</a
-          >
-          <a href="" class="header__menu-link"><i class="fa fa-search"></i></a>
-          <a href="" class="header__menu-link">عربي</a>
-        </nav>
       </header>
       <section class="hero-section">
         <div class="hero-content">
@@ -114,6 +115,17 @@
         <div class="home-title mb-4">
           <h2 class="heading__tetra mb-2">Upcoming Courses</h2>
           <p>Stay close, to explore our latest courses</p>
+        </div>
+        <div class="owl-c">
+          <div class="owl-carousel">
+            <div>Your Content</div>
+            <div>Your Content</div>
+            <div>Your Content</div>
+            <div>Your Content</div>
+            <div>Your Content</div>
+            <div>Your Content</div>
+            <div>Your Content</div>
+          </div>
         </div>
         <div class="card-container">
           <!-- single card  -->
@@ -482,15 +494,12 @@
         </div>
       </footer>
     </div>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="js/slick.custom.js"></script>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel();
+      });
+    </script>
   </body>
 </html>

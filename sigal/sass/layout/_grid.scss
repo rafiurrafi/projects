@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
   @include clearfix;
   &:not(:last-child) {
@@ -8,7 +7,6 @@
   }
 
   [class^="col-"] {
-    background-color: red;
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
@@ -40,4 +38,8 @@
       3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + 2 *#{$gutter-horizontal}
     );
   }
+}
+.row--flex {
+  max-width: $grid-width;
+  margin: 0 auto;
 }

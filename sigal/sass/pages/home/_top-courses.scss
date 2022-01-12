@@ -1,0 +1,28 @@
+.top-courses {
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    &-tag {
+      flex: 0 0 20%;
+    }
+    &-btns {
+      flex: 1;
+      display: flex;
+    }
+    &-btn {
+      text-align: center;
+      margin-right: 1rem;
+      flex: 1;
+      border: 1px solid #ddd;
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+  &__content {
+    margin-left: 20%;
+    margin-top: 5rem;
+  }
+  &__card {
+    width: 33%;
+  }
+}

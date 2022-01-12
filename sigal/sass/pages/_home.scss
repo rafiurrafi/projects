@@ -36,6 +36,22 @@
 }
 .cta-section {
   grid-column: full-start / full-end;
+  padding: 10rem 0;
+  @include grid-content;
+  position: relative;
+  background-color: darkgray;
+  .cta {
+    grid-column: center-start / col-start 6;
+  }
+  .cta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
 }
 .top-program-section {
   grid-column: center-start / center-end;

@@ -202,7 +202,22 @@ body {
   grid-column: center-start / center-end; }
 
 .cta-section {
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 10rem 0;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  position: relative;
+  background-color: darkgray; }
+  .cta-section .cta {
+    grid-column: center-start / col-start 6; }
+  .cta-section .cta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover; }
 
 .top-program-section {
   grid-column: center-start / center-end; }
@@ -290,6 +305,38 @@ body {
     grid-column: center-start / center-end; }
   .upcoming-course-section .card-container {
     grid-column: center-start / center-end; }
+
+.upcoming-couse__link {
+  text-align: right;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444444;
+  grid-column: col-start 7 / center-end;
+  margin-top: 2rem; }
+  .upcoming-couse__link:hover {
+    color: #00afdd; }
+
+.top-courses__filter {
+  display: flex;
+  justify-content: space-between; }
+  .top-courses__filter-tag {
+    flex: 0 0 20%; }
+  .top-courses__filter-btns {
+    flex: 1;
+    display: flex; }
+  .top-courses__filter-btn {
+    text-align: center;
+    margin-right: 1rem;
+    flex: 1;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #444444; }
+.top-courses__content {
+  margin-left: 20%;
+  margin-top: 5rem; }
+.top-courses__card {
+  width: 33%; }
 
 /*
 COLORS:

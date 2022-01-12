@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px 10px 0 0;
   overflow: hidden;
   border: 1px solid #ddd;
   &.slick-slide {
@@ -46,6 +46,14 @@
   &__level {
     font-weight: 700;
   }
+  &__batch {
+    font-size: 1.1rem;
+  }
+  &__btn {
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
   &__text {
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
@@ -66,6 +74,21 @@
     text-align: center;
   }
 }
+.card--join {
+  .card__img {
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+}
+.card__heading--join {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h4 {
+    color: $color-primary;
+  }
+}
+
 .card-container {
   // display: grid;
   // grid-gap: 3rem;

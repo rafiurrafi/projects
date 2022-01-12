@@ -21,6 +21,10 @@ body {
   span {
     font-weight: 400;
   }
+  &-blue {
+    font-weight: 700;
+    color: $color-primary;
+  }
 }
 .heading__tetra {
   font-size: 4.7rem;
@@ -31,4 +35,20 @@ body {
 .heading-4 {
   font-size: 1.6rem;
   color: $color-primary-dark;
+}
+.heading__line {
+  position: relative;
+  line-height: 1.2;
+  &--light {
+    color: $color-primary-light;
+  }
+  &--light::after {
+    background-color: $color-primary-light;
+  }
+  &::after {
+    content: "";
+    height: 3px;
+    width: 3rem;
+    display: block;
+  }
 }

@@ -28,6 +28,9 @@ body {
   line-height: 1; }
   .heading__tertiary span {
     font-weight: 400; }
+  .heading__tertiary-blue {
+    font-weight: 700;
+    color: #00afdd; }
 
 .heading__tetra {
   font-size: 4.7rem;
@@ -38,6 +41,19 @@ body {
 .heading-4 {
   font-size: 1.6rem;
   color: #166589; }
+
+.heading__line {
+  position: relative;
+  line-height: 1.2; }
+  .heading__line--light {
+    color: #95d7f7; }
+  .heading__line--light::after {
+    background-color: #95d7f7; }
+  .heading__line::after {
+    content: "";
+    height: 3px;
+    width: 3rem;
+    display: block; }
 
 .mb-2 {
   margin-bottom: 2rem !important; }
@@ -63,6 +79,8 @@ body {
   .btn--primary {
     color: white;
     background-color: #00afdd; }
+    .btn--primary-light {
+      background-color: #95d7f7; }
 
 .card {
   position: relative;
@@ -119,6 +137,62 @@ body {
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: repeat(3, 1fr); }
+
+.input {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-weight: inherit;
+  font-size: 1.6rem;
+  outline: none;
+  border: none; }
+
+.footer {
+  background-color: #444;
+  padding-top: 40vh;
+  margin-top: -20vh;
+  position: relative;
+  z-index: -1;
+  color: white;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .footer__container {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 3fr;
+    grid-column-gap: 7rem; }
+  .footer__1 img {
+    width: 20rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem; }
+  .footer__1-text {
+    font-size: 1.2rem; }
+  .footer__4-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem; }
+  .footer__nav-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-bottom: 1rem; }
+  .footer__social {
+    display: flex;
+    justify-content: space-between; }
+    .footer__social-icons a {
+      color: #95d7f7;
+      border: 1px solid #95d7f7;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      margin-left: 1rem; }
+  .footer .heading__line {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem; }
 
 .row {
   max-width: 114rem;
@@ -178,7 +252,7 @@ body {
 
 .home-screen {
   display: grid;
-  grid-template-rows: 10rem 90vh repeat(4, min-content) 100vh min-content 40vw min-content min-content;
+  grid-template-rows: [header-start] 10rem [header-end hero-start] 90vh [hero-end] repeat(4, min-content) 100vh min-content 40vh min-content min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .hero-section {
@@ -207,9 +281,25 @@ body {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   position: relative;
-  background-color: darkgray; }
+  background-color: darkgray;
+  align-items: center; }
   .cta-section .cta {
     grid-column: center-start / col-start 6; }
+    .cta-section .cta__heading {
+      line-height: 1.3;
+      font-weight: 700; }
+      .cta-section .cta__heading--400 {
+        font-weight: 400; }
+      .cta-section .cta__heading--300 {
+        font-weight: 300; }
+    .cta-section .cta__text {
+      font-size: 1.9rem; }
+    .cta-section .cta__btn {
+      grid-column: center-start / center-end;
+      width: 20rem;
+      color: white;
+      padding: 1rem 0;
+      margin-top: 2rem; }
   .cta-section .cta-bg {
     position: absolute;
     top: 0;
@@ -224,12 +314,58 @@ body {
 
 .outcome-section {
   grid-column: full-start / full-end; }
+  .outcome-section .outcome {
+    background-color: #444444;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden; }
+    .outcome-section .outcome__content {
+      flex: 0 0 50vw;
+      padding: 0 5vw; }
+    .outcome-section .outcome__img {
+      flex: 0 0 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: inline-block; }
 
 .step-section {
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-column-gap: 10rem;
+  grid-row-gap: 4.5rem; }
+  .step-section .step {
+    position: relative; }
+    .step-section .step__heading {
+      font-size: 3.4rem;
+      color: #166589;
+      margin-bottom: 1rem; }
+      .step-section .step__heading::after {
+        background-color: #166589; }
+    .step-section .step--1::before {
+      content: "01"; }
+    .step-section .step--2::before {
+      content: "02"; }
+    .step-section .step--3::before {
+      content: "03"; }
+    .step-section .step::before {
+      opacity: 0.7;
+      display: inline-block;
+      position: absolute;
+      top: -8rem;
+      left: -4rem;
+      font-size: 10rem;
+      font-weight: 700;
+      z-index: -1;
+      color: #c6c6c6; }
 
 .contact-section {
   grid-column: center-start / center-end; }
+
+.footer {
+  grid-column: full-start / full-end; }
 
 .home-title p {
   font-weight: 700;
@@ -258,6 +394,48 @@ body {
       color: #166589;
       font-weight: 700;
       border-radius: 4px; }
+
+.contact {
+  display: flex; }
+  .contact__img-container {
+    background-color: #166589;
+    flex: 0 0 30vw; }
+  .contact__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; }
+  .contact__form-container {
+    flex: 1;
+    background-color: #166589;
+    padding: 5rem; }
+  .contact__heading {
+    font-size: 3.4rem;
+    color: #95d7f7;
+    line-height: 1.2;
+    margin-bottom: 1.5rem; }
+  .contact__subheading {
+    font-size: 1.6rem;
+    color: white; }
+  .contact__form .input {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white; }
+    .contact__form .input::-webkit-input-placeholder {
+      color: white;
+      opacity: 0.5; }
+  .contact__input-group {
+    margin-bottom: 1.5rem;
+    display: flex; }
+    .contact__input-group > * {
+      flex: 0 0 48%; }
+    .contact__input-group .input:first-child {
+      margin-right: 4%; }
+  .contact__btn {
+    border: 1px solid #fff;
+    color: #fff;
+    opacity: 0.6;
+    padding: 1rem;
+    margin-top: 1.5rem; }
 
 .board-section {
   grid-column: full-start / full-end;

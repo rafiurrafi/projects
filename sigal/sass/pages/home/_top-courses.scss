@@ -16,6 +16,13 @@
       border: 1px solid #ddd;
       text-decoration: none;
       color: $text-color;
+      background-color: transparent;
+      padding: 1rem 0;
+      transition: flex 0.3s 0.5s, background-color 0.3s;
+      &.active {
+        background-color: $color-primary;
+        flex: 1.5;
+      }
     }
   }
   &__content {
@@ -24,5 +31,6 @@
   }
   &__card {
     width: 33%;
+    margin: 0 5px;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   &__img-container {
     background-color: $color-primary-dark;
-    flex: 0 0 30vw;
+    flex: 0 0 35vw;
   }
   &__img {
     width: 100%;
@@ -53,4 +53,3 @@
     margin-top: 1.5rem;
   }
 }
-

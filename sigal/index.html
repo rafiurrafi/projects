@@ -13,7 +13,11 @@
       rel="stylesheet"
     />
     <!-- add slick style  -->
-    <link rel="stylesheet" href="vendors/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -48,17 +52,19 @@
         </div>
       </header>
       <section class="hero-section">
-        <div class="hero-content">
-          <h1 class="heading__primary">Sigal Education</h1>
-          <p>Learn on your schedule</p>
-          <p>
-            Study any topic, anytime. explore thousands of courses for the
-            <br />
-            lowest price ever!
-          </p>
-        </div>
-        <div class="hero-img">
-          <img src="img/teeth.png" alt="" />
+        <div class="row--flex">
+          <div class="hero-content">
+            <h1 class="heading__primary">Sigal Education</h1>
+            <p>Learn on your schedule</p>
+            <p>
+              Study any topic, anytime. explore thousands of courses for the
+              <br />
+              lowest price ever!
+            </p>
+          </div>
+          <div class="hero-img">
+            <img src="img/teeth.png" alt="" />
+          </div>
         </div>
       </section>
       <section class="categories-section">
@@ -268,32 +274,8 @@
               </div>
             </div>
             <!-- End of card  -->
-          </div>
-          <a href="#" class="upcoming-couse__link"
-            >Explore more feature &raquo;</a
-          >
-        </div>
-      </section>
-      <section class="top-courses-section">
-        <div class="row--flex">
-          <div class="home-title mb-4">
-            <h2 class="heading__tetra mb-2">Top Courses</h2>
-            <p>Stay close, to explore our latest courses</p>
-          </div>
-          <div class="top-courses__filter">
-            <div class="top-courses__filter-tag">Filter</div>
-            <div class="top-courses__filter-btns">
-              <a href="" class="top-courses__filter-btn"> Veneers </a>
-              <a href="" class="top-courses__filter-btn"> Whiting </a>
-              <a href="" class="top-courses__filter-btn"> Bonding </a>
-              <a href="" class="top-courses__filter-btn"> Feelings </a>
-              <a href="" class="top-courses__filter-btn"> Implants </a>
-              <a href="" class="top-courses__filter-btn"> Crown </a>
-              <a href="" class="top-courses__filter-btn"> Others </a>
-            </div>
-          </div>
-          <div class="top-courses__content">
-            <div class="card top-courses__card">
+            <!-- single card  -->
+            <div class="card">
               <div class="card__header">
                 <img src="img/top-course-1.png" class="card__img" alt="" />
                 <span class="card__tag">online</span>
@@ -338,32 +320,614 @@
                 <a href="" class="btn btn--primary d-block py-1">Join</a>
               </div>
             </div>
+            <!-- End of card  -->
+            <!-- single card  -->
+            <div class="card">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                    <!-- <img
+                    src="img/svg/clock-regular.svg"
+                    class="card__icon"
+                    alt=""
+                  /> -->
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div>
+            <!-- End of card  -->
+          </div>
+          <a href="#" class="upcoming-couse__link"
+            >Explore more feature &raquo;</a
+          >
+        </div>
+      </section>
+      <section class="top-courses-section">
+        <div class="row--flex">
+          <div class="home-title mb-4">
+            <h2 class="heading__tetra mb-2">Top Courses</h2>
+            <p>Stay close, to explore our latest courses</p>
+          </div>
+          <div class="top-courses__filter">
+            <div class="top-courses__filter-tag">Filter</div>
+            <div class="top-courses__filter-btns">
+              <button data-filter=".v" class="top-courses__filter-btn active"> Veneers </button>
+              <button data-filter=".w" class="top-courses__filter-btn"> Whiting </butt>
+              <button data-filter=".b" class="top-courses__filter-btn"> Bonding </butt>
+              <button data-filter=".f" class="top-courses__filter-btn"> Feelings </butt>
+              <button data-filter=".i" class="top-courses__filter-btn"> Implants </butt>
+              <button data-filter=".c" class="top-courses__filter-btn"> Crown </butt>
+              <button data-filter=".o" class="top-courses__filter-btn"> Others </butt>
+            </div>
+          </div>
+          <div class="top-courses__content">
+            <!-- single cardd  -->
+             <div class="card top-courses__card v">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card w">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card b">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card f">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card i">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card c">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card o">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card v">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card w">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card b o">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card f v">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
+            <!-- single cardd  -->
+             <div class="card top-courses__card b i">
+              <div class="card__header">
+                <img src="img/top-course-1.png" class="card__img" alt="" />
+                <span class="card__tag">online</span>
+              </div>
+              <div class="card__content">
+                <div class="card__content-title mb-2">
+                  <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                  <p>Lorem Universit</p>
+                </div>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum, quasi aliquam adipisci possimus optio sequi ut qui
+                  dolor suscipit blanditiis libero illum quis? Fugiat distinctio
+                  minus esse? Maxime, tempora. Voluptatem.
+                </p>
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    15:33:00 Hours
+                  </p>
+                  <p>
+                   
+                    <i class="fa fa-list" aria-hidden="true"></i>
+                    15 Lessons
+                  </p>
+                </div>
+
+                <div class="card__content-feature">
+                  <p>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    11-01-2022
+                  </p>
+                </div>
+                <div class="card__content-feature mb-2">
+                  <p class="card__price">500.00 SAR</p>
+                  <p class="card__level">Begininer</p>
+                </div>
+                <a href="" class="btn btn--primary d-block py-1">Join</a>
+              </div>
+            </div> 
           </div>
         </div>
       </section>
       <section class="cta-section">
         <!-- <img src="img/tab.png" class="cta-bg" alt="" /> -->
-        <div class="cta">
-          <div class="cta__heading heading__primary">
-            <span class="cta__heading--400"
-              >Attend our courses or programs</span
-            >
-            <span class="cta__heading--300">Gain more credits</span> & Sync your
-            credits with SCFHS
+        <div class="row--flex">
+          <div class="cta">
+            <div class="cta__heading heading__primary">
+              <span class="cta__heading--400"
+                >Attend our courses or programs</span
+              >
+              <span class="cta__heading--300">Gain more credits</span> & Sync
+              your credits with SCFHS
+            </div>
+            <div class="cta__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="btn btn--primary-light cta__btn">
+              Learn more &raquo;
+            </div>
           </div>
-          <div class="cta__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </div>
-          <div class="btn btn--primary-light cta__btn">Learn more &raquo;</div>
         </div>
       </section>
       <section class="top-program-section">Top program</section>
       <section class="outcome-section">
         <div class="outcome">
           <div class="outcome__content">
+            <!-- <div class="row--flex"> -->
             <h3 class="heading__tertiary mb-2">
               Learner outcomes on
               <span class="heading__tertiary-blue">Sigal</span>
@@ -373,77 +937,84 @@
               benefits like getting a promotion, a raise, or starting a new
               career
             </p>
+            <!-- </div> -->
           </div>
-          <!-- <img src="img/tab.png" class="outcome__img" /> -->
+          <div class="outcome__img">
+            <img src="img/tab.png" />
+          </div>
           <!-- <div class="outcome__img">text</div> -->
         </div>
       </section>
       <section class="step-section">
-        <div class="step step--1">
-          <h4 class="heading__line step__heading">Learn</h4>
-          <p class="step__text">
-            in-demand skills with over 100 online courses or programs
-          </p>
-        </div>
-        <div class="step step--2">
-          <h4 class="heading__line step__heading">Learn</h4>
-          <p class="step__text">
-            in-demand skills with over 100 online courses or programs
-          </p>
-        </div>
-        <div class="step step--3">
-          <h4 class="heading__line step__heading">Learn</h4>
-          <p class="step__text">
-            in-demand skills with over 100 online courses or programs
-          </p>
+        <div class="row--flex">
+          <div class="step step--1">
+            <h4 class="heading__line step__heading">Learn</h4>
+            <p class="step__text">
+              in-demand skills with over 100 online courses or programs
+            </p>
+          </div>
+          <div class="step step--2">
+            <h4 class="heading__line step__heading">Learn</h4>
+            <p class="step__text">
+              in-demand skills with over 100 online courses or programs
+            </p>
+          </div>
+          <div class="step step--3">
+            <h4 class="heading__line step__heading">Learn</h4>
+            <p class="step__text">
+              in-demand skills with over 100 online courses or programs
+            </p>
+          </div>
         </div>
       </section>
       <section class="contact-section">
-        <div class="contact">
-          <div class="contact__img-container">
-            <img src="img/tab.png" alt="" class="contact__img" />
-          </div>
-          <div class="contact__form-container">
-            <h5 class="contact__subheading">Contact us</h5>
-            <h3 class="contact__heading">
-              Have Questions? <br />
-              Get in Touch!
-            </h3>
-            <form action="" class="contact__form">
-              <div class="contact__input-group">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  class="input input--text"
-                />
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  class="input input--text"
-                />
-              </div>
-              <div class="contact__input-group">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  class="input input--text"
-                />
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  class="input input--text"
-                />
-              </div>
-              <textarea
-                class="input"
-                placeholder="Your messages..."
-                name=""
-                id=""
-                cols="30"
-                rows="5"
-              ></textarea>
-              <a href="" class="btn d-block contact__btn">Send</a>
-            </form>
+        <div class="row--flex">
+          <div class="contact">
+            <div class="contact__img-container">
+              <img src="img/tab.png" alt="" class="contact__img" />
+            </div>
+            <div class="contact__form-container">
+              <h5 class="contact__subheading">Contact us</h5>
+              <h3 class="contact__heading">
+                Have Questions? <br />
+                Get in Touch!
+              </h3>
+              <form action="" class="contact__form">
+                <div class="contact__input-group">
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    class="input input--text"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    class="input input--text"
+                  />
+                </div>
+                <div class="contact__input-group">
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    class="input input--text"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    class="input input--text"
+                  />
+                </div>
+                <textarea
+                  class="input"
+                  placeholder="Your messages..."
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="5"
+                ></textarea>
+                <a href="" class="btn d-block contact__btn">Send</a>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -496,12 +1067,22 @@
         </div>
       </footer>
     </div>
+    <!-- <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script> -->
     <script src="vendors/jquery.min.js"></script>
-    <script src="vendors/owl.carousel.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".owl-carousel").owlCarousel();
-      });
-    </script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- isotop -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/slick.custom.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -20,11 +20,12 @@
   margin-bottom: 10vh;
   background-color: $color-white;
   clip-path: ellipse(75% 100% at 48.75% 0%);
-  // display: flex;
-  align-items: center;
-  // justify-content: space-between;
-  @include grid-content;
   overflow: hidden;
+  .row--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .hero-content {
     margin-top: -15vh;
     grid-column: center-start / col-end 5;
@@ -34,6 +35,7 @@
   }
   .hero-img {
     width: 40rem;
+    margin-right: -15vw;
     img {
       width: 100%;
     }
@@ -43,18 +45,29 @@
 .top-courses-section {
 }
 .cta-section {
-  grid-column: full-start / full-end;
-  padding: 10rem 0;
-  @include grid-content;
+  height: 100vh;
   position: relative;
-  background-color: darkgray;
-  align-items: center;
-  // background-image: url(../../img/tab.png);
+  color: white;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary-dark, 0.9),
+      rgba($color-primary-light, 0.7),
+      rgba(#000, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1593642532871-8b12e02d091c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center;
+  .row--flex {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
   .cta {
-    grid-column: center-start / col-start 6;
+    flex: 0 0 70%;
     &__heading {
       line-height: 1.3;
       font-weight: 700;
+      color: $color-white;
       &--400 {
         font-weight: 400;
       }
@@ -66,44 +79,42 @@
       font-size: 1.9rem;
     }
     &__btn {
-      grid-column: center-start / center-end;
       width: 20rem;
       color: white;
       padding: 1rem 0;
       margin-top: 2rem;
     }
   }
-  .cta-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    object-fit: cover;
-  }
+  // .cta-bg {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 100%;
+  //   width: 100%;
+  //   z-index: -1;
+  //   object-fit: cover;
+  // }
 }
 .top-program-section {
   grid-column: center-start / center-end;
 }
 .outcome-section {
-  grid-column: full-start / full-end;
   .outcome {
     background-color: $text-color;
     color: $color-white;
     display: flex;
     align-items: center;
-    overflow: hidden;
     &__content {
       flex: 0 0 50vw;
       padding: 0 5vw;
     }
     &__img {
       flex: 0 0 1;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: inline-block;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     // &__img {
     //   background-image: url(../../img/tab.png);
@@ -111,12 +122,15 @@
   }
 }
 .step-section {
-  grid-column: center-start / center-end;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-column-gap: 10rem;
-  grid-row-gap: 4.5rem;
+  padding: 10rem 0;
+  .row--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > * {
+      width: 20%;
+    }
+  }
   .step {
     position: relative;
     &__heading {
@@ -156,7 +170,6 @@
   }
 }
 .contact-section {
-  grid-column: center-start / center-end;
 }
 .footer {
   grid-column: full-start / full-end;

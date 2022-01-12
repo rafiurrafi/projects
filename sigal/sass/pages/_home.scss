@@ -15,8 +15,9 @@
 }
 
 .hero-section {
-  grid-column: full-start / full-end;
-  box-sizing: border-box;
+  height: 60vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   background-color: $color-white;
   clip-path: ellipse(75% 100% at 48.75% 0%);
   // display: flex;
@@ -32,8 +33,7 @@
     }
   }
   .hero-img {
-    grid-column: col-end 7 / full-end;
-    width: 30rem;
+    width: 40rem;
     img {
       width: 100%;
     }
@@ -41,7 +41,6 @@
 }
 
 .top-courses-section {
-  grid-column: center-start / center-end;
 }
 .cta-section {
   grid-column: full-start / full-end;

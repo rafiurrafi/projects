@@ -1,28 +1,21 @@
 .upcoming-course-section {
-  grid-column: center-start / center-end;
-  @include grid-content;
   overflow: hidden;
   .home-title {
-    grid-column: center-start / center-end;
   }
-  .owl-c {
-    grid-column: center-start / center-end;
-    background-color: red;
-    overflow: hidden;
-  }
+
   .card-container {
-    grid-column: center-start / center-end;
   }
 }
 
 .upcoming-couse__link {
-  text-align: right;
+  margin-left: auto;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 700;
   color: $text-color;
-  grid-column: col-start 7 / center-end;
   margin-top: 2rem;
+  min-width: 10rem;
+  float: right;
   &:hover {
     color: $color-primary;
   }

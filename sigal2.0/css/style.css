@@ -1,0 +1,47 @@
+.navbar-logo {
+  width: 200px; }
+
+.section-hero {
+  height: 60vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  clip-path: ellipse(75% 100% at 48.75% 0%);
+  overflow: hidden;
+  background-color: white; }
+  .section-hero .hero-img {
+    height: 100%; }
+    .section-hero .hero-img svg {
+      height: 100%; }
+
+.categories-section {
+  background-color: #eeeeee;
+  margin-top: -24vh;
+  padding-top: 26vh;
+  z-index: -1; }
+  .categories-section .category-btn {
+    background-size: cover;
+    background-position: center;
+    color: #166589;
+    transition: all 0.3s; }
+    .categories-section .category-btn--1 {
+      background-image: url("../img/cat-1.svg"); }
+    .categories-section .category-btn--2 {
+      background-image: url("../img/cat-2.svg"); }
+    .categories-section .category-btn--3 {
+      background-image: url("../img/cat-3.svg"); }
+    .categories-section .category-btn--4 {
+      background-image: url("../img/cat-1.svg"); }
+    .categories-section .category-btn--5 {
+      background-image: url("../img/cat-2.svg"); }
+    .categories-section .category-btn--6 {
+      background-image: url("../img/cat-3.svg"); }
+    .categories-section .category-btn--7 {
+      background-image: url("../img/cat-1.svg"); }
+    .categories-section .category-btn--8 {
+      background-image: url("../img/cat-3.svg"); }
+    .categories-section .category-btn:hover {
+      background-color: #166589 !important;
+      color: white; }
+
+.board-section {
+  background-color: #eeeeee; }

@@ -1,5 +1,4 @@
 .contact {
-  display: flex;
   &__img-container {
     background-color: $color-primary-dark;
     flex: 0 0 35vw;
@@ -13,7 +12,6 @@
   &__form-container {
     flex: 1;
     background-color: $color-primary-dark;
-    padding: 5rem;
   }
   &__heading {
     font-size: 2.1rem;

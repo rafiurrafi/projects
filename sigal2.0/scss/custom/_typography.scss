@@ -1,0 +1,47 @@
+.heading__primary {
+  color: #213e7b;
+  font-size: 54px;
+  line-height: 1;
+}
+.heading__secondary {
+  color: #444444;
+  font-size: 40;
+  line-height: 1;
+}
+.heading__tertiary {
+  font-size: 44px;
+  line-height: 1;
+  span {
+    font-weight: 400;
+  }
+  &-blue {
+    font-weight: 700;
+    color: $color-primary;
+  }
+}
+.heading__tetra {
+  font-size: 47px;
+  font-weight: 600;
+  color: $color-primary;
+  line-height: 1;
+}
+.heading-4 {
+  font-size: 16px;
+  color: $color-primary-dark;
+}
+.heading__line {
+  position: relative;
+  line-height: 1.2;
+  &--light {
+    color: $color-primary-light;
+  }
+  &--light::after {
+    background-color: $color-primary-light;
+  }
+  &::after {
+    content: "";
+    height: 3px;
+    width: 30px;
+    display: block;
+  }
+}

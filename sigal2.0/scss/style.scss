@@ -27,10 +27,9 @@ $text-color: #444;
   }
 
   &__content {
-    padding: 1rem;
     &-title {
       p {
-        font-size: 1.4rem;
+        font-size: 0.8rem;
         font-weight: 600;
       }
     }
@@ -39,6 +38,7 @@ $text-color: #444;
       justify-content: space-between;
       align-items: center;
       padding: 3px 0;
+      font-size: 0.8rem;
       p {
         display: flex;
         align-items: center;
@@ -66,18 +66,14 @@ $text-color: #444;
     font-weight: 700;
   }
   &__text {
-    font-size: 1.2rem;
-    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
     border-bottom: 1px solid #eee;
-    margin-bottom: 1rem;
   }
   &__tag {
     position: absolute;
     top: 0;
     left: 0;
     display: inline-block;
-    padding: 1rem 1.5rem;
-    font-weight: 700;
     color: white;
     font-size: 1.4rem;
     background-color: $color-primary;
@@ -104,6 +100,22 @@ $text-color: #444;
 .navbar-logo {
   width: 200px;
 }
+.header {
+  .nav-link {
+    font-weight: 600;
+    font-size: 0.935rem;
+    color: $color-primary-dark;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  .navbar-brand {
+    // margin-left: -2rem;
+  }
+  .navbar-nav {
+    // margin-right: -2rem;
+  }
+}
 // ========================================
 // hero section
 // ========================================
@@ -114,12 +126,19 @@ $text-color: #444;
   clip-path: ellipse(75% 100% at 48.75% 0%);
   overflow: hidden;
   background-color: white;
+  overflow: hidden;
   .hero-img {
-    // width: 300px;
     height: 100%;
+    margin-right: -7rem;
     svg {
+      width: 20rem;
       height: 100%;
     }
+  }
+  p {
+    line-height: 1;
+    font-size: 1.875rem;
+    margin-bottom: 0;
   }
 }
 // ========================================
@@ -174,7 +193,7 @@ $text-color: #444;
 .board-plate {
   &--dark {
     .px-4 {
-      background-color: $color-primary-dark;
+      background-color: #213e7b;
       background-image: url("../img/board-circle-1.svg");
     }
   }
@@ -190,14 +209,15 @@ $text-color: #444;
 // ========================================
 .top-courses {
   &__filter {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     &-tag {
       flex: 0 0 15%;
     }
     &-btns {
       flex: 1;
       display: flex;
+      flex-wrap: wrap;
     }
     &-btn {
       text-align: center;
@@ -208,9 +228,12 @@ $text-color: #444;
       color: $text-color;
       background-color: transparent;
       padding: 1rem 0;
+      font-weight: 600;
+
       transition: flex 0.3s 0.5s, background-color 0.3s;
       &.active {
-        background-color: $color-primary;
+        background-color: $color-primary-dark;
+        color: white;
         flex: 1.5;
       }
     }
@@ -220,8 +243,6 @@ $text-color: #444;
     margin-top: 5rem;
   }
   &__card {
-    width: 32%;
-    margin: 0 5px;
     margin-bottom: 3rem;
   }
 }

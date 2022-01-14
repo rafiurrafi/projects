@@ -91,12 +91,12 @@
 
 .heading__primary {
   color: #213e7b;
-  font-size: 54px;
+  font-size: 3.375rem;
   line-height: 1; }
 
 .heading__secondary {
   color: #444444;
-  font-size: 40;
+  font-size: 2.5rem;
   line-height: 1; }
 
 .heading__tertiary {
@@ -109,13 +109,13 @@
     color: #00afdd; }
 
 .heading__tetra {
-  font-size: 47px;
-  font-weight: 600;
+  font-size: 2.9rem;
+  font-weight: 700;
   color: #00afdd;
   line-height: 1; }
 
 .heading-4 {
-  font-size: 16px;
+  font-size: 1rem;
   color: #166589; }
 
 .heading__line {
@@ -144,23 +144,22 @@
     stroke: blue; }
   .card__img {
     width: 100%; }
-  .card__content {
-    padding: 1rem; }
-    .card__content-title p {
-      font-size: 1.4rem;
-      font-weight: 600; }
-    .card__content-feature {
+  .card__content-title p {
+    font-size: 0.8rem;
+    font-weight: 600; }
+  .card__content-feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0;
+    font-size: 0.8rem; }
+    .card__content-feature p {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 3px 0; }
-      .card__content-feature p {
-        display: flex;
-        align-items: center; }
-        .card__content-feature p i {
-          margin-right: 0.5rem;
-          display: inline-block;
-          color: #00afdd; }
+      align-items: center; }
+      .card__content-feature p i {
+        margin-right: 0.5rem;
+        display: inline-block;
+        color: #00afdd; }
   .card__price {
     color: #00afdd;
     font-weight: 700; }
@@ -173,17 +172,13 @@
     font-size: 1.4rem;
     font-weight: 700; }
   .card__text {
-    font-size: 1.2rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 1rem; }
+    font-size: 0.75rem;
+    border-bottom: 1px solid #eee; }
   .card__tag {
     position: absolute;
     top: 0;
     left: 0;
     display: inline-block;
-    padding: 1rem 1.5rem;
-    font-weight: 700;
     color: white;
     font-size: 1.4rem;
     background-color: #00afdd;
@@ -204,17 +199,31 @@
 .navbar-logo {
   width: 200px; }
 
+.header .nav-link {
+  font-weight: 600;
+  font-size: 0.935rem;
+  color: #166589; }
+  .header .nav-link:hover {
+    color: #00afdd; }
+
 .section-hero {
   height: 60vh;
   margin-top: 10vh;
   margin-bottom: 10vh;
   clip-path: ellipse(75% 100% at 48.75% 0%);
   overflow: hidden;
-  background-color: white; }
+  background-color: white;
+  overflow: hidden; }
   .section-hero .hero-img {
-    height: 100%; }
+    height: 100%;
+    margin-right: -7rem; }
     .section-hero .hero-img svg {
+      width: 20rem;
       height: 100%; }
+  .section-hero p {
+    line-height: 1;
+    font-size: 1.875rem;
+    margin-bottom: 0; }
 
 .categories-section {
   background-color: #eeeeee;
@@ -250,39 +259,37 @@
   background-color: #eeeeee; }
 
 .board-plate--dark .px-4 {
-  background-color: #166589;
+  background-color: #213e7b;
   background-image: url("../img/board-circle-1.svg"); }
 .board-plate--light .px-4 {
   background-color: #166589;
   background-image: url("../img/board-circle-2.svg"); }
 
-.top-courses__filter {
+.top-courses__filter-tag {
+  flex: 0 0 15%; }
+.top-courses__filter-btns {
+  flex: 1;
   display: flex;
-  justify-content: space-between; }
-  .top-courses__filter-tag {
-    flex: 0 0 15%; }
-  .top-courses__filter-btns {
-    flex: 1;
-    display: flex; }
-  .top-courses__filter-btn {
-    text-align: center;
-    margin-right: 1rem;
-    flex: 1;
-    border: 1px solid #ddd;
-    text-decoration: none;
-    color: #444;
-    background-color: transparent;
-    padding: 1rem 0;
-    transition: flex 0.3s 0.5s, background-color 0.3s; }
-    .top-courses__filter-btn.active {
-      background-color: #00afdd;
-      flex: 1.5; }
+  flex-wrap: wrap; }
+.top-courses__filter-btn {
+  text-align: center;
+  margin-right: 1rem;
+  flex: 1;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #444;
+  background-color: transparent;
+  padding: 1rem 0;
+  font-weight: 600;
+  transition: flex 0.3s 0.5s, background-color 0.3s; }
+  .top-courses__filter-btn.active {
+    background-color: #166589;
+    color: white;
+    flex: 1.5; }
 .top-courses__content {
   margin-left: 15%;
   margin-top: 5rem; }
 .top-courses__card {
-  width: 32%;
-  margin: 0 5px;
   margin-bottom: 3rem; }
 
 .cta-section {

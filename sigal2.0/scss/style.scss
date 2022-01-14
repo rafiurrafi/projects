@@ -3,6 +3,9 @@ $color-primary-dark: #166589;
 $color-primary: #00afdd;
 $color-primary-light: #95d7f7;
 $text-color: #444;
+@import "./custom/contact";
+@import "./custom/footer";
+@import "./custom/input";
 @import "./custom/typography";
 // ======================================
 // components

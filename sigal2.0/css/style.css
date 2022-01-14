@@ -1,3 +1,94 @@
+.contact {
+  display: flex; }
+  .contact__img-container {
+    background-color: #166589;
+    flex: 0 0 35vw; }
+  .contact__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; }
+  .contact__form-container {
+    flex: 1;
+    background-color: #166589;
+    padding: 5rem; }
+  .contact__heading {
+    font-size: 2.1rem;
+    color: #95d7f7;
+    line-height: 1.2;
+    margin-bottom: 1.5rem; }
+  .contact__subheading {
+    font-size: 1rem;
+    color: white; }
+  .contact__form .input {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white; }
+    .contact__form .input::-webkit-input-placeholder {
+      color: white;
+      opacity: 0.5; }
+  .contact__input-group {
+    margin-bottom: 0.95rem;
+    display: flex; }
+    .contact__input-group > * {
+      flex: 0 0 48%; }
+    .contact__input-group .input:first-child {
+      margin-right: 4%; }
+  .contact__btn {
+    border: 1px solid #fff;
+    color: white;
+    opacity: 0.6;
+    padding: 0.625rem;
+    margin-top: 1rem; }
+
+.footer {
+  background-color: #444;
+  padding-top: 40vh;
+  margin-top: -20vh;
+  position: relative;
+  z-index: -1;
+  color: white; }
+  .footer__1 img {
+    width: 200px;
+    margin-top: -20px;
+    margin-bottom: 20px; }
+  .footer__1-text {
+    font-size: 12px; }
+  .footer__4-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem; }
+  .footer__nav-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-bottom: 1rem; }
+  .footer__social {
+    display: flex;
+    justify-content: space-between; }
+    .footer__social-icons a {
+      color: #95d7f7;
+      border: 1px solid #95d7f7;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      margin-left: 1rem; }
+  .footer .heading__line {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem; }
+
+.input {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  font-weight: inherit;
+  font-size: 16px;
+  outline: none;
+  border: none; }
+
 .heading__primary {
   color: #213e7b;
   font-size: 54px;

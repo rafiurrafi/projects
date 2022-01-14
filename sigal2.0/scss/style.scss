@@ -71,6 +71,20 @@ $color-primary-dark: #166589;
 .board-section {
   background-color: $color-gray-light-2;
 }
+.board-plate {
+  &--dark {
+    .px-4 {
+      background-color: $color-primary-dark;
+      background-image: url("../img/board-circle-1.svg");
+    }
+  }
+  &--light {
+    .px-4 {
+      background-color: $color-primary-dark;
+      background-image: url("../img/board-circle-2.svg");
+    }
+  }
+}
 // ========================================
 // hero
 // ========================================

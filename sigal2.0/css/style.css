@@ -45,3 +45,10 @@
 
 .board-section {
   background-color: #eeeeee; }
+
+.board-plate--dark .px-4 {
+  background-color: #166589;
+  background-image: url("../img/board-circle-1.svg"); }
+.board-plate--light .px-4 {
+  background-color: #166589;
+  background-image: url("../img/board-circle-2.svg"); }

@@ -213,6 +213,22 @@ $text-color: #444;
 // top courses
 // ========================================
 .top-courses {
+  &-section {
+    position: relative;
+  }
+  &-overlay {
+    position: absolute;
+    z-index: -1;
+    background-color: #eee;
+    height: 60%;
+    width: 100%;
+    border-top-right-radius: 45%;
+    border-top-left-radius: 45%;
+    bottom: 0;
+    left: 0;
+  }
+}
+.top-courses {
   &__filter {
     // display: flex;
     // justify-content: space-between;
@@ -294,6 +310,23 @@ $text-color: #444;
   }
 }
 // ========================================
+// join top program section
+// ========================================
+.join-program-section {
+  background-color: #eee;
+  position: relative;
+  z-index: -2;
+}
+.join-program-overlay {
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  z-index: -1;
+  bottom: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+// ========================================
 // outcome
 // ========================================
 .outcome-section {
@@ -306,10 +339,19 @@ $text-color: #444;
     }
     &__img {
       flex: 0 0 1;
+      background-image: linear-gradient(
+          to right,
+          rgba($color-primary-dark, 0.9),
+          rgba($color-primary-light, 0.4)
+        ),
+        url("../img/tab.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: red;
       img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        position: relative;
+        z-index: -2;
       }
     }
     // &__img {

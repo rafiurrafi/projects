@@ -77,7 +77,7 @@ $text-color: #444;
     color: white;
     font-size: 1.4rem;
     background-color: $color-primary;
-    width: 10rem;
+    width: 6.25rem;
     text-align: center;
   }
 }
@@ -226,21 +226,19 @@ $text-color: #444;
     }
     &-btn {
       text-align: center;
-      margin-right: 1rem;
       flex: 1;
       border: 1px solid #ddd;
       border-radius: 5px;
       text-decoration: none;
       color: $text-color;
       background-color: transparent;
-      padding: 1rem 0;
       font-weight: 600;
 
       transition: flex 0.3s 0.5s, background-color 0.3s;
       &.active {
         background-color: $color-primary-dark;
         color: white;
-        flex: 1.5;
+        // flex: 1.5;
       }
     }
   }
@@ -325,13 +323,12 @@ $text-color: #444;
 // ========================================
 .step-section {
   padding: 100px;
-  // background-color: #eee;
+  background-color: #eee;
   .step {
     position: relative;
     &__heading {
-      font-size: 34px;
+      font-size: 2.1rem;
       color: $color-primary-dark;
-      margin-bottom: 10px;
       &::after {
         background-color: $color-primary-dark;
       }
@@ -355,11 +352,10 @@ $text-color: #444;
       opacity: 0.7;
       display: inline-block;
       position: absolute;
-      top: -80px;
-      left: -40px;
+      top: -2.8rem;
+      left: -1.56rem;
       font-size: 100px;
       font-weight: 700;
-      z-index: -1;
       color: #c6c6c6;
     }
   }
@@ -389,5 +385,36 @@ $text-color: #444;
   right: -2rem;
 }
 // ========================================
-// hero
+// Home page responsive
 // ========================================
+@media (max-width: 992px) {
+  // hero
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+  .hero-img {
+    margin-right: -4rem !important;
+  }
+  //cta
+  .cta__heading {
+    font-size: 3rem;
+  }
+  //card
+  .card__tag {
+    font-size: 1rem;
+  }
+  //top course
+  .top-courses__filter-btn {
+    flex: 0 0 23%;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .cta__heading {
+    font-size: 2.7rem;
+  }
+  .top-courses__filter-btn {
+    flex: 0 0 22%;
+  }
+}

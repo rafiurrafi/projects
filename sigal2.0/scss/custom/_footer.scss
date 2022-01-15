@@ -15,10 +15,6 @@
       font-size: 12px;
     }
   }
-  &__2 {
-  }
-  &__3 {
-  }
   &__4 {
     &-text {
       font-size: 0.8rem;
@@ -41,19 +37,22 @@
       a {
         color: $color-primary-light;
         border: 1px solid $color-primary-light;
-        height: 1.8rem;
-        width: 1.8rem;
+        height: 1.5rem;
+        width: 1.5rem;
         border-radius: 50%;
         text-decoration: none;
         display: inline-block;
         text-align: center;
         margin-left: 5px;
+        font-size: 0.85rem;
       }
     }
   }
+  &__bottom {
+    font-size: 0.75rem;
+    border-top: 1px solid $color-primary-dark;
+  }
   .heading__line {
     font-size: 1rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
   }
 }

@@ -9,7 +9,7 @@
   line-height: 1;
 }
 .heading__tertiary {
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 1;
   span {
     font-weight: 400;
@@ -42,6 +42,23 @@
     content: "";
     height: 3px;
     width: 30px;
+    margin-top: 6px;
     display: block;
+  }
+}
+@media (max-width: 992px) {
+  .heading__primary {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .heading__primary {
+    font-size: 2.5rem;
+  }
+  .heading__secondary {
+    font-size: 2rem;
+  }
+  .heading__tertiary {
+    font-size: 2.5rem;
   }
 }

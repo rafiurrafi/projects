@@ -245,8 +245,10 @@ $text-color: #444;
     }
   }
   &__content {
-    margin-left: 15%;
     margin-top: 5rem;
+    @media (min-width: 768px) {
+      margin-left: 15%;
+    }
   }
   &__card {
     margin-bottom: 3rem;
@@ -363,9 +365,29 @@ $text-color: #444;
   }
 }
 // ========================================
-// hero
+// owl carousel
 // ========================================
-
+#upcoming-course,
+.join-card-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.prev-slide,
+.next-slide {
+  position: absolute;
+  top: 50%;
+  img {
+    height: 2rem;
+  }
+}
+.prev-slide {
+  left: -2rem;
+}
+.next-slide {
+  right: -2rem;
+}
 // ========================================
 // hero
 // ========================================

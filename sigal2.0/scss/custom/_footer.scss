@@ -5,8 +5,6 @@
   position: relative;
   z-index: -1;
   color: white;
-  &__container {
-  }
   &__1 {
     img {
       width: 200px;
@@ -49,12 +47,12 @@
         text-decoration: none;
         display: inline-block;
         text-align: center;
-        margin-left: 1rem;
+        margin-left: 5px;
       }
     }
   }
   .heading__line {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
   }

@@ -480,7 +480,7 @@
             </div>
             <!-- End of card  -->
           </div>
-          <a href="#" class="upcoming-couse__link"
+          <a href="#" class="upcoming-couse__link fw-bold text-dark text-decoration-none float-end"
             >Explore more feature &raquo;</a
           >
         </div>
@@ -494,7 +494,7 @@
             <p>Stay close, to explore our latest courses</p>
           </div>
           <div class="top-courses__filter d-flex justify-content-between align-items-center">
-            <div class="top-courses__filter-tag">Filter</div>
+            <div class="top-courses__filter-tag d-none d-md-block">Filter</div>
             <div class="top-courses__filter-btns d-flex">
               <button data-filter=".v" class="top-courses__filter-btn active"> Veneers </button>
               <button data-filter=".w" class="top-courses__filter-btn"> Whiting </butt>
@@ -642,7 +642,7 @@
             </div>
           </div>
             <!-- single cardd  -->
-            <div class="col-6 col-lg-4 f">
+            <div class="col-sm-6 col-lg-4 f">
             <div class="card top-courses__card ">
               <div class="card__header">
                 <img src="img/top-course-1.png" class="card__img" alt="" />
@@ -687,7 +687,7 @@
             </div>
           </div>
             <!-- single cardd  -->
-            <div class="col-6 col-lg-4 i">
+            <div class="col-sm-6 col-lg-4 i">
             <div class="card top-courses__card ">
               <div class="card__header">
                 <img src="img/top-course-1.png" class="card__img" alt="" />
@@ -867,7 +867,7 @@
             </div>
           </div>
             <!-- single cardd  -->
-            <div class="col-6 col-lg-4 w">
+            <div class="col-sm-6 col-lg-4 w">
             <div class="card top-courses__card ">
               <div class="card__header">
                 <img src="img/top-course-1.png" class="card__img" alt="" />
@@ -912,7 +912,7 @@
             </div>
           </div>
             <!-- single cardd  -->
-            <div class="col-6 col-lg-4 b o">
+            <div class="col-sm-6 col-lg-4 b o">
             <div class="card top-courses__card ">
               <div class="card__header">
                 <img src="img/top-course-1.png" class="card__img" alt="" />
@@ -957,7 +957,7 @@
             </div>
           </div>
             <!-- single cardd  -->
-            <div class="col-6 col-lg-4 f v">
+            <div class="col-sm-6 col-lg-4 f v">
             <div class="card top-courses__card ">
               <div class="card__header">
                 <img src="img/top-course-1.png" class="card__img" alt="" />
@@ -1002,7 +1002,7 @@
             </div>
           </div>
             <!-- single cardd  -->
-            <div class="col-6 col-lg-4 b i">
+            <div class="col-sm-6 col-lg-4 b i">
             <div class="card top-courses__card ">
               <div class="card__header">
                 <img src="img/top-course-1.png" class="card__img" alt="" />
@@ -1246,7 +1246,7 @@
             </div>
             <!-- End of card  -->
           </div>
-          <a href="#" class="upcoming-couse__link"
+          <a href="#" class="fw-bold text-dark text-decoration-none float-end"
             >Explore more feature &raquo;</a
           >
         </div>
@@ -1254,7 +1254,7 @@
       <!-- start of outcome-section  -->
       <section class="outcome-section">
         <div class="outcome d-md-flex align-items-center">
-          <div class="outcome__content">
+          <div class="outcome__content py-5 py-md-0">
             <!-- <div class="row--flex"> -->
             <h3 class="heading__tertiary mb-2">
               Learner outcomes on
@@ -1353,12 +1353,17 @@
         </div>
       </section>
       <!-- end of contact-section  -->
-      <!-- start of footer-section  -->
-      <footer class="footer">
-        <div
-          class="container footer__container d-md-flex justify-content-between"
-        >
-          <div class="footer__1">
+    
+      <!-- start of step-section  -->
+      <!-- end of cts-course-section  -->
+    </main>
+    <!-- start of footer-section  -->
+    <footer class="footer">
+      <div
+        class="container footer__container"
+      >
+        <div class="row gy-4">
+          <div class="col-md-4 footer__1">
             <img src="img/logo-2.svg" alt="" />
             <p class="footer__1-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
@@ -1367,7 +1372,7 @@
               est, faucibus in elementum venenatis, cursus sed elit.
             </p>
           </div>
-          <div class="footer__2 px-md-4">
+          <div class="col-md-2 footer__2 ">
             <h5 class="heading__line heading__line--light">Quick Links</h5>
             <nav class="footer__nav">
               <a href="" class="footer__nav-link">About</a>
@@ -1376,7 +1381,7 @@
               <a href="" class="footer__nav-link">Blog</a>
             </nav>
           </div>
-          <div class="footer__3 px-md-4">
+          <div class="col-md-2 footer__3">
             <h5 class="heading__line heading__line--light">Service</h5>
             <nav class="footer__nav">
               <a href="" class="footer__nav-link">Medical Course</a>
@@ -1385,7 +1390,7 @@
               <a href="" class="footer__nav-link">Blog</a>
             </nav>
           </div>
-          <div class="footer__4">
+          <div class="col-md-4 footer__4">
             <h5 class="heading__line heading__line--light">Visit us</h5>
             <p class="footer__4-text">
               3rd Floor, Al Thalateen Comercial Complex, Prince Sultan Bin
@@ -1403,11 +1408,9 @@
             </div>
           </div>
         </div>
-      </footer>
-      <!-- end of footer-section  -->
-      <!-- start of step-section  -->
-      <!-- end of cts-course-section  -->
-    </main>
+      </div>
+    </footer>
+    <!-- end of footer-section  -->
 
     <!-- js plugins  -->
 
@@ -1435,9 +1438,10 @@
     <script>
       $("#upcoming-course").owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 20,
         responsiveClass: true,
         autoPlay: 1000,
+        navText:["<div class='nav-btn prev-slide'><img src='img/Icon ionic-ios-arrow-forward.svg' alt=''></div>","<div class='nav-btn next-slide'><img src='img/Icon ionic-ios-arrow-next.svg' alt=''></div>"],
         responsive: {
           0: {
             items: 1,
@@ -1457,8 +1461,9 @@
       // join-card-container
       $(".join-card-container ").owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 20,
         responsiveClass: true,
+        navText:["<div class='nav-btn prev-slide'><img src='img/Icon ionic-ios-arrow-forward.svg' alt=''></div>","<div class='nav-btn next-slide'><img src='img/Icon ionic-ios-arrow-next.svg' alt=''></div>"],
         responsive: {
           0: {
             items: 1,

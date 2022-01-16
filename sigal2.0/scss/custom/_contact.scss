@@ -36,11 +36,18 @@
   &__input-group {
     margin-bottom: 0.95rem;
     display: flex;
+    @media (max-width: 768px) {
+      display: block;
+    }
     & > * {
       flex: 0 0 48%;
     }
     .input:first-child {
       margin-right: 4%;
+      @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 0.95rem;
+      }
     }
   }
   &__btn {

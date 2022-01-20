@@ -220,9 +220,14 @@
     font-size: 0.85rem; }
 
 svg {
+  height: 2rem;
+  width: 2rem;
   border: 1px solid #166589;
   border-radius: 5px;
   fill: #166589; }
+  svg.active {
+    background-color: #166589;
+    fill: white; }
 
 .navbar-logo {
   width: 200px; }
@@ -466,3 +471,16 @@ svg {
     flex: 0 0 22%; } }
 .course--main {
   background-color: #eeeeee; }
+
+.section-menu-filter .dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid #eeeeee; }
+
+.section-menu-filter input {
+  background-color: #eeeeee;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit; }
+
+.cat-filter-btn.active {
+  color: #00afdd !important; }

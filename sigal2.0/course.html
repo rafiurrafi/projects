@@ -7,7 +7,7 @@
     <!--  font-awesome + google font  -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap"
@@ -89,32 +89,766 @@
       <section class="section-menu-filter">
         <div class="container">
           <div class="row">
-            <div class="col-md-2">
-              <p class="font-size-sm fw-bold mr-2">View</p>
+            <div class="col-md-3 d-none d-md-flex">
+              <p class="font-size-sm fw-bold me-3">View</p>
               <!-- list menu icon  -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 27.545 22.38"
-              >
-                <path
-                  id="Icon_awesome-list-ul"
-                  data-name="Icon awesome-list-ul"
-                  d="M2.582,3.375A2.582,2.582,0,1,0,5.165,5.957,2.582,2.582,0,0,0,2.582,3.375Zm0,8.608a2.582,2.582,0,1,0,2.582,2.582,2.582,2.582,0,0,0-2.582-2.582Zm0,8.608a2.582,2.582,0,1,0,2.582,2.582,2.582,2.582,0,0,0-2.582-2.582Zm24.1.861H9.469a.861.861,0,0,0-.861.861v1.722a.861.861,0,0,0,.861.861H26.684a.861.861,0,0,0,.861-.861V22.312A.861.861,0,0,0,26.684,21.452Zm0-17.216H9.469a.861.861,0,0,0-.861.861V6.818a.861.861,0,0,0,.861.861H26.684a.861.861,0,0,0,.861-.861V5.1A.861.861,0,0,0,26.684,4.236Zm0,8.608H9.469a.861.861,0,0,0-.861.861v1.722a.861.861,0,0,0,.861.861H26.684a.861.861,0,0,0,.861-.861V13.7A.861.861,0,0,0,26.684,12.844Z"
-                  transform="translate(0 -3.375)"
-                />
-              </svg>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 27.545 22.38"
+                  class="active p-1 me-2"
+                >
+                  <path
+                    id="Icon_awesome-list-ul"
+                    data-name="Icon awesome-list-ul"
+                    d="M2.582,3.375A2.582,2.582,0,1,0,5.165,5.957,2.582,2.582,0,0,0,2.582,3.375Zm0,8.608a2.582,2.582,0,1,0,2.582,2.582,2.582,2.582,0,0,0-2.582-2.582Zm0,8.608a2.582,2.582,0,1,0,2.582,2.582,2.582,2.582,0,0,0-2.582-2.582Zm24.1.861H9.469a.861.861,0,0,0-.861.861v1.722a.861.861,0,0,0,.861.861H26.684a.861.861,0,0,0,.861-.861V22.312A.861.861,0,0,0,26.684,21.452Zm0-17.216H9.469a.861.861,0,0,0-.861.861V6.818a.861.861,0,0,0,.861.861H26.684a.861.861,0,0,0,.861-.861V5.1A.861.861,0,0,0,26.684,4.236Zm0,8.608H9.469a.861.861,0,0,0-.861.861v1.722a.861.861,0,0,0,.861.861H26.684a.861.861,0,0,0,.861-.861V13.7A.861.861,0,0,0,26.684,12.844Z"
+                    transform="translate(0 -3.375)"
+                  />
+                </svg>
+              </a>
               <!-- grid icon  -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24.667 25.033"
-              >
-                <path
-                  id="Icon_material-apps"
-                  data-name="Icon material-apps"
-                  d="M6,12.089h6V6H6Zm9,18.267h6V24.267H15Zm-9,0h6V24.267H6Zm0-9.134h6V15.134H6Zm9,0h6V15.134H15ZM24,6v6.089h6V6Zm-9,6.089h6V6H15Zm9,9.134h6V15.134H24Zm0,9.134s4.5,1.522,6,0,0-6.089,0-6.089H24Z"
-                  transform="translate(-6 -6)"
-                />
-              </svg>
+              <a href="#">
+                <svg
+                  class="p-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24.667 25.033"
+                >
+                  <path
+                    id="Icon_material-apps"
+                    data-name="Icon material-apps"
+                    d="M6,12.089h6V6H6Zm9,18.267h6V24.267H15Zm-9,0h6V24.267H6Zm0-9.134h6V15.134H6Zm9,0h6V15.134H15ZM24,6v6.089h6V6Zm-9,6.089h6V6H15Zm9,9.134h6V15.134H24Zm0,9.134s4.5,1.522,6,0,0-6.089,0-6.089H24Z"
+                    transform="translate(-6 -6)"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- end of first col  -->
+            <div class="offset-md-1 col-md-8 bg-white">
+              <div class="row">
+                <div class="col-2 fw-bold font-size-sm text-primary">
+                  Filter :
+                </div>
+                <div class="col">
+                  <!-- Dropdown 1  -->
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle font-size-sm"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Date
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- Dropdown 1  -->
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle font-size-sm"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Instructor
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li class="mb-2 border-0">
+                        <a class="dropdown-item" href="#"
+                          ><input
+                            type="text"
+                            class="form-control p-0 ps-2"
+                            placeholder="&#xF002;"
+                        /></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Dr Ahmed saleh</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Dr. Naura Faisal</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Dr. Sara Almuqbil</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Dr Ahmed saleh</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Dr. Naura Faisal</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Dr. Sara Almuqbil</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col">
+                  <!-- Dropdown 1  -->
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle font-size-sm"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Delivery Method
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item py-2" href="#">Online</a></li>
+                      <li>
+                        <a class="dropdown-item py-2" href="#">In-person</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item py-2" href="#">Hybrid</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Dropdown 1  -->
+                <div class="col">
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle font-size-sm"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Type
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item py-2" href="#">Course</a></li>
+                      <li>
+                        <a class="dropdown-item py-2" href="#">Program</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Dropdown 1  -->
+                <div class="col">
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle font-size-sm"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Location
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-category my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2 font-size-sm fw-bold text-primary">
+              <p class="mb=3">Category :</p>
+              <nav class="cat-filter-btns">
+                <button
+                  class="cat-filter-btn d-block bg-white w-100 text-start ps-3 mb-3 font-size-sm border-0 py-1"
+                  data-filter="*"
+                >
+                  All
+                </button>
+                <button
+                  class="cat-filter-btn d-block bg-white w-100 text-start ps-3 mb-3 font-size-sm border-0 py-1"
+                  data-filter=".v"
+                >
+                  Veneers
+                </button>
+                <button
+                  data-filter=".w"
+                  class="cat-filter-btn d-block bg-white w-100 text-start ps-3 mb-3 font-size-sm border-0 py-1"
+                >
+                  Whitening
+                </button>
+                <button
+                  data-filter=".b"
+                  class="cat-filter-btn d-block bg-white w-100 text-start ps-3 mb-3 font-size-sm border-0 py-1"
+                >
+                  Bonding
+                </button>
+                <button
+                  data-filter=".f"
+                  class="cat-filter-btn d-block bg-white w-100 text-start ps-3 mb-3 font-size-sm border-0 py-1"
+                >
+                  Filling
+                </button>
+                <button
+                  data-filter=".i"
+                  class="cat-filter-btn d-block bg-white w-100 text-start ps-3 mb-3 font-size-sm border-0 py-1"
+                >
+                  Implants
+                </button>
+                <button
+                  data-filter=".c"
+                  class="cat-filter-btn d-block bg-white w-100 text-start ps-3 mb-3 font-size-sm border-0 py-1"
+                >
+                  Crowns
+                </button>
+                <button
+                  data-filter=".o"
+                  class="cat-filter-btn d-block bg-white w-100 text-start ps-3 mb-3 font-size-sm border-0 py-1"
+                >
+                  Other
+                </button>
+              </nav>
+            </div>
+            <!-- Second row of main category   -->
+            <div class="col-sm-10">
+              <input
+                type="text"
+                placeholder="Search course/program"
+                class="form-control py-2"
+              />
+              <!-- row for card  -->
+              <div class="row course-container">
+                <div class="col-md-6 col-lg-4 mb-4 v b i o">
+                  <!-- single card  -->
+                  <div class="card">
+                    <div class="card__header">
+                      <img
+                        src="img/top-course-1.png"
+                        class="card__img"
+                        alt=""
+                      />
+                      <span class="card__tag py-1">online</span>
+                    </div>
+                    <div class="card__content p-3">
+                      <div class="card__content-title mb-2">
+                        <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem Universit</p>
+                      </div>
+                      <p class="card__text pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum, quasi aliquam adipisci possimus optio sequi ut
+                        qui dolor suscipit blanditiis libero illum quis? Fugiat
+                        distinctio minus esse? Maxime, tempora. Voluptatem.
+                      </p>
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>
+                          15:33:00 Hours
+                        </p>
+                        <p>
+                          <i class="fa fa-list" aria-hidden="true"></i>
+                          15 Lessons
+                        </p>
+                      </div>
+
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          11-01-2022
+                        </p>
+                      </div>
+                      <div class="card__content-feature mb-2">
+                        <p class="card__price">500.00 SAR</p>
+                        <p class="card__level">Begininer</p>
+                      </div>
+                      <a href="" class="btn btn-primary text-white d-block py-1"
+                        >Join</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End of card  -->
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 w f c">
+                  <!-- single card  -->
+                  <div class="card">
+                    <div class="card__header">
+                      <img
+                        src="img/top-course-1.png"
+                        class="card__img"
+                        alt=""
+                      />
+                      <span class="card__tag py-1">online</span>
+                    </div>
+                    <div class="card__content p-3">
+                      <div class="card__content-title mb-2">
+                        <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem Universit</p>
+                      </div>
+                      <p class="card__text pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum, quasi aliquam adipisci possimus optio sequi ut
+                        qui dolor suscipit blanditiis libero illum quis? Fugiat
+                        distinctio minus esse? Maxime, tempora. Voluptatem.
+                      </p>
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>
+                          15:33:00 Hours
+                        </p>
+                        <p>
+                          <i class="fa fa-list" aria-hidden="true"></i>
+                          15 Lessons
+                        </p>
+                      </div>
+
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          11-01-2022
+                        </p>
+                      </div>
+                      <div class="card__content-feature mb-2">
+                        <p class="card__price">500.00 SAR</p>
+                        <p class="card__level">Begininer</p>
+                      </div>
+                      <a href="" class="btn btn-primary text-white d-block py-1"
+                        >Join</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End of card  -->
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 v b i o">
+                  <!-- single card  -->
+                  <div class="card">
+                    <div class="card__header">
+                      <img
+                        src="img/top-course-1.png"
+                        class="card__img"
+                        alt=""
+                      />
+                      <span class="card__tag py-1">online</span>
+                    </div>
+                    <div class="card__content p-3">
+                      <div class="card__content-title mb-2">
+                        <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem Universit</p>
+                      </div>
+                      <p class="card__text pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum, quasi aliquam adipisci possimus optio sequi ut
+                        qui dolor suscipit blanditiis libero illum quis? Fugiat
+                        distinctio minus esse? Maxime, tempora. Voluptatem.
+                      </p>
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>
+                          15:33:00 Hours
+                        </p>
+                        <p>
+                          <i class="fa fa-list" aria-hidden="true"></i>
+                          15 Lessons
+                        </p>
+                      </div>
+
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          11-01-2022
+                        </p>
+                      </div>
+                      <div class="card__content-feature mb-2">
+                        <p class="card__price">500.00 SAR</p>
+                        <p class="card__level">Begininer</p>
+                      </div>
+                      <a href="" class="btn btn-primary text-white d-block py-1"
+                        >Join</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End of card  -->
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 w f c">
+                  <!-- single card  -->
+                  <div class="card">
+                    <div class="card__header">
+                      <img
+                        src="img/top-course-1.png"
+                        class="card__img"
+                        alt=""
+                      />
+                      <span class="card__tag py-1">online</span>
+                    </div>
+                    <div class="card__content p-3">
+                      <div class="card__content-title mb-2">
+                        <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem Universit</p>
+                      </div>
+                      <p class="card__text pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum, quasi aliquam adipisci possimus optio sequi ut
+                        qui dolor suscipit blanditiis libero illum quis? Fugiat
+                        distinctio minus esse? Maxime, tempora. Voluptatem.
+                      </p>
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>
+                          15:33:00 Hours
+                        </p>
+                        <p>
+                          <i class="fa fa-list" aria-hidden="true"></i>
+                          15 Lessons
+                        </p>
+                      </div>
+
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          11-01-2022
+                        </p>
+                      </div>
+                      <div class="card__content-feature mb-2">
+                        <p class="card__price">500.00 SAR</p>
+                        <p class="card__level">Begininer</p>
+                      </div>
+                      <a href="" class="btn btn-primary text-white d-block py-1"
+                        >Join</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End of card  -->
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 v b i o">
+                  <!-- single card  -->
+                  <div class="card">
+                    <div class="card__header">
+                      <img
+                        src="img/top-course-1.png"
+                        class="card__img"
+                        alt=""
+                      />
+                      <span class="card__tag py-1">online</span>
+                    </div>
+                    <div class="card__content p-3">
+                      <div class="card__content-title mb-2">
+                        <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem Universit</p>
+                      </div>
+                      <p class="card__text pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum, quasi aliquam adipisci possimus optio sequi ut
+                        qui dolor suscipit blanditiis libero illum quis? Fugiat
+                        distinctio minus esse? Maxime, tempora. Voluptatem.
+                      </p>
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>
+                          15:33:00 Hours
+                        </p>
+                        <p>
+                          <i class="fa fa-list" aria-hidden="true"></i>
+                          15 Lessons
+                        </p>
+                      </div>
+
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          11-01-2022
+                        </p>
+                      </div>
+                      <div class="card__content-feature mb-2">
+                        <p class="card__price">500.00 SAR</p>
+                        <p class="card__level">Begininer</p>
+                      </div>
+                      <a href="" class="btn btn-primary text-white d-block py-1"
+                        >Join</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End of card  -->
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 w f c">
+                  <!-- single card  -->
+                  <div class="card">
+                    <div class="card__header">
+                      <img
+                        src="img/top-course-1.png"
+                        class="card__img"
+                        alt=""
+                      />
+                      <span class="card__tag py-1">online</span>
+                    </div>
+                    <div class="card__content p-3">
+                      <div class="card__content-title mb-2">
+                        <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem Universit</p>
+                      </div>
+                      <p class="card__text pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum, quasi aliquam adipisci possimus optio sequi ut
+                        qui dolor suscipit blanditiis libero illum quis? Fugiat
+                        distinctio minus esse? Maxime, tempora. Voluptatem.
+                      </p>
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>
+                          15:33:00 Hours
+                        </p>
+                        <p>
+                          <i class="fa fa-list" aria-hidden="true"></i>
+                          15 Lessons
+                        </p>
+                      </div>
+
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          11-01-2022
+                        </p>
+                      </div>
+                      <div class="card__content-feature mb-2">
+                        <p class="card__price">500.00 SAR</p>
+                        <p class="card__level">Begininer</p>
+                      </div>
+                      <a href="" class="btn btn-primary text-white d-block py-1"
+                        >Join</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End of card  -->
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 v b i o">
+                  <!-- single card  -->
+                  <div class="card">
+                    <div class="card__header">
+                      <img
+                        src="img/top-course-1.png"
+                        class="card__img"
+                        alt=""
+                      />
+                      <span class="card__tag py-1">online</span>
+                    </div>
+                    <div class="card__content p-3">
+                      <div class="card__content-title mb-2">
+                        <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem Universit</p>
+                      </div>
+                      <p class="card__text pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum, quasi aliquam adipisci possimus optio sequi ut
+                        qui dolor suscipit blanditiis libero illum quis? Fugiat
+                        distinctio minus esse? Maxime, tempora. Voluptatem.
+                      </p>
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>
+                          15:33:00 Hours
+                        </p>
+                        <p>
+                          <i class="fa fa-list" aria-hidden="true"></i>
+                          15 Lessons
+                        </p>
+                      </div>
+
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          11-01-2022
+                        </p>
+                      </div>
+                      <div class="card__content-feature mb-2">
+                        <p class="card__price">500.00 SAR</p>
+                        <p class="card__level">Begininer</p>
+                      </div>
+                      <a href="" class="btn btn-primary text-white d-block py-1"
+                        >Join</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End of card  -->
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 w f c">
+                  <!-- single card  -->
+                  <div class="card">
+                    <div class="card__header">
+                      <img
+                        src="img/top-course-1.png"
+                        class="card__img"
+                        alt=""
+                      />
+                      <span class="card__tag py-1">online</span>
+                    </div>
+                    <div class="card__content p-3">
+                      <div class="card__content-title mb-2">
+                        <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem Universit</p>
+                      </div>
+                      <p class="card__text pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum, quasi aliquam adipisci possimus optio sequi ut
+                        qui dolor suscipit blanditiis libero illum quis? Fugiat
+                        distinctio minus esse? Maxime, tempora. Voluptatem.
+                      </p>
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>
+                          15:33:00 Hours
+                        </p>
+                        <p>
+                          <i class="fa fa-list" aria-hidden="true"></i>
+                          15 Lessons
+                        </p>
+                      </div>
+
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          11-01-2022
+                        </p>
+                      </div>
+                      <div class="card__content-feature mb-2">
+                        <p class="card__price">500.00 SAR</p>
+                        <p class="card__level">Begininer</p>
+                      </div>
+                      <a href="" class="btn btn-primary text-white d-block py-1"
+                        >Join</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End of card  -->
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 v b i o">
+                  <!-- single card  -->
+                  <div class="card">
+                    <div class="card__header">
+                      <img
+                        src="img/top-course-1.png"
+                        class="card__img"
+                        alt=""
+                      />
+                      <span class="card__tag py-1">online</span>
+                    </div>
+                    <div class="card__content p-3">
+                      <div class="card__content-title mb-2">
+                        <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem Universit</p>
+                      </div>
+                      <p class="card__text pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum, quasi aliquam adipisci possimus optio sequi ut
+                        qui dolor suscipit blanditiis libero illum quis? Fugiat
+                        distinctio minus esse? Maxime, tempora. Voluptatem.
+                      </p>
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>
+                          15:33:00 Hours
+                        </p>
+                        <p>
+                          <i class="fa fa-list" aria-hidden="true"></i>
+                          15 Lessons
+                        </p>
+                      </div>
+
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          11-01-2022
+                        </p>
+                      </div>
+                      <div class="card__content-feature mb-2">
+                        <p class="card__price">500.00 SAR</p>
+                        <p class="card__level">Begininer</p>
+                      </div>
+                      <a href="" class="btn btn-primary text-white d-block py-1"
+                        >Join</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End of card  -->
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4 w f c">
+                  <!-- single card  -->
+                  <div class="card">
+                    <div class="card__header">
+                      <img
+                        src="img/top-course-1.png"
+                        class="card__img"
+                        alt=""
+                      />
+                      <span class="card__tag py-1">online</span>
+                    </div>
+                    <div class="card__content p-3">
+                      <div class="card__content-title mb-2">
+                        <h4 class="heading-4">Lorem ipsum dolor sit.</h4>
+                        <p>Lorem Universit</p>
+                      </div>
+                      <p class="card__text pb-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolorum, quasi aliquam adipisci possimus optio sequi ut
+                        qui dolor suscipit blanditiis libero illum quis? Fugiat
+                        distinctio minus esse? Maxime, tempora. Voluptatem.
+                      </p>
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-clock-o" aria-hidden="true"></i>
+                          15:33:00 Hours
+                        </p>
+                        <p>
+                          <i class="fa fa-list" aria-hidden="true"></i>
+                          15 Lessons
+                        </p>
+                      </div>
+
+                      <div class="card__content-feature">
+                        <p>
+                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                          11-01-2022
+                        </p>
+                      </div>
+                      <div class="card__content-feature mb-2">
+                        <p class="card__price">500.00 SAR</p>
+                        <p class="card__level">Begininer</p>
+                      </div>
+                      <a href="" class="btn btn-primary text-white d-block py-1"
+                        >Join</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End of card  -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -245,5 +979,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- isotop  -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      // svg view icon active classs
+      const icons = document.querySelectorAll(".section-menu-filter svg");
+      icons.forEach((icon) => {
+        icon.addEventListener("click", (e) => {
+          icons.forEach((i) => i.classList.remove("active"));
+          icon.classList.add("active");
+        });
+      });
+      // isotop for course filter
+      var $grid = $(".course-container").isotope({
+        // filter: ".v",
+        // options
+      });
+      // filter items on button click
+      $(".cat-filter-btns").on("click", "button", function () {
+        $(".cat-filter-btn").removeClass("active");
+        $(this).addClass("active");
+        var filterValue = $(this).attr("data-filter");
+        $grid.isotope({ filter: filterValue });
+      });
+    </script>
   </body>
 </html>

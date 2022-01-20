@@ -105,14 +105,14 @@ $text-color: #444;
 // Reusability
 // ========================================
 svg {
-  // height: 1rem;
-  // width: 1rem;
+  height: 2rem;
+  width: 2rem;
   border: 1px solid $color-primary-dark;
   border-radius: 5px;
   fill: $color-primary-dark;
   &.active {
-    // background-color: $color-primary-dark;
-    // fill: white;
+    background-color: $color-primary-dark;
+    fill: white;
   }
 }
 // header
@@ -488,4 +488,21 @@ svg {
 // ========================================
 .course--main {
   background-color: $color-gray-light-2;
+}
+.section-menu-filter .dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid $color-gray-light-2;
+}
+
+.section-menu-filter {
+  input {
+    background-color: $color-gray-light-2;
+
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  }
+}
+.cat-filter-btn.active {
+  color: $color-primary !important;
 }

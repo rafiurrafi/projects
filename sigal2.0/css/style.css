@@ -219,6 +219,11 @@
     color: #00afdd;
     font-size: 0.85rem; }
 
+svg {
+  border: 1px solid #166589;
+  border-radius: 5px;
+  fill: #166589; }
+
 .navbar-logo {
   width: 200px; }
 

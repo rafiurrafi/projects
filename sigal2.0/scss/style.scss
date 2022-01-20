@@ -101,6 +101,20 @@ $text-color: #444;
   }
 }
 
+// ========================================
+// Reusability
+// ========================================
+svg {
+  // height: 1rem;
+  // width: 1rem;
+  border: 1px solid $color-primary-dark;
+  border-radius: 5px;
+  fill: $color-primary-dark;
+  &.active {
+    // background-color: $color-primary-dark;
+    // fill: white;
+  }
+}
 // header
 .navbar-logo {
   width: 200px;

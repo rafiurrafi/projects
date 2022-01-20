@@ -459,3 +459,5 @@
 
   .top-courses__filter-btn {
     flex: 0 0 22%; } }
+.course--main {
+  background-color: #eeeeee; }

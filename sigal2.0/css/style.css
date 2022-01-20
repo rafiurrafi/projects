@@ -484,3 +484,7 @@ svg {
 
 .cat-filter-btn.active {
   color: #00afdd !important; }
+
+.cat-placeholder-icon {
+  margin-left: -2rem;
+  color: #eeeeee; }

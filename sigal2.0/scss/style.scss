@@ -573,55 +573,96 @@ svg {
 // course details page
 // ========================================
 
-.course-details-screen {
-  height: 100vh;
-  background-color: $color-gray-light-2;
-  z-index: -2;
-  position: relative;
+#course-details-body {
+  .header {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+  }
   .section-hero {
     background-image: url(../img/Banner-2.jpg);
     background-size: cover;
     background-position: center;
     height: 90vh;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    z-index: -1;
+    background-color: $color-gray-light-2;
   }
   .hero-content {
-    position: absolute;
-    top: 40%;
-    width: 70%;
+    margin-top: 15vh;
     opacity: 0.7;
     .heading__primary {
       font-size: 2.55rem;
     }
   }
+
+  .section-course-details-features {
+    margin-top: -35vh;
+    background-color: transparent;
+
+    .col-sm-6.col-md-4 {
+      padding-right: calc(var(--bs-gutter-x) * 0.15);
+      padding-left: calc(var(--bs-gutter-x) * 0.15);
+      position: relative;
+      z-index: 2;
+    }
+    img {
+      height: 3.4rem;
+      width: 2.25rem;
+    }
+    h4,
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  .course-details--main {
+    padding-top: 50vh;
+    margin-top: -40vh;
+    // position: relative;
+    // z-index: 1;
+    .section-course-details {
+      .nav.nav-pills {
+        position: relative;
+        z-index: 3;
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 0.7rem;
+      }
+      .nav-link {
+        padding: 0.5rem 0 !important;
+        text-align: center;
+        display: block;
+        color: $color-primary-dark;
+        font-size: 0.9rem;
+        &.active {
+          background-color: $color-primary-dark;
+          color: white;
+        }
+      }
+    }
+    .course-details__content {
+      min-height: 60vh;
+    }
+  }
 }
 
-.section-course-details-features {
-  margin-top: -20vh;
-  background-color: transparent;
-  .col-sm-6.col-md-4 {
-    padding-right: calc(var(--bs-gutter-x) * 0.15);
-    padding-left: calc(var(--bs-gutter-x) * 0.15);
+// ========================================
+// course details page - responsive
+// ========================================
+@media (max-width: 768px) {
+  .course-details--main {
+    padding-top: 70vh;
+    margin-top: -60vh;
   }
-  img {
-    height: 3.4rem;
-    width: 2.25rem;
-  }
-  h4,
-  p {
-    font-size: 0.8rem;
+  .course-details-screen {
+    .hero-content {
+      width: 100%;
+    }
   }
 }
-.course-details--main {
-  .section-course-details {
-    .nav.nav-pills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
-    }
+
+@media (max-width: 576px) {
+  .course-details--main {
+    padding-top: 110vh;
+    margin-top: -100vh;
   }
 }

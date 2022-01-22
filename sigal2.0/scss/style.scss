@@ -575,6 +575,7 @@ svg {
 
 #course-details-body {
   .header {
+    background-color: transparent !important;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -585,10 +586,11 @@ svg {
     background-size: cover;
     background-position: center;
     height: 90vh;
+    margin-top: 0;
     background-color: $color-gray-light-2;
   }
   .hero-content {
-    margin-top: 15vh;
+    margin-top: 20vh;
     opacity: 0.7;
     .heading__primary {
       font-size: 2.55rem;

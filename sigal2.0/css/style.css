@@ -244,6 +244,12 @@ svg {
     background-color: #166589;
     fill: white; }
 
+.bg-gray {
+  background-color: #eeeeee; }
+
+.bg-primary-odd {
+  background-color: #213e7b; }
+
 .navbar-logo {
   width: 200px; }
 
@@ -541,7 +547,9 @@ svg {
   background-position: center;
   height: 90vh;
   margin-top: 0;
-  background-color: #eeeeee; }
+  background-color: #eeeeee;
+  position: relative;
+  z-index: -1; }
 #course-details-body .hero-content {
   margin-top: 20vh;
   opacity: 0.7; }
@@ -550,16 +558,19 @@ svg {
 #course-details-body .section-course-details-features {
   margin-top: -35vh;
   background-color: transparent; }
-  #course-details-body .section-course-details-features .col-sm-6.col-md-4 {
+  #course-details-body .section-course-details-features .col-md-6.col-lg-4 {
     padding-right: calc(var(--bs-gutter-x) * 0.15);
-    padding-left: calc(var(--bs-gutter-x) * 0.15);
-    position: relative;
-    z-index: 2; }
+    padding-left: calc(var(--bs-gutter-x) * 0.15); }
+  #course-details-body .section-course-details-features .course-details__text {
+    flex: 1; }
   #course-details-body .section-course-details-features img {
     height: 3.4rem;
     width: 2.25rem; }
+  #course-details-body .section-course-details-features svg path {
+    fill: white; }
   #course-details-body .section-course-details-features h4,
-  #course-details-body .section-course-details-features p {
+  #course-details-body .section-course-details-features p,
+  #course-details-body .section-course-details-features a {
     font-size: 0.8rem; }
 #course-details-body .course-details--main {
   padding-top: 50vh;
@@ -588,7 +599,10 @@ svg {
     margin-top: -60vh; }
 
   .course-details-screen .hero-content {
-    width: 100%; } }
+    width: 100%; }
+
+  .col-md-6.col-lg-4 {
+    margin-bottom: 0.75rem !important; } }
 @media (max-width: 576px) {
   .course-details--main {
     padding-top: 110vh;

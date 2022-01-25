@@ -134,6 +134,12 @@ svg {
     fill: white;
   }
 }
+.bg-gray {
+  background-color: $color-gray-light-2;
+}
+.bg-primary-odd {
+  background-color: #213e7b;
+}
 // header
 .navbar-logo {
   width: 200px;
@@ -588,6 +594,8 @@ svg {
     height: 90vh;
     margin-top: 0;
     background-color: $color-gray-light-2;
+    position: relative;
+    z-index: -1;
   }
   .hero-content {
     margin-top: 20vh;
@@ -601,18 +609,24 @@ svg {
     margin-top: -35vh;
     background-color: transparent;
 
-    .col-sm-6.col-md-4 {
+    .col-md-6.col-lg-4 {
       padding-right: calc(var(--bs-gutter-x) * 0.15);
       padding-left: calc(var(--bs-gutter-x) * 0.15);
-      position: relative;
-      z-index: 2;
+    }
+
+    .course-details__text {
+      flex: 1;
     }
     img {
       height: 3.4rem;
       width: 2.25rem;
     }
+    svg path {
+      fill: white;
+    }
     h4,
-    p {
+    p,
+    a {
       font-size: 0.8rem;
     }
   }
@@ -659,6 +673,9 @@ svg {
     .hero-content {
       width: 100%;
     }
+  }
+  .col-md-6.col-lg-4 {
+    margin-bottom: 0.75rem !important;
   }
 }
 

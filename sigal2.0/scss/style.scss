@@ -89,6 +89,8 @@ $text-color: #444;
   }
 }
 .card--inline {
+  margin-bottom: 0.75rem;
+  border-radius: 10px;
   .card__features {
     border-left: 1px solid $color-gray-light-2;
     font-size: 0.7rem;

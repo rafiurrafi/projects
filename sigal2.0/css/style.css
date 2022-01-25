@@ -210,11 +210,14 @@
     color: #ccc;
     font-size: 0.7rem; }
 
-.card--inline .card__features {
-  border-left: 1px solid #eeeeee;
-  font-size: 0.7rem; }
-.card--inline .card__price {
-  font-size: 0.6rem; }
+.card--inline {
+  margin-bottom: 0.75rem;
+  border-radius: 10px; }
+  .card--inline .card__features {
+    border-left: 1px solid #eeeeee;
+    font-size: 0.7rem; }
+  .card--inline .card__price {
+    font-size: 0.6rem; }
 
 .card--join .card__img {
   border-bottom-right-radius: 40%;

@@ -67,7 +67,138 @@
         </div>
       </nav>
     </header>
-    <main class="signup-main bg-gray">The main sectionn area</main>
+    <main class="signup-main bg-gray py-5">
+      <div class="container">
+        <div class="sign-up-container d-flex">
+          <div class="signup-img-container d-none d-md-block">
+            <!-- <img src="img/cover-1.png" alt="" class="sign-up-img" /> -->
+            &nbsp;
+          </div>
+          <div class="sign-up-form-container bg-white p-4">
+            <h2 class="text-primary fw-bold mb-4 text-center">Sign up</h2>
+            <form action="#" class="sign-up-form">
+              <h5 class="text-primary mb-3 fw-bold">Basic information</h5>
+              <input
+                type="text"
+                placeholder="Full name*"
+                class="bg-gray form-control mb-3"
+              />
+              <input
+                type="text"
+                placeholder="Email Address*"
+                class="bg-gray form-control mb-3"
+              />
+              <input
+                type="text"
+                placeholder="Phone Number*"
+                class="bg-gray form-control mb-3"
+              />
+              <select name="" class="bg-gray form-select mb-3" id="">
+                <option value="" disabled selected>Nationality*</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+              </select>
+              <input
+                type="text"
+                placeholder="National ID/Iqama/Passport*"
+                class="bg-gray form-control mb-3"
+              />
+              <select name="" class="bg-gray form-select mb-3" id="">
+                <option value="" disabled selected>Country*</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+              </select>
+              <h5 class="text-primary my-4 fw-bold">Work information</h5>
+              <select name="" class="bg-gray form-select mb-3" id="">
+                <option value="" disabled selected>Title / Profession</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+              </select>
+              <input
+                type="text"
+                placeholder="Organization"
+                class="bg-gray form-control mb-3"
+              />
+              <select name="" class="bg-gray form-select mb-3" id="">
+                <option value="" disabled selected>Degree</option>
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+              </select>
+              <h5 class="text-primary my-4 fw-bold">
+                Would you like to receive credit hours?
+              </h5>
+              <div class="d-flex justify-content-between">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                    value="yes"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    value="no"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    No
+                  </label>
+                </div>
+
+                <div><!-- Empty for spacing as parent is flex  --></div>
+              </div>
+              <input
+                id="scfhs-id"
+                type="text"
+                placeholder="SCFHS ID*"
+                class="bg-gray form-control my-3"
+              />
+              <div class="form-check mt-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label " for="flexCheckDefault">
+                  I agree to the
+                  <a href="#" class="text-primary fw-bold text-decoration-none"
+                    >Terms of Service</a
+                  >
+                  and
+                  <a href="#" class="text-primary fw-bold text-decoration-none"
+                    >Privacy Policy</a
+                  >, including Cookie Use.
+                </label>
+              </div>
+              <a
+                href="#"
+                class="btn btn-outline-primary d-block w-1 my-5 btn-lg fw-bold py-3"
+                >Signup</a
+              >
+              <p>
+                You already have an account ?
+                <a href="#" class="text-primary fw-bold text-decoration-none"
+                  >Login</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- End of Menu filter section  -->
     <section class="contact-section">
@@ -187,9 +318,23 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-    <!-- isotop  -->
 
-    <!-- carousel  -->
+    <!-- jquery  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // default hide
+        $("#scfhs-id").hide();
+        $("input[type='radio']").click(function () {
+          var radioValue = $("input[name='flexRadioDefault']:checked").val();
+          if (radioValue === "yes") {
+            $("#scfhs-id").slideDown("slow");
+          } else {
+            $("#scfhs-id").slideUp("slow");
+          }
+          console.log(radioValue);
+        });
+      });
+    </script>
   </body>
 </html>

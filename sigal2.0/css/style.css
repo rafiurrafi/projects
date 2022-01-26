@@ -608,3 +608,21 @@ svg {
   .course-details--main {
     padding-top: 110vh;
     margin-top: -100vh; } }
+.signup-img-container {
+  flex: 0 0 50%;
+  height: inherit;
+  width: 100%;
+  background-image: linear-gradient(to bottom left, rgba(0, 0, 0, 0.57), rgba(22, 101, 137, 0.7), rgba(0, 0, 0, 0.57)), url(../img/cover-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+.sign-up-form-container {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+@media (max-width: 768px) {
+  .sign-up-form-container {
+    border-radius: 10px; } }

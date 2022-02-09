@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72.8 80.7" style="enable-background:new 0 0 72.8 80.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#0079B2;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st1{fill:#FFFFFF;stroke:#0079B2;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="Icon_feather-calendar" transform="translate(-3.5 -2)">
+	<path id="Path_1" class="st0" d="M11.1,9.7h46.3c3.7,0,6.6,3,6.6,6.6c0,0,0,0,0,0v46.3c0,3.7-3,6.6-6.6,6.6h0H11.1
+		c-3.7,0-6.6-3-6.6-6.6l0,0V16.3C4.5,12.7,7.5,9.7,11.1,9.7L11.1,9.7z"/>
+	<path id="Path_2" class="st0" d="M47.5,3.1v13.2"/>
+	<path id="Path_3" class="st0" d="M21,3.1v13.2"/>
+	<path id="Path_4" class="st0" d="M4.5,29.6H64"/>
+</g>
+<g id="Icon_feather-clock" transform="translate(-2 -2)">
+	<path id="Path_5" class="st1" d="M74,61.5c0,9.2-7.4,16.6-16.6,16.6s-16.6-7.4-16.6-16.6s7.4-16.6,16.6-16.6S74,52.4,74,61.5
+		L74,61.5z"/>
+	<path id="Path_6" class="st1" d="M57.4,51.6v9.9l6.6,3.3"/>
+</g>
+</svg>

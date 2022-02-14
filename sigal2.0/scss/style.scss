@@ -597,7 +597,6 @@ svg {
     margin-top: 0;
     background-color: $color-gray-light-2;
     position: relative;
-    z-index: -1;
   }
   .hero-content {
     margin-top: 20vh;
@@ -610,6 +609,8 @@ svg {
   .section-course-details-features {
     margin-top: -35vh;
     background-color: transparent;
+    position: relative;
+    z-index: 2;
 
     .col-md-6.col-lg-4 {
       padding-right: calc(var(--bs-gutter-x) * 0.15);

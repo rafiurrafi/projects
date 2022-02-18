@@ -1,10 +1,54 @@
+:root {
+  --color-primary: #213e7b;
+}
+body {
+  font-family: "Raleway", sans-serif !important;
+}
+
+.fw-semi {
+  font-weight: 600 !important;
+}
+.heading-primary {
+  font-size: 5rem;
+}
 .header {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  .navbar-toggler:focus {
-    outline: none;
-    border: none;
+  z-index: 1;
+  .navbar-logo {
+    height: 6.25rem;
+  }
+  .header-nav {
+    a {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}
+// rgba(#00afdd, 0.7),
+// rgba(#213e7b, 0.7),
+.section-hero {
+  background-image: linear-gradient(
+      to right top,
+      rgba(#00afdd, 0.5),
+      rgba(#213e7b, 0.3),
+      rgba(#fff, 1)
+    ),
+    url("../images/bg-cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  .row {
+    padding-bottom: 7rem !important;
+  }
+}
+.section-brief {
+  .img-container {
+    img {
+      height: 3.25rem;
+    }
   }
 }

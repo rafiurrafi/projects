@@ -1,8 +1,35 @@
+:root {
+  --color-primary: #213e7b; }
+
+body {
+  font-family: "Raleway", sans-serif !important; }
+
+.fw-semi {
+  font-weight: 600 !important; }
+
+.heading-primary {
+  font-size: 5rem; }
+
 .header {
   width: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
-  .header .navbar-toggler:focus {
-    outline: none;
-    border: none; }
+  left: 0;
+  z-index: 1; }
+  .header .navbar-logo {
+    height: 6.25rem; }
+  .header .header-nav a {
+    font-size: 1rem;
+    font-weight: 600; }
+
+.section-hero {
+  background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/bg-cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh; }
+  .section-hero .row {
+    padding-bottom: 7rem !important; }
+
+.section-brief .img-container img {
+  height: 3.25rem; }

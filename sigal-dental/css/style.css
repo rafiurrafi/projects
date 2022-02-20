@@ -74,6 +74,29 @@ body {
         width: 2.1rem;
         object-fit: cover; }
 
+.section-doctors {
+  /* the parent */ }
+  .section-doctors .doctor-slide {
+    position: relative;
+    padding-top: 6.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15); }
+    .section-doctors .doctor-slide img {
+      position: absolute;
+      top: -5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 10rem;
+      width: 10rem;
+      object-fit: cover;
+      border-radius: 50%;
+      z-index: 1; }
+  .section-doctors .owl-carousel .owl-stage-outer {
+    padding-top: 5rem; }
+  .section-doctors .slick-slide {
+    margin: 0 27px; }
+  .section-doctors .slick-list {
+    margin: 0 -27px; }
+
 @media (max-width: 1200px) {
   .brief-container .col-lg-4 {
     padding: 1.5rem !important; } }

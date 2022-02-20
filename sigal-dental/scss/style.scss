@@ -105,6 +105,33 @@ body {
 }
 // section doctors
 .section-doctors {
+  .doctor-slide {
+    position: relative;
+    padding-top: 6.5rem;
+    box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.15);
+    img {
+      position: absolute;
+      top: -5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 10rem;
+      width: 10rem;
+      object-fit: cover;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+  .owl-carousel .owl-stage-outer {
+    padding-top: 5rem;
+  }
+  .slick-slide {
+    margin: 0 27px;
+  }
+
+  /* the parent */
+  .slick-list {
+    margin: 0 -27px;
+  }
 }
 // responsive
 // for phone

@@ -52,3 +52,66 @@ body {
     }
   }
 }
+.section-about {
+  background-color: #f1f1f1;
+  .about-home {
+    min-height: 100vh;
+    position: relative;
+    img {
+      width: 50%;
+      height: 80vh;
+      object-fit: cover;
+    }
+    &__content {
+      min-height: 80vh;
+      width: 60%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding-left: 5rem;
+      &-border {
+        width: 100%;
+        height: 80vh;
+        position: absolute;
+        bottom: 40px;
+        left: 30px;
+        border: 1px solid #fff;
+      }
+    }
+    &__header {
+      border-left: 3px solid #00afdd;
+      font-size: 2.2rem;
+      margin-left: -1.35rem;
+      span {
+        font-size: 1.3rem; //20px
+      }
+    }
+    &__text {
+      border-bottom: 1px solid #95d7f7;
+    }
+
+    &__feature {
+      flex: 1;
+      &:not(:last-child) {
+        border-right: 1px solid #00afdd;
+      }
+      img {
+        height: 2.55rem; //40px - 60
+        width: 2.1rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
+// section doctors
+.section-doctors {
+}
+// responsive
+// for phone
+@media (max-width: 1200px) {
+  .brief-container {
+    .col-lg-4 {
+      padding: 1.5rem !important;
+    }
+  }
+}

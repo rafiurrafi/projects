@@ -105,6 +105,9 @@ body {
 }
 // section doctors
 .section-doctors {
+  .doctor-slides {
+    position: relative;
+  }
   .doctor-slide {
     position: relative;
     padding-top: 6.5rem;
@@ -123,14 +126,68 @@ body {
   }
   .owl-carousel .owl-stage-outer {
     padding-top: 5rem;
+    padding-bottom: 2rem;
   }
-  .slick-slide {
-    margin: 0 27px;
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 0;
+    font-size: 40px;
   }
+  .owl-next {
+    right: 0;
+  }
+}
+// section service
+.section-service {
+  background-image: linear-gradient(
+      rgba(17, 34, 71, 0.94),
+      rgba(17, 34, 71, 0.94)
+    ),
+    url("../images/service-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  /* the parent */
-  .slick-list {
-    margin: 0 -27px;
+  img {
+    height: 4.25rem;
+    width: 4.25rem;
+  }
+  .s1,
+  .s2,
+  .s3,
+  .s4,
+  .s5,
+  .s6 {
+    border-bottom: 1px solid #00afdd;
+  }
+  .s1,
+  .s2,
+  .s4,
+  .s5 {
+    border-right: 1px solid #00afdd;
+  }
+  .s7,
+  .s8 {
+    border-right: 1px solid #00afdd;
+  }
+}
+// section
+// branches
+.section-branches {
+  .braches-content {
+    background-size: cover;
+    background-position: center;
+    height: 11rem;
+    position: relative;
+    border-radius: 0.7rem;
+    h3 {
+      position: absolute;
+      left: 1rem;
+      bottom: 0rem;
+    }
   }
 }
 // responsive

@@ -74,28 +74,69 @@ body {
         width: 2.1rem;
         object-fit: cover; }
 
-.section-doctors {
-  /* the parent */ }
-  .section-doctors .doctor-slide {
-    position: relative;
-    padding-top: 6.5rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15); }
-    .section-doctors .doctor-slide img {
-      position: absolute;
-      top: -5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 10rem;
-      width: 10rem;
-      object-fit: cover;
-      border-radius: 50%;
-      z-index: 1; }
-  .section-doctors .owl-carousel .owl-stage-outer {
-    padding-top: 5rem; }
-  .section-doctors .slick-slide {
-    margin: 0 27px; }
-  .section-doctors .slick-list {
-    margin: 0 -27px; }
+.section-doctors .doctor-slides {
+  position: relative; }
+.section-doctors .doctor-slide {
+  position: relative;
+  padding-top: 6.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15); }
+  .section-doctors .doctor-slide img {
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1; }
+.section-doctors .owl-carousel .owl-stage-outer {
+  padding-top: 5rem;
+  padding-bottom: 2rem; }
+.section-doctors .owl-prev,
+.section-doctors .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+  font-size: 40px; }
+.section-doctors .owl-next {
+  right: 0; }
+
+.section-service {
+  background-image: linear-gradient(rgba(17, 34, 71, 0.94), rgba(17, 34, 71, 0.94)), url("../images/service-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .section-service img {
+    height: 4.25rem;
+    width: 4.25rem; }
+  .section-service .s1,
+  .section-service .s2,
+  .section-service .s3,
+  .section-service .s4,
+  .section-service .s5,
+  .section-service .s6 {
+    border-bottom: 1px solid #00afdd; }
+  .section-service .s1,
+  .section-service .s2,
+  .section-service .s4,
+  .section-service .s5 {
+    border-right: 1px solid #00afdd; }
+  .section-service .s7,
+  .section-service .s8 {
+    border-right: 1px solid #00afdd; }
+
+.section-branches .braches-content {
+  background-size: cover;
+  background-position: center;
+  height: 11rem;
+  position: relative;
+  border-radius: 0.7rem; }
+  .section-branches .braches-content h3 {
+    position: absolute;
+    left: 1rem;
+    bottom: 0rem; }
 
 @media (max-width: 1200px) {
   .brief-container .col-lg-4 {

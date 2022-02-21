@@ -1,6 +1,9 @@
 :root {
   --color-primary: #213e7b;
+  --color-secondary: #166589;
 }
+@import "./custom/contact";
+@import "./custom/input";
 body {
   font-family: "Raleway", sans-serif !important;
 }
@@ -40,12 +43,15 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  clip-path: ellipse(85% 100% at 48.75% 0%);
   height: 90vh;
   .row {
     padding-bottom: 7rem !important;
   }
 }
 .section-brief {
+  position: relative;
+  z-index: 2;
   .img-container {
     img {
       height: 3.25rem;
@@ -55,15 +61,15 @@ body {
 .section-about {
   background-color: #f1f1f1;
   .about-home {
-    min-height: 100vh;
+    min-height: 80vh;
     position: relative;
     img {
       width: 50%;
-      height: 80vh;
+      height: 60vh;
       object-fit: cover;
     }
     &__content {
-      min-height: 80vh;
+      min-height: 70vh;
       width: 60%;
       position: absolute;
       bottom: 0;
@@ -196,6 +202,19 @@ body {
   .brief-container {
     .col-lg-4 {
       padding: 1.5rem !important;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .section-about {
+    .about-home {
+      img {
+        display: none;
+      }
+      &__content {
+        position: relative;
+      }
     }
   }
 }

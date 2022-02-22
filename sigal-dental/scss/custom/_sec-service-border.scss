@@ -1,0 +1,37 @@
+.section-service {
+  .s1,
+  .s2,
+  .s3,
+  .s4,
+  .s5,
+  .s6 {
+    border-bottom: 1px solid #00afdd;
+  }
+  .s1,
+  .s2,
+  .s4,
+  .s5 {
+    border-right: 1px solid #00afdd;
+  }
+  .s7,
+  .s8 {
+    border-right: 1px solid #00afdd;
+  }
+}
+@media (max-width: 768px) {
+  .section-service {
+    .s2,
+    .s4,
+    .s8 {
+      border-right: none;
+    }
+    .s3,
+    .s9 {
+      border-right: 1px solid #00afdd;
+    }
+    .s7,
+    .s8 {
+      border-bottom: 1px solid #00afdd;
+    }
+  }
+}

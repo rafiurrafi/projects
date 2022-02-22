@@ -161,25 +161,9 @@ body {
     height: 4.25rem;
     width: 4.25rem;
   }
-  .s1,
-  .s2,
-  .s3,
-  .s4,
-  .s5,
-  .s6 {
-    border-bottom: 1px solid #00afdd;
-  }
-  .s1,
-  .s2,
-  .s4,
-  .s5 {
-    border-right: 1px solid #00afdd;
-  }
-  .s7,
-  .s8 {
-    border-right: 1px solid #00afdd;
-  }
 }
+//import section-service border
+@import "./custom/sec-service-border";
 // section
 // branches
 .section-branches {

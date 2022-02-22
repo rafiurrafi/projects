@@ -173,22 +173,34 @@ body {
   .section-service img {
     height: 4.25rem;
     width: 4.25rem; }
-  .section-service .s1,
+
+.section-service .s1,
+.section-service .s2,
+.section-service .s3,
+.section-service .s4,
+.section-service .s5,
+.section-service .s6 {
+  border-bottom: 1px solid #00afdd; }
+.section-service .s1,
+.section-service .s2,
+.section-service .s4,
+.section-service .s5 {
+  border-right: 1px solid #00afdd; }
+.section-service .s7,
+.section-service .s8 {
+  border-right: 1px solid #00afdd; }
+
+@media (max-width: 768px) {
   .section-service .s2,
+  .section-service .s4,
+  .section-service .s8 {
+    border-right: none; }
   .section-service .s3,
-  .section-service .s4,
-  .section-service .s5,
-  .section-service .s6 {
-    border-bottom: 1px solid #00afdd; }
-  .section-service .s1,
-  .section-service .s2,
-  .section-service .s4,
-  .section-service .s5 {
+  .section-service .s9 {
     border-right: 1px solid #00afdd; }
   .section-service .s7,
   .section-service .s8 {
-    border-right: 1px solid #00afdd; }
-
+    border-bottom: 1px solid #00afdd; } }
 .section-branches .braches-content {
   background-size: cover;
   background-position: center;

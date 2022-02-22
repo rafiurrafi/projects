@@ -61,7 +61,7 @@
     </header>
     <section class="section-hero">
       <div class="container h-100">
-        <div class="row align-items-end h-100 w-100 py-5">
+        <!-- <div class="row align-items-end h-100 w-100 py-5">
           <div class="col-lg-8 hero-content text-white">
             <h1 class="heading-primary fw-bolder">
               <span class="d-block text-primary">Specialized</span>Dental Center
@@ -73,16 +73,38 @@
           </div>
           <div class="col-lg-3 hero-content offset-lg-1 text-white">
             <button
-              class="btn btn-primary fw-bold mt-n1"
+              class="btn btn-primary fw-bold mt-n1 float-lg-end"
               style="border-radius: 0.5rem"
             >
               Book an appointment
             </button>
           </div>
+        </div> -->
+        <div class="hero-container w-100">
+          <div class="hero-container__inner">
+            <div class="hero-content text-white">
+              <h1 class="heading-primary fw-bolder">
+                <span class="d-block text-primary">Specialized</span>Dental
+                Center
+              </h1>
+              <p class="fw-semi fs-5">
+                We Create Your Healthy Smile with latest technology and best
+                doctors in industry
+              </p>
+            </div>
+            <div class="hero-content text-white">
+              <button
+                class="btn btn-primary fw-bold float-lg-end"
+                style="border-radius: 0.5rem"
+              >
+                Book an appointment
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="section-brief" style="margin-top: -4rem">
+    <section class="section-brief" style="margin-top: -5rem">
       <div class="container">
         <div
           class="row brief-container bg-primary mx-auto mt-n5 text-white"
@@ -99,7 +121,7 @@
             >
               <div class="brief-content-header">
                 <h6 class="fw-bold mb-1">Call us</h6>
-                <p style="font-size: 0.75rem">
+                <p style="font-size: 0.9rem">
                   Because we care and you are our top priority, call us now.
                 </p>
               </div>
@@ -117,7 +139,7 @@
             >
               <div class="brief-content-header">
                 <h6 class="fw-bold mb-1">Where are we?</h6>
-                <p style="font-size: 0.75rem">
+                <p style="font-size: 0.9rem">
                   Because we care and you are our top priority, call us now.
                 </p>
               </div>
@@ -429,6 +451,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="vendors/owl.carousel.min.js"></script>
     <script>
+      // header bg change on navbar  button clicked
+      const navbarButton = document.querySelector(".navbar-toggler");
+      const header = document.querySelector(".header");
+      navbarButton.addEventListener("click", () => {
+        if (!header.classList.contains("bg-white"))
+          header.classList.add("bg-white");
+        else
+          setTimeout(() => {
+            header.classList.remove("bg-white");
+            header.style.transition = "background-color .4s";
+          }, 400);
+      });
+      //owl carousel
       $(".doctor-slides").owlCarousel({
         loop: true,
         margin: 20,

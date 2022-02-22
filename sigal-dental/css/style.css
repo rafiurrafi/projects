@@ -66,7 +66,7 @@ body {
   font-weight: 600 !important; }
 
 .heading-primary {
-  font-size: 5rem; }
+  font-size: 4.5rem; }
 
 .header {
   width: 100%;
@@ -87,8 +87,8 @@ body {
   background-repeat: no-repeat;
   clip-path: ellipse(85% 100% at 48.75% 0%);
   height: 90vh; }
-  .section-hero .row {
-    padding-bottom: 7rem !important; }
+  .section-hero .hero-content button {
+    margin-top: -1.5rem; }
 
 .section-brief {
   position: relative;
@@ -114,7 +114,7 @@ body {
       padding-left: 5rem; }
       .section-about .about-home__content-border {
         width: 100%;
-        height: 80vh;
+        height: 70vh;
         position: absolute;
         bottom: 40px;
         left: 30px;
@@ -200,11 +200,51 @@ body {
     left: 1rem;
     bottom: 0rem; }
 
+@media (min-width: 1200px) {
+  .hero-container {
+    top: 40%; } }
 @media (max-width: 1200px) {
+  html {
+    font-size: 80%; }
+
   .brief-container .col-lg-4 {
     padding: 1.5rem !important; } }
-@media (max-width: 990px) {
-  .section-about .about-home img {
-    display: none; }
-  .section-about .about-home__content {
-    position: relative; } }
+@media (max-width: 992px) {
+  html {
+    font-size: 70%; }
+
+  .hero-content button {
+    margin-top: 1.5rem; }
+
+  .section-about .about-home {
+    height: 100%; }
+    .section-about .about-home img {
+      display: none !important; }
+    .section-about .about-home__content {
+      position: relative;
+      width: 100%;
+      height: min-content; }
+      .section-about .about-home__content-border {
+        border: 1px solid red; } }
+@media (max-width: 768px) {
+  html {
+    font-size: 65%; }
+
+  .section-hero {
+    clip-path: ellipse(90% 100% at 48.75% 0%); } }
+@media (max-width: 590px) {
+  .section-about .container {
+    overflow: hidden; } }
+@media (max-width: 576px) {
+  html {
+    font-size: 60%; }
+
+  .section-hero {
+    clip-path: ellipse(95% 100% at 48.75% 0%); } }
+.section-hero .container {
+  position: relative; }
+.section-hero .hero-container {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  background-color: red; }

@@ -384,7 +384,7 @@
       </div>
     </section>
     <!-- start of contact-section  -->
-    <section class="contact-section">
+    <section class="contact-section" style="background-color: #dddddd">
       <div class="container">
         <div class="contact d-md-flex">
           <div class="contact__img-container d-none d-md-block">
@@ -436,6 +436,106 @@
       </div>
     </section>
     <!-- end of contact-section  -->
+    <!-- start of footer  -->
+    <footer class="footer py-5" style="background-color: #dddddd">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div style="width: 85%">
+              <img src="images/Sigal-Logo.svg" class="footer__logo" alt="" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Maecenas in arcu nec sapien varius malesuada. Integer eget nisi
+                sollicitudin, faucibus mauris non, ullamcorper metus. Proin
+                justo est, faucibus in elementum venenatis, cursus sed elit.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 pt-4">
+            <h4 class="fw-bold text-primary mb-5" style="font-size: 1rem">
+              Quick Links
+            </h4>
+            <a href="#" class="d-block mb-3 text-decoration-none">About</a>
+            <a href="#" class="d-block mb-3 text-decoration-none">Doctor</a>
+            <a href="#" class="d-block mb-3 text-decoration-none">Gallery</a>
+            <a href="#" class="d-block mb-3 text-decoration-none">Blog</a>
+            <div class="footer__social-container">
+              <h4 class="fw-bold text-primary mt-5" style="font-size: 1rem">
+                Follow Us
+              </h4>
+              <!-- only for small screen  -->
+              <div class="mt-5 d-block d-lg-none">
+                <a
+                  href=""
+                  class="footer__social d-inline-block text-center py-1 me-2"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+                <a
+                  href=""
+                  class="footer__social d-inline-block text-center py-1"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 pt-4">
+            <h4 class="fw-bold text-primary mb-5" style="font-size: 1rem">
+              Sigal world made service
+            </h4>
+            <a href="#" class="d-block mb-3 text-decoration-none">Education</a>
+            <a href="#" class="d-block mb-3 text-decoration-none"
+              >Medical Equipment</a
+            >
+            <a href="#" class="d-block mb-3 text-decoration-none"
+              >Medical Service</a
+            >
+            <a href="#" class="d-block mb-3 text-decoration-none"
+              >Dental Service</a
+            >
+            <div class="mt-5 d-none d-lg-block">
+              <a
+                href=""
+                class="footer__social d-inline-block text-center py-1 me-2"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a href="" class="footer__social d-inline-block text-center py-1"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 pt-4">
+            <h4 class="fw-bold text-primary mb-5" style="font-size: 1rem">
+              Visit us
+            </h4>
+            <div class="d-flex">
+              <p style="flex: 0 0 40%">Location</p>
+              <div style="flex: 1">
+                <p>
+                  - Prince Abdulaziz Ibn Musaid Ibn Jalawi St, As Sulimaniyah,
+                  Riyadh 12221
+                </p>
+                <p>
+                  - Intesection - Tahkassussi Road, Prestige Center, 2nd Floor
+                  East of Panorama Mall Aiun Al Jawa St, Riyadh 12331
+                </p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <p style="flex: 0 0 40%">Phone Number :</p>
+              <div style="flex: 1">
+                <p>920002002</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <p style="flex: 0 0 40%">Email Address:</p>
+              <div style="flex: 1">
+                <p>info@sigalclinics.net</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -468,6 +568,7 @@
         loop: true,
         margin: 20,
         responsiveClass: true,
+        stagePadding: 10,
         responsive: {
           0: {
             items: 1,
@@ -475,12 +576,12 @@
           },
           600: {
             items: 2,
-            nav: false,
+            nav: true,
           },
           1000: {
             items: 3,
             nav: true,
-            loop: false,
+            loop: true,
           },
         },
       });

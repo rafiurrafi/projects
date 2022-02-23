@@ -34,6 +34,7 @@ body {
 // rgba(#00afdd, 0.7),
 // rgba(#213e7b, 0.7),
 .section-hero {
+  background-color: #eeeeee;
   background-image: linear-gradient(
       to right top,
       rgba(#00afdd, 0.5),
@@ -150,7 +151,7 @@ body {
     left: 0;
   }
   .owl-next {
-    right: 0;
+    right: -1rem;
   }
 }
 // section service
@@ -219,6 +220,13 @@ body {
       background-color: var(--color-primary);
     }
   }
+}
+.section-bg-gray {
+  height: 40vh;
+  position: relative;
+  z-index: -2;
+  background-color: #ddd;
+  margin-top: -20vh;
 }
 // responsive
 //devices

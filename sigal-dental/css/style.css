@@ -82,6 +82,7 @@ body {
     font-weight: 600; }
 
 .section-hero {
+  background-color: #eeeeee;
   background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/bg-cover.jpg");
   background-size: cover;
   background-position: center;
@@ -168,7 +169,7 @@ body {
 .section-doctors .owl-prev {
   left: 0; }
 .section-doctors .owl-next {
-  right: 0; }
+  right: -1rem; }
 
 .section-service {
   background-image: linear-gradient(rgba(17, 34, 71, 0.94), rgba(17, 34, 71, 0.94)), url("../images/service-bg.svg");
@@ -241,6 +242,13 @@ body {
   .footer__social:hover {
     color: white !important;
     background-color: var(--color-primary); }
+
+.section-bg-gray {
+  height: 40vh;
+  position: relative;
+  z-index: -2;
+  background-color: #ddd;
+  margin-top: -20vh; }
 
 @media (min-width: 1200px) {
   .hero-container {

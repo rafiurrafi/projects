@@ -244,11 +244,9 @@ body {
     background-color: var(--color-primary); }
 
 .section-bg-gray {
-  height: 40vh;
   position: relative;
   z-index: -2;
-  background-color: #ddd;
-  margin-top: -20vh; }
+  background-color: #ddd; }
 
 @media (min-width: 1200px) {
   .hero-container {

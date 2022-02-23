@@ -56,25 +56,6 @@
     </header>
     <section class="section-hero">
       <div class="container h-100">
-        <!-- <div class="row align-items-end h-100 w-100 py-5">
-          <div class="col-lg-8 hero-content text-white">
-            <h1 class="heading-primary fw-bolder">
-              <span class="d-block text-primary">Specialized</span>Dental Center
-            </h1>
-            <p class="fw-semi fs-5">
-              We Create Your Healthy Smile with latest technology and best
-              doctors in industry
-            </p>
-          </div>
-          <div class="col-lg-3 hero-content offset-lg-1 text-white">
-            <button
-              class="btn btn-primary fw-bold mt-n1 float-lg-end"
-              style="border-radius: 0.5rem"
-            >
-              Book an appointment
-            </button>
-          </div>
-        </div> -->
         <div class="hero-container w-100">
           <div class="hero-container__inner">
             <div class="hero-content text-white">
@@ -577,6 +558,16 @@
             header.style.transition = "background-color .4s";
           }, 400);
       });
+      // section brief
+      const briefSection = document.querySelector(".section-brief");
+      const grayBgSection = document.querySelector(".section-bg-gray");
+      let briefSectionHeight = briefSection.clientHeight;
+      let marginTop = briefSectionHeight + 30;
+      grayBgSection.style.height = briefSectionHeight + 60 + "px";
+
+      grayBgSection.style.marginTop = "-" + marginTop + "px";
+      console.log(grayBgSection.height + "px");
+
       //owl carousel
       $(".doctor-slides").owlCarousel({
         loop: true,

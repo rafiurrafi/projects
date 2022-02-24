@@ -1,0 +1,40 @@
+@import "./custom/font-setup";
+body {
+  font-family: gilroy;
+  font-weight: 400;
+}
+.sidebar {
+  min-height: 100vh;
+  width: 14rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#home-main {
+  margin-left: 14rem;
+  background-color: #f8f7fa;
+  min-height: 100vh;
+}
+.search-icon {
+  margin-left: -2rem;
+}
+.header {
+  padding: 0 2%;
+  height: 3.75rem;
+  &-left-link {
+    font-size: 1.25rem;
+    &:first-of-type {
+      border-right: 1px solid #000;
+      color: #394040;
+    }
+  }
+}
+.header-search {
+  &::-webkit-input-placeholder {
+    color: #cbcbd4;
+  }
+}
+.profile-container {
+  height: 2.6rem;
+  width: 2.6rem;
+}

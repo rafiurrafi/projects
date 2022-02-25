@@ -1,4 +1,4 @@
-input {
+.switch {
   display: block;
   opacity: 0;
 }
@@ -31,12 +31,12 @@ label:after {
   transition: all 0.3s;
 }
 
-input:checked + label {
+.switch:checked + label {
   background: #1c144a;
   opacity: 1;
 }
 
-input:checked + label:after {
+.switch:checked + label:after {
   left: auto;
   right: 2px;
 }

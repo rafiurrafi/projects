@@ -5,13 +5,14 @@ body {
 }
 .sidebar {
   min-height: 100vh;
-  width: 14rem;
+  width: 14.6rem;
   position: fixed;
   top: 0;
   left: 0;
 }
 #home-main {
-  margin-left: 14rem;
+  padding: 0 2%;
+  margin-left: 14.6rem;
   background-color: #f8f7fa;
   min-height: 100vh;
 }
@@ -19,13 +20,19 @@ body {
   margin-left: -2rem;
 }
 .header {
-  padding: 0 2%;
   height: 3.75rem;
   &-left-link {
     font-size: 1.25rem;
     &:first-of-type {
       border-right: 1px solid #000;
       color: #394040;
+    }
+  }
+  &__logo {
+    width: 12rem;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -37,4 +44,17 @@ body {
 .profile-container {
   height: 2.6rem;
   width: 2.6rem;
+}
+.drpdwn {
+}
+
+.drpdwn-items {
+  display: none;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    rgba(28, 20, 74, 0.8);
+  a {
+    &.active {
+      color: #00e28d;
+    }
+  }
 }

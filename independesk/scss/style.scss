@@ -1,4 +1,6 @@
 @import "./custom/font-setup";
+@import "./custom/switch";
+@import "./custom/table";
 body {
   font-family: gilroy;
   font-weight: 400;
@@ -44,8 +46,6 @@ body {
 .profile-container {
   height: 2.6rem;
   width: 2.6rem;
-}
-.drpdwn {
 }
 
 .drpdwn-items {

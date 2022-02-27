@@ -129,23 +129,83 @@
       </button>
       <!-- section filter  -->
       <section class="section-filter">
-        <div class="dropdown">
-          <button onclick="myFunction(this)" class="dropbtn py-1">
-            <img src="assets/employee.svg" alt="" />
-            <span class="d-inline-block fw-bold px-2">All Employees (5)</span>
-            <i class="fa fa-angle-down"></i>
-          </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-
-            <label class="checkbox-container"
-              >One
-              <input type="checkbox" checked="checked" />
-              <span class="checkmark"></span>
-            </label>
+        <!-- First dropdown  -->
+        <div class="filter">
+          <div class="filter__left">
+            <div class="dropdown">
+              <button onclick="myFunction(this)" class="dropbtn py-1">
+                <img src="assets/employee.svg" alt="" />
+                <span class="d-inline-block fw-bold px-2"
+                  >All Employees (5)</span
+                >
+                <i class="fa fa-angle-down"></i>
+              </button>
+              <div id="myDropdown" class="dropdown-content px-5 py-3">
+                <div class="mb-3">
+                  <h5 style="font-size: 0.9rem" class="fw-bold mb-1">Roles</h5>
+                  <label class="checkbox-container"
+                    >All Licence
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Team Lead
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >...
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mb-3">
+                  <h5 style="font-size: 0.9rem" class="fw-bold mb-1">Team</h5>
+                  <label class="checkbox-container"
+                    >All Licence
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Team Lead
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >...
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="mb-3">
+                  <h5 style="font-size: 0.9rem" class="fw-bold mb-1">
+                    Worksplace
+                  </h5>
+                  <label class="checkbox-container"
+                    >All Worksplace
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Company Office
+                    <input type="checkbox" checked="checked" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Home Office
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox-container"
+                    >Independesk
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="filter__right"></div>
         </div>
       </section>
       <section class="section-table my-4">

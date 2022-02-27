@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- start of cdn  -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -128,7 +128,20 @@
         <i class="fa fa-bars"></i>
       </button>
       <!-- section filter  -->
-      <section class="section-filter"></section>
+      <section class="section-filter">
+        <div class="dropdown">
+          <button onclick="myFunction(this)" class="dropbtn py-1">
+            <img src="assets/employee.svg" alt="" />
+            <span class="d-inline-block fw-bold px-2">All Employees (5)</span>
+            <i class="fa fa-angle-down"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </section>
       <section class="section-table my-4">
         <table class="table-info">
           <!-- <caption>
@@ -237,21 +250,14 @@
       crossorigin="anonymous"
     ></script>
     <!-- date picker  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script> -->
+    <script src="main.js"></script>
     <script>
       $(document).ready(function () {
         // dropdown item
         $(".drpdwn").click(function () {
           $(this).next(".drpdwn-items").slideToggle();
         });
-        // show sidebar
-        // $("#btn").click(function () {
-        //   $(".sidebar").addClass("active");
-        // });
-
-        // date time
-        //picker
-        $("#datepicker").datepicker({ format: "dd, MM yyyy" });
 
         //toggle sidebar
         const showSidebar = document.querySelector(".show-sidebar");

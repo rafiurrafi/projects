@@ -90,106 +90,10 @@ body {
     }
   }
 }
-// .pickdate-container {
-// }
-// .pickdate-icon {
-//   width: 1.2rem;
-// }
-
-// .pickdate-input {
-//   border: 1px solid red !important;
-// }
-.table-condensed {
-  width: 13.7rem;
-}
-.datepicker {
-  overflow: hidden !important;
-  border: 1px solid #1c144a;
-  border-radius: 0 0 0.5rem 0.5rem !important;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  .datepicker-dropdown.dropdown-menu {
-    font-size: 0.75rem !important;
-  }
-}
-// change dropdown icon
-.dropdown-toggle::after {
-  display: none;
-}
-.pick-date {
-  width: 14.3rem;
-  border: 1px solid #1c144a;
-  input {
-    width: 9.7rem !important;
-    border: none;
-    background-color: transparent;
-    width: min-content;
-    &:focus {
-      outline: none;
-    }
-  }
-  .input-group-append {
-    margin-top: 3%;
-    font-size: 1.5rem;
-  }
-  .input-group-text {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-top: 10%;
-    display: block;
-  }
-}
-
-//dropdown menu width
-.dropdown-filter {
-  width: 7.5rem;
-  &:focus,
-  &:active {
-    outline: none;
-  }
-  .dropdown-menu {
-    min-width: 7.5rem;
-  }
-  // active stage
-  .btn.dropdown-toggle.show {
-    border: 1px solid #1c144a;
-  }
-  .dropdown-menu.show {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    border: 1px solid #1c144a;
-    border-top: none;
-  }
-  // for second category
-  &--big {
-    width: 8.6rem;
-  }
-  &--big .dropdown-menu {
-    min-width: 8.6rem;
-  }
-}
-button:focus:not(:focus-visible) {
-  outline: none !important;
-}
 // section filter
 .section-filter {
-  .dropdown button {
-    &:focus,
-    &:active {
-      border: 1px solid #1c144a;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-  }
-  .dropdown-menu {
-    border: 1px solid #1c144a;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    margin-top: -4px;
-    min-width: inherit !important;
-  }
+  height: 4.6rem;
+  @import "./custom/dropdown";
 }
 @media (max-width: 1200px) {
   .filter-container {

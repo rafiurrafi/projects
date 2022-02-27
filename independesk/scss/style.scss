@@ -2,6 +2,7 @@
 @import "./custom/switch";
 @import "./custom/table";
 @import "./custom/checkbox";
+@import "./custom/datepicker";
 body {
   font-family: gilroy;
   font-weight: 400;
@@ -93,7 +94,7 @@ body {
 }
 // section filter
 .section-filter {
-  height: 4.6rem;
+  border: 1px solid #1c144a;
   @import "./custom/dropdown";
 }
 @media (max-width: 1200px) {

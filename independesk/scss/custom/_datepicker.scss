@@ -1,0 +1,57 @@
+.ui-datepicker {
+  td a {
+    text-align: center !important;
+  }
+  &-title {
+    width: 7.3rem;
+  }
+  .ui-state-default,
+  .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default,
+  .ui-button,
+  html .ui-button.ui-state-disabled:hover,
+  html .ui-button.ui-state-disabled:active {
+    color: #1c144a !important;
+    font-size: 0.75rem !important;
+    border: none !important;
+    background-color: white !important;
+  }
+  .ui-state-active {
+    background-color: #1c144a !important;
+    color: #00e28d !important;
+    padding: 1px 0.2em !important;
+    border-radius: 0.8rem;
+  }
+  .ui-widget-header {
+    background-color: white !important;
+    border: none !important;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .ui-datepicker-prev span {
+    // background-image: url(http://legacy.australianetwork.com/img/icon_arrow_left_black.png) !important;
+    background-position: 0px 0px !important;
+    transform: scale(1.5) rotate(-90deg);
+  }
+
+  .ui-datepicker-next span {
+    font-size: 1.5rem;
+    // background-image: url(http://legacy.australianetwork.com/img/icon_arrow_right_black.png) !important;
+    background-position: 0px 0px !important;
+    transform: scale(1.5) rotate(90deg);
+  }
+  .ui-state-hover {
+    border: none !important;
+    margin: 0 !important;
+    background-color: transparent !important;
+  }
+  .ui-datepicker-next-hover {
+    top: 0px !important;
+    right: 0px !important;
+  }
+  .ui-datepicker-prev-hover {
+    left: 0px !important;
+    top: 0px !important;
+  }
+}

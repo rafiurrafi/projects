@@ -13,22 +13,25 @@
   // background-color: #f8f8f8;
   border: 1px solid #1c144a;
   padding: 0.35em;
-  height: 4rem;
+  padding: 0.35rem 1rem;
 }
 
 .table-info th,
 .table-info td {
   padding: 0.625em;
-  text-align: center;
+  // text-align: center;
+  padding-left: 5%;
 }
 
 .table-info th {
   font-size: 0.85em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .table-info {
     border: 0;
   }
@@ -83,5 +86,19 @@
   border-radius: 50%;
   img {
     height: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .table-info th,
+  .table-info td {
+    padding-left: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-info th,
+  .table-info td {
+    padding-left: 1%;
   }
 }

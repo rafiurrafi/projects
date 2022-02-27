@@ -128,7 +128,126 @@
         <i class="fa fa-bars"></i>
       </button>
       <!-- section filter  -->
-      <section class="section-filter"></section>
+      <section class="section-filter">
+        <div
+          class="py-3 d-xl-flex justify-content-between align-items-center bg-white filter-container"
+        >
+          <!-- left filter section  -->
+          <div class="d-flex filter-left bg-white">
+            <div class="dropdown me-3">
+              <button
+                class="btn dropdown-toggle shadow-none text-primary fw-bold"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="font-size: 1.125rem"
+              >
+                <img src="assets/employee.svg" alt="" /> All employees (5)
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+            <!-- date time picker  -->
+            <!-- <div class="pickdate-container date" id="datepicker">
+                <img class="pickdate-icon" src="assets/calendar.svg" alt="" />
+                <input type="text" class="pickdate-input" value="03 feb 2020" />
+              </div> -->
+            <div
+              class="input-group date pick-date justify-content-center"
+              id="datepicker"
+            >
+              <img class="pickdate-icon" src="assets/calendar.svg" alt="" />
+              <input
+                type="text"
+                class="px-3 fw-bold"
+                value="03, February 2022"
+              />
+              <span class="input-group-append">
+                <span class="input-group-text d-block">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </span>
+            </div>
+          </div>
+          <!-- right filter section  -->
+          <div class="d-flex filter-right bg-white">
+            <div class="btn-group dropdown-filter">
+              <button
+                class="btn dropdown-toggle shadow-none"
+                type="button"
+                id="sortDropdown"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                <img class="me-2" src="assets/sort.svg" alt="" /> Sort List
+                <i class="fa fa-angle-down"></i>
+              </button>
+              <ul class="dropdown-menu ps-4" aria-labelledby="sortDropdown">
+                <li>
+                  <input type="checkbox" /> <label for="">Employee</label>
+                </li>
+                <li><input type="checkbox" /> <label for="">Licence</label></li>
+                <li><input type="checkbox" /> <label for="">Team</label></li>
+                <li>
+                  <input type="checkbox" /> <label for="">Worksplace</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="btn-group dropdown-filter--big">
+              <button
+                class="btn btn-sm dropdown-toggle shadow-none"
+                type="button"
+                id="dropdownMenuClickableInside"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                <img class="me-2" src="assets/category.svg" alt="" /> Customize
+                <i class="fa fa-angle-down"></i>
+              </button>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuClickableInside"
+              >
+                <div class="dropdown-item d-flex align-items-center">
+                  <!-- switch  -->
+                  <div class="switch-container">
+                    <input type="checkbox" id="checkbox2" class="switch" />
+                    <label for="checkbox2"></label>
+                  </div>
+                  Licence
+                </div>
+              </ul>
+            </div>
+            <div class="dropdown ms-3">
+              <button
+                class="btn dropdown-toggle shadow-none"
+                type="button"
+                id="exportDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img class="me-2" src="assets/export.svg" alt="" /> Export
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="exportDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section-table my-4">
         <table class="table-info">
           <!-- <caption>

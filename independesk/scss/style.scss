@@ -98,17 +98,31 @@ body {
   @import "./custom/dropdown";
 }
 @media (max-width: 1200px) {
-  .filter-container {
+  // .filter-container {
+  //   background-color: transparent !important;
+  // }
+  // .filter-left {
+  //   margin-bottom: 2rem;
+  // }
+  // .filter-left,
+  // .filter-right {
+  //   justify-content: space-between;
+  //   padding: 0.5rem 0;
+  //   border: 1px solid #1c144a;
+  // }
+  .section-filter {
     background-color: transparent !important;
-  }
-  .filter-left {
-    margin-bottom: 2rem;
-  }
-  .filter-left,
-  .filter-right {
-    justify-content: space-between;
-    padding: 0.5rem 0;
-    border: 1px solid #1c144a;
+    border: none;
+    .filter {
+      &__left {
+        margin-bottom: 1.4rem;
+      }
+      &__left,
+      &__right {
+        background-color: white;
+        border: 1px solid #1c144a;
+      }
+    }
   }
 }
 @media (max-width: 992px) {
@@ -146,5 +160,52 @@ body {
   }
   .sidebar.active {
     width: 100vw;
+  }
+}
+// special purpose breakpoint
+@media (max-width: 460px) {
+  // filter section
+  .section-filter {
+    .filter {
+      &__left,
+      &__right {
+        display: block !important;
+        background-color: transparent;
+        border: none;
+      }
+    }
+    .dropdown {
+      width: 100%;
+      background-color: white;
+      text-align: center;
+    }
+  }
+}
+
+// Custom
+// Date
+// input
+.date-container {
+  // background-color: red;
+  width: 14rem;
+  img {
+    margin-right: -3rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  i {
+    margin-left: -2rem;
+  }
+  input {
+    width: 100% !important;
+    border: 1px solid transparent;
+    border-top-right-radius: 0.8rem !important;
+    border-top-left-radius: 0.8rem !important;
+    &:focus {
+      outline: none;
+      border: 1px solid #1c144a;
+      border-bottom: 1px solid transparent;
+    }
   }
 }

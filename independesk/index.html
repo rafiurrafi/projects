@@ -82,12 +82,12 @@
     >
       <!-- header left  -->
       <div>
-        <a href="#" class="header-left-link fw-bold text-decoration-none pe-3"
+        <a href="#" class="header-left-link fw-bold text-decoration-none pe-2"
           >Employee</a
         >
         <a
           href="#"
-          class="header-left-link text-decoration-none text-primary ms-3"
+          class="header-left-link text-decoration-none text-primary ms-2"
           >overview</a
         >
       </div>
@@ -131,8 +131,8 @@
       </button>
       <!-- section filter  -->
       <section class="section-filter px-2 py-3 bg-white">
-        <div class="filter">
-          <div class="filter__left">
+        <div class="filter d-xl-flex justify-content-between">
+          <div class="filter__left d-flex justify-content-between">
             <!-- First dropdown  -->
 
             <div class="dropdown">
@@ -208,17 +208,45 @@
               </div>
             </div>
             <!-- input datepicker  -->
-            <div>
-              <p>hello</p>
+            <div
+              class="d-flex align-items-center align-items-center date-container ms-3"
+            >
+              <img src="assets/calendar.svg" alt="" />
               <input
                 type="text"
                 id="datepicker"
                 value="03, February 2022"
-                class="fw-bold"
+                class="fw-bold ps-5 py-2 ms-3"
               />
+              <i class="fa fa-angle-down d-block"></i>
             </div>
           </div>
-          <div class="filter__right"></div>
+          <div class="filter__right">
+            <div class="dropdown">
+              <button onclick="myFunction(this)" class="dropbtn py-1">
+                <img src="assets/sort.svg" alt="" /> Sort List
+              </button>
+              <div id="myDropdown" class="dropdown-content px-5 py-3">
+                Hello
+              </div>
+            </div>
+            <div class="dropdown">
+              <button onclick="myFunction(this)" class="dropbtn py-1">
+                <img src="assets/sort.svg" alt="" /> Sort List
+              </button>
+              <div id="myDropdown" class="dropdown-content px-5 py-3">
+                Hello
+              </div>
+            </div>
+            <div class="dropdown">
+              <button onclick="myFunction(this)" class="dropbtn py-1">
+                <img src="assets/sort.svg" alt="" /> Sort List
+              </button>
+              <div id="myDropdown" class="dropdown-content px-5 py-3">
+                Hello
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section-table my-4">

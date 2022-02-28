@@ -1,9 +1,16 @@
 .ui-datepicker {
+  width: 14rem !important;
+  //   margin-left: -0.3rem;
+  border: 1px solid #1c144a !important;
+  border-bottom-right-radius: 0.8rem !important;
+  border-bottom-left-radius: 0.8rem !important;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
   td a {
     text-align: center !important;
   }
   &-title {
-    width: 7.3rem;
+    width: 7rem;
   }
   .ui-state-default,
   .ui-widget-content .ui-state-default,

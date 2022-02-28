@@ -154,20 +154,21 @@ body {
   .owl-next {
     right: -1rem;
   }
-  // .doctors-bg {
-  //   position: absolute;
-  //   top: 20%;
-  //   left: 0;
-  //   z-index: -2;
-  //   background-color: red;
-  //   height: 70%;
-  //   width: 100%;
-  //   border-bottom-left-radius: 50%;
-  //   border-bottom-right-radius: 50%;
-  // }
+  .doctors-bg {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: -2;
+    background-color: white;
+    height: 70%;
+    width: 100%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
 }
 // section service
 .section-service {
+  position: relative;
   background-image: linear-gradient(
       rgba(17, 34, 71, 0.94),
       rgba(17, 34, 71, 0.94)
@@ -180,6 +181,15 @@ body {
   img {
     height: 4.25rem;
     width: 4.25rem;
+  }
+  .section-bg {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: #eeeeee;
+    height: 100%;
+    width: 100%;
+    z-index: -3; //respective to doctor bg
   }
 }
 //import section-service border

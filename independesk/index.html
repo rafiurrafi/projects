@@ -222,29 +222,31 @@
             </div>
           </div>
           <div class="filter__right">
-            <div class="dropdown">
-              <button onclick="myFunction(this)" class="dropbtn py-1">
+            <div class="dropdown sort-container">
+              <button
+                onclick="sortToggle(this)"
+                class="dropbtn sortDropdownBtn py-1"
+              >
                 <img src="assets/sort.svg" alt="" /> Sort List
               </button>
-              <div id="myDropdown" class="dropdown-content px-5 py-3">
+              <div id="sortDropdown" class="dropdown-content px-5 py-3">
                 Hello
               </div>
             </div>
-            <div class="dropdown">
-              <button onclick="myFunction(this)" class="dropbtn py-1">
+            <div class="dropdown" id="category-container">
+              <button
+                onclick="categoryToggle(this)"
+                class="dropbtn categoryBtn py-1"
+              >
                 <img src="assets/sort.svg" alt="" /> Sort List
               </button>
-              <div id="myDropdown" class="dropdown-content px-5 py-3">
-                Hello
-              </div>
+              <div id="category" class="dropdown-content px-5 py-3">Hello</div>
             </div>
-            <div class="dropdown">
-              <button onclick="myFunction(this)" class="dropbtn py-1">
+            <div class="dropdown export-container">
+              <button onclick="exportToggle(this)" class="exportBtn py-1">
                 <img src="assets/sort.svg" alt="" /> Sort List
               </button>
-              <div id="myDropdown" class="dropdown-content px-5 py-3">
-                Hello
-              </div>
+              <div id="export" class="dropdown-content px-5 py-3">Hello</div>
             </div>
           </div>
         </div>

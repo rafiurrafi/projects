@@ -393,13 +393,14 @@
                 </div>
               </div>
             </div>
-            <div class="dropdown export-container" style="font-size: 0.85rem">
+            <div class="dropdown export-container">
               <button onclick="exportToggle(this)" class="exportBtn py-1">
                 <img src="assets/sort.svg" alt="" /> Export
               </button>
               <div
                 id="export"
                 class="dropdown-content dropdown-content--right px-2 py-3"
+                style="font-size: 0.85rem"
               >
                 <p class="fw-bold text-primary">Export properties</p>
                 <div class="d-flex">
@@ -420,10 +421,15 @@
                 <!-- Start  -->
 
                 <div class="mb-3">
-                  <input class="form-control" type="file" id="formFile" />
-                  <label for="formFile" class="form-label">Export.pdf</label>
+                  <label for="formFileSm" class="form-label"
+                    >Small file input example</label
+                  >
+                  <input
+                    class="form-control form-control-sm"
+                    id="formFileSm"
+                    type="file"
+                  />
                 </div>
-
                 <!-- end  -->
                 <div class="text-center">
                   <a

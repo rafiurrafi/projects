@@ -29,6 +29,31 @@ body {
       color: orangered;
     }
   }
+  .drpdwn-container .active {
+    color: #00e28d !important;
+  }
+
+  .drpdwn-container:hover {
+    & > a {
+      color: #00e28d !important;
+    }
+    .sidebar-icon {
+      &-path {
+        fill: #00e28d;
+      }
+      &-stroke {
+        stroke: #00e28d;
+      }
+    }
+  }
+  .sidebar-icon {
+    &-path {
+      fill: #fff;
+    }
+    &-stroke {
+      stroke: #fff;
+    }
+  }
 }
 .sidebar.active {
   left: 0;
@@ -96,20 +121,79 @@ body {
 .section-filter {
   border: 1px solid #1c144a;
   @import "./custom/dropdown";
+  label {
+    font-size: 0.8rem;
+  }
+  button {
+    width: 100%;
+  }
+  .sort-container {
+    width: 7.5rem;
+    input {
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    #sortDropdown {
+      i {
+        opacity: 0;
+        transition: opacity;
+        color: #1c144a;
+      }
+      input:checked ~ i {
+        opacity: 1;
+      }
+    }
+  }
+  #category-container {
+    width: 9.5rem;
+    .switch-item {
+      border: 1px solid #eee;
+      opacity: 0.7;
+      &.active {
+        opacity: 1;
+      }
+      & > * {
+        transform: translateY(-3px);
+      }
+    }
+  }
+  // export
+  #export {
+    min-width: 11rem;
+    border-top: 1px solid #1c144a;
+    input[type="checkbox"] {
+      appearance: none;
+    }
+    #export-box {
+      height: 1.2rem;
+      width: 1.2rem;
+      border: 1px solid #1c144a;
+      i {
+        opacity: 0;
+      }
+    }
+    input:checked ~ i {
+      opacity: 1;
+    }
+  }
+  .exportBtn {
+    border: 1px solid transparent;
+    background-color: white;
+    &.active {
+      border: 1px solid #1c144a;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-bottom: 1px solid transparent;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
 }
+
 @media (max-width: 1200px) {
-  // .filter-container {
-  //   background-color: transparent !important;
-  // }
-  // .filter-left {
-  //   margin-bottom: 2rem;
-  // }
-  // .filter-left,
-  // .filter-right {
-  //   justify-content: space-between;
-  //   padding: 0.5rem 0;
-  //   border: 1px solid #1c144a;
-  // }
   .section-filter {
     background-color: transparent !important;
     border: none;
@@ -119,8 +203,15 @@ body {
       }
       &__left,
       &__right {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         background-color: white;
         border: 1px solid #1c144a;
+      }
+      &__right {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 1rem;
       }
     }
   }
@@ -167,11 +258,35 @@ body {
   // filter section
   .section-filter {
     .filter {
+      &__left {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        .date-container {
+          width: inherit;
+          margin-left: 0 !important;
+          img {
+            transform: translateX(10%);
+            // margin-right: 0;
+          }
+        }
+      }
+      &__right {
+        padding-top: 0;
+        padding-right: 0;
+        #category-container {
+          width: 100%;
+        }
+      }
       &__left,
       &__right {
         display: block !important;
         background-color: transparent;
         border: none;
+        & > * {
+          display: block;
+          border: 1px solid #1c144a;
+          margin-bottom: 1rem;
+        }
       }
     }
     .dropdown {

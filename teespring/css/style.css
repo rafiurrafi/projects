@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "helvetika";
+  src: url("../../fonts/hel-500.ttf");
+  font-weight: 400; }
+@font-face {
+  font-family: "helvetika";
+  src: url("../../fonts/hel-700.ttf");
+  font-weight: 700; }
+@font-face {
+  font-family: "helvetika";
+  src: url("../../fonts/hel-900.ttf");
+  font-weight: 900; }
+.d-flex {
+  display: flex; }
+
+.align-center {
+  align-items: center; }
+
+.justify-between {
+  justify-content: space-between; }
+
+:root {
+  --color-primary: #ee2761;
+  --width: 114rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem; }
+
+.container {
+  max-width: var(--width);
+  margin: 0 auto; }
+
+.header__logo {
+  height: 3rem;
+  width: 12rem; }

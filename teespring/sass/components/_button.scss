@@ -2,10 +2,20 @@
   text-decoration: none;
   display: inline-block;
   padding: 1rem 1.5rem;
-  font-size: 95%;
+  font-size: 85%;
   font-weight: 700;
   &--primary {
     color: var(--color-white);
     background-color: var(--color-primary);
+  }
+  &--white {
+    background-color: var(--color-white);
+    color: var(--text-color);
+    font-weight: 400;
+    transition: all 0.3s;
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
   }
 }

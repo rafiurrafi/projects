@@ -7,3 +7,27 @@
 .justify-between {
   justify-content: space-between;
 }
+.justify-center {
+  justify-content: center;
+}
+.direction-column {
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+.text-white {
+  color: var(--color-white);
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}

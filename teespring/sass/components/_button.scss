@@ -1,0 +1,11 @@
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 95%;
+  font-weight: 700;
+  &--primary {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+  }
+}

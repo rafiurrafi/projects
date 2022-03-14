@@ -3,10 +3,12 @@ $color-primary-dark: #166589;
 $color-primary: #00afdd;
 $color-primary-light: #95d7f7;
 $text-color: #444;
+$color-secondary: #213e7b;
 @import "./custom/contact";
 @import "./custom/footer";
 @import "./custom/input";
 @import "./custom/typography";
+@import "./custom/utility";
 // ======================================
 // components
 .card {
@@ -719,5 +721,34 @@ svg {
 @media (max-width: 768px) {
   .sign-up-form-container {
     border-radius: 10px;
+  }
+}
+
+// ============================================
+// Checkout page
+// Normal design
+// =============================================
+.form-container {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.form-buttons button {
+  background-color: #f6f6f6;
+  color: $color-secondary;
+  transition: all 0.3s;
+  &.active,
+  &:hover {
+    background-color: $color-secondary;
+    color: white;
+  }
+}
+.checkout-coupon {
+  .coupon-form {
+    input {
+      flex: 0 0 75%;
+    }
+    button {
+      flex: 1;
+    }
   }
 }

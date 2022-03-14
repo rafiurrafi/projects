@@ -150,6 +150,18 @@
 
   .heading__tertiary {
     font-size: 2.5rem; } }
+.font-small {
+  font-size: 0.85rem; }
+
+.font-30 {
+  font-size: 1.3rem; }
+
+.radius-8 {
+  border-radius: 0.8rem; }
+
+.radius-5 {
+  border-radius: 5px; }
+
 .card {
   position: relative;
   border-radius: 10px 10px 0 0;
@@ -631,3 +643,19 @@ svg {
 @media (max-width: 768px) {
   .sign-up-form-container {
     border-radius: 10px; } }
+.form-container {
+  border-radius: 0.8rem;
+  overflow: hidden; }
+
+.form-buttons button {
+  background-color: #f6f6f6;
+  color: #213e7b;
+  transition: all 0.3s; }
+  .form-buttons button.active, .form-buttons button:hover {
+    background-color: #213e7b;
+    color: white; }
+
+.checkout-coupon .coupon-form input {
+  flex: 0 0 75%; }
+.checkout-coupon .coupon-form button {
+  flex: 1; }

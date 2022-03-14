@@ -741,6 +741,9 @@ svg {
     background-color: $color-secondary;
     color: white;
   }
+  &:focus {
+    box-shadow: none;
+  }
 }
 .checkout-coupon {
   .coupon-form {
@@ -750,5 +753,21 @@ svg {
     button {
       flex: 1;
     }
+  }
+}
+.checkout-profile-detials {
+  position: relative;
+  padding-top: 5rem;
+  .edit-icon {
+    // background-color: red;
+    background-color: #f0f0f0;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    right: 1.4rem;
+    color: #444;
+    font-size: 1.4rem;
   }
 }

@@ -162,6 +162,9 @@
 .radius-5 {
   border-radius: 5px; }
 
+.font-gray-1 {
+  color: #8d8d8d; }
+
 .card {
   position: relative;
   border-radius: 10px 10px 0 0;
@@ -654,8 +657,24 @@ svg {
   .form-buttons button.active, .form-buttons button:hover {
     background-color: #213e7b;
     color: white; }
+  .form-buttons button:focus {
+    box-shadow: none; }
 
 .checkout-coupon .coupon-form input {
   flex: 0 0 75%; }
 .checkout-coupon .coupon-form button {
   flex: 1; }
+
+.checkout-profile-detials {
+  position: relative;
+  padding-top: 5rem; }
+  .checkout-profile-detials .edit-icon {
+    background-color: #f0f0f0;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    right: 1.4rem;
+    color: #444;
+    font-size: 1.4rem; }

@@ -365,6 +365,22 @@
           }
           console.log(radioValue);
         });
+        // hide /show login signup
+        $(".checkout-signup").hide(); //initial signup form hide
+        // show login when login btn clicked
+        $("#checkout-login-btn").click(function () {
+          $(this).addClass("active");
+          $("#checkout-signup-btn").removeClass("active");
+          $(".checkout-signup").hide();
+          $(".checkout-login").show();
+        });
+        // show signup when signup btn clicked
+        $("#checkout-signup-btn").click(function () {
+          $(this).addClass("active");
+          $("#checkout-login-btn").removeClass("active");
+          $(".checkout-login").hide();
+          $(".checkout-signup").show();
+        });
       });
     </script>
   </body>

@@ -1,2 +1,8 @@
 @import "./variable";
 @import "./aside";
+@import "./header";
+@import "./summary";
+main {
+  flex: 1;
+  background-color: $gray-light-1;
+}

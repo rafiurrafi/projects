@@ -1,0 +1,18 @@
+.font-30 {
+  font-size: 1.3rem; }
+
+.sidebar {
+  width: 5rem;
+  min-height: 100vh;
+  flex-direction: column;
+  border-top-right-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem; }
+  .sidebar svg {
+    display: block;
+    margin-bottom: 1rem;
+    height: 1.3rem;
+    width: 1.3rem; }
+    .sidebar svg path {
+      stroke: #fff; }
+      .sidebar svg path:hover {
+        stroke: #00afdd; }

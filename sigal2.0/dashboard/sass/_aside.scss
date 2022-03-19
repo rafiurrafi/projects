@@ -1,0 +1,20 @@
+.sidebar {
+  width: 5rem;
+  min-height: 100vh;
+  flex-direction: column;
+  border-top-right-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+
+  svg {
+    display: block;
+    margin-bottom: 1rem;
+    height: $font30;
+    width: $font30;
+    path {
+      stroke: #fff;
+      &:hover {
+        stroke: $color-primary-light;
+      }
+    }
+  }
+}

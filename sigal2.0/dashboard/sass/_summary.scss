@@ -12,3 +12,49 @@
     font-size: 2rem;
   }
 }
+.certificate {
+  a {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: $gray-light-1;
+    color: $gray-dark-1;
+    transition: all 0.3s;
+    &:hover {
+      color: white;
+      background-color: #213e7b;
+    }
+  }
+}
+.section-course {
+  .progress {
+    height: 0.35rem;
+    &-bar {
+      background-color: $color-primary-light;
+    }
+  }
+  .course-type {
+    span:first-of-type {
+      color: $gray-dark-1;
+    }
+    span:last-of-type {
+      font-weight: 500;
+    }
+  }
+}
+.upcoming-course-content {
+  .upcoming-date {
+    font-weight: 600;
+  }
+  .upcoming-content {
+    flex: 1;
+  }
+  .upcoming-status {
+    a {
+      color: $gray-dark-1;
+      &:hover {
+        color: #213e7b;
+      }
+    }
+  }
+}

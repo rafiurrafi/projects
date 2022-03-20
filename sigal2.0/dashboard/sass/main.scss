@@ -1,10 +1,7 @@
 @import "./variable";
+@import "./base";
 @import "./aside";
 @import "./header";
 @import "./summary";
 @import "./utils";
 @import "./responsive";
-main {
-  flex: 1;
-  background-color: $gray-light-1;
-}

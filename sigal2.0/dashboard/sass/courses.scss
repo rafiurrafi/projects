@@ -1,5 +1,23 @@
 @import "./variable";
+@import "./base";
 @import "./aside";
 @import "./header";
 @import "./utils";
 @import "./responsive";
+
+.nav-tabs {
+  border: none;
+}
+.course-btn {
+  background-color: white;
+  color: $color-secondary;
+  border: none;
+  border-radius: 1.4rem;
+  &.active {
+    background-color: $color-secondary;
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+  }
+}

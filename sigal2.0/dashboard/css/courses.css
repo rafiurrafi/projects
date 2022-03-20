@@ -38,46 +38,6 @@ main {
     border-radius: 50%;
     font-size: 1.56rem; }
 
-.report {
-  flex-direction: column;
-  border-radius: 0.8rem;
-  overflow: hidden; }
-  .report svg {
-    height: 2.4rem; }
-  .report div:nth-child(2) {
-    font-size: 0.8rem; }
-  .report div:nth-child(3) {
-    font-size: 2rem; }
-
-.certificate a {
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  background-color: #f6f6f6;
-  color: #afadad;
-  transition: all 0.3s; }
-  .certificate a:hover {
-    color: white;
-    background-color: #213e7b; }
-
-.section-course .progress {
-  height: 0.35rem; }
-  .section-course .progress-bar {
-    background-color: #00afdd; }
-.section-course .course-type span:first-of-type {
-  color: #afadad; }
-.section-course .course-type span:last-of-type {
-  font-weight: 500; }
-
-.upcoming-course-content .upcoming-date {
-  font-weight: 600; }
-.upcoming-course-content .upcoming-content {
-  flex: 1; }
-.upcoming-course-content .upcoming-status a {
-  color: #afadad; }
-  .upcoming-course-content .upcoming-status a:hover {
-    color: #213e7b; }
-
 .radius-8 {
   border-radius: 0.8rem; }
 
@@ -105,3 +65,18 @@ main {
 @media (max-width: 575.98px) {
   .section-summary {
     width: inherit; } }
+.nav-tabs {
+  border: none; }
+
+.course-btn {
+  background-color: white;
+  color: #213e7b;
+  border: none;
+  border-radius: 1.4rem; }
+  .course-btn.active {
+    background-color: #213e7b;
+    color: #fff; }
+  .course-btn:focus {
+    outline: none; }
+
+/*# sourceMappingURL=courses.css.map */

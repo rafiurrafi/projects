@@ -185,12 +185,12 @@
               <li class="" role="presentation">
                 <button
                   class="course-btn active small px-5 py-2 fw-bold"
-                  id="home-tab"
+                  id="online-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#home"
+                  data-bs-target="#online"
                   type="button"
                   role="tab"
-                  aria-controls="home"
+                  aria-controls="online"
                   aria-selected="true"
                 >
                   Home
@@ -199,29 +199,29 @@
               <li class="" role="presentation">
                 <button
                   class="course-btn small px-5 py-2 mx-4 fw-bold"
-                  id="profile-tab"
+                  id="inperson-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#profile"
+                  data-bs-target="#inperson"
                   type="button"
                   role="tab"
-                  aria-controls="profile"
+                  aria-controls="inperson"
                   aria-selected="false"
                 >
-                  Profile
+                  In Person
                 </button>
               </li>
               <li class="" role="presentation">
                 <button
                   class="course-btn small px-5 py-2 fw-bold"
-                  id="contact-tab"
+                  id="hybrid-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#contact"
+                  data-bs-target="#hybrid"
                   type="button"
                   role="tab"
-                  aria-controls="contact"
+                  aria-controls="hybrid"
                   aria-selected="false"
                 >
-                  Contact
+                  Hybrid
                 </button>
               </li>
             </ul>
@@ -234,20 +234,34 @@
           <div class="tab-content" id="myTabContent">
             <div
               class="tab-pane fade show active"
-              id="home"
+              id="online"
               role="tabpanel"
-              aria-labelledby="home-tab"
+              aria-labelledby="online-tab"
             >
-              1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
-              voluptatibus! Molestiae, ratione ullam? Quaerat nostrum eius
-              placeat sunt ipsa itaque distinctio deserunt, ullam maiores eos,
-              voluptas ducimus est quod impedit!
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Account</th>
+                    <th scope="col">Due Date</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Period</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Account">Visa - 3412</td>
+                    <td data-label="Due Date">04/01/2016</td>
+                    <td data-label="Amount">$1,190</td>
+                    <td data-label="Period">03/01/2016 - 03/31/2016</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div
               class="tab-pane fade"
-              id="profile"
+              id="inperson"
               role="tabpanel"
-              aria-labelledby="profile-tab"
+              aria-labelledby="inperson-tab"
             >
               2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
               amet magnam dignissimos a atque eveniet saepe impedit aliquid
@@ -256,9 +270,9 @@
             </div>
             <div
               class="tab-pane fade"
-              id="contact"
+              id="hybrid"
               role="tabpanel"
-              aria-labelledby="contact-tab"
+              aria-labelledby="hybrid-tab"
             >
               3. Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatibus commodi impedit veniam quasi dolore sequi

@@ -103,4 +103,12 @@ body {
   transform: translate(-50%, -50%);
   transition: opacity 0.4s; }
 
+.edit-icon {
+  background-color: #f0f0f0;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  color: #444;
+  font-size: 1.25rem; }
+
 /*# sourceMappingURL=profile.css.map */

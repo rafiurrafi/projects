@@ -1,0 +1,47 @@
+@import "./variable";
+@import "./base";
+@import "./aside";
+@import "./header";
+@import "./utils";
+@import "./responsive";
+.profile {
+  &__img-container {
+    position: relative;
+    height: 9rem;
+    width: 9rem;
+    cursor: pointer;
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      display: none;
+      background-color: rgba($gray-dark-1, 0.4);
+      border-radius: 50%;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &:hover::before {
+      display: block;
+    }
+    &:hover .profile__icon {
+      opacity: 1;
+    }
+  }
+  &__img {
+    margin: 0 auto;
+    height: inherit;
+    width: inherit;
+  }
+  &__icon {
+    opacity: 0;
+    height: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s;
+  }
+}

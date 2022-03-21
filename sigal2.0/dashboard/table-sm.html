@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <style>
+      .tbody {
+        text-align: right;
+      }
+      .tbody div::before {
+        content: attr(data-label);
+        float: left;
+      }
+    </style>
+    <div class="thead d-flex justify-content-between">
+      <div>title</div>
+      <div>location</div>
+      <div>date</div>
+      <div>time</div>
+      <div>status</div>
+    </div>
+    <div class="tbody d-flex justify-content-between">
+      <div data-label="title">boss</div>
+      <div data-label="location">bangla</div>
+      <div data-label="date">november</div>
+      <div data-label="time">10</div>
+      <div data-label="status">loading</div>
+    </div>
+  </body>
+</html>

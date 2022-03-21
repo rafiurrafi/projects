@@ -5,6 +5,9 @@ main {
   flex: 1;
   background-color: #f6f6f6; }
 
+body {
+  color: #444; }
+
 .sidebar {
   width: 5rem;
   min-height: 100vh;
@@ -69,6 +72,7 @@ main {
   position: relative;
   height: 9rem;
   width: 9rem;
+  margin-left: 45%;
   cursor: pointer; }
   .profile__img-container::before {
     content: "";

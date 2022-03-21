@@ -5,6 +5,9 @@ main {
   flex: 1;
   background-color: #f6f6f6; }
 
+body {
+  color: #444; }
+
 .sidebar {
   width: 5rem;
   min-height: 100vh;

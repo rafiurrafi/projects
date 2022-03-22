@@ -3,7 +3,8 @@
 
 main {
   flex: 1;
-  background-color: #f6f6f6; }
+  background-color: #f6f6f6;
+  margin-left: 5rem; }
 
 body {
   color: #444; }
@@ -13,7 +14,8 @@ body {
   min-height: 100vh;
   flex-direction: column;
   border-top-right-radius: 0.8rem;
-  border-bottom-right-radius: 0.8rem; }
+  border-bottom-right-radius: 0.8rem;
+  position: fixed; }
   .sidebar svg {
     height: 1.3rem;
     width: 1.3rem; }

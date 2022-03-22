@@ -3,6 +3,7 @@
 @import "./aside";
 @import "./header";
 @import "./utils";
+@import "./pagination";
 @import "./table";
 @import "./responsive";
 
@@ -21,4 +22,10 @@
   &:focus {
     outline: none;
   }
+}
+.circle {
+  background-color: $color-primary-light;
+  border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
 }

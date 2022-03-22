@@ -47,73 +47,39 @@ body {
 .f-18 {
   font-size: 0.76rem; }
 
-table {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  table-layout: fixed; }
+.pagination div {
+  height: 2rem;
+  width: 2rem;
+  background-color: #ddd; }
+  .pagination div.active {
+    color: #fff !important;
+    background-color: #213e7b; }
 
-table caption {
-  font-size: 1.5em;
-  margin: 0.5em 0 0.75em; }
-
-table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: 0.35em; }
-
-table th,
-table td {
-  padding: 0.625em;
+.dash-table__head, .dash-table__body {
   text-align: center; }
+  .dash-table__head div:first-of-type, .dash-table__body div:first-of-type {
+    flex: 25%; }
+  .dash-table__head div:nth-child(2), .dash-table__body div:nth-child(2) {
+    flex: 25%; }
+  .dash-table__head div:nth-child(3), .dash-table__body div:nth-child(3) {
+    flex: 10%; }
+  .dash-table__head div:nth-child(4), .dash-table__body div:nth-child(4) {
+    flex: 10%; }
+  .dash-table__head div:nth-child(5), .dash-table__body div:nth-child(5) {
+    flex: 10%; }
+.dash-table__body div:first-of-type {
+  text-align: left; }
 
-table th {
-  font-size: 0.85em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase; }
-
-@media screen and (max-width: 600px) {
-  table {
-    border: 0; }
-
-  table caption {
-    font-size: 1.3em; }
-
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px; }
-
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: 0.625em; }
-
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: 0.8em;
-    text-align: right; }
-
-  table td::before {
-    /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase; }
-
-  table td:last-child {
-    border-bottom: 0; } }
+@media (max-width: 767.98px) {
+  .dash-table__body {
+    display: block !important; }
+  .dash-table__body {
+    text-align: right !important; }
+    .dash-table__body div:first-of-type {
+      text-align: right; }
+    .dash-table__body div::before {
+      content: attr(data-label);
+      float: left; } }
 @media (max-width: 991.98px) {
   .sidebar {
     display: none !important; }
@@ -148,5 +114,11 @@ table th {
     color: #fff; }
   .course-btn:focus {
     outline: none; }
+
+.circle {
+  background-color: #00afdd;
+  border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem; }
 
 /*# sourceMappingURL=courses.css.map */

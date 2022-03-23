@@ -1,11 +1,39 @@
 .sidebar {
+  position: relative;
+  overflow: hidden;
   width: 5rem;
   min-height: 100vh;
-  flex-direction: column;
   border-top-right-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
   position: fixed;
+  white-space: nowrap;
+  transition: width 0.4s;
+  .top-sidebar {
+    opacity: 0;
+    border-bottom: 1px solid $gray-light-1;
+    transition: opacity 0.4s;
+    .sidebar-img {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+  .middle-sidebar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .bottom-sidebar {
+    position: absolute;
+    bottom: 2rem;
+  }
 
+  a {
+    margin-left: 0.7rem;
+    color: white;
+    svg {
+      margin-right: 1.4rem;
+    }
+  }
   svg {
     height: $font30;
     width: $font30;
@@ -13,7 +41,16 @@
       stroke: #fff;
     }
   }
-  a:hover path {
-    stroke: $color-primary-light;
+  a:hover {
+    color: $color-primary-light;
+    path {
+      stroke: $color-primary-light;
+    }
+  }
+  &:hover {
+    width: 15rem;
+    .top-sidebar {
+      opacity: 1;
+    }
   }
 }

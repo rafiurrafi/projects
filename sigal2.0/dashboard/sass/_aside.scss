@@ -30,6 +30,12 @@
   a {
     margin-left: 0.8rem;
     color: white;
+    &.active {
+      color: $color-primary-light;
+      svg path {
+        stroke: $color-primary-light;
+      }
+    }
     svg {
       margin-right: 1.6rem;
     }

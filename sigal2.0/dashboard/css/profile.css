@@ -45,6 +45,10 @@ body {
   .sidebar a {
     margin-left: 0.8rem;
     color: white; }
+    .sidebar a.active {
+      color: #00afdd; }
+      .sidebar a.active svg path {
+        stroke: #00afdd; }
     .sidebar a svg {
       margin-right: 1.6rem; }
   .sidebar svg {

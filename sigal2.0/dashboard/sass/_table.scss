@@ -1,4 +1,14 @@
 .dash-table {
+  &__head {
+    font-weight: bold;
+    color: $gray-dark-1;
+    div {
+      cursor: pointer;
+      img {
+        height: 0.75rem;
+      }
+    }
+  }
   &__head,
   &__body {
     text-align: center;

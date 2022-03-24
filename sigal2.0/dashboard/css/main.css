@@ -45,6 +45,10 @@ body {
   .sidebar a {
     margin-left: 0.8rem;
     color: white; }
+    .sidebar a.active {
+      color: #00afdd; }
+      .sidebar a.active svg path {
+        stroke: #00afdd; }
     .sidebar a svg {
       margin-right: 1.6rem; }
   .sidebar svg {
@@ -132,6 +136,38 @@ body {
   color: #afadad; }
 .section-course .course-type span:last-of-type {
   font-weight: 500; }
+
+.single-ongoing-course {
+  position: relative;
+  overflow: hidden; }
+  .single-ongoing-course::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.904), rgba(0, 175, 221, 0.3), rgba(0, 175, 221, 0.8));
+    transition: all 0.3s; }
+  .single-ongoing-course:hover::before {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1; }
+  .single-ongoing-course .ongoing-btn {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s; }
+  .single-ongoing-course:hover .ongoing-btn {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2; }
 
 .upcoming-course-content .upcoming-date {
   font-weight: 600; }

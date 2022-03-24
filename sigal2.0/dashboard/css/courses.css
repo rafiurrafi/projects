@@ -45,6 +45,10 @@ body {
   .sidebar a {
     margin-left: 0.8rem;
     color: white; }
+    .sidebar a.active {
+      color: #00afdd; }
+      .sidebar a.active svg path {
+        stroke: #00afdd; }
     .sidebar a svg {
       margin-right: 1.6rem; }
   .sidebar svg {
@@ -116,6 +120,13 @@ body {
     color: #fff !important;
     background-color: #213e7b; }
 
+.dash-table__head {
+  font-weight: bold;
+  color: #afadad; }
+  .dash-table__head div {
+    cursor: pointer; }
+    .dash-table__head div img {
+      height: 0.75rem; }
 .dash-table__head, .dash-table__body {
   text-align: center; }
   .dash-table__head div:first-of-type, .dash-table__body div:first-of-type {

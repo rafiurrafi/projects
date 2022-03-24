@@ -9,6 +9,15 @@ main {
 body {
   color: #444; }
 
+.sidebar-open__btn {
+  position: fixed;
+  top: 1.35rem;
+  left: 2%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none; }
+
 .sidebar {
   position: relative;
   overflow: hidden;
@@ -34,10 +43,10 @@ body {
     position: absolute;
     bottom: 2rem; }
   .sidebar a {
-    margin-left: 0.7rem;
+    margin-left: 0.8rem;
     color: white; }
     .sidebar a svg {
-      margin-right: 1.4rem; }
+      margin-right: 1.6rem; }
   .sidebar svg {
     height: 1.3rem;
     width: 1.3rem; }
@@ -51,9 +60,17 @@ body {
     width: 15rem; }
     .sidebar:hover .top-sidebar {
       opacity: 1; }
+  .sidebar > button {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background-color: transparent;
+    border: none;
+    display: none; }
 
 .header {
-  height: 4rem; }
+  height: 4rem;
+  margin-left: 5rem; }
   .header__search {
     flex: 1; }
     .header__search i {
@@ -71,6 +88,19 @@ body {
     border-radius: 50%;
     font-size: 1.56rem; }
 
+@media (max-width: 991.98px) {
+  .header {
+    height: 3rem;
+    margin-left: 3rem; }
+
+  .header__noti {
+    height: 2rem;
+    width: 2rem;
+    background-color: #f6f6f6;
+    color: #afadad;
+    border-radius: 50%;
+    font-size: 1rem;
+    line-height: 2rem; } }
 .radius-8 {
   border-radius: 0.8rem; }
 
@@ -80,7 +110,8 @@ body {
 .pagination div {
   height: 2rem;
   width: 2rem;
-  background-color: #ddd; }
+  background-color: #ddd;
+  cursor: pointer; }
   .pagination div.active {
     color: #fff !important;
     background-color: #213e7b; }
@@ -113,12 +144,24 @@ body {
 @media (max-width: 991.98px) {
   .sidebar {
     display: none !important; }
+    .sidebar.active {
+      display: block !important; }
+      .sidebar.active button {
+        display: block;
+        transform: scale(1.5); }
+
+  .header {
+    padding-left: 1rem !important; }
+
+  .sidebar-open__btn {
+    display: block;
+    top: 0.8rem; }
 
   main {
     background-color: red;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%; }
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%; }
 
   .section-summary .reports {
     justify-content: space-between;
@@ -126,7 +169,11 @@ body {
     .section-summary .reports > * {
       width: 33%; }
     .section-summary .reports .report div:nth-child(2) {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+
+  .nav-tabs button {
+    font-size: 80%;
+    padding: 0.5rem 1.5rem !important; } }
 .nav-tabs {
   border: none; }
 
@@ -146,5 +193,21 @@ body {
   border-radius: 50%;
   height: 0.5rem;
   width: 0.5rem; }
+
+@media (max-width: 991.98px) {
+  .section-courses {
+    padding-left: 4% !important;
+    padding-right: 4% !important; }
+    .section-courses #inperson-tab {
+      margin-left: 0.5rem !important;
+      margin-right: 0.5rem !important; }
+    .section-courses .nav-tabs button {
+      font-size: 80%;
+      padding: 0.5rem 1.5rem !important; } }
+@media (max-width: 575.98px) {
+  .nav-tabs button {
+    margin-top: 1rem;
+    font-size: 70% !important;
+    padding: 0.3rem 1.3rem !important; } }
 
 /*# sourceMappingURL=courses.css.map */

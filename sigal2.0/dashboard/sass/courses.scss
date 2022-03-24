@@ -29,3 +29,42 @@
   height: 0.5rem;
   width: 0.5rem;
 }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .section-courses {
+    padding-left: 4% !important;
+    padding-right: 4% !important;
+    #inperson-tab {
+      margin-left: 0.5rem !important;
+      margin-right: 0.5rem !important;
+    }
+    .nav-tabs button {
+      font-size: 80%;
+      padding: 0.5rem 1.5rem !important;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  // .section-summary {
+  //   width: 700px;
+  // }
+}
+// small devices
+@media (max-width: 575.98px) {
+  .nav-tabs button {
+    margin-top: 1rem;
+    font-size: 70% !important;
+    padding: 0.3rem 1.3rem !important;
+  }
+}

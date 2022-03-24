@@ -28,10 +28,10 @@
   }
 
   a {
-    margin-left: 0.7rem;
+    margin-left: 0.8rem;
     color: white;
     svg {
-      margin-right: 1.4rem;
+      margin-right: 1.6rem;
     }
   }
   svg {
@@ -52,5 +52,13 @@
     .top-sidebar {
       opacity: 1;
     }
+  }
+  & > button {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background-color: transparent;
+    border: none;
+    display: none;
   }
 }

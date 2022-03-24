@@ -6,3 +6,12 @@ main {
 body {
   color: #444;
 }
+.sidebar-open__btn {
+  position: fixed;
+  top: 1.35rem;
+  left: 2%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}

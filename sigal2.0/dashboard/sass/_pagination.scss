@@ -3,6 +3,7 @@
     height: 2rem;
     width: 2rem;
     background-color: $gray-dark-2;
+    cursor: pointer;
     &.active {
       color: #fff !important;
       background-color: $color-secondary;

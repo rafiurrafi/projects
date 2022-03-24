@@ -10,12 +10,26 @@
 @media (max-width: 991.98px) {
   .sidebar {
     display: none !important;
+    &.active {
+      display: block !important;
+      button {
+        display: block;
+        transform: scale(1.5);
+      }
+    }
+  }
+  .header {
+    padding-left: 1rem !important;
+  }
+  .sidebar-open__btn {
+    display: block;
+    top: 0.8rem;
   }
   main {
     background-color: red;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
   }
   .section-summary {
     // width: 900px;
@@ -34,6 +48,10 @@
         }
       }
     }
+  }
+  .nav-tabs button {
+    font-size: 80%;
+    padding: 0.5rem 1.5rem !important;
   }
 }
 

@@ -194,6 +194,21 @@ body {
     main .main-content {
       width: 70%;
       margin-left: 15%; } }
+.apexcharts-toolbar {
+  display: none !important; }
+
+.apexcharts-text {
+  fill: #afadad !important; }
+
+.chart-btns {
+  width: 70%;
+  margin-left: 18%; }
+  .chart-btns .btn {
+    padding: 0.375rem 0.5rem;
+    border: 1px solid #afadad; }
+    .chart-btns .btn.active {
+      border: 1px solid #213e7b; }
+
 @media (max-width: 625.98px) {
   .upcoming-course-content {
     display: block !important;

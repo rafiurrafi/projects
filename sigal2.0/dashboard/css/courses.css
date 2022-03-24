@@ -158,22 +158,10 @@ body {
     top: 0.8rem; }
 
   main {
-    background-color: red;
-    width: 86%;
-    margin-left: 7%;
-    margin-right: 7%; }
-
-  .section-summary .reports {
-    justify-content: space-between;
-    height: 18rem !important; }
-    .section-summary .reports > * {
-      width: 33%; }
-    .section-summary .reports .report div:nth-child(2) {
-      font-size: 1rem; }
-
-  .nav-tabs button {
-    font-size: 80%;
-    padding: 0.5rem 1.5rem !important; } }
+    margin-left: 0; }
+    main .main-content {
+      width: 70%;
+      margin-left: 15%; } }
 .nav-tabs {
   border: none; }
 

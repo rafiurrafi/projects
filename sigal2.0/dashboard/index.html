@@ -17,14 +17,24 @@
     <title>Sigal - dashboard</title>
   </head>
   <body>
-    <div id="body-container " class="d-flex">
+    <div id="body-container ">
       <aside
-        class="sidebar bg-secondary d-flex justify-content-between align-items-center py-4"
+        class="sidebar bg-secondary justify-content-between align-items-center py-4"
       >
-        <div></div>
-        <div>
+        <button class="text-white">&times;</button>
+        <div class="top-sidebar text-center mx-4">
+          <img
+            src="img/doctor.png"
+            alt=""
+            class="d-block mx-auto circle-rounded sidebar-img"
+          />
+          <h5 class="text-white my-2">
+            Hello <span style="color: #00afdd">Ammar</span>
+          </h5>
+        </div>
+        <div class="middle-sidebar">
           <!-- menu svg  -->
-          <a href="#" class="d-block py-3">
+          <a href="#" class="d-block p-3 text-decoration-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -40,9 +50,10 @@
                 stroke-width="2"
               />
             </svg>
+            Dashboard
           </a>
           <!-- menu svg  -->
-          <a href="#" class="d-block py-3">
+          <a href="#" class="d-block p-3 text-decoration-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -58,9 +69,10 @@
                 stroke-width="2"
               />
             </svg>
+            Profile
           </a>
           <!-- menu svg  -->
-          <a href="#" class="d-block py-3">
+          <a href="#" class="d-block p-3 text-decoration-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -76,9 +88,10 @@
                 stroke-width="2"
               />
             </svg>
+            Course
           </a>
           <!-- menu svg  -->
-          <a href="#" class="d-block py-3">
+          <a href="#" class="d-block p-3 text-decoration-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -94,9 +107,10 @@
                 stroke-width="2"
               />
             </svg>
+            Quizes and Exams
           </a>
           <!-- menu svg  -->
-          <a href="#" class="d-block py-3">
+          <a href="#" class="d-block p-3 text-decoration-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32.031"
@@ -112,376 +126,384 @@
                 stroke-width="2"
               />
             </svg>
+            Certification
           </a>
         </div>
-        <div>
-          <!-- menu svg  -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32.414"
-            height="32"
-            viewBox="0 0 32.414 32"
-          >
-            <g
-              id="Icon_ionic-md-log-out"
-              data-name="Icon ionic-md-log-out"
-              transform="translate(1 1)"
+        <div class="bottom-sidebar">
+          <a href="" class="d-block p-3 text-decoration-none">
+            <!-- menu svg  -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32.414"
+              height="32"
+              viewBox="0 0 32.414 32"
             >
-              <path
-                id="Path_29"
-                data-name="Path 29"
-                d="M13.5,19.5H26.838l-3.066,3.143,2.1,2.1L32.625,18l-6.75-6.75-2.18,2.1L26.838,16.5H13.5Z"
-                transform="translate(-2.625 -3)"
-                fill="none"
-                stroke-width="2"
-              />
-              <g id="Group_184" data-name="Group 184">
+              <g
+                id="Icon_ionic-md-log-out"
+                data-name="Icon ionic-md-log-out"
+                transform="translate(1 1)"
+              >
                 <path
-                  id="Path_30"
-                  data-name="Path 30"
-                  d="M18.418,30.3A11.921,11.921,0,1,1,26.856,9.93l2.195-2.185a15.992,15.992,0,0,0-2.006-1.673,15.006,15.006,0,1,0-.007,24.6A14.929,14.929,0,0,0,29.044,29L26.856,26.82A11.881,11.881,0,0,1,18.418,30.3Z"
-                  transform="translate(-3.375 -3.375)"
-                  fill="none"
-                  stroke-width="2"
-                />
-                <path
-                  id="Path_31"
-                  data-name="Path 31"
-                  d="M31.458,17.958h.084v.084h-.084Z"
+                  id="Path_29"
+                  data-name="Path 29"
+                  d="M13.5,19.5H26.838l-3.066,3.143,2.1,2.1L32.625,18l-6.75-6.75-2.18,2.1L26.838,16.5H13.5Z"
                   transform="translate(-2.625 -3)"
                   fill="none"
                   stroke-width="2"
                 />
+                <g id="Group_184" data-name="Group 184">
+                  <path
+                    id="Path_30"
+                    data-name="Path 30"
+                    d="M18.418,30.3A11.921,11.921,0,1,1,26.856,9.93l2.195-2.185a15.992,15.992,0,0,0-2.006-1.673,15.006,15.006,0,1,0-.007,24.6A14.929,14.929,0,0,0,29.044,29L26.856,26.82A11.881,11.881,0,0,1,18.418,30.3Z"
+                    transform="translate(-3.375 -3.375)"
+                    fill="none"
+                    stroke-width="2"
+                  />
+                  <path
+                    id="Path_31"
+                    data-name="Path 31"
+                    d="M31.458,17.958h.084v.084h-.084Z"
+                    transform="translate(-2.625 -3)"
+                    fill="none"
+                    stroke-width="2"
+                  />
+                </g>
               </g>
-            </g>
-          </svg>
+            </svg>
+            Logout
+          </a>
         </div>
       </aside>
-      <main>
-        <header class="header d-flex align-items-center bg-white ps-5">
-          <div class="header__search d-flex align-items-center">
-            <i class="fa fa-search d-block me-2 mt-1"></i>
-            <input type="text" placeholder="search" />
-          </div>
-          <a href="" class="header__noti text-center"
-            ><i class="fa fa-bell"></i
-          ></a>
-          <a
-            href="#"
-            class="bg-secondary align-self-stretch px-3 text-decoration-none text-white text-center ms-4"
-          >
-            <span class="d-block"><i class="fa fa-home"></i></span>
-            Go home
-          </a>
-        </header>
-        <section class="section-summary my-4 ps-5 pe-4">
-          <div class="row gy-5">
-            <div class="col-lg-4 weekly-report">
-              <h6 class="fw-bold text-secondary mb-3">Weekly Report</h6>
-              <div class="reports d-flex" style="height: 15rem">
-                <!-- single report  -->
-                <div
-                  class="report mx-2 pt-3 d-flex align-items-center justify-content-between bg-white"
-                >
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="63.8"
-                      height="57.62"
-                      viewBox="0 0 63.8 57.62"
-                    >
-                      <g
-                        id="Icon_feather-book-open"
-                        data-name="Icon feather-book-open"
-                        transform="translate(-2 -3.5)"
-                      >
-                        <path
-                          id="Path_38"
-                          data-name="Path 38"
-                          d="M3,4.5H21.54A12.36,12.36,0,0,1,33.9,16.86V60.12a9.27,9.27,0,0,0-9.27-9.27H3Z"
-                          transform="translate(0)"
-                          fill="#00afdd"
-                          stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                        />
-                        <path
-                          id="Path_39"
-                          data-name="Path 39"
-                          d="M48.9,4.5H30.36A12.36,12.36,0,0,0,18,16.86V60.12a9.27,9.27,0,0,1,9.27-9.27H48.9Z"
-                          transform="translate(15.9)"
-                          fill="#00afdd"
-                          stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="fw-bold text-secondary text-center px-2">
-                    completed course
-                  </div>
+      <!-- Header start  -->
+      <header class="header d-flex align-items-center bg-white ps-5">
+        <div class="header__search d-flex align-items-center">
+          <i class="fa fa-search d-block me-2 mt-1"></i>
+          <input type="text" placeholder="search" />
+        </div>
+        <a href="" class="header__noti text-center"
+          ><i class="fa fa-bell"></i
+        ></a>
+        <a
+          href="#"
+          class="bg-secondary align-self-stretch px-3 text-decoration-none text-white text-center ms-4"
+        >
+          <span class="d-block"><i class="fa fa-home"></i></span>
+          Go home
+        </a>
+      </header>
+      <!-- header end  -->
+      <main class="mt-5">
+        <div class="main-content">
+          <section class="section-summary my-4 ps-5 pe-4">
+            <div class="row gy-5">
+              <div class="col-lg-4 weekly-report">
+                <h6 class="fw-bold text-secondary mb-3">Weekly Report</h6>
+                <div class="reports d-sm-flex">
+                  <!-- single report  -->
                   <div
-                    class="fw-bold text-white align-self-stretch text-center py-1"
-                    style="background-color: #00afdd"
+                    class="report mx-2 pt-3 d-flex align-items-center justify-content-between bg-white"
                   >
-                    5
-                  </div>
-                </div>
-                <!-- single report  -->
-                <div
-                  class="report mx-2 pt-3 d-flex align-items-center justify-content-between bg-white"
-                >
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="63.8"
-                      height="57.62"
-                      viewBox="0 0 63.8 57.62"
-                    >
-                      <g
-                        id="Icon_feather-book-open"
-                        data-name="Icon feather-book-open"
-                        transform="translate(-2 -3.5)"
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="63.8"
+                        height="57.62"
+                        viewBox="0 0 63.8 57.62"
                       >
-                        <path
-                          id="Path_38"
-                          data-name="Path 38"
-                          d="M3,4.5H21.54A12.36,12.36,0,0,1,33.9,16.86V60.12a9.27,9.27,0,0,0-9.27-9.27H3Z"
-                          transform="translate(0)"
-                          fill="#00afdd"
-                          stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                        />
-                        <path
-                          id="Path_39"
-                          data-name="Path 39"
-                          d="M48.9,4.5H30.36A12.36,12.36,0,0,0,18,16.86V60.12a9.27,9.27,0,0,1,9.27-9.27H48.9Z"
-                          transform="translate(15.9)"
-                          fill="#00afdd"
-                          stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="fw-bold text-secondary text-center px-2">
-                    completed course
-                  </div>
-                  <div
-                    class="fw-bold text-white align-self-stretch text-center py-1 bg-primary"
-                  >
-                    5
-                  </div>
-                </div>
-                <!-- single report  -->
-                <div
-                  class="report mx-2 pt-3 d-flex align-items-center justify-content-between bg-white"
-                >
-                  <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="63.8"
-                      height="57.62"
-                      viewBox="0 0 63.8 57.62"
-                    >
-                      <g
-                        id="Icon_feather-book-open"
-                        data-name="Icon feather-book-open"
-                        transform="translate(-2 -3.5)"
-                      >
-                        <path
-                          id="Path_38"
-                          data-name="Path 38"
-                          d="M3,4.5H21.54A12.36,12.36,0,0,1,33.9,16.86V60.12a9.27,9.27,0,0,0-9.27-9.27H3Z"
-                          transform="translate(0)"
-                          fill="#00afdd"
-                          stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                        />
-                        <path
-                          id="Path_39"
-                          data-name="Path 39"
-                          d="M48.9,4.5H30.36A12.36,12.36,0,0,0,18,16.86V60.12a9.27,9.27,0,0,1,9.27-9.27H48.9Z"
-                          transform="translate(15.9)"
-                          fill="#00afdd"
-                          stroke="#fff"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="fw-bold text-secondary text-center px-2">
-                    completed course
-                  </div>
-                  <div
-                    class="fw-bold text-white align-self-stretch text-center py-1 bg-secondary"
-                  >
-                    5
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <h6 class="fw-bold text-secondary mb-3">
-                Summary of quizes and exams
-              </h6>
-            </div>
-            <div class="col-lg-4">
-              <h6 class="fw-bold text-secondary mb-3">Certification</h6>
-              <!-- single certificate -->
-              <div
-                class="certificate radius-8 bg-white px-2 py-2 d-flex justify-content-between align-items-center mb-3"
-              >
-                <p class="mb-0 fw-bold f-18 text-secondary">
-                  Lorem ipsum dolor sit amet.
-                </p>
-                <a
-                  href="#"
-                  class="d-flex align-items-center justify-content-center"
-                  ><i class="fa fa-download"></i
-                ></a>
-              </div>
-              <!-- single certificate -->
-              <div
-                class="certificate radius-8 bg-white px-2 py-2 d-flex justify-content-between align-items-center mb-3"
-              >
-                <p class="mb-0 fw-bold f-18 text-secondary">
-                  Lorem ipsum dolor sit amet.
-                </p>
-                <a
-                  href="#"
-                  class="d-flex align-items-center justify-content-center"
-                  ><i class="fa fa-download"></i
-                ></a>
-              </div>
-              <!-- single certificate -->
-              <div
-                class="certificate radius-8 bg-white px-2 py-2 d-flex justify-content-between align-items-center"
-              >
-                <p class="mb-0 fw-bold f-18 text-secondary">
-                  Lorem ipsum dolor sit amet.
-                </p>
-                <a
-                  href="#"
-                  class="d-flex align-items-center justify-content-center"
-                  ><i class="fa fa-download"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section-course ps-5 pe-4 py-5">
-          <div class="row gx-5">
-            <div class="col-lg-6">
-              <h6 class="fw-bold text-secondary mb-3">Ongoing course</h6>
-              <div class="row gy-3">
-                <div class="col-lg-6">
-                  <div class="bg-white radius-8 p-3">
-                    <p class="fw-bold small mb-1" style="color: #00afdd">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                    <p class="f-18 mb-3">Lorem, ipsum dolor.</p>
+                        <g
+                          id="Icon_feather-book-open"
+                          data-name="Icon feather-book-open"
+                          transform="translate(-2 -3.5)"
+                        >
+                          <path
+                            id="Path_38"
+                            data-name="Path 38"
+                            d="M3,4.5H21.54A12.36,12.36,0,0,1,33.9,16.86V60.12a9.27,9.27,0,0,0-9.27-9.27H3Z"
+                            transform="translate(0)"
+                            fill="#00afdd"
+                            stroke="#fff"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          />
+                          <path
+                            id="Path_39"
+                            data-name="Path 39"
+                            d="M48.9,4.5H30.36A12.36,12.36,0,0,0,18,16.86V60.12a9.27,9.27,0,0,1,9.27-9.27H48.9Z"
+                            transform="translate(15.9)"
+                            fill="#00afdd"
+                            stroke="#fff"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="fw-bold text-secondary text-center px-2">
+                      completed course
+                    </div>
                     <div
-                      class="f-18 d-flex justify-content-between align-items-center"
+                      class="fw-bold text-white align-self-stretch text-center py-1"
+                      style="background-color: #00afdd"
                     >
-                      <p class="mb-0 course-type">
-                        <span class="d-block">Type</span>
-                        <span class="d-block">Online</span>
-                      </p>
-                      <div style="width: 4.5rem">
-                        <div class="progress mb-1">
-                          <div
-                            class="progress-bar"
-                            role="progressbar"
-                            style="width: 75%"
-                            aria-valuenow="75"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                        <p class="mb-0">Progress(75%)</p>
-                      </div>
+                      5
                     </div>
                   </div>
-                </div>
-                <!-- single course Ongoing -->
-                <div class="col-lg-6">
-                  <div class="bg-white radius-8 p-3">
-                    <p class="fw-bold small mb-1" style="color: #00afdd">
-                      Lorem ipsum dolor sit amet.
-                    </p>
-                    <p class="f-18 mb-3">Lorem, ipsum dolor.</p>
+                  <!-- single report  -->
+                  <div
+                    class="report mx-2 pt-3 d-flex align-items-center justify-content-between bg-white"
+                  >
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="63.8"
+                        height="57.62"
+                        viewBox="0 0 63.8 57.62"
+                      >
+                        <g
+                          id="Icon_feather-book-open"
+                          data-name="Icon feather-book-open"
+                          transform="translate(-2 -3.5)"
+                        >
+                          <path
+                            id="Path_38"
+                            data-name="Path 38"
+                            d="M3,4.5H21.54A12.36,12.36,0,0,1,33.9,16.86V60.12a9.27,9.27,0,0,0-9.27-9.27H3Z"
+                            transform="translate(0)"
+                            fill="#00afdd"
+                            stroke="#fff"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          />
+                          <path
+                            id="Path_39"
+                            data-name="Path 39"
+                            d="M48.9,4.5H30.36A12.36,12.36,0,0,0,18,16.86V60.12a9.27,9.27,0,0,1,9.27-9.27H48.9Z"
+                            transform="translate(15.9)"
+                            fill="#00afdd"
+                            stroke="#fff"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="fw-bold text-secondary text-center px-2">
+                      completed course
+                    </div>
                     <div
-                      class="f-18 d-flex justify-content-between align-items-center"
+                      class="fw-bold text-white align-self-stretch text-center py-1 bg-primary"
                     >
-                      <p class="mb-0 course-type">
-                        <span class="d-block">Type</span>
-                        <span class="d-block">Online</span>
-                      </p>
-                      <div style="width: 4.5rem">
-                        <div class="progress mb-1">
-                          <div
-                            class="progress-bar"
-                            role="progressbar"
-                            style="width: 75%"
-                            aria-valuenow="75"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                        <p class="mb-0">Progress(75%)</p>
-                      </div>
+                      5
+                    </div>
+                  </div>
+                  <!-- single report  -->
+                  <div
+                    class="report mx-2 pt-3 d-flex align-items-center justify-content-between bg-white"
+                  >
+                    <div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="63.8"
+                        height="57.62"
+                        viewBox="0 0 63.8 57.62"
+                      >
+                        <g
+                          id="Icon_feather-book-open"
+                          data-name="Icon feather-book-open"
+                          transform="translate(-2 -3.5)"
+                        >
+                          <path
+                            id="Path_38"
+                            data-name="Path 38"
+                            d="M3,4.5H21.54A12.36,12.36,0,0,1,33.9,16.86V60.12a9.27,9.27,0,0,0-9.27-9.27H3Z"
+                            transform="translate(0)"
+                            fill="#00afdd"
+                            stroke="#fff"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          />
+                          <path
+                            id="Path_39"
+                            data-name="Path 39"
+                            d="M48.9,4.5H30.36A12.36,12.36,0,0,0,18,16.86V60.12a9.27,9.27,0,0,1,9.27-9.27H48.9Z"
+                            transform="translate(15.9)"
+                            fill="#00afdd"
+                            stroke="#fff"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="fw-bold text-secondary text-center px-2">
+                      completed course
+                    </div>
+                    <div
+                      class="fw-bold text-white align-self-stretch text-center py-1 bg-secondary"
+                    >
+                      5
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-6">
-              <h6 class="fw-bold text-secondary mb-1">Upcoming Course</h6>
-              <p class="f-18">Today is Monday 07 Mar 2022</p>
-              <div
-                class="upcoming-course-content radius-8 overflow-hidden d-flex align-items-center bg-white pe-3"
-              >
+              <div class="col-lg-4">
+                <h6 class="fw-bold text-secondary mb-3">
+                  Summary of quizes and exams
+                </h6>
+              </div>
+              <div class="col-lg-4">
+                <h6 class="fw-bold text-secondary mb-3">Certification</h6>
+                <!-- single certificate -->
                 <div
-                  class="upcoming-date bg-primary f-18 align-self-stretch px-3 py-3 text-white text-center"
+                  class="certificate radius-8 bg-white px-2 py-2 d-flex justify-content-between align-items-center mb-3"
                 >
-                  <span class="d-block">10</span>
-                  <span class="d-block">Mon</span>
-                </div>
-                <div class="upcoming-content ms-3">
-                  <p class="small text-secondary fw-bold mb-1">
+                  <p class="mb-0 fw-bold f-18 text-secondary">
                     Lorem ipsum dolor sit amet.
                   </p>
-                  <p class="f-18 mb-0">
-                    Thursday 10 Mar 2022, 9:00 am - 4:00 pm
-                  </p>
+                  <a
+                    href="#"
+                    class="d-flex align-items-center justify-content-center"
+                    ><i class="fa fa-download"></i
+                  ></a>
                 </div>
-                <div class="upcoming-status">
-                  <p class="fw-bold small mb-0 text-secondary">Online</p>
-                  <a href="#" class="f-18 d-block text-decoration-none"
-                    >More info ></a
-                  >
+                <!-- single certificate -->
+                <div
+                  class="certificate radius-8 bg-white px-2 py-2 d-flex justify-content-between align-items-center mb-3"
+                >
+                  <p class="mb-0 fw-bold f-18 text-secondary">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <a
+                    href="#"
+                    class="d-flex align-items-center justify-content-center"
+                    ><i class="fa fa-download"></i
+                  ></a>
+                </div>
+                <!-- single certificate -->
+                <div
+                  class="certificate radius-8 bg-white px-2 py-2 d-flex justify-content-between align-items-center"
+                >
+                  <p class="mb-0 fw-bold f-18 text-secondary">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <a
+                    href="#"
+                    class="d-flex align-items-center justify-content-center"
+                    ><i class="fa fa-download"></i
+                  ></a>
                 </div>
               </div>
-              <a
-                href="#"
-                class="fw-bold text-secondary small text-decoration-none float-end mt-3"
-                >Show all ></a
-              >
             </div>
-          </div>
-        </section>
+          </section>
+          <section class="section-course ps-5 pe-4 py-5">
+            <div class="row gx-5 gy-4">
+              <div class="col-lg-6">
+                <h6 class="fw-bold text-secondary mb-3">Ongoing course</h6>
+                <div class="row gy-3">
+                  <div class="col-lg-6">
+                    <div class="bg-white radius-8 p-3">
+                      <p class="fw-bold small mb-1" style="color: #00afdd">
+                        Lorem ipsum dolor sit amet.
+                      </p>
+                      <p class="f-18 mb-3">Lorem, ipsum dolor.</p>
+                      <div
+                        class="f-18 d-flex justify-content-between align-items-center"
+                      >
+                        <p class="mb-0 course-type">
+                          <span class="d-block">Type</span>
+                          <span class="d-block">Online</span>
+                        </p>
+                        <div style="width: 4.5rem">
+                          <div class="progress mb-1">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 75%"
+                              aria-valuenow="75"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <p class="mb-0">Progress(75%)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single course Ongoing -->
+                  <div class="col-lg-6">
+                    <div class="bg-white radius-8 p-3">
+                      <p class="fw-bold small mb-1" style="color: #00afdd">
+                        Lorem ipsum dolor sit amet.
+                      </p>
+                      <p class="f-18 mb-3">Lorem, ipsum dolor.</p>
+                      <div
+                        class="f-18 d-flex justify-content-between align-items-center"
+                      >
+                        <p class="mb-0 course-type">
+                          <span class="d-block">Type</span>
+                          <span class="d-block">Online</span>
+                        </p>
+                        <div style="width: 4.5rem">
+                          <div class="progress mb-1">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 75%"
+                              aria-valuenow="75"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <p class="mb-0">Progress(75%)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h6 class="fw-bold text-secondary mb-1">Upcoming Course</h6>
+                <p class="f-18">Today is Monday 07 Mar 2022</p>
+                <div
+                  class="upcoming-course-content radius-8 overflow-hidden d-sm-flex align-items-center bg-white pe-3"
+                >
+                  <div
+                    class="upcoming-date bg-primary f-18 align-self-stretch px-3 py-3 text-white text-center"
+                  >
+                    <span class="d-block">10</span>
+                    <span class="d-block">Mon</span>
+                  </div>
+                  <div class="upcoming-content ms-3">
+                    <p class="small text-secondary fw-bold mb-1">
+                      Lorem ipsum dolor sit amet.
+                    </p>
+                    <p class="f-18 mb-0">
+                      Thursday 10 Mar 2022, 9:00 am - 4:00 pm
+                    </p>
+                  </div>
+                  <div class="upcoming-status text-center">
+                    <p class="fw-bold small mb-0 text-secondary">Online</p>
+                    <a href="#" class="f-18 d-block text-decoration-none"
+                      >More info ></a
+                    >
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="fw-bold text-secondary small text-decoration-none float-end mt-3"
+                  >Show all ></a
+                >
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
   </body>

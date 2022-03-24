@@ -90,7 +90,8 @@ body {
 
 @media (max-width: 991.98px) {
   .header {
-    height: 3rem; }
+    height: 3rem;
+    margin-left: 3rem; }
 
   .header__noti {
     height: 2rem;
@@ -103,7 +104,8 @@ body {
 .report {
   flex-direction: column;
   border-radius: 0.8rem;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 15rem; }
   .report svg {
     height: 2.4rem; }
   .report div:nth-child(2) {
@@ -140,6 +142,31 @@ body {
   .upcoming-course-content .upcoming-status a:hover {
     color: #213e7b; }
 
+@media (max-width: 991.98px) {
+  .section-summary .reports {
+    justify-content: space-between; }
+    .section-summary .reports > * {
+      width: 25%; }
+    .section-summary .reports .report {
+      height: 18rem !important; }
+      .section-summary .reports .report div:nth-child(2) {
+        font-size: 1rem; } }
+@media (max-width: 767.98px) {
+  .reports > * {
+    width: 33% !important; }
+
+  .report {
+    height: 13rem; } }
+@media (max-width: 575.98px) {
+  .section-summary,
+  .section-course {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+  .reports > * {
+    width: 70% !important;
+    margin-left: 15% !important;
+    margin-bottom: 1.5rem; } }
 .radius-8 {
   border-radius: 0.8rem; }
 
@@ -163,19 +190,13 @@ body {
     top: 0.8rem; }
 
   main {
-    background-color: red;
-    width: 86%;
-    margin-left: 7%;
-    margin-right: 7%; }
-
-  .section-summary .reports {
-    justify-content: space-between;
-    height: 18rem !important; }
-    .section-summary .reports > * {
-      width: 33%; }
-    .section-summary .reports .report div:nth-child(2) {
-      font-size: 1rem; }
-
-  .nav-tabs button {
-    font-size: 80%;
-    padding: 0.5rem 1.5rem !important; } }
+    margin-left: 0; }
+    main .main-content {
+      width: 70%;
+      margin-left: 15%; } }
+@media (max-width: 625.98px) {
+  .upcoming-course-content {
+    display: block !important;
+    padding-right: 0 !important; }
+    .upcoming-course-content > * {
+      margin-bottom: 1.5rem; } }

@@ -124,22 +124,10 @@ body {
     top: 0.8rem; }
 
   main {
-    background-color: red;
-    width: 86%;
-    margin-left: 7%;
-    margin-right: 7%; }
-
-  .section-summary .reports {
-    justify-content: space-between;
-    height: 18rem !important; }
-    .section-summary .reports > * {
-      width: 33%; }
-    .section-summary .reports .report div:nth-child(2) {
-      font-size: 1rem; }
-
-  .nav-tabs button {
-    font-size: 80%;
-    padding: 0.5rem 1.5rem !important; } }
+    margin-left: 0; }
+    main .main-content {
+      width: 70%;
+      margin-left: 15%; } }
 .profile__img-container {
   position: relative;
   height: 9rem;
@@ -182,5 +170,19 @@ body {
   border-radius: 50%;
   color: #444;
   font-size: 1.25rem; }
+
+@media (max-width: 991.98px) {
+  .profile__img-container {
+    margin-left: 35%; } }
+@media (max-width: 767.98px) {
+  .profile__img-container {
+    margin-left: 30%;
+    height: 7rem;
+    width: 7rem; } }
+@media (max-width: 575.98px) {
+  .profile__img-container {
+    margin-left: 25%;
+    height: 6rem;
+    width: 6rem; } }
 
 /*# sourceMappingURL=profile.css.map */

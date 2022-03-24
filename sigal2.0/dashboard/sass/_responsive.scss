@@ -26,32 +26,11 @@
     top: 0.8rem;
   }
   main {
-    background-color: red;
-    width: 86%;
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-  .section-summary {
-    // width: 900px;
-    // margin-left: auto;
-    // margin-right: auto;
-    .reports {
-      justify-content: space-between;
-      height: 18rem !important;
-
-      & > * {
-        width: 33%;
-      }
-      .report {
-        div:nth-child(2) {
-          font-size: 1rem;
-        }
-      }
+    margin-left: 0;
+    .main-content {
+      width: 70%;
+      margin-left: 15%;
     }
-  }
-  .nav-tabs button {
-    font-size: 80%;
-    padding: 0.5rem 1.5rem !important;
   }
 }
 

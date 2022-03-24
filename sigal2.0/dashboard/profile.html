@@ -17,14 +17,24 @@
     <title>Sigal - dashboard</title>
   </head>
   <body>
-    <div id="body-container " class="d-flex">
+    <div id="body-container ">
       <aside
-        class="sidebar bg-secondary d-flex justify-content-between align-items-center py-4"
+        class="sidebar bg-secondary justify-content-between align-items-center py-4"
       >
-        <div></div>
-        <div>
+        <button class="text-white">&times;</button>
+        <div class="top-sidebar text-center mx-4">
+          <img
+            src="img/doctor.png"
+            alt=""
+            class="d-block mx-auto circle-rounded sidebar-img"
+          />
+          <h5 class="text-white my-2">
+            Hello <span style="color: #00afdd">Ammar</span>
+          </h5>
+        </div>
+        <div class="middle-sidebar">
           <!-- menu svg  -->
-          <a href="#" class="d-block py-3">
+          <a href="#" class="d-block p-3 text-decoration-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -40,9 +50,10 @@
                 stroke-width="2"
               />
             </svg>
+            Dashboard
           </a>
           <!-- menu svg  -->
-          <a href="#" class="d-block py-3">
+          <a href="#" class="d-block p-3 text-decoration-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -58,9 +69,10 @@
                 stroke-width="2"
               />
             </svg>
+            Profile
           </a>
           <!-- menu svg  -->
-          <a href="#" class="d-block py-3">
+          <a href="#" class="d-block p-3 text-decoration-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -76,9 +88,10 @@
                 stroke-width="2"
               />
             </svg>
+            Course
           </a>
           <!-- menu svg  -->
-          <a href="#" class="d-block py-3">
+          <a href="#" class="d-block p-3 text-decoration-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -94,9 +107,10 @@
                 stroke-width="2"
               />
             </svg>
+            Quizes and Exams
           </a>
           <!-- menu svg  -->
-          <a href="#" class="d-block py-3">
+          <a href="#" class="d-block p-3 text-decoration-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32.031"
@@ -112,68 +126,74 @@
                 stroke-width="2"
               />
             </svg>
+            Certification
           </a>
         </div>
-        <div>
-          <!-- menu svg  -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32.414"
-            height="32"
-            viewBox="0 0 32.414 32"
-          >
-            <g
-              id="Icon_ionic-md-log-out"
-              data-name="Icon ionic-md-log-out"
-              transform="translate(1 1)"
+        <div class="bottom-sidebar">
+          <a href="" class="d-block p-3 text-decoration-none">
+            <!-- menu svg  -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32.414"
+              height="32"
+              viewBox="0 0 32.414 32"
             >
-              <path
-                id="Path_29"
-                data-name="Path 29"
-                d="M13.5,19.5H26.838l-3.066,3.143,2.1,2.1L32.625,18l-6.75-6.75-2.18,2.1L26.838,16.5H13.5Z"
-                transform="translate(-2.625 -3)"
-                fill="none"
-                stroke-width="2"
-              />
-              <g id="Group_184" data-name="Group 184">
+              <g
+                id="Icon_ionic-md-log-out"
+                data-name="Icon ionic-md-log-out"
+                transform="translate(1 1)"
+              >
                 <path
-                  id="Path_30"
-                  data-name="Path 30"
-                  d="M18.418,30.3A11.921,11.921,0,1,1,26.856,9.93l2.195-2.185a15.992,15.992,0,0,0-2.006-1.673,15.006,15.006,0,1,0-.007,24.6A14.929,14.929,0,0,0,29.044,29L26.856,26.82A11.881,11.881,0,0,1,18.418,30.3Z"
-                  transform="translate(-3.375 -3.375)"
-                  fill="none"
-                  stroke-width="2"
-                />
-                <path
-                  id="Path_31"
-                  data-name="Path 31"
-                  d="M31.458,17.958h.084v.084h-.084Z"
+                  id="Path_29"
+                  data-name="Path 29"
+                  d="M13.5,19.5H26.838l-3.066,3.143,2.1,2.1L32.625,18l-6.75-6.75-2.18,2.1L26.838,16.5H13.5Z"
                   transform="translate(-2.625 -3)"
                   fill="none"
                   stroke-width="2"
                 />
+                <g id="Group_184" data-name="Group 184">
+                  <path
+                    id="Path_30"
+                    data-name="Path 30"
+                    d="M18.418,30.3A11.921,11.921,0,1,1,26.856,9.93l2.195-2.185a15.992,15.992,0,0,0-2.006-1.673,15.006,15.006,0,1,0-.007,24.6A14.929,14.929,0,0,0,29.044,29L26.856,26.82A11.881,11.881,0,0,1,18.418,30.3Z"
+                    transform="translate(-3.375 -3.375)"
+                    fill="none"
+                    stroke-width="2"
+                  />
+                  <path
+                    id="Path_31"
+                    data-name="Path 31"
+                    d="M31.458,17.958h.084v.084h-.084Z"
+                    transform="translate(-2.625 -3)"
+                    fill="none"
+                    stroke-width="2"
+                  />
+                </g>
               </g>
-            </g>
-          </svg>
+            </svg>
+            Logout
+          </a>
         </div>
       </aside>
+      <!-- Header start  -->
+      <header class="header d-flex align-items-center bg-white ps-5">
+        <div class="header__search d-flex align-items-center">
+          <i class="fa fa-search d-block me-2 mt-1"></i>
+          <input type="text" placeholder="search" />
+        </div>
+        <a href="" class="header__noti text-center"
+          ><i class="fa fa-bell"></i
+        ></a>
+        <a
+          href="#"
+          class="bg-secondary align-self-stretch px-3 text-decoration-none text-white text-center ms-4"
+        >
+          <span class="d-block"><i class="fa fa-home"></i></span>
+          Go home
+        </a>
+      </header>
+      <!-- header end  -->
       <main>
-        <header class="header d-flex align-items-center bg-white ps-5">
-          <div class="header__search d-flex align-items-center">
-            <i class="fa fa-search d-block me-2 mt-1"></i>
-            <input type="text" placeholder="search" />
-          </div>
-          <a href="" class="header__noti text-center"
-            ><i class="fa fa-bell"></i
-          ></a>
-          <a
-            href="#"
-            class="bg-secondary align-self-stretch px-3 text-decoration-none text-white text-center ms-4"
-          >
-            <span class="d-block"><i class="fa fa-home"></i></span>
-            Go home
-          </a>
-        </header>
         <section class="section-profile py-5 ps-5 pe-4">
           <div class="profile__img-container mb-5">
             <img

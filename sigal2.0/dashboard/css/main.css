@@ -27,6 +27,7 @@ body {
   border-bottom-right-radius: 0.8rem;
   position: fixed;
   white-space: nowrap;
+  z-index: 5;
   transition: width 0.4s; }
   .sidebar .top-sidebar {
     opacity: 0;
@@ -228,7 +229,13 @@ body {
     margin-left: 0; }
     main .main-content {
       width: 70%;
-      margin-left: 15%; } }
+      margin-left: 15%; }
+
+  .section-profile {
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
 .apexcharts-toolbar {
   display: none !important; }
 

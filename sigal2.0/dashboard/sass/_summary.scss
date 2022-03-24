@@ -3,6 +3,7 @@
   border-radius: 0.8rem;
   overflow: hidden;
   height: 15rem;
+  width: 30%;
   svg {
     height: 2.4rem;
   }
@@ -105,8 +106,6 @@
 @media (max-width: 991.98px) {
   .section-summary {
     .reports {
-      justify-content: space-between;
-
       & > * {
         width: 25%;
       }
@@ -122,7 +121,7 @@
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
   .reports > * {
-    width: 33% !important;
+    width: 30% !important;
   }
   .report {
     height: 13rem;

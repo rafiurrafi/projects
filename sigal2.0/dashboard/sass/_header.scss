@@ -23,19 +23,13 @@
     font-size: 1.56rem;
   }
 }
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {
-}
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-}
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
   .header {
     height: 3rem;
     margin-left: 3rem;
+    padding-left: 1rem !important;
   }
   .header__noti {
     height: 2rem;
@@ -46,17 +40,4 @@
     font-size: 1rem;
     line-height: 2rem;
   }
-}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-  // .section-summary {
-  //   width: 700px;
-  // }
-}
-// small devices
-@media (max-width: 575.98px) {
-  // .section-summary {
-  //   width: inherit;
-  // }
 }

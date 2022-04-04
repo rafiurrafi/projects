@@ -3,7 +3,6 @@
 @import "./aside";
 @import "./header";
 @import "./utils";
-@import "./responsive";
 .profile {
   &__img-container {
     position: relative;
@@ -67,6 +66,12 @@
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
+  .section-profile {
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
   .profile {
     &__img-container {
       margin-left: 35%;

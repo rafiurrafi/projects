@@ -18,6 +18,16 @@ body {
   cursor: pointer;
   display: none; }
 
+@media (max-width: 991.98px) {
+  .sidebar-open__btn {
+    display: block;
+    top: 0.8rem; }
+
+  main {
+    margin-left: 0; }
+    main .main-content {
+      width: 70%;
+      margin-left: 15%; } }
 .sidebar {
   position: relative;
   overflow: hidden;
@@ -73,6 +83,14 @@ body {
     border: none;
     display: none; }
 
+@media (max-width: 991.98px) {
+  .sidebar {
+    display: none !important; }
+    .sidebar.active {
+      display: block !important; }
+      .sidebar.active button {
+        display: block;
+        transform: scale(1.5); } }
 .header {
   height: 4rem;
   margin-left: 5rem; }
@@ -96,7 +114,8 @@ body {
 @media (max-width: 991.98px) {
   .header {
     height: 3rem;
-    margin-left: 3rem; }
+    margin-left: 3rem;
+    padding-left: 1rem !important; }
 
   .header__noti {
     height: 2rem;
@@ -209,33 +228,6 @@ body {
 .f-18 {
   font-size: 0.76rem; }
 
-@media (max-width: 991.98px) {
-  .sidebar {
-    display: none !important; }
-    .sidebar.active {
-      display: block !important; }
-      .sidebar.active button {
-        display: block;
-        transform: scale(1.5); }
-
-  .header {
-    padding-left: 1rem !important; }
-
-  .sidebar-open__btn {
-    display: block;
-    top: 0.8rem; }
-
-  main {
-    margin-left: 0; }
-    main .main-content {
-      width: 70%;
-      margin-left: 15%; }
-
-  .section-profile {
-    width: 90%;
-    margin-left: 5%;
-    padding-left: 0 !important;
-    padding-right: 0 !important; } }
 .apexcharts-toolbar {
   display: none !important; }
 

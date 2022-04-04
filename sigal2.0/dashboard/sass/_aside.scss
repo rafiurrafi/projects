@@ -69,3 +69,16 @@
     display: none;
   }
 }
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    display: none !important;
+    &.active {
+      display: block !important;
+      button {
+        display: block;
+        transform: scale(1.5);
+      }
+    }
+  }
+}

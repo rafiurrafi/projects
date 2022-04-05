@@ -1,15 +1,4 @@
-/*
- *    main.js
- *    Mastering Data Visualization with D3.js
- *    5.3 - Adding an update function
- */
-/*
- *    main.js
- *    Mastering Data Visualization with D3.js
- *    5.3 - Adding an update function
- */
-
-// create 2 data_set
+// create 4 data_set
 var data1 = [
   { name: "online", value: 4, color: "#00AFDD" },
   { name: "inperson", value: 11, color: "#166589" },
@@ -55,9 +44,6 @@ var x = d3
       return d.name;
     })
   );
-// .padding(0.2)
-// .align(0.5);
-// .paddingOuter(1);
 svg
   .append("g")
   .attr("class", "x-axis")
@@ -67,12 +53,6 @@ svg
 // Add Y axis
 var y = d3.scaleLinear().domain([0, 12]).range([height, 0]);
 svg.append("g").attr("class", "myYaxis ").call(d3.axisLeft(y).ticks(6));
-// svg.append("g").attr("class", "myYaxis ").call(y);
-
-// xtra start
-// yGridLine.tickValues([2, 4, 6, 8, 10, 12]);
-
-// var ordinalColorScale = d3.scale.category20();
 
 var yGridLine = d3.axisLeft(y).ticks(6).tickSize(-width, 0, 0).tickFormat("");
 svg
@@ -81,8 +61,6 @@ svg
   .attr("transform", "translate(0,0)")
   .call(yGridLine)
   .style("stroke-dasharray", "28 18");
-
-// xtra end
 
 // A function that create / update the plot for a given variable:
 function update(data) {

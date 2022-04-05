@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="css/visualization.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Sigal - dashboard</title>
   </head>
@@ -315,12 +316,34 @@
                 <h6 class="fw-bold text-secondary mb-3">
                   Summary of quizes and exams
                 </h6>
-                <div id="chart"></div>
-                <div class="chart-btns d-flex justify-content-between">
-                  <div class="btn btn-outline-secondary active fw-bold">1d</div>
-                  <div class="btn btn-outline-secondary fw-bold">7d</div>
-                  <div class="btn btn-outline-secondary fw-bold">1m</div>
-                  <div class="btn btn-outline-secondary fw-bold">1y</div>
+                <!-- <div id="chart"></div> -->
+                <!-- vis  -->
+                <div id="my_dataviz"></div>
+                <div class="chart-btns d-flex justify-content-between mt-4">
+                  <div
+                    onclick="update(data1)"
+                    class="btn btn-outline-secondary active fw-bold"
+                  >
+                    1d
+                  </div>
+                  <div
+                    onclick="update(data2)"
+                    class="btn btn-outline-secondary fw-bold"
+                  >
+                    7d
+                  </div>
+                  <div
+                    onclick="update(data3)"
+                    class="btn btn-outline-secondary fw-bold"
+                  >
+                    1m
+                  </div>
+                  <div
+                    onclick="update(data4)"
+                    class="btn btn-outline-secondary fw-bold"
+                  >
+                    1y
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4">
@@ -607,7 +630,10 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="js/chart.js"></script>
+    <!-- <script src="js/chart.js"></script> -->
     <script src="js/main.js"></script>
+    <!-- External JS libraries -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/visualization.js"></script>
   </body>
 </html>

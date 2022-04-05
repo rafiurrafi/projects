@@ -1,0 +1,18 @@
+.myYaxis > path {
+  /* opacity: 0; */
+}
+
+.tick line {
+  opacity: 0.2;
+  /* stroke-dasharray: 35, 20; */
+}
+.tick text {
+  font-weight: 700;
+  color: #c6c6c6;
+  font-size: 0.9rem;
+}
+.domain,
+.x-axis .tick line,
+.myYaxis .tick line {
+  stroke: transparent;
+}

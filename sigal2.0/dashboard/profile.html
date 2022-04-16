@@ -406,6 +406,24 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script></script>
+    <script>
+      const resetBtn = document.querySelector("#reset-btn");
+      const saveBtn = document.querySelector("#reset-save");
+      const cancelBtn = document.querySelector("#reset-cancel");
+      const resetSection = document.querySelector(".reset__section");
+      resetBtn.addEventListener("click", (e) => {
+        resetSection.style.display = "block";
+        hideButton();
+      });
+      saveBtn.addEventListener("click", showButton);
+      cancelBtn.addEventListener("click", showButton);
+      function hideButton() {
+        resetBtn.style.display = "none";
+      }
+      function showButton() {
+        resetBtn.style.display = "block";
+        resetSection.style.display = "none";
+      }
+    </script>
   </body>
 </html>

@@ -275,8 +275,16 @@ svg {
   font-weight: 600;
   font-size: 0.935rem;
   color: #166589; }
+  .header .nav-link img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%; }
   .header .nav-link:hover {
     color: #00afdd; }
+@media (max-width: 991px) {
+  .header .nav-link.mx-3 {
+    margin-left: 0 !important;
+    margin-right: 0 !important; } }
 
 .section-hero {
   height: 60vh;

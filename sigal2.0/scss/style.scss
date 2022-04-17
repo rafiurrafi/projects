@@ -153,8 +153,19 @@ svg {
     font-weight: 600;
     font-size: 0.935rem;
     color: $color-primary-dark;
+    img {
+      height: 2rem;
+      width: 2rem;
+      border-radius: 50%;
+    }
     &:hover {
       color: $color-primary;
+    }
+  }
+  @media (max-width: 991px) {
+    .nav-link.mx-3 {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
     }
   }
 }

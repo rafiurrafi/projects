@@ -831,3 +831,35 @@ svg {
     // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
   }
 }
+.download-item {
+  align-items: center;
+  gap: 1rem;
+  p {
+    background-color: #f6f6f6;
+    flex: 0 0 85%;
+  }
+  button {
+    flex: 1;
+  }
+  svg {
+    height: 1.14rem;
+    width: 1.14rem;
+  }
+}
+.review {
+  gap: 1rem;
+  &__number {
+    flex: 0 0 25%;
+  }
+  &__progress {
+    flex: 1;
+  }
+  &__star {
+    flex: 0 0 25%;
+  }
+}
+@media (max-width: 767px) {
+  .download-item {
+    gap: 0.5rem;
+  }
+}

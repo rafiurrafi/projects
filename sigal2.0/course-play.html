@@ -66,7 +66,11 @@
       <!-- video section start  -->
       <div class="video-section">
         <div class="video-container">
-          <video src="videos/1.mp4" poster="videos/video-thumb.svg"></video>
+          <video
+            src="videos/1.mp4"
+            controls
+            poster="videos/video-thumb.svg"
+          ></video>
         </div>
         <div class="video-list py-3">
           <h3 class="video-section-title px-3">Course Content</h3>
@@ -98,15 +102,21 @@
               >
                 <div class="accordion-body">
                   <div class="single-video px-4 py-2 active">
-                    <h6 class="mb-0">01. Lorem ipsum dolor sit.</h6>
+                    <h6 class="mb-0" src="videos/1.mp4">
+                      01. Lorem ipsum dolor sit.
+                    </h6>
                     <p class="mb-0 font-small">16:19 min</p>
                   </div>
                   <div class="single-video px-4 py-2">
-                    <h6 class="mb-0">01. Lorem ipsum dolor sit.</h6>
+                    <h6 class="mb-0" src="videos/2.mp4">
+                      01. Lorem ipsum dolor sit.
+                    </h6>
                     <p class="mb-0 font-small">16:19 min</p>
                   </div>
                   <div class="single-video px-4 py-2">
-                    <h6 class="mb-0">01. Lorem ipsum dolor sit.</h6>
+                    <h6 class="mb-0" src="videos/3.mp4">
+                      01. Lorem ipsum dolor sit.
+                    </h6>
                     <p class="mb-0 font-small">16:19 min</p>
                   </div>
                 </div>
@@ -133,15 +143,21 @@
               >
                 <div class="accordion-body">
                   <div class="single-video px-4 py-2">
-                    <h6 class="mb-0">01. Lorem ipsum dolor sit.</h6>
+                    <h6 class="mb-0" src="videos/1.mp4">
+                      01. Lorem ipsum dolor sit.
+                    </h6>
                     <p class="mb-0 font-small">16:19 min</p>
                   </div>
                   <div class="single-video px-4 py-2">
-                    <h6 class="mb-0">01. Lorem ipsum dolor sit.</h6>
+                    <h6 class="mb-0" src="videos/2.mp4">
+                      01. Lorem ipsum dolor sit.
+                    </h6>
                     <p class="mb-0 font-small">16:19 min</p>
                   </div>
                   <div class="single-video px-4 py-2">
-                    <h6 class="mb-0">01. Lorem ipsum dolor sit.</h6>
+                    <h6 class="mb-0" src="videos/3.mp4">
+                      01. Lorem ipsum dolor sit.
+                    </h6>
                     <p class="mb-0 font-small">16:19 min</p>
                   </div>
                 </div>
@@ -168,15 +184,21 @@
               >
                 <div class="accordion-body">
                   <div class="single-video px-4 py-2 active">
-                    <h6 class="mb-0">01. Lorem ipsum dolor sit.</h6>
+                    <h6 class="mb-0" src="videos/1.mp4">
+                      01. Lorem ipsum dolor sit.
+                    </h6>
                     <p class="mb-0 font-small">16:19 min</p>
                   </div>
                   <div class="single-video px-4 py-2">
-                    <h6 class="mb-0">01. Lorem ipsum dolor sit.</h6>
+                    <h6 class="mb-0" src="videos/2.mp4">
+                      01. Lorem ipsum dolor sit.
+                    </h6>
                     <p class="mb-0 font-small">16:19 min</p>
                   </div>
                   <div class="single-video px-4 py-2">
-                    <h6 class="mb-0">01. Lorem ipsum dolor sit.</h6>
+                    <h6 class="mb-0" src="videos/3.mp4">
+                      01. Lorem ipsum dolor sit.
+                    </h6>
                     <p class="mb-0 font-small">16:19 min</p>
                   </div>
                 </div>
@@ -255,5 +277,18 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const mainVideo = document.querySelector(".video-container video");
+      const videoLists = document.querySelectorAll(".single-video");
+
+      videoLists.forEach((video) => {
+        video.addEventListener("click", function () {
+          videoLists.forEach((item) => item.classList.remove("active"));
+          video.classList.add("active");
+          mainVideo.src = video.children[0].getAttribute("src");
+          mainVideo.play();
+        });
+      });
+    </script>
   </body>
 </html>

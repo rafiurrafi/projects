@@ -801,7 +801,17 @@ svg {
 }
 .video-list {
   height: 80vh;
-  overflow-y: scroll;
+  overflow: hidden;
+  transition: overflow 0.3s;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  &:hover {
+    overflow-y: scroll;
+  }
+  .accordion {
+    height: 80vh;
+  }
   .accordion-header {
     .accordion-button {
       border: none !important;
@@ -815,7 +825,19 @@ svg {
         background-color: #f6f6f6 !important;
       }
     }
-    .accordion-button:not(.collapsed) {
+  }
+
+  .accordion-body {
+    padding: 1rem 0 !important;
+  }
+  .single-video {
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background-color: #eee;
+    }
+    &.active {
+      background-color: #ddd;
     }
   }
 }

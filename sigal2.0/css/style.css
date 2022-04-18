@@ -703,7 +703,14 @@ svg {
 
 .video-list {
   height: 80vh;
-  overflow-y: scroll; }
+  overflow: hidden;
+  transition: overflow 0.3s; }
+  .video-list::-webkit-scrollbar {
+    width: 0px; }
+  .video-list:hover {
+    overflow-y: scroll; }
+  .video-list .accordion {
+    height: 80vh; }
   .video-list .accordion-header .accordion-button {
     border: none !important;
     box-shadow: none;
@@ -713,3 +720,12 @@ svg {
       box-shadow: none; }
     .video-list .accordion-header .accordion-button.collapsed {
       background-color: #f6f6f6 !important; }
+  .video-list .accordion-body {
+    padding: 1rem 0 !important; }
+  .video-list .single-video {
+    cursor: pointer;
+    transition: 0.3s; }
+    .video-list .single-video:hover {
+      background-color: #eee; }
+    .video-list .single-video.active {
+      background-color: #ddd; }

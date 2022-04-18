@@ -729,3 +729,19 @@ svg {
       background-color: #eee; }
     .video-list .single-video.active {
       background-color: #ddd; }
+
+.course-play-main .section-course-details .nav.nav-pills {
+  position: relative;
+  z-index: 3;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0.7rem; }
+.course-play-main .section-course-details .nav-link {
+  padding: 0.5rem 0 !important;
+  text-align: center;
+  display: block;
+  color: #166589;
+  font-size: 0.9rem; }
+  .course-play-main .section-course-details .nav-link.active {
+    background-color: #166589;
+    color: white; }

@@ -18,3 +18,23 @@
 .color-gray-1 {
   color: #f6f6f6;
 }
+@mixin tab-button($width) {
+  .nav.nav-pills {
+    position: relative;
+    z-index: 3;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax($width, 1fr));
+    grid-gap: 0.7rem;
+  }
+  .nav-link {
+    padding: 0.5rem 0 !important;
+    text-align: center;
+    display: block;
+    color: $color-primary-dark;
+    font-size: 0.9rem;
+    &.active {
+      background-color: $color-primary-dark;
+      color: white;
+    }
+  }
+}

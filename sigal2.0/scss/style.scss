@@ -644,24 +644,7 @@ svg {
     // position: relative;
     // z-index: 1;
     .section-course-details {
-      .nav.nav-pills {
-        position: relative;
-        z-index: 3;
-        display: grid !important;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-gap: 0.7rem;
-      }
-      .nav-link {
-        padding: 0.5rem 0 !important;
-        text-align: center;
-        display: block;
-        color: $color-primary-dark;
-        font-size: 0.9rem;
-        &.active {
-          background-color: $color-primary-dark;
-          color: white;
-        }
-      }
+      @include tab-button(150px);
     }
     .course-details__content {
       min-height: 60vh;
@@ -839,5 +822,11 @@ svg {
     &.active {
       background-color: #ddd;
     }
+  }
+}
+.course-play-main {
+  .section-course-details {
+    @include tab-button(200px);
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
   }
 }

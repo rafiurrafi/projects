@@ -156,6 +156,9 @@
 .font-30 {
   font-size: 1.3rem; }
 
+.font-40 {
+  font-size: 1.7rem; }
+
 .radius-8 {
   border-radius: 0.8rem; }
 
@@ -253,7 +256,8 @@
     font-size: 0.85rem; }
 
 body {
-  color: #444; }
+  color: #444;
+  font-family: "Raleway", sans-serif; }
 
 svg {
   height: 2rem;

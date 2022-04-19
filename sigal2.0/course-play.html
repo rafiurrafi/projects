@@ -272,7 +272,7 @@
           <div class="tab-content" id="pills-tabContent">
             <!-- First tab start  -->
             <div
-              class="tab-pane fade show active"
+              class="tab-pane fade "
               id="pills-goal"
               role="tabpanel"
               aria-labelledby="pills-goal-tab"
@@ -342,18 +342,19 @@
             </div>
             <!-- Third tab start  -->
             <div
-              class="tab-pane fade"
+              class="tab-pane fade show active"
               id="pills-learning"
               role="tabpanel"
               aria-labelledby="pills-learning-tab"
             >
               <div class="course-details__content bg-white p-4 rounded">
                 <h3 class="font-40 fw-bold mb-3">Review</h3>
-                <div class="review d-flex">
+                <div class="review d-lg-flex align-items-start">
                   <!-- start of review numbner  -->
-                  <div class="review__number">
-                    <h3>4.5</h3>
-                   <div>
+                  <div class="review__number mb-4">
+                    <h3 class="text-secondary fw-bold mb-0">4.5</h3>
+                    <!-- stars  -->
+                   <div class="star-26">
                     <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
                       <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
                     </svg>
@@ -374,13 +375,173 @@
                   </div>
                   <!-- start of review progress  -->
                   <div class="review__progress">
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    <!-- single review progress  -->
+                    <div class="review__progress-single justify-content-between d-flex  align-items-center">
+                      <div class="review__progress-container me-3">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="review__rating d-flex">
+                        <div class="review__rating-star star-26 d-none d-md-block me-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg>
+                        </div>
+                        <div class="review__rating-percent">55%</div>
+                      </div>
+                    </div>
+                    <!-- single review progress  -->
+                    <div class="review__progress-single justify-content-between d-flex align-items-center">
+                      <div class="review__progress-container me-3">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="review__rating d-flex">
+                        <!-- star  -->
+                        <div class="review__rating-star star-26 d-none d-md-block me-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg>
+                        </div>
+                        <div class="review__rating-percent">55%</div>
+                      </div>
+                    </div>
+                    <!-- single review progress  -->
+                    <div class="review__progress-single justify-content-between d-flex align-items-center">
+                      <div class="review__progress-container me-3">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="review__rating d-flex">
+                        <!-- star  -->
+                        <div class="review__rating-star star-26 d-none d-md-block me-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg>
+                        </div>
+                        <div class="review__rating-percent">55%</div>
+                      </div>
+                    </div>
+                    <!-- single review progress  -->
+                    <div class="review__progress-single justify-content-between d-flex align-items-center">
+                      <div class="review__progress-container me-3">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="review__rating d-flex">
+                        <!-- star  -->
+                        <div class="review__rating-star star-26 d-none d-md-block me-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg>
+                        </div>
+                        <div class="review__rating-percent">55%</div>
+                      </div>
+                    </div>
+                    <!-- single review progress  -->
+                    <div class="review__progress-single justify-content-between d-flex align-items-center">
+                      <div class="review__progress-container me-3">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 3%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                      <div class="review__rating d-flex">
+                        <!-- star  -->
+                        <div class="review__rating-star star-26 d-none d-md-block me-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg>
+                        </div>
+                        <div class="review__rating-percent">55%</div>
+                      </div>
                     </div>
                   </div>
                   <!-- start of review star  -->
-                  <div class="review__star"></div>
                 </div>
+                <!-- start of comment section  -->
+                <h3 class="font-40 fw-bold mt-5 mb-3">Reviews</h3>
+                <div class="review__search-section d-md-flex">
+                  <div class="review__search d-flex">
+                    <input type="text" class="form-control" placeholder="Search Reviews">
+                    <button class="btn bg-gray"><i class="fa fa-search"></i></button>
+                  </div>
+                  <select class="review__select px-2"><option value="">All Ratings</option></select>
+                </div>
+              <div class="single-review">
+                <div class="review__header d-flex">
+                  <div class="review__img bg-secondary me-3 d-flex align-items-center justify-content-center">
+                    <div class=" text-white">MN</div>
+                  </div>
+                  <div class="review__title">
+                    <h4 class="fw-bold text-secondary mb-0" style="font-size: 1.19rem;">Shadat Ali</h4>
+                    <div class="review__meta d-flex">
+                         <!-- star  -->
+                        <div class="review__rating-star star-26 d-none d-md-block me-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg> <svg xmlns="http://www.w3.org/2000/svg" width="27.921" height="26.725" viewBox="0 0 27.921 26.725">
+                            <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M13.9.929,10.5,7.839,2.871,8.95a1.671,1.671,0,0,0-.924,2.85l5.516,5.376-1.3,7.594a1.669,1.669,0,0,0,2.422,1.759L15.4,22.943l6.821,3.585a1.67,1.67,0,0,0,2.422-1.759l-1.3-7.594L28.856,11.8a1.671,1.671,0,0,0-.924-2.85L20.307,7.839,16.9.929a1.671,1.671,0,0,0-3,0Z" transform="translate(-1.441 0.001)" fill="#213e7b"/>
+                          </svg>
+                      </div>
+                      <p class="mb-0">2 days ago</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review__body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac lacus placerat, imperdiet lorem eget, euismod lectus. Nam eu massa a lorem finibus accumsan eu eleifend mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </div>
+              </div>
+              <div class="review__border w-75 my-5"></div>
             </div>
             <!-- Forth tab start  -->
             <div

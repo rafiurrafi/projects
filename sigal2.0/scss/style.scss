@@ -841,25 +841,76 @@ svg {
   button {
     flex: 1;
   }
-  svg {
-    height: 1.14rem;
-    width: 1.14rem;
-  }
 }
 .review {
   gap: 1rem;
+
   &__number {
-    flex: 0 0 25%;
+    flex: 0 0 10%;
+    h3 {
+      font-size: 5rem;
+      margin-top: -1.3rem;
+    }
   }
   &__progress {
     flex: 1;
+    &-container {
+      flex: 0 0 70%;
+      @media (max-width: 767px) {
+        flex: 0 0 90%;
+      }
+    }
+    .progress {
+      height: 0.8rem;
+      &-bar {
+        background-color: #8d8d8d;
+      }
+    }
   }
   &__star {
     flex: 0 0 25%;
+  }
+
+  &__search {
+    flex: 0 0 70%;
+    &-section {
+      gap: 1rem;
+    }
+    .form-control,
+    .btn {
+      border-radius: 0;
+      &:focus {
+        box-shadow: 0;
+      }
+    }
+  }
+  &__select {
+    flex: 1;
+    border-color: #ced4da;
+  }
+  &__img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+  }
+  &__body {
+    margin-left: 5rem;
+  }
+  &__border {
+    height: 1px;
+    background-color: #ddd;
+    margin-left: 12.5%;
   }
 }
 @media (max-width: 767px) {
   .download-item {
     gap: 0.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .review__body {
+    margin-top: 0.6rem;
+    margin-left: 0rem;
   }
 }

@@ -171,6 +171,10 @@
 .color-gray-1 {
   color: #f6f6f6; }
 
+.star-26 svg {
+  height: 1.14rem;
+  width: 1.14rem; }
+
 .card {
   position: relative;
   border-radius: 10px 10px 0 0;
@@ -758,19 +762,55 @@ svg {
     flex: 0 0 85%; }
   .download-item button {
     flex: 1; }
-  .download-item svg {
-    height: 1.14rem;
-    width: 1.14rem; }
 
 .review {
   gap: 1rem; }
   .review__number {
-    flex: 0 0 25%; }
+    flex: 0 0 10%; }
+    .review__number h3 {
+      font-size: 5rem;
+      margin-top: -1.3rem; }
   .review__progress {
     flex: 1; }
+    .review__progress-container {
+      flex: 0 0 70%; }
+      @media (max-width: 767px) {
+        .review__progress-container {
+          flex: 0 0 90%; } }
+    .review__progress .progress {
+      height: 0.8rem; }
+      .review__progress .progress-bar {
+        background-color: #8d8d8d; }
   .review__star {
     flex: 0 0 25%; }
+  .review__search {
+    flex: 0 0 70%; }
+    .review__search-section {
+      gap: 1rem; }
+    .review__search .form-control,
+    .review__search .btn {
+      border-radius: 0; }
+      .review__search .form-control:focus,
+      .review__search .btn:focus {
+        box-shadow: 0; }
+  .review__select {
+    flex: 1;
+    border-color: #ced4da; }
+  .review__img {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%; }
+  .review__body {
+    margin-left: 5rem; }
+  .review__border {
+    height: 1px;
+    background-color: #ddd;
+    margin-left: 12.5%; }
 
 @media (max-width: 767px) {
   .download-item {
     gap: 0.5rem; } }
+@media (max-width: 575px) {
+  .review__body {
+    margin-top: 0.6rem;
+    margin-left: 0rem; } }

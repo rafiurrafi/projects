@@ -807,9 +807,31 @@ svg {
     background-color: #ddd;
     margin-left: 12.5%; }
 
+.note__form {
+  flex: 1; }
+  .note__form-header {
+    border: 1px solid #ced4da;
+    border-bottom: none; }
+    .note__form-header select {
+      border: none; }
+      .note__form-header select:focus {
+        outline: none; }
+    .note__form-header button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer; }
+  .note__form .form-control {
+    border-radius: 0; }
+
 @media (max-width: 767px) {
+  .video-section {
+    display: block; }
+
   .download-item {
-    gap: 0.5rem; } }
+    gap: 0.5rem; }
+
+  .note__form-header button {
+    margin-top: 0.75rem; } }
 @media (max-width: 575px) {
   .review__body {
     margin-top: 0.6rem;

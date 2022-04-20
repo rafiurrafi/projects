@@ -902,9 +902,36 @@ svg {
     margin-left: 12.5%;
   }
 }
+.note__form {
+  flex: 1;
+  &-header {
+    border: 1px solid #ced4da;
+    border-bottom: none;
+    select {
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .form-control {
+    border-radius: 0;
+  }
+}
 @media (max-width: 767px) {
+  .video-section {
+    display: block;
+  }
   .download-item {
     gap: 0.5rem;
+  }
+  .note__form-header button {
+    margin-top: 0.75rem;
   }
 }
 

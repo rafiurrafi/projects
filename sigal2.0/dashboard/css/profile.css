@@ -184,6 +184,13 @@ body {
   .reset__form input:focus {
     outline: none; }
 
+.profile-edit-form input {
+  flex: 0 0 40%;
+  background-color: #eeeeee;
+  color: #8d8d8d;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem; }
+
 @media (max-width: 991.98px) {
   .section-profile {
     width: 90%;

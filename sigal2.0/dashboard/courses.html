@@ -271,17 +271,22 @@
                   <div>Date <img src="img/Arrows.svg" alt="" /></div>
                   <div>Time <img src="img/Arrows.svg" alt="" /></div>
                   <div>Status <img src="img/Arrows.svg" alt="" /></div>
-                  <div style="opacity: 0">Details</div>
+                  <div style="color: #f6f6f6">
+                    Details <img src="img/Arrows.svg" alt="" />
+                  </div>
                 </div>
               </div>
               <div class="dash-tables dash-tables--online">
                 <!-- single table  -->
                 <div class="dash-table bg-white small radius-8 mb-3">
-                  <div class="dash-table__content p-3">
+                  <div class="dash-table__content">
                     <div
-                      class="dash-table__body d-flex justify-content-between"
+                      class="dash-table__body d-flex justify-content-between align-items-center"
                     >
-                      <div data-label="Title">1. Lorem ipsum dolor...</div>
+                      <div data-label="Title" class="py-1">
+                        <img src="img/course/course-1.svg" alt="" /> 1. Lorem
+                        ipsum dolor...
+                      </div>
                       <div data-label="Location">Zoom</div>
                       <div data-label="Date">8 May, 2022</div>
                       <div data-label="Time">3:00 pm</div>
@@ -1109,7 +1114,13 @@
         dashTableDetails.slideToggle("slow");
       });
 
-      // pagination
+      // const tableActions = document.querySelectorAll(".table-action");
+      // tableActions.forEach((action) => {
+      //   const height = action.clientHeight;
+      //   action.style.height = height + "px";
+      //   action.style.lineHeight = height + "px";
+      //   action.style.verticalAlign = "middle";
+      // });
     </script>
     <script src="js/paginate.js"></script>
   </body>

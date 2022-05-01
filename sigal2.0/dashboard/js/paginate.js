@@ -15,7 +15,7 @@ const itemsHybrid = document.querySelectorAll("#hybrid .dash-table");
 const paginationContainerHybrid = document.querySelector(".pagination--hybrid");
 
 let current_page = 1;
-let rows = 1;
+let rows = 4;
 
 function displayList(items, wrapper, rowsPerPage, page) {
   wrapper.innerHTML = "";

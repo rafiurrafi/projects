@@ -1,5 +1,5 @@
 const itemContainer = document.querySelector(".dash-tables--online");
-const items = document.querySelectorAll("#online .dash-table");
+const items = document.querySelectorAll("#online .dash-table-container");
 const paginationContainer = document.querySelector(".pagination--online");
 
 // inperson

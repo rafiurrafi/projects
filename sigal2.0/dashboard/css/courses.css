@@ -176,7 +176,26 @@ body {
 .dash-table__head {
   flex: 0 0 90%; }
 
-@media (max-width: 767.98px) {
+.table-action {
+  margin-top: 1rem;
+  width: 90%;
+  margin-left: 5px;
+  text-align: center;
+  font-size: .7rem; }
+  .table-action.active button {
+    background-color: #213E7B !important; }
+  .table-action button {
+    width: 100%;
+    background-color: #8D8D8D;
+    color: white;
+    border: none;
+    padding: 5px 0;
+    border-radius: .5rem; }
+
+@media (max-width: 991px) {
+  .dash-table__content {
+    padding-left: 1rem;
+    padding-right: 1rem; }
   .dash-table__body {
     display: block !important; }
   .dash-table__body {
@@ -185,7 +204,20 @@ body {
       text-align: right; }
     .dash-table__body div::before {
       content: attr(data-label);
-      float: left; } }
+      float: left; }
+
+  .table-action {
+    text-align: right !important;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .table-action button {
+      width: 100px;
+      font-weight: bold; }
+    .table-action::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold; } }
 .nav-tabs {
   border: none; }
 

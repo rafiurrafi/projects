@@ -15,9 +15,9 @@
     color: #12516e; }
 
 .link-secondary {
-  color: #6c757d; }
+  color: #213e7b; }
   .link-secondary:hover, .link-secondary:focus {
-    color: #565e64; }
+    color: #1a3262; }
 
 .link-success {
   color: #198754; }
@@ -320,7 +320,7 @@
   border-color: #166589 !important; }
 
 .border-secondary {
-  border-color: #6c757d !important; }
+  border-color: #213e7b !important; }
 
 .border-success {
   border-color: #198754 !important; }
@@ -949,7 +949,7 @@
   color: #166589 !important; }
 
 .text-secondary {
-  color: #6c757d !important; }
+  color: #213e7b !important; }
 
 .text-success {
   color: #198754 !important; }
@@ -991,7 +991,7 @@
   background-color: #166589 !important; }
 
 .bg-secondary {
-  background-color: #6c757d !important; }
+  background-color: #213e7b !important; }
 
 .bg-success {
   background-color: #198754 !important; }

@@ -266,7 +266,7 @@
                 <!-- extra layer  -->
                 <div class="table-head-container d-flex">
                   <div
-                    class="dash-table__head d-none small d-md-flex justify-content-between"
+                    class="dash-table__head d-none small d-lg-flex justify-content-between"
                   >
                     <div>Title <img src="img/Arrows.svg" alt="" /></div>
                     <div>Location <img src="img/Arrows.svg" alt="" /></div>
@@ -274,25 +274,25 @@
                     <div>Time <img src="img/Arrows.svg" alt="" /></div>
                     <div>Status <img src="img/Arrows.svg" alt="" /></div>
                     <div style="color: #f6f6f6">
-                      Details <img src="img/Arrows.svg" alt="" />
+                      Details <img style="opacity: 0;" src="img/Arrows.svg" alt="" />
                     </div>
                   </div>
                   <!-- end of table head  -->
-                  <div class="text-center" style="flex: 0 0 10%">
-                    Status <img src="img/Arrows.svg" alt="" />
+                  <div class="text-center d-none d-lg-block small fw-bold" style="flex: 0 0 10%; color: #afadad;">
+                    Action <img src="img/Arrows.svg" style=" height: 0.75rem;" alt="" />
                   </div>
                 </div>
               </div>
               <div class="dash-tables dash-tables--online">
                 <!-- single table  -->
-                <div class="dash-table-container py-3 d-flex">
+                <div class="dash-table-container py-3 d-lg-flex">
                   <div class="dash-table bg-white small radius-8 mb-3">
                     <div class="dash-table__content">
                       <div
                         class="dash-table__body d-flex justify-content-between align-items-center"
                       >
                         <div data-label="Title" class="py-1">
-                          <img src="img/course/course-1.svg" alt="" /> 1. Lorem
+                          <img src="img/course/course-1.svg" alt="" class="d-none d-lg-inline" /> 1. Lorem
                           ipsum dolor...
                         </div>
                         <div data-label="Location">Zoom</div>
@@ -351,7 +351,7 @@
                     </div>
                   </div>
                   <!-- end of white bg -->
-                  <div class="button btn btn-sm">Course</div>
+                  <div data-label="Location" class="table-action align-self-start  ps-1"><button>Get Certificate</button></div>
                 </div>
                 <!-- single table  -->
 

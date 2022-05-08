@@ -71,6 +71,19 @@
   }
 }
 
+.section-certification{
+  .dash-table{
+    
+    &__head,
+    &__body {
+      div:first-of-type,div:nth-child(2) {
+        flex: 0 0 23%;
+        text-align: center;
+      }
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .dash-table {
     &__content{
@@ -104,6 +117,17 @@
       content: attr(data-label);
       float: left;
       font-weight: bold;
+    }
+  }
+  .section-certification{
+    .dash-table{
+      
+      &__head,
+      &__body {
+        div:first-of-type,div:nth-child(2) {
+          text-align: right;
+        }
+      }
     }
   }
 }

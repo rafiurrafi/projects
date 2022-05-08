@@ -4,18 +4,20 @@ const paginationContainer = document.querySelector(".pagination--online");
 
 // inperson
 const itemPersonContainer = document.querySelector(".dash-tables--person");
-const itemsPerson = document.querySelectorAll("#inperson .dash-table");
+const itemsPerson = document.querySelectorAll(
+  "#inperson .dash-table-container"
+);
 const paginationContainerPerson = document.querySelector(
   ".pagination--inperson"
 );
 
 //hybrid
 const itemContainerHybrid = document.querySelector(".dash-tables--hybrid");
-const itemsHybrid = document.querySelectorAll("#hybrid .dash-table");
+const itemsHybrid = document.querySelectorAll("#hybrid .dash-table-container");
 const paginationContainerHybrid = document.querySelector(".pagination--hybrid");
 
 let current_page = 1;
-let rows = 4;
+let rows = 2;
 
 function displayList(items, wrapper, rowsPerPage, page) {
   wrapper.innerHTML = "";

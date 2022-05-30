@@ -1,0 +1,25 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  .card {
+    background-color: $color-white;
+    border-radius: 2rem;
+    &__content {
+      border: 1px solid red;
+      border-radius: 2.5rem;
+      padding: 1rem;
+      margin: 1rem;
+
+      display: flex;
+    }
+    &__img {
+      flex: 1;
+      width: 100%;
+      height: auto;
+    }
+    &__text {
+      flex: 0 0 60%;
+    }
+  }
+}

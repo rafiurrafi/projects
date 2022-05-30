@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Masterkey - first project demo</title>
   </head>
@@ -228,6 +238,7 @@
       <div class="container">
         <div class="slider-title">Title</div>
         <div class="cards">
+          <!-- single card  -->
           <div class="card">
             <div class="card__content">
               <img src="" alt="" class="card__img" />
@@ -240,6 +251,33 @@
               </div>
             </div>
           </div>
+          <!-- single card  -->
+          <div class="card">
+            <div class="card__content">
+              <img src="" alt="" class="card__img" />
+              <div class="card__text">
+                <h3 class="card__title">Card Title</h3>
+                <p class="card__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, cum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- single card  -->
+          <div class="card">
+            <div class="card__content">
+              <img src="" alt="" class="card__img" />
+              <div class="card__text">
+                <h3 class="card__title">Card Title</h3>
+                <p class="card__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, cum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- single card  -->
           <div class="card">
             <div class="card__content">
               <img src="" alt="" class="card__img" />
@@ -291,6 +329,63 @@
         </div>
       </div>
     </footer>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
     <script src="js/tab.js"></script>
+    <script>
+      $(".cards").slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow:
+          "<button type='button' class='slick-prev '><i class='fa fa-angle-left fa-2x' aria-hidden='true'></i></button>",
+        nextArrow:
+          "<button type='button' class='slick-next '><i class='fa fa-angle-right fa-2x' aria-hidden='true'></i></button>",
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+      //customize slick dots
+      const slickDots = document.querySelectorAll(".slick-dots button");
+      slickDots.forEach((button) => {
+        button.innerHTML = "";
+      });
+    </script>
   </body>
 </html>

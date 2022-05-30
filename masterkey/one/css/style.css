@@ -68,10 +68,45 @@ a {
   font-size: inherit; }
   .btn:focus {
     outline: none; }
-  .btn--full {
-    background-color: #ff6f00;
+  .btn--secondary {
+    background-color: #cc5900;
     color: white;
-    border-radius: 2.5rem; }
+    border-radius: 2.5rem;
+    transition: all 0.3s; }
+    .btn--secondary:hover {
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.35);
+      background-color: #ff6f00; }
+  .btn--primary {
+    background-color: #644f96;
+    color: white;
+    transition: all 0.3s; }
+    .btn--primary:hover {
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.35);
+      background-color: #433564; }
+  .btn--block {
+    display: block;
+    width: 100%; }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8rem;
+  margin: 10rem 0; }
+  .features .feature__icon {
+    margin: 0 auto;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    background-color: white; }
+  .features .feature__text {
+    margin-top: 3rem;
+    text-align: center; }
+  .features .btn {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 3rem;
+    padding: 1.5rem 0;
+    margin-top: 3rem; }
 
 .header-nav {
   text-transform: uppercase; }
@@ -120,7 +155,7 @@ a {
   overflow: hidden;
   padding: 1rem 2rem;
   text-transform: uppercase; }
-  .header__auth-buttons .btn.btn--full {
+  .header__auth-buttons .btn.btn--secondary {
     padding: 1rem 3rem; }
 
 .section-hero {

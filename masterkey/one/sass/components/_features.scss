@@ -1,0 +1,27 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8rem;
+
+  margin: 10rem 0;
+  .feature {
+    &__icon {
+      margin: 0 auto;
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+      background-color: white;
+    }
+    &__text {
+      margin-top: 3rem;
+      text-align: center;
+    }
+  }
+  .btn {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 3rem;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+  }
+}

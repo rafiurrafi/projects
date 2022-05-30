@@ -3,3 +3,6 @@
   justify-content: space-between;
   align-items: center;
 }
+@mixin section-spacing($vertical) {
+  padding: $vertical 0;
+}

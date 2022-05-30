@@ -27,9 +27,16 @@ ul {
 a {
   text-decoration: none; }
 
-.heading-primary {
+.heading-primary, .heading-secondary {
   color: #644f96;
-  font-size: 3rem; }
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.heading-primary {
+  font-size: 2.5rem; }
+
+.heading-secondary {
+  font-size: 2rem; }
 
 .bold {
   font-weight: 700; }
@@ -63,6 +70,7 @@ a {
     outline: none; }
   .btn--full {
     background-color: #ff6f00;
+    color: white;
     border-radius: 2.5rem; }
 
 .header-nav {
@@ -76,6 +84,18 @@ a {
     transition: 0.3s; }
     .header-nav__link.active, .header-nav__link:hover {
       color: #ff6f00; }
+
+.title {
+  position: relative; }
+  .title__border {
+    border: 1px dashed #404040; }
+  .title__text {
+    width: 30vw;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2; }
 
 .header__top .container {
   padding: 2rem 0;
@@ -104,13 +124,13 @@ a {
     padding: 1rem 3rem; }
 
 .section-hero {
-  padding: 6rem 0; }
+  padding: 8rem 0; }
   .section-hero .container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .section-hero .hero__content {
-    flex: 0 0 50%;
+    flex: 0 0 60%;
     margin-right: 10rem; }
   .section-hero .hero__artwork {
     display: flex;
@@ -120,3 +140,6 @@ a {
     height: 40vh;
     width: 100%;
     background-color: white; }
+
+.section-features {
+  padding: 8rem 0; }

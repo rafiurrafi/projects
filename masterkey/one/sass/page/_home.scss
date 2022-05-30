@@ -1,10 +1,10 @@
 .section-hero {
-  padding: 6rem 0;
+  @include section-spacing(8rem);
   .container {
     @include flex;
   }
   .hero__content {
-    flex: 0 0 50%;
+    flex: 0 0 60%;
     margin-right: 10rem;
   }
   .hero__artwork {
@@ -14,4 +14,7 @@
     width: 100%;
     background-color: white;
   }
+}
+.section-features {
+  @include section-spacing(8rem);
 }

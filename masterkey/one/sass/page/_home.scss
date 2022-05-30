@@ -1,0 +1,17 @@
+.section-hero {
+  padding: 6rem 0;
+  .container {
+    @include flex;
+  }
+  .hero__content {
+    flex: 0 0 50%;
+    margin-right: 10rem;
+  }
+  .hero__artwork {
+    @include flex;
+    justify-content: center;
+    height: 40vh;
+    width: 100%;
+    background-color: white;
+  }
+}

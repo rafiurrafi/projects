@@ -1,9 +1,11 @@
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 8rem;
+  grid-gap: 5rem;
 
-  margin: 10rem 0;
+  width: 80%;
+
+  margin: 10rem 10%;
   .feature {
     &__icon {
       margin: 0 auto;
@@ -18,8 +20,6 @@
     }
   }
   .btn {
-    width: 90%;
-    margin: 0 auto;
     border-radius: 3rem;
     padding: 1.5rem 0;
     margin-top: 3rem;

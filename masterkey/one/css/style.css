@@ -20,22 +20,60 @@ body {
   max-width: 114rem;
   margin: 0 auto; }
 
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 .bold {
   font-weight: 700; }
 
 .text-center {
   text-align: center; }
 
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: inherit; }
+  .btn:focus {
+    outline: none; }
+  .btn--full {
+    background-color: #ff6f00;
+    border-radius: 1.5rem; }
+
+.header-nav {
+  text-transform: uppercase; }
+  .header-nav__item {
+    display: inline-block; }
+    .header-nav__item:not(:first-child) {
+      margin-left: 2rem; }
+  .header-nav__link {
+    color: #644f96;
+    transition: 0.3s; }
+    .header-nav__link.active, .header-nav__link:hover {
+      color: #ff6f00; }
+
 .header__top .container {
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .header__top .container a {
-    text-decoration: none;
-    color: #404040; }
+.header__top a {
+  color: #404040; }
 .header__logo {
   font-size: 3rem;
   font-weight: bold; }
 .header__lang a.active {
   color: #1eac17; }
+.header__main .container {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+.header__auth-buttons {
+  background-color: #fff;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 1rem 2rem; }

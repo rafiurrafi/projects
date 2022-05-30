@@ -1,0 +1,14 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+
+  &:focus {
+    outline: none;
+  }
+  &--full {
+    background-color: $color-secondary;
+    border-radius: 1.5rem;
+  }
+}

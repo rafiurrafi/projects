@@ -1,0 +1,17 @@
+.header-nav {
+  text-transform: uppercase;
+  &__item {
+    display: inline-block;
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+  &__link {
+    color: $color-primary;
+    transition: 0.3s;
+    &.active,
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}

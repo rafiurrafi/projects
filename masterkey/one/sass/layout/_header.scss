@@ -1,6 +1,23 @@
 .header {
   &__top {
-    display: flex;
-    justify-content: space-between;
+    .container {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        text-decoration: none;
+        color: $color-gray-dark-1;
+      }
+    }
+  }
+  &__logo {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  &__lang {
+    a.active {
+      color: rgb(30, 172, 23);
+    }
   }
 }

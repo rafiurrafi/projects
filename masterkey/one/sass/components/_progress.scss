@@ -1,0 +1,32 @@
+.progresses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+  .progress {
+    height: 30rem;
+    width: 30rem;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__number {
+      font-size: 4.5rem;
+    }
+    &__title {
+      font-size: 1.8rem;
+    }
+    &--dotted {
+      border: 1px dashed $color-white;
+    }
+    &--white {
+      background-color: $color-white;
+      color: $color-primary;
+    }
+    &--yellow {
+      background-color: $color-secondary;
+    }
+  }
+}

@@ -89,6 +89,13 @@ a {
     .btn--primary:hover {
       box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.35);
       background-color: #433564; }
+  .btn--gray {
+    background-color: #ccc;
+    color: white;
+    transition: all 0.3s; }
+    .btn--gray:hover {
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.35);
+      background-color: #a6a6a6; }
   .btn--block {
     display: block;
     width: 100%; }
@@ -125,38 +132,71 @@ a {
     .header-nav__link.active, .header-nav__link:hover {
       color: #ff6f00; }
 
+.progresses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem; }
+  .progresses .progress {
+    height: 30rem;
+    width: 30rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .progresses .progress__number {
+      font-size: 4.5rem; }
+    .progresses .progress__title {
+      font-size: 1.8rem; }
+    .progresses .progress--dotted {
+      border: 1px dashed #fff; }
+    .progresses .progress--white {
+      background-color: #fff;
+      color: #644f96; }
+    .progresses .progress--yellow {
+      background-color: #ff6f00; }
+
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1; }
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s; }
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd; }
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc; }
+  margin-top: 10rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem; }
+  .tab .btn {
+    border-radius: 2rem;
+    padding: 1rem;
+    color: black; }
+    .tab .btn.active, .tab .btn:hover {
+      color: #fff;
+      background-color: #ff6f00; }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
   animation: fadeEffect 1s;
   /* Fading effect takes 1 second */ }
+  .tabcontent__inner {
+    display: flex;
+    min-height: 40vh; }
+  .tabcontent__banner {
+    height: inherit;
+    width: 100%;
+    background-color: #644f96;
+    flex: 0 0 1;
+    margin-right: 6rem; }
+  .tabcontent__text {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    flex: 0 0 60%; }
+  .tabcontent__paragraph {
+    margin-bottom: auto; }
+  .tabcontent__link {
+    color: #644f96; }
 
 .title {
   position: relative; }
@@ -216,3 +256,15 @@ a {
 
 .section-features {
   padding: 8rem 0; }
+
+.section-progress {
+  background-color: #644f96;
+  padding: 5rem 0;
+  margin: 10rem 0; }
+  .section-progress__title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 5rem;
+    text-align: center; }

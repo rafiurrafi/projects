@@ -117,34 +117,109 @@
       <div class="container">
         <div class="tab">
           <button
-            class="tablinks"
-            onclick="openCity(event, 'London')"
+            class="btn btn--gray tablinks"
+            onclick="openCity(event, 'pop-under')"
             id="defaultOpen"
           >
-            London
+            pop-under
           </button>
-          <button class="tablinks" onclick="openCity(event, 'Paris')">
-            Paris
+          <button
+            class="btn btn--gray tablinks"
+            onclick="openCity(event, 'banner-ad')"
+          >
+            banner-ad
           </button>
-          <button class="tablinks" onclick="openCity(event, 'Tokyo')">
-            Tokyo
+          <button
+            class="btn btn--gray tablinks"
+            onclick="openCity(event, 'native')"
+          >
+            native
+          </button>
+          <button
+            class="btn btn--gray tablinks"
+            onclick="openCity(event, 'skin')"
+          >
+            skin
           </button>
         </div>
 
         <!-- Tab content -->
-        <div id="London" class="tabcontent">
-          <h3>London</h3>
-          <p>London is the capital city of England.</p>
+        <div id="pop-under" class="tabcontent">
+          <div class="tabcontent__inner">
+            <div class="tabcontent__banner">&nbsp;</div>
+            <div class="tabcontent__text">
+              <h3 class="heading-tertiary">pop under</h3>
+              <p class="tabcontent__paragraph">
+                This is one of the most popular ads. After user’s click, this ad
+                opens landing page in behind. So, the user experience is not
+                hampered much
+              </p>
+              <a href="" class="tabcontent__link">Learn More</a>
+            </div>
+          </div>
         </div>
 
-        <div id="Paris" class="tabcontent">
-          <h3>Paris</h3>
-          <p>Paris is the capital of France.</p>
+        <div id="banner-ad" class="tabcontent">
+          <div class="tabcontent__inner">
+            <div class="tabcontent__banner">&nbsp;</div>
+            <div class="tabcontent__text">
+              <h3 class="heading-tertiary">Banner ad</h3>
+              <p class="tabcontent__paragraph">
+                This is one of the most popular ads. After user’s click, this ad
+                opens landing page in behind. So, the user experience is not
+                hampered much
+              </p>
+              <a href="" class="tabcontent__link">Learn More</a>
+            </div>
+          </div>
         </div>
 
-        <div id="Tokyo" class="tabcontent">
-          <h3>Tokyo</h3>
-          <p>Tokyo is the capital of Japan.</p>
+        <div id="native" class="tabcontent">
+          <div class="tabcontent__inner">
+            <div class="tabcontent__banner">&nbsp;</div>
+            <div class="tabcontent__text">
+              <h3 class="heading-tertiary">Native</h3>
+              <p class="tabcontent__paragraph">
+                This is one of the most popular ads. After user’s click, this ad
+                opens landing page in behind. So, the user experience is not
+                hampered much
+              </p>
+              <a href="" class="tabcontent__link">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div id="skin" class="tabcontent">
+          <div class="tabcontent__inner">
+            <div class="tabcontent__banner">&nbsp;</div>
+            <div class="tabcontent__text">
+              <h3 class="heading-tertiary">Skin</h3>
+              <p class="tabcontent__paragraph">
+                This is one of the most popular ads. After user’s click, this ad
+                opens landing page in behind. So, the user experience is not
+                hampered much
+              </p>
+              <a href="" class="tabcontent__link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-progress">
+      <div class="container">
+        <h3 class="section-progress__title">Our Progress</h3>
+        <div class="progresses">
+          <div class="progress progress--dotted">
+            <h3 class="progress__number">1 BN+</h3>
+            <div class="progress__title">Daily Impression</div>
+          </div>
+          <div class="progress progress--white">
+            <h3 class="progress__number">$500K+</h3>
+            <div class="progress__title">Paid</div>
+          </div>
+          <div class="progress progress--yellow">
+            <h3 class="progress__number">8K+</h3>
+            <div class="progress__title">Global Publisher</div>
+          </div>
         </div>
       </div>
     </section>

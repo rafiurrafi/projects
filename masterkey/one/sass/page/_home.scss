@@ -18,3 +18,16 @@
 .section-features {
   @include section-spacing(8rem);
 }
+.section-progress {
+  background-color: $color-primary;
+  padding: 5rem 0;
+  margin: 10rem 0;
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+}

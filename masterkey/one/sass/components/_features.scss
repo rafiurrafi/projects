@@ -1,11 +1,11 @@
 .features {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 5rem;
 
   width: 80%;
-
   margin: 10rem 10%;
+
   .feature {
     &__icon {
       margin: 0 auto;
@@ -13,6 +13,12 @@
       width: 20rem;
       border-radius: 50%;
       background-color: white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10rem;
+      color: $color-primary;
     }
     &__text {
       margin-top: 3rem;

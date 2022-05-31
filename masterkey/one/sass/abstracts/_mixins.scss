@@ -13,11 +13,13 @@
     }
   }
   @if $breakpoint == tab-port {
+    //900px
     @media (max-width: 56.25em) {
       @content;
     }
   }
   @if $breakpoint == tab-land {
+    //1200
     @media (max-width: 75em) {
       @content;
     }

@@ -57,6 +57,9 @@
               <a href="#" class="header-nav__link">Contact Us</a>
             </li>
           </ul>
+          <div class="header__menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+          </div>
           <div class="header__auth-buttons">
             <button class="btn">Login</button>
             <button class="btn btn--secondary ms-2">Sign Up</button>
@@ -97,17 +100,23 @@
       <div class="container">
         <div class="features">
           <div class="feature">
-            <div class="feature__icon"></div>
+            <div class="feature__icon">
+              <i class="fa fa-bell-o" aria-hidden="true"></i>
+            </div>
             <h3 class="feature__text">Responsive</h3>
             <button class="btn btn--primary btn--block">Explore</button>
           </div>
           <div class="feature">
-            <div class="feature__icon"></div>
+            <div class="feature__icon">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            </div>
             <h3 class="feature__text">Responsive</h3>
             <button class="btn btn--primary btn--block">Explore</button>
           </div>
           <div class="feature">
-            <div class="feature__icon"></div>
+            <div class="feature__icon">
+              <i class="fa fa-users" aria-hidden="true"></i>
+            </div>
             <h3 class="feature__text">Responsive</h3>
             <button class="btn btn--primary btn--block">Explore</button>
           </div>
@@ -164,7 +173,9 @@
                 opens landing page in behind. So, the user experience is not
                 hampered much
               </p>
-              <a href="" class="tabcontent__link">Learn More</a>
+              <a href="" class="tabcontent__link"
+                >Learn More <i class="fa fa-external-link"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -179,7 +190,9 @@
                 opens landing page in behind. So, the user experience is not
                 hampered much
               </p>
-              <a href="" class="tabcontent__link">Learn More</a>
+              <a href="" class="tabcontent__link"
+                >Learn More <i class="fa fa-external-link"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -194,7 +207,9 @@
                 opens landing page in behind. So, the user experience is not
                 hampered much
               </p>
-              <a href="" class="tabcontent__link">Learn More</a>
+              <a href="" class="tabcontent__link"
+                >Learn More <i class="fa fa-external-link"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -208,7 +223,9 @@
                 opens landing page in behind. So, the user experience is not
                 hampered much
               </p>
-              <a href="" class="tabcontent__link">Learn More</a>
+              <a href="" class="tabcontent__link"
+                >Learn More <i class="fa fa-external-link"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -236,12 +253,17 @@
     </section>
     <section class="section-slider">
       <div class="container">
-        <div class="slider-title">Title</div>
+        <div class="heading-secondary text-center mb-1">Testimonial</div>
         <div class="cards">
           <!-- single card  -->
           <div class="card">
             <div class="card__content">
-              <img src="" alt="" class="card__img" />
+              <div class="card__img">
+                <img
+                  src="assets/bruno-van-der-kraan-6P-dSJbcvow-unsplash-min.jpg"
+                  alt=""
+                />
+              </div>
               <div class="card__text">
                 <h3 class="card__title">Card Title</h3>
                 <p class="card__text">
@@ -254,7 +276,12 @@
           <!-- single card  -->
           <div class="card">
             <div class="card__content">
-              <img src="" alt="" class="card__img" />
+              <div class="card__img">
+                <img
+                  src="assets/dan-aragon-n20DUSVsUk8-unsplash-min.jpg"
+                  alt=""
+                />
+              </div>
               <div class="card__text">
                 <h3 class="card__title">Card Title</h3>
                 <p class="card__text">
@@ -267,7 +294,12 @@
           <!-- single card  -->
           <div class="card">
             <div class="card__content">
-              <img src="" alt="" class="card__img" />
+              <div class="card__img">
+                <img
+                  src="assets/eberhard-grossgasteiger-y2azHvupCVo-unsplash-min.jpg"
+                  alt=""
+                />
+              </div>
               <div class="card__text">
                 <h3 class="card__title">Card Title</h3>
                 <p class="card__text">
@@ -280,7 +312,27 @@
           <!-- single card  -->
           <div class="card">
             <div class="card__content">
-              <img src="" alt="" class="card__img" />
+              <div class="card__img">
+                <img
+                  src="assets/jonathan-bean-Ejpx_sdKEKo-unsplash-min.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card__text">
+                <h3 class="card__title">Card Title</h3>
+                <p class="card__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Autem, cum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- single card  -->
+          <div class="card">
+            <div class="card__content">
+              <div class="card__img">
+                <img src="assets/kendal-3Zi07aNODs8-unsplash-min.jpg" alt="" />
+              </div>
               <div class="card__text">
                 <h3 class="card__title">Card Title</h3>
                 <p class="card__text">
@@ -298,7 +350,7 @@
         <div class="footer__content">
           <div class="footer__left">
             <h3 class="heading-tertiary">We are social</h3>
-            <h3 class="heading-tertiary">Follow us</h3>
+            <h3 class="heading-tertiary" style="color: #404040">Follow us</h3>
             <div class="footer__socials">
               <a href="#" class="footer__social"></a>
               <a href="#" class="footer__social"></a>
@@ -366,14 +418,7 @@
             },
           },
           {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 480,
+            breakpoint: 768,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,

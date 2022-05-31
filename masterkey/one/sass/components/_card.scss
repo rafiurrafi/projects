@@ -2,11 +2,13 @@
   // display: grid;
   // grid-template-columns: repeat(2, 1fr);
   // grid-gap: 4rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   .card {
     background-color: $color-white;
     border-radius: 2rem;
+    margin-right: 2rem;
+    // width: 95%;
     &__content {
       border: 1px solid red;
       border-radius: 2.5rem;
@@ -16,9 +18,12 @@
       display: flex;
     }
     &__img {
-      flex: 1;
-      width: 100%;
-      height: auto;
+      flex: 0 0 1;
+      margin-right: 1.4rem;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
     &__text {
       flex: 0 0 60%;
@@ -50,9 +55,27 @@
 }
 .slick-prev {
   left: 45%;
+  @include respond(tab-land) {
+    left: 43%;
+  }
+  @include respond(tab-port) {
+    left: 40%;
+  }
+  @include respond(phone) {
+    left: 37%;
+  }
 }
 .slick-next {
   right: 45%;
+  @include respond(tab-land) {
+    right: 43%;
+  }
+  @include respond(tab-port) {
+    right: 40%;
+  }
+  @include respond(tab-port) {
+    right: 37%;
+  }
 }
 .slick-dots {
   text-align: center;
@@ -76,4 +99,17 @@
 }
 .slick-dots .slick-active button {
   width: 4rem;
+  background-color: $color-primary;
 }
+// x?
+// x?
+// x?
+/* the slides */
+// .slick-slide {
+//   margin-right: 15px;
+//   margin-right: 10px;
+// }
+/* the parent */
+// .slick-track {
+//   margin: 0 -10px;
+// }

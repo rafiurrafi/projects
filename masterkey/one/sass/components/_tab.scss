@@ -5,8 +5,15 @@
   padding-bottom: 3rem;
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 4rem;
+
+  @include respond(tab-port) {
+    grid-gap: 3rem;
+  }
+  @include respond(phone) {
+    grid-gap: 2rem;
+  }
 
   .btn {
     border-radius: 2rem;
@@ -28,6 +35,9 @@
   &__inner {
     display: flex;
     min-height: 40vh;
+    @include respond(phone) {
+      display: block;
+    }
   }
   &__banner {
     height: inherit;
@@ -35,15 +45,28 @@
     background-color: $color-primary;
     flex: 0 0 1;
     margin-right: 6rem;
+    @include respond(tab-port) {
+      margin-right: 4rem;
+    }
+    @include respond(phone) {
+      min-height: 40vh;
+      margin-bottom: 3rem;
+    }
   }
   &__text {
     display: flex;
     flex-direction: column;
     padding: 0.5rem 0;
     flex: 0 0 60%;
+    @include respond(tab-port) {
+      flex: 0 0 60%;
+    }
   }
   &__paragraph {
     margin-bottom: auto;
+    @include respond(phone) {
+      margin: 2rem 0;
+    }
   }
   &__link {
     color: $color-primary;

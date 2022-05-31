@@ -2,10 +2,17 @@
   @include section-spacing(8rem);
   .container {
     @include flex;
+    @include respond(tab-port) {
+      display: block;
+    }
   }
   .hero__content {
     flex: 0 0 60%;
     margin-right: 10rem;
+    @include respond(tab-port) {
+      margin-right: 0rem;
+      margin-bottom: 4rem;
+    }
   }
   .hero__artwork {
     @include flex;

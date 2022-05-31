@@ -23,6 +23,17 @@
       @include flex;
     }
   }
+  &-nav {
+    @include respond(tab-land) {
+      display: none;
+    }
+  }
+  &__menu-icon {
+    display: none;
+    @include respond(tab-land) {
+      display: block;
+    }
+  }
   &__auth-buttons {
     background-color: $color-white;
     border-radius: 3.5rem;

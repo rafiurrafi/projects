@@ -1,8 +1,15 @@
 .footer {
+  padding-top: 8rem;
   &__content {
     display: flex;
+    @include respond(tab-port) {
+      display: block;
+    }
     & > * {
       flex: 0 0 25%;
+      @include respond(tab-port) {
+        margin-bottom: 4rem;
+      }
     }
   }
   &__link {

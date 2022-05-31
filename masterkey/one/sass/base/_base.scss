@@ -30,6 +30,10 @@ body {
 .container {
   max-width: $grid-width;
   margin: 0 auto;
+  @include respond(tab-land) {
+    width: 85%;
+    margin-left: 7.5%;
+  }
 }
 ul {
   list-style: none;

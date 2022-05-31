@@ -5,6 +5,12 @@
   }
   &__text {
     width: 30vw;
+    @include respond(tab-port) {
+      width: 40vw;
+    }
+    @include respond(phone) {
+      width: 63vw;
+    }
     position: absolute;
     top: -50%;
     left: 50%;

@@ -1,3 +1,24 @@
+.title h3 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem; }
+  .title h3::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100px;
+    background-color: #6610f2;
+    margin-top: 7px; }
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3; }
+
 .slide {
   height: 100vh;
   width: 100%;
@@ -13,3 +34,6 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/2.jpg); }
   .slide--3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/3.jpg); }
+
+.section-feature i {
+  font-size: 3rem; }

@@ -38,6 +38,15 @@
 .section-feature i {
   font-size: 3rem; }
 
+.section-overview {
+  background-image: linear-gradient(to right bottom, rgba(102, 16, 242, 0.5), rgba(13, 110, 253, 0.7)), url("../img/1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.overview h3 {
+  font-size: 3rem; }
+
 .testimonial img {
   height: 100px;
   width: 100px;

@@ -12,12 +12,24 @@
       }
     }
   }
+  &__logo {
+    color: $color-gray-dark-1;
+    font-size: 6rem;
+    font-weight: bold;
+  }
   &__link {
     display: block;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 2rem;
     color: $color-gray-dark-1;
+  }
+  &__social {
+    margin-bottom: 3rem;
+    color: $color-primary;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
   }
   .heading-tertiary {
     text-transform: capitalize;

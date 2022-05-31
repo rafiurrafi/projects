@@ -70,8 +70,8 @@
 .section-overview {
   background-image: linear-gradient(
       to right bottom,
-      rgba(#6610f2, 0.5),
-      rgba(#0d6efd, 0.7)
+      rgba(#000, 0.5),
+      rgba(#000, 0.7)
     ),
     url("../img/1.jpg");
   background-position: center;
@@ -94,4 +94,44 @@
     object-fit: cover;
     margin-right: 15px;
   }
+}
+// =========================
+//section footer
+// =========================
+.footer {
+  background-color: rgb(61, 61, 61);
+  &-bottom {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+// =========================
+//Responsive
+// =========================
+@media (max-width: 991px) {
+  .collapse.navbar-collapse {
+    .ms-4,
+    .ms-auto {
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+}
+.owl-nav {
+  z-index: 3;
+}
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: white;
+  z-index: 233;
+}
+.owl-prev {
+  left: 2% !important;
+}
+.owl-next {
+  right: 2% !important;
 }

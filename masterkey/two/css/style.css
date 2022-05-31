@@ -37,3 +37,10 @@
 
 .section-feature i {
   font-size: 3rem; }
+
+.testimonial img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px; }

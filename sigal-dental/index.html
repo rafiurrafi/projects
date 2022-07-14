@@ -37,76 +37,24 @@
             <div class="navbar-nav header-nav ms-auto">
               <a class="nav-link" href="#"></a>
               <a class="nav-link" href="#"></a>
-              <a href="" class="nav-link text-primary">Home</a>
-              <a href="" class="nav-link text-primary">About</a>
-              <a href="" class="nav-link text-primary">Service</a>
-              <a href="" class="nav-link text-primary">Doctor</a>
-              <a href="" class="nav-link text-primary">Gallery</a>
-              <a href="" class="nav-link text-primary">Blog</a>
-              <a href="" class="nav-link text-primary">Contact</a>
-              <a href="" class="nav-link text-primary">Patient Login</a>
-              <a href="" class="nav-link text-primary"
+              <a href="" class="nav-link text-white">Home</a>
+              <a href="" class="nav-link text-white">About</a>
+              <a href="" class="nav-link text-white">Service</a>
+              <a href="" class="nav-link text-white">Doctor</a>
+              <a href="" class="nav-link text-white">Gallery</a>
+              <a href="" class="nav-link text-white">Blog</a>
+              <a href="" class="nav-link text-white">Contact</a>
+              <a href="" class="nav-link text-white">Patient Login</a>
+              <a href="" class="nav-link text-white"
                 ><i class="fa fa-search"></i
               ></a>
-              <a href="" class="nav-link text-primary">عربي</a>
+              <a href="" class="nav-link text-white">عربي</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
     <div class="section-hero-containers">
-      <section class="section-hero">
-        <div class="container h-100">
-          <div class="hero-container w-100">
-            <div class="hero-container__inner">
-              <div class="hero-content text-white">
-                <h1 class="heading-primary fw-bolder">
-                  <span class="d-block text-primary">Specialized</span>Dental
-                  Center
-                </h1>
-                <p class="fw-semi fs-5">
-                  We Create Your Healthy Smile with latest technology and best
-                  doctors in industry
-                </p>
-              </div>
-              <div class="hero-content text-white">
-                <button
-                  class="btn btn-primary fw-bold float-lg-end"
-                  style="border-radius: 0.5rem"
-                >
-                  Book an appointment
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-hero">
-        <div class="container h-100">
-          <div class="hero-container w-100">
-            <div class="hero-container__inner">
-              <div class="hero-content text-white">
-                <h1 class="heading-primary fw-bolder">
-                  <span class="d-block text-primary">Specialized</span>Dental
-                  Center
-                </h1>
-                <p class="fw-semi fs-5">
-                  We Create Your Healthy Smile with latest technology and best
-                  doctors in industry
-                </p>
-              </div>
-              <div class="hero-content text-white">
-                <button
-                  class="btn btn-primary fw-bold float-lg-end"
-                  style="border-radius: 0.5rem"
-                >
-                  Book an appointment
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="section-hero">
         <div class="container h-100">
           <div class="hero-container w-100">
@@ -361,14 +309,29 @@
       const navbarButton = document.querySelector(".navbar-toggler");
       const header = document.querySelector(".header");
       navbarButton.addEventListener("click", () => {
-        if (!header.classList.contains("bg-white"))
-          header.classList.add("bg-white");
+        if (!header.classList.contains("bg-primary"))
+          header.classList.add("bg-primary");
         else
           setTimeout(() => {
-            header.classList.remove("bg-white");
+            header.classList.remove("bg-primary");
             header.style.transition = "background-color .4s";
           }, 400);
       });
+      // section hero slide
+      // $(".section-hero-containers").owlCarousel({
+      //   loop: true,
+      //   responsive: {
+      //     0: {
+      //       items: 1,
+      //     },
+      //     600: {
+      //       items: 3,
+      //     },
+      //     1000: {
+      //       items: 5,
+      //     },
+      //   },
+      // });
       // section brief
       const briefSection = document.querySelector(".section-brief");
       const grayBgSection = document.querySelector(".section-bg-gray");

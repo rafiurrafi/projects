@@ -45,9 +45,142 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  clip-path: ellipse(85% 100% at 48.75% 0%);
+  //   clip-path: ellipse(85% 100% at 48.75% 0%);
   height: 90vh;
+  position: relative;
   .hero-content button {
     margin-top: -1.5rem;
+  }
+}
+.section-branches {
+  .braches-content {
+    background-size: cover;
+    background-position: center;
+    height: 11rem;
+    position: relative;
+    border-radius: 0.7rem;
+    h3 {
+      position: absolute;
+      left: 1rem;
+      bottom: 0rem;
+    }
+  }
+}
+
+// Section footer
+.footer {
+  a {
+    color: #444444;
+  }
+  h4 {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 2rem;
+      background-color: var(--color-primary);
+      position: absolute;
+      margin-top: 5px;
+    }
+  }
+  &__logo {
+    width: 10rem;
+  }
+  &__social {
+    color: var(--color-primary) !important;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    transition: all 0.3s;
+    &:hover {
+      color: white !important;
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+// responsive
+//devices
+// xl
+@media (min-width: 1200px) {
+  .hero-container {
+    top: 40%;
+  }
+}
+// lg
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+  .brief-container {
+    .col-lg-4 {
+      padding: 1.5rem !important;
+    }
+  }
+}
+
+// md
+@media (max-width: 992px) {
+  html {
+    font-size: 70%;
+  }
+  .hero-content button {
+    margin-top: 1.5rem;
+  }
+  .section-about {
+    .about-home {
+      height: 100%;
+      img {
+        display: none !important;
+      }
+      &__content {
+        position: relative;
+        width: 100%;
+        height: min-content;
+      }
+    }
+  }
+  .footer {
+    &__social-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+  }
+}
+// sm
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .section-hero {
+    clip-path: ellipse(90% 100% at 48.75% 0%);
+  }
+}
+// special purpose
+@media (max-width: 590px) {
+  .section-about .container {
+    overflow: hidden;
+  }
+}
+// xs
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .section-hero {
+    clip-path: ellipse(95% 100% at 48.75% 0%);
+  }
+}
+.section-hero {
+  .container {
+    position: relative;
+  }
+  .hero-container {
+    position: absolute;
+    top: 45%;
+    left: 0;
   }
 }

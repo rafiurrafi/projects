@@ -87,7 +87,94 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  clip-path: ellipse(85% 100% at 48.75% 0%);
-  height: 90vh; }
+  height: 90vh;
+  position: relative; }
   .section-hero .hero-content button {
     margin-top: -1.5rem; }
+
+.section-branches .braches-content {
+  background-size: cover;
+  background-position: center;
+  height: 11rem;
+  position: relative;
+  border-radius: 0.7rem; }
+  .section-branches .braches-content h3 {
+    position: absolute;
+    left: 1rem;
+    bottom: 0rem; }
+
+.footer a {
+  color: #444444; }
+.footer h4 {
+  position: relative; }
+  .footer h4::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 2rem;
+    background-color: var(--color-primary);
+    position: absolute;
+    margin-top: 5px; }
+.footer__logo {
+  width: 10rem; }
+.footer__social {
+  color: var(--color-primary) !important;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  transition: all 0.3s; }
+  .footer__social:hover {
+    color: white !important;
+    background-color: var(--color-primary); }
+
+@media (min-width: 1200px) {
+  .hero-container {
+    top: 40%; } }
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%; }
+
+  .brief-container .col-lg-4 {
+    padding: 1.5rem !important; } }
+@media (max-width: 992px) {
+  html {
+    font-size: 70%; }
+
+  .hero-content button {
+    margin-top: 1.5rem; }
+
+  .section-about .about-home {
+    height: 100%; }
+    .section-about .about-home img {
+      display: none !important; }
+    .section-about .about-home__content {
+      position: relative;
+      width: 100%;
+      height: min-content; }
+
+  .footer__social-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem; } }
+@media (max-width: 768px) {
+  html {
+    font-size: 65%; }
+
+  .section-hero {
+    clip-path: ellipse(90% 100% at 48.75% 0%); } }
+@media (max-width: 590px) {
+  .section-about .container {
+    overflow: hidden; } }
+@media (max-width: 576px) {
+  html {
+    font-size: 60%; }
+
+  .section-hero {
+    clip-path: ellipse(95% 100% at 48.75% 0%); } }
+.section-hero .container {
+  position: relative; }
+.section-hero .hero-container {
+  position: absolute;
+  top: 45%;
+  left: 0; }

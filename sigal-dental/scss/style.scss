@@ -23,7 +23,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 4;
   .navbar-logo {
     height: 6.25rem;
   }
@@ -37,13 +37,42 @@ body {
 // rgba(#00afdd, 0.7),
 // rgba(#213e7b, 0.7),
 .section-hero {
-  background-image: linear-gradient(
-      to right top,
-      rgba(#00afdd, 0.5),
-      rgba(#213e7b, 0.3),
-      rgba(#fff, 1)
-    ),
-    url("../images/bg-cover.jpg");
+  &.hero-1 {
+    background-image: linear-gradient(
+        to right top,
+        rgba(#00afdd, 0.5),
+        rgba(#213e7b, 0.3),
+        rgba(#fff, 1)
+      ),
+      url("../images/updated/Slider/Slider-2.png");
+  }
+  &.hero-2 {
+    background-image: linear-gradient(
+        to right top,
+        rgba(#00afdd, 0.5),
+        rgba(#213e7b, 0.3),
+        rgba(#fff, 1)
+      ),
+      url("../images/updated/Slider/Slider-3.png");
+  }
+  &.hero-3 {
+    background-image: linear-gradient(
+        to right top,
+        rgba(#00afdd, 0.5),
+        rgba(#213e7b, 0.3),
+        rgba(#fff, 1)
+      ),
+      url("../images/updated/Slider/Slider-4.png");
+  }
+  &.hero-4 {
+    background-image: linear-gradient(
+        to right top,
+        rgba(#00afdd, 0.5),
+        rgba(#213e7b, 0.3),
+        rgba(#fff, 1)
+      ),
+      url("../images/updated/Slider/Slider-1.png");
+  }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -77,7 +77,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 4; }
   .header .navbar-logo {
     height: 6.25rem; }
   .header .header-nav a {
@@ -85,12 +85,19 @@ body {
     font-weight: 600; }
 
 .section-hero {
-  background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/bg-cover.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 90vh;
   position: relative; }
+  .section-hero.hero-1 {
+    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-2.png"); }
+  .section-hero.hero-2 {
+    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-3.png"); }
+  .section-hero.hero-3 {
+    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-4.png"); }
+  .section-hero.hero-4 {
+    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-1.png"); }
   .section-hero button {
     position: absolute;
     bottom: 0;

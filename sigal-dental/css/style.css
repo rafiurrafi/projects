@@ -134,6 +134,51 @@ body {
     background-color: red;
     background-image: url(../images/Icon-1.svg); }
 
+.section-doctors {
+  padding: 5rem 0; }
+  .section-doctors .doctor-slide {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem; }
+    .section-doctors .doctor-slide__img {
+      height: 8rem;
+      width: 8rem;
+      border-radius: 50%;
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%); }
+  .section-doctors .owl-item.active.center {
+    transition: all 0.3s; }
+    .section-doctors .owl-item.active.center small {
+      display: block !important; }
+  .section-doctors .owl-prev,
+  .section-doctors .owl-next {
+    position: absolute;
+    bottom: -4%; }
+    .section-doctors .owl-prev span,
+    .section-doctors .owl-next span {
+      font-size: 3rem; }
+  .section-doctors .owl-prev {
+    left: 42%; }
+  .section-doctors .owl-next {
+    right: 42%; }
+  .section-doctors .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  .section-doctors .owl-dots button span {
+    height: 10px;
+    width: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px; }
+  .section-doctors .owl-dots button.active span {
+    background-color: #0079b2; }
+
 .section-service .single-service {
   background-color: white;
   border-radius: 0.5rem;

@@ -91,7 +91,7 @@ body {
   padding: 7rem 0;
   .about-left {
     flex: 0 0 60%;
-    min-height: 84vh;
+    min-height: 34rem;
     background-image: url(../images/updated/Slider/Slider-3.png);
     background-size: cover;
     background-position: center;
@@ -116,7 +116,7 @@ body {
     }
     .about-block {
       flex: 0 0 50%;
-      height: 42vh;
+      height: 17rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -404,10 +404,10 @@ body {
   }
   .section-about {
     .about-left {
-      min-height: 40vh;
+      min-height: 25rem;
     }
     .about-block {
-      height: 15vh;
+      height: 12.5rem;
     }
     .about-right .d-flex:nth-child(2) {
       transform: translateX(0) !important;

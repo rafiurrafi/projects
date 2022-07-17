@@ -110,7 +110,7 @@ body {
   padding: 7rem 0; }
   .section-about .about-left {
     flex: 0 0 60%;
-    min-height: 84vh;
+    min-height: 34rem;
     background-image: url(../images/updated/Slider/Slider-3.png);
     background-size: cover;
     background-position: center; }
@@ -131,7 +131,7 @@ body {
       width: inherit; }
     .section-about .about-right .about-block {
       flex: 0 0 50%;
-      height: 42vh;
+      height: 17rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -335,9 +335,9 @@ body {
     font-size: 65%; }
 
   .section-about .about-left {
-    min-height: 40vh; }
+    min-height: 25rem; }
   .section-about .about-block {
-    height: 15vh; }
+    height: 12.5rem; }
   .section-about .about-right .d-flex:nth-child(2) {
     transform: translateX(0) !important; }
 

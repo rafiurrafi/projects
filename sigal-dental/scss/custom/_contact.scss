@@ -11,7 +11,7 @@
   }
   &__form-container {
     flex: 1;
-    background-color: #166589;
+    background-color: #08142e;
   }
   &__heading {
     font-size: 2.1rem;
@@ -58,7 +58,9 @@
     padding: 0.625rem;
     margin-top: 1rem;
     &:hover {
-      color: #95d7f7;
+      background: #95d7f7;
+      border: 1px solid #95d7f7;
+      color: #00afdd;
     }
   }
 }

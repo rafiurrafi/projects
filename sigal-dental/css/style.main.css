@@ -12,7 +12,7 @@
   opacity: 0.7; }
 .contact__form-container {
   flex: 1;
-  background-color: #166589; }
+  background-color: #08142e; }
 .contact__heading {
   font-size: 2.1rem;
   color: #95d7f7;
@@ -48,7 +48,9 @@
   padding: 0.625rem;
   margin-top: 1rem; }
   .contact__btn:hover {
-    color: #95d7f7; }
+    background: #95d7f7;
+    border: 1px solid #95d7f7;
+    color: #00afdd; }
 
 .input {
   display: inline-block;
@@ -319,5 +321,3 @@ body {
   position: absolute;
   top: 45%;
   left: 0; }
-
-/*# sourceMappingURL=style.main.css.map */

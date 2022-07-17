@@ -66,8 +66,7 @@
             <div class="hero-container__inner">
               <div class="hero-content text-white">
                 <h1 class="heading-primary fw-bolder">
-                  <span class="d-block text-primary">Specialized</span>Dental
-                  Center
+                  <span class="d-block">Specialized</span>Dental Center
                 </h1>
                 <p class="fw-semi fs-5">
                   We Create Your Healthy Smile with latest technology and best
@@ -77,7 +76,10 @@
             </div>
           </div>
         </div>
-        <button class="btn fw-bold text-white py-2 px-2">
+        <button
+          class="btn fw-bold text-white py-2 px-2"
+          onclick="openFormModal()"
+        >
           <i class="fa fa-calendar d-block text-center mb-2"></i> Book an
           appointment
         </button>
@@ -88,7 +90,7 @@
             <div class="hero-container__inner">
               <div class="hero-content text-white">
                 <h1 class="heading-primary fw-bolder">
-                  <span class="d-block text-primary">Second</span>Dental Center
+                  <span class="d-block">Second</span>Dental Center
                 </h1>
                 <p class="fw-semi fs-5">
                   We Create Your Healthy Smile with latest technology and best
@@ -109,7 +111,7 @@
             <div class="hero-container__inner">
               <div class="hero-content text-white">
                 <h1 class="heading-primary fw-bolder">
-                  <span class="d-block text-primary">Second</span>Dental Center
+                  <span class="d-block">Second</span>Dental Center
                 </h1>
                 <p class="fw-semi fs-5">
                   We Create Your Healthy Smile with latest technology and best
@@ -130,7 +132,7 @@
             <div class="hero-container__inner">
               <div class="hero-content text-white">
                 <h1 class="heading-primary fw-bolder">
-                  <span class="d-block text-primary">Second</span>Dental Center
+                  <span class="d-block">Second</span>Dental Center
                 </h1>
                 <p class="fw-semi fs-5">
                   We Create Your Healthy Smile with latest technology and best
@@ -148,7 +150,7 @@
     </div>
     <section class="section-about">
       <div class="container">
-        <div class="d-flex">
+        <div class="d-md-flex">
           <div class="about-left text-white">
             <div class="px-5 py-4">
               <h4>
@@ -541,18 +543,16 @@
                   class="input input--text"
                 />
               </div>
-              <div class="contact__input-group">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  class="input input--text"
-                />
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  class="input input--text"
-                />
-              </div>
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="input input--text mb-3"
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                class="input input--text mb-3"
+              />
               <textarea
                 class="input"
                 placeholder="Your messages..."
@@ -676,6 +676,66 @@
         © Copyright Sigal 2021. All right reserved.
       </div>
     </section>
+    <!-- section modal  -->
+    <div class="modal-overlay"></div>
+    <section class="section-modal">
+      <div class="form-modal-content">
+        <div class="p-5 row form-modal">
+          <div class="col-md-6">
+            <div class="form-group mb-3">
+              <input
+                type="text"
+                placeholder="Patient Name"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <input
+                type="text"
+                placeholder="Patient Name"
+                class="form-control"
+              />
+            </div>
+            <div class="row gx-3 mb-3">
+              <div class="col-6 form-group">
+                <select name="" class="form-select" id="">
+                  <option value="">10:00 - 12:00</option>
+                  <option value="">10:00 - 12:00</option>
+                  <option value="">10:00 - 12:00</option>
+                </select>
+              </div>
+              <div class="col-6 form-group">
+                <select name="" class="form-select" id="">
+                  <option value="">10:00 - 12:00</option>
+                  <option value="">10:00 - 12:00</option>
+                  <option value="">10:00 - 12:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <select name="" class="form-select" id="">
+                <option value="">Communication Method</option>
+                <option value="">Communication Method</option>
+                <option value="">Communication Method</option>
+              </select>
+            </div>
+            <button class="btn btn-primary text-white d-block w-100">
+              Book Now
+            </button>
+          </div>
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              class="modal-img"
+              src="images/updated/Slider/Slider-5.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <button class="form-modal-close" onclick="closeFormModal()">
+          &times;
+        </button>
+      </div>
+    </section>
     <!-- <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -715,13 +775,16 @@
       // doctors slide
       $(".doctor-slides").owlCarousel({
         center: true,
-        items: 3,
+        items: 2,
         loop: true,
-        margin: 50,
+        margin: 30,
         nav: true,
         dots: true,
         responsive: {
-          600: {
+          700: {
+            items: 3,
+          },
+          900: {
             items: 4,
           },
         },
@@ -731,6 +794,15 @@
         loop: true,
         autoplay: true,
       });
+      // open and close modal
+      function openFormModal() {
+        document.querySelector(".section-modal").style.display = "block";
+        document.querySelector(".modal-overlay").style.display = "block";
+      }
+      function closeFormModal() {
+        document.querySelector(".section-modal").style.display = "none";
+        document.querySelector(".modal-overlay").style.display = "none";
+      }
     </script>
   </body>
 </html>

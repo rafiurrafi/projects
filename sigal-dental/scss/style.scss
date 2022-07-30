@@ -44,7 +44,7 @@ body {
         rgba(#213e7b, 0.3),
         rgba(#fff, 1)
       ),
-      url("../images/updated/Slider/Slider-2.png");
+      url("../images/updated/Slider/Slider-1.png");
   }
   &.hero-2 {
     background-image: linear-gradient(
@@ -53,7 +53,7 @@ body {
         rgba(#213e7b, 0.3),
         rgba(#fff, 1)
       ),
-      url("../images/updated/Slider/Slider-3.png");
+      url("../images/updated/Slider/Slider-2.png");
   }
   &.hero-3 {
     background-image: linear-gradient(
@@ -62,7 +62,7 @@ body {
         rgba(#213e7b, 0.3),
         rgba(#fff, 1)
       ),
-      url("../images/updated/Slider/Slider-4.png");
+      url("../images/updated/Slider/Slider-3.png");
   }
   &.hero-4 {
     background-image: linear-gradient(
@@ -71,7 +71,16 @@ body {
         rgba(#213e7b, 0.3),
         rgba(#fff, 1)
       ),
-      url("../images/updated/Slider/Slider-1.png");
+      url("../images/updated/Slider/Slider-4.png");
+  }
+  &.hero-5 {
+    background-image: linear-gradient(
+        to right top,
+        rgba(#00afdd, 0.5),
+        rgba(#213e7b, 0.3),
+        rgba(#fff, 1)
+      ),
+      url("../images/updated/Slider/Slider-5.png");
   }
   background-size: cover;
   background-position: center;
@@ -92,7 +101,8 @@ body {
   .about-left {
     flex: 0 0 60%;
     min-height: 34rem;
-    background-image: url(../images/updated/Slider/Slider-3.png);
+    background-image: linear-gradient(rgba(#000, 0.6), rgba(#000, 0.6)),
+      url(../images/updated/About-img.png);
     background-size: cover;
     background-position: center;
   }
@@ -143,8 +153,9 @@ body {
     margin-bottom: 3rem;
     &__img {
       height: 8rem;
-      width: 8rem;
+      width: 8rem !important;
       border-radius: 50%;
+      object-fit: cover;
       position: absolute;
       top: -20%;
       left: 50%;

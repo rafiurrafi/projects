@@ -93,13 +93,15 @@ body {
   height: 90vh;
   position: relative; }
   .section-hero.hero-1 {
-    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-2.png"); }
-  .section-hero.hero-2 {
-    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-3.png"); }
-  .section-hero.hero-3 {
-    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-4.png"); }
-  .section-hero.hero-4 {
     background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-1.png"); }
+  .section-hero.hero-2 {
+    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-2.png"); }
+  .section-hero.hero-3 {
+    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-3.png"); }
+  .section-hero.hero-4 {
+    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-4.png"); }
+  .section-hero.hero-5 {
+    background-image: linear-gradient(to right top, rgba(0, 175, 221, 0.5), rgba(33, 62, 123, 0.3), white), url("../images/updated/Slider/Slider-5.png"); }
   .section-hero button {
     position: absolute;
     bottom: 0;
@@ -111,7 +113,7 @@ body {
   .section-about .about-left {
     flex: 0 0 60%;
     min-height: 34rem;
-    background-image: url(../images/updated/Slider/Slider-3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/updated/About-img.png);
     background-size: cover;
     background-position: center; }
   .section-about h4 {
@@ -149,8 +151,9 @@ body {
     margin-bottom: 3rem; }
     .section-doctors .doctor-slide__img {
       height: 8rem;
-      width: 8rem;
+      width: 8rem !important;
       border-radius: 50%;
+      object-fit: cover;
       position: absolute;
       top: -20%;
       left: 50%;

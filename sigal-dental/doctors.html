@@ -15,7 +15,7 @@
     <!-- <link rel="stylesheet" href="vendors/owl.carousel.min.css" /> -->
 
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/doctors.css" />
     <title>Sigal - Completency and Care</title>
   </head>
   <body id="doctors-body">
@@ -200,15 +200,22 @@
     <main class="py-5">
       <div class="container">
         <div class="section-filter">
-          <div class="row">
+          <div class="row gy-3">
             <!-- search input box -->
-            <div class="col-sm-5">
-              <input type="text" class="form-control" />
+            <div class="col-sm-4">
+              <div class="doctor-input-container">
+                <span><i class="fa fa-search"></i></span>
+                <input
+                  type="text"
+                  class="form-control ps-5"
+                  placeholder="Doctor name"
+                />
+              </div>
             </div>
             <!-- select dentist  -->
             <div class="col-sm-3">
               <div class="select-box" id="select-box">
-                <div class="options-container fw-bold" id="options-container">
+                <div class="options-container" id="options-container">
                   <div class="option">
                     <input
                       type="radio"
@@ -288,7 +295,7 @@
                   class="selected d-flex justify-content-between align-items-center"
                   id="selected"
                 >
-                  <span class="fw-bold">Selected</span>
+                  <span>All Specialization</span>
                   <span class="selected-icon"
                     ><i class="fa fa-chevron-down" aria-hidden="true"></i
                   ></span>
@@ -298,10 +305,7 @@
             <!-- selct department -->
             <div class="col-sm-3">
               <div class="select-box" id="dept-select-box">
-                <div
-                  class="options-container fw-bold"
-                  id="dept-options-container"
-                >
+                <div class="options-container" id="dept-options-container">
                   <div class="option">
                     <input
                       type="radio"
@@ -381,7 +385,7 @@
                   class="selected d-flex justify-content-between align-items-center"
                   id="dept-selected"
                 >
-                  <span class="fw-bold">Selected</span>
+                  <span>Department</span>
                   <span class="selected-icon"
                     ><i class="fa fa-chevron-down" aria-hidden="true"></i
                   ></span>
@@ -389,7 +393,7 @@
               </div>
             </div>
             <!-- select button  -->
-            <div class="col-sm-1">
+            <div class="col-sm-2">
               <button class="btn btn-primary d-block w-100">Filter</button>
             </div>
           </div>

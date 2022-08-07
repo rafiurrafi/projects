@@ -1,0 +1,24 @@
+@import "./base";
+@import "./select-box";
+.doctor-input-container {
+  position: relative;
+  span {
+    position: absolute;
+    z-index: 2;
+    top: 0.7rem;
+    left: 0.8rem;
+    .fa.fa-search {
+      color: #444 !important;
+    }
+  }
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border: 1px solid #f1f2f2;
+  }
+}

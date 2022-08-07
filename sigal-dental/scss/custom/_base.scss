@@ -34,51 +34,6 @@ body {
   }
 } // rgba(#00afdd, 0.7), // rgba(#213e7b, 0.7),
 .section-hero {
-  &.hero-1 {
-    background-image: linear-gradient(
-        to right top,
-        rgba(#00afdd, 0.5),
-        rgba(#213e7b, 0.3),
-        rgba(#fff, 1)
-      ),
-      url("../images/updated/Slider/Slider-1.png");
-  }
-  &.hero-2 {
-    background-image: linear-gradient(
-        to right top,
-        rgba(#00afdd, 0.5),
-        rgba(#213e7b, 0.3),
-        rgba(#fff, 1)
-      ),
-      url("../images/updated/Slider/Slider-2.png");
-  }
-  &.hero-3 {
-    background-image: linear-gradient(
-        to right top,
-        rgba(#00afdd, 0.5),
-        rgba(#213e7b, 0.3),
-        rgba(#fff, 1)
-      ),
-      url("../images/updated/Slider/Slider-3.png");
-  }
-  &.hero-4 {
-    background-image: linear-gradient(
-        to right top,
-        rgba(#00afdd, 0.5),
-        rgba(#213e7b, 0.3),
-        rgba(#fff, 1)
-      ),
-      url("../images/updated/Slider/Slider-4.png");
-  }
-  &.hero-5 {
-    background-image: linear-gradient(
-        to right top,
-        rgba(#00afdd, 0.5),
-        rgba(#213e7b, 0.3),
-        rgba(#fff, 1)
-      ),
-      url("../images/updated/Slider/Slider-5.png");
-  }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -123,6 +78,18 @@ body {
     &:hover {
       color: white !important;
       background-color: var(--color-primary);
+    }
+  }
+}
+.navigation {
+  a {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid #166589;
+    border-radius: 50%;
+    &.active {
+      background-color: #166589;
+      color: #fff;
     }
   }
 }

@@ -200,9 +200,193 @@
     <main class="py-5">
       <div class="container">
         <div class="section-filter">
-          <div class="select-box">
-            <div class="options-container">Options</div>
-            <div class="selected">Selected</div>
+          <div class="row">
+            <!-- search input box -->
+            <div class="col-sm-5">
+              <input type="text" class="form-control" />
+            </div>
+            <!-- select dentist  -->
+            <div class="col-sm-3">
+              <div class="select-box">
+                <div class="options-container fw-bold">
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="orthodontic"
+                      name="orthodontic"
+                    />
+                    <label for="orthodontic">orthodontic</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="endodontic"
+                      name="endodontic"
+                    />
+                    <label for="endodontic">endodontic</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="implantology"
+                      name="implantology"
+                    />
+                    <label for="implantology">implantology</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="preventive-dentistry"
+                      name="preventive dentistry"
+                    />
+                    <label for="preventive-dentistry"
+                      >Preventive Dentistry</label
+                    >
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="surgery"
+                      name="surgery"
+                    />
+                    <label for="surgery">surgery</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="pedodontics"
+                      name="pedodontics"
+                    />
+                    <label for="pedodontics">pedodontics</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="prosthodontics"
+                      name="prosthodontics"
+                    />
+                    <label for="prosthodontics">prosthodontics</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="diagnostics"
+                      name="diagnostics"
+                    />
+                    <label for="diagnostics">diagnostics</label>
+                  </div>
+                </div>
+                <div
+                  class="selected d-flex justify-content-between align-items-center"
+                >
+                  <span class="fw-bold">Selected</span>
+                  <span class="selected-icon"
+                    ><i class="fa fa-arrow-down"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <!-- selct department -->
+            <div class="col-sm-3">
+              <div class="select-box">
+                <div class="options-container fw-bold">
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="orthodontic"
+                      name="orthodontic"
+                    />
+                    <label for="orthodontic">orthodontic</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="endodontic"
+                      name="endodontic"
+                    />
+                    <label for="endodontic">endodontic</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="implantology"
+                      name="implantology"
+                    />
+                    <label for="implantology">implantology</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="preventive-dentistry"
+                      name="preventive dentistry"
+                    />
+                    <label for="preventive-dentistry"
+                      >Preventive Dentistry</label
+                    >
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="surgery"
+                      name="surgery"
+                    />
+                    <label for="surgery">surgery</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="pedodontics"
+                      name="pedodontics"
+                    />
+                    <label for="pedodontics">pedodontics</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="prosthodontics"
+                      name="prosthodontics"
+                    />
+                    <label for="prosthodontics">prosthodontics</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="select-radio"
+                      id="diagnostics"
+                      name="diagnostics"
+                    />
+                    <label for="diagnostics">diagnostics</label>
+                  </div>
+                </div>
+                <div
+                  class="selected d-flex justify-content-between align-items-center"
+                >
+                  <span class="fw-bold">Selected</span>
+                  <span class="selected-icon"
+                    ><i class="fa fa-arrow-down"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <!-- select button  -->
+            <div class="col-sm-1">
+              <button class="btn btn-primary d-block w-100">Filter</button>
+            </div>
           </div>
         </div>
       </div>
@@ -381,15 +565,21 @@
         loop: true,
         autoplay: true,
       });
-      // open and close modal
-      function openFormModal() {
-        document.querySelector(".section-modal").style.display = "block";
-        document.querySelector(".modal-overlay").style.display = "block";
-      }
-      function closeFormModal() {
-        document.querySelector(".section-modal").style.display = "none";
-        document.querySelector(".modal-overlay").style.display = "none";
-      }
+      // select box
+      const selected = document.querySelector(".selected");
+      const selectBox = document.querySelector(".select-box");
+      const optionsContainer = document.querySelector(".options-container");
+      selected.addEventListener("click", function () {
+        selectBox.classList.toggle("active");
+      });
+      const options = document.querySelectorAll("label");
+      options.forEach((option) => {
+        option.addEventListener("click", function () {
+          selectBox.classList.toggle("active");
+          const selectedText = selected.querySelector("span:first-of-type");
+          selectedText.textContent = option.textContent;
+        });
+      });
     </script>
   </body>
 </html>

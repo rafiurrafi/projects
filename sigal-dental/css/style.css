@@ -164,6 +164,47 @@ body {
   top: 45%;
   left: 0; }
 
+.select-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  position: relative;
+  border-radius: 0.5rem; }
+  .select-box .selected {
+    order: 0;
+    cursor: pointer;
+    border: 1px solid #f1f2f2;
+    padding: 0.5rem 1rem; }
+    .select-box .selected-icon {
+      transition: 0.3s; }
+  .select-box .options-container {
+    background-color: white;
+    order: 1;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: -260px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    border-radius: 0 0rem 0.5rem 0.5rem; }
+    .select-box .options-container input[type="radio"] {
+      display: none; }
+    .select-box .options-container label {
+      margin: 0.5rem 0;
+      padding-left: 1rem;
+      cursor: pointer;
+      border-left: 3px solid transparent; }
+      .select-box .options-container label:hover {
+        color: #0079b2;
+        border-left: 3px solid #0079b2; }
+  .select-box .options-container.active + .selected {
+    background-color: red; }
+  .select-box.active .options-container {
+    max-height: 260px; }
+  .select-box.active .selected-icon {
+    transform: rotate(-180deg); }
+
 .section-about {
   padding: 7rem 0; }
   .section-about .about-left {

@@ -1,5 +1,8 @@
 @import "./base";
 @import "./select-box";
+#doctors-body {
+  background-color: #f0f0f0;
+}
 .doctor-input-container {
   position: relative;
   span {
@@ -20,5 +23,39 @@
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     border: 1px solid #f1f2f2;
+  }
+}
+.doctor-info {
+  font-size: 80%;
+  position: relative;
+  border-radius: 0.8rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20%;
+    height: 60%;
+    width: 0.7rem;
+    background-color: #0079b2;
+    display: block;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  img {
+    width: 100%;
+  }
+}
+.doctor-info a {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding-top: 1px;
+  text-align: center;
+  border: 1px solid #0079b2;
+  border-radius: 50%;
+  display: inline-block;
+  &:hover {
+    background-color: #0079b2;
+    i.fa {
+      color: white;
+    }
   }
 }

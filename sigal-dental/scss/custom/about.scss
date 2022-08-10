@@ -3,7 +3,80 @@
 #about-body {
   background-color: #f0f0f0;
   .section-hero-containers .section-hero {
-    background-color: red;
+    background-image: url("../../images/about-bg.png");
+  }
+}
+.section-about-description {
+  min-height: 70vh;
+  width: 70%;
+  margin-left: 15%;
+  background-image: url("../../images/about-bg-w.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  margin-top: -10rem;
+  border-radius: 0.5rem;
+  margin-bottom: 10rem;
+  & > div {
+    width: 80%;
+    margin-left: 5%;
+    p:first-of-type {
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    object-fit: contain;
+  }
+}
+.section-about-goal .bg-white {
+  height: 18rem;
+  padding-top: 8rem;
+  position: relative;
+  .img-container {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f0f0;
+    z-index: 1;
+    img {
+      height: 74%;
+      width: 74%;
+      transform: scale(0.8);
+    }
+  }
+}
+.section-about-values {
+  margin-bottom: 6rem;
+  h4 {
+    font-size: 3.5rem;
+  }
+  .about-value-single {
+    height: 7.5rem;
+    background-image: url("../../images/about-bg-w.png");
+    background-size: cover;
+    border-radius: 0.8rem;
+
+    position: relative;
+  }
+  a {
+    color: #0079b2;
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1.3rem;
   }
 }
 // xs

@@ -30,6 +30,17 @@ body {
     a {
       font-size: 1rem;
       font-weight: 600;
+      &.active {
+        color: #0079b2 !important;
+      }
+      &.active::after {
+        content: "";
+        width: 1.5rem;
+        height: 3px;
+        background-color: #0079b2;
+        display: block;
+        margin-top: 0.3rem;
+      }
     }
   }
 } // rgba(#00afdd, 0.7), // rgba(#213e7b, 0.7),

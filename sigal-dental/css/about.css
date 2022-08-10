@@ -251,6 +251,9 @@ body {
     z-index: 1;
     object-fit: contain; }
 
+.section-about-goal {
+  margin-bottom: 6rem; }
+
 .section-about-goal .bg-white {
   height: 18rem;
   padding-top: 8rem;
@@ -273,7 +276,7 @@ body {
 .section-about-values {
   margin-bottom: 6rem; }
   .section-about-values h4 {
-    font-size: 3.5rem; }
+    font-size: 3rem; }
   .section-about-values .about-value-single {
     height: 7.5rem;
     background-image: url("../../images/about-bg-w.png");

@@ -2,7 +2,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif; }
 
 @media (max-width: 1200px) {
   html {
@@ -16,5 +17,25 @@ body {
 @media (max-width: 576px) {
   html {
     font-size: 60%; } }
+.hero-single {
+  position: relative;
+  height: 80vh; }
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%); }
+  .hero-content h1 {
+    font-size: 6rem; }
+  .hero-content img {
+    height: 9.5rem; }
+.hero-bg-img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; }
 
 /*# sourceMappingURL=home.css.map */

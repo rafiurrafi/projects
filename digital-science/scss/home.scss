@@ -1,1 +1,28 @@
 @import "./custom/base";
+.hero {
+  &-single {
+    position: relative;
+    height: 80vh;
+  }
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    h1 {
+      font-size: 6rem;
+    }
+    img {
+      height: 9.5rem;
+    }
+  }
+  &-bg-img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+}

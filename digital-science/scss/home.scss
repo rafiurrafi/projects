@@ -46,3 +46,20 @@
     }
   }
 }
+
+.section-home-service {
+  background-color: #f0f0f0;
+  padding: 10rem 0;
+  .title {
+    margin-bottom: 10rem;
+  }
+  img {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+  }
+  p {
+    font-weight: 500;
+    font-size: 95%;
+  }
+}

@@ -71,4 +71,17 @@ body {
       width: 30vw;
       background-image: linear-gradient(to right, #1ab0f2, #080a87); }
 
+.section-home-service {
+  background-color: #f0f0f0;
+  padding: 10rem 0; }
+  .section-home-service .title {
+    margin-bottom: 10rem; }
+  .section-home-service img {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover; }
+  .section-home-service p {
+    font-weight: 500;
+    font-size: 95%; }
+
 /*# sourceMappingURL=home.css.map */

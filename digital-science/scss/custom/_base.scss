@@ -1,0 +1,37 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+// responsive
+//devices
+// xl
+
+@media (min-width: 1200px) {
+}
+// lg
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+// md
+@media (max-width: 992px) {
+  html {
+    font-size: 70%;
+  }
+}
+// sm
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+}
+// xs
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+}

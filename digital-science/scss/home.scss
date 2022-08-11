@@ -13,7 +13,7 @@
       font-size: 6rem;
     }
     img {
-      height: 9.5rem;
+      height: 8.5rem;
     }
   }
   &-bg-img {
@@ -24,5 +24,20 @@
     height: 100%;
     width: 100%;
     z-index: -1;
+  }
+}
+.section-home-description {
+  min-height: 80vh;
+  p {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30vw;
+      height: 3px;
+      background-image: linear-gradient(to right, #1ab0f2, #080a87);
+      bottom: -30%;
+      left: 0;
+    }
   }
 }

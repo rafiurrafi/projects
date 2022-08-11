@@ -28,7 +28,7 @@ body {
   .hero-content h1 {
     font-size: 6rem; }
   .hero-content img {
-    height: 9.5rem; }
+    height: 8.5rem; }
 .hero-bg-img {
   object-fit: cover;
   position: absolute;
@@ -37,5 +37,18 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1; }
+
+.section-home-description {
+  min-height: 80vh; }
+  .section-home-description p {
+    position: relative; }
+    .section-home-description p::after {
+      content: "";
+      position: absolute;
+      width: 30vw;
+      height: 3px;
+      background-image: linear-gradient(to right, #1ab0f2, #080a87);
+      bottom: -30%;
+      left: 0; }
 
 /*# sourceMappingURL=home.css.map */

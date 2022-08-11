@@ -3,6 +3,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  position: relative;
   font-family: "Raleway", sans-serif; }
 
 .title {
@@ -29,9 +30,16 @@ body {
 @media (max-width: 576px) {
   html {
     font-size: 60%; } }
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 3; }
+
 .hero-single {
   position: relative;
-  height: 80vh; }
+  height: 100vh; }
 .hero-content {
   position: absolute;
   top: 50%;

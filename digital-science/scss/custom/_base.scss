@@ -1,3 +1,9 @@
+// mixins
+@mixin gradient($height, $width, $start-color, $end-color) {
+  height: $height;
+  width: $width;
+  background-image: linear-gradient(to right, $start-color, $end-color);
+}
 html {
   font-size: 62.5%;
 }
@@ -5,15 +11,23 @@ body {
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif;
 }
-
+.title {
+  font-size: 4.7rem;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    @include gradient(3px, 55px, #1ab0f2, #4fe699);
+  }
+}
 // responsive
 //devices
 // xl
 
-@media (min-width: 1200px) {
-}
 // lg
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
   html {
     font-size: 80%;
   }

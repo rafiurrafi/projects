@@ -5,7 +5,19 @@ body {
   font-size: 1.6rem;
   font-family: "Raleway", sans-serif; }
 
-@media (max-width: 1200px) {
+.title {
+  font-size: 4.7rem;
+  position: relative; }
+  .title::after {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    height: 3px;
+    width: 55px;
+    background-image: linear-gradient(to right, #1ab0f2, #4fe699); }
+
+@media (min-width: 1200px) {
   html {
     font-size: 80%; } }
 @media (max-width: 992px) {
@@ -45,10 +57,10 @@ body {
     .section-home-description p::after {
       content: "";
       position: absolute;
-      width: 30vw;
-      height: 3px;
-      background-image: linear-gradient(to right, #1ab0f2, #080a87);
       bottom: -30%;
-      left: 0; }
+      left: 0;
+      height: 3px;
+      width: 30vw;
+      background-image: linear-gradient(to right, #1ab0f2, #080a87); }
 
 /*# sourceMappingURL=home.css.map */

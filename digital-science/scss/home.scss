@@ -33,11 +33,9 @@
     &::after {
       content: "";
       position: absolute;
-      width: 30vw;
-      height: 3px;
-      background-image: linear-gradient(to right, #1ab0f2, #080a87);
       bottom: -30%;
       left: 0;
+      @include gradient(3px, 30vw, #1ab0f2, #080a87);
     }
   }
 }

@@ -23,6 +23,9 @@ body {
     @include gradient(3px, 55px, #1ab0f2, #4fe699);
   }
 }
+.bg-light-gray {
+  background-color: #f0f0f0;
+}
 // responsive
 //devices
 // xl

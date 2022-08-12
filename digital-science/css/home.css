@@ -18,6 +18,9 @@ body {
     width: 55px;
     background-image: linear-gradient(to right, #1ab0f2, #4fe699); }
 
+.bg-light-gray {
+  background-color: #f0f0f0; }
+
 @media (min-width: 1200px) {
   html {
     font-size: 80%; } }
@@ -44,7 +47,7 @@ body {
   position: absolute;
   top: 50%;
   left: 10%;
-  transform: translateY(-50%); }
+  transform: translateY(-40%); }
   .hero-content h1 {
     font-size: 6rem; }
   .hero-content img {
@@ -72,7 +75,6 @@ body {
       background-image: linear-gradient(to right, #1ab0f2, #080a87); }
 
 .section-home-service {
-  background-color: #f0f0f0;
   padding: 10rem 0; }
   .section-home-service .title {
     margin-bottom: 10rem; }
@@ -83,5 +85,41 @@ body {
   .section-home-service p {
     font-weight: 500;
     font-size: 95%; }
+
+.footer-logo {
+  height: 10.4rem; }
+.footer p {
+  font-size: 1.1rem; }
+.footer-link {
+  font-weight: 500;
+  font-size: 1.2rem; }
+.footer-socials a {
+  height: 3rem; }
+  .footer-socials a:hover path {
+    stroke: #1ab0f2; }
+.footer form {
+  font-size: 1.1rem; }
+  .footer form input {
+    border-radius: 0.5rem 0 0 0.5rem; }
+  .footer form .btn {
+    border-radius: 0 0.5rem 0.5rem 0;
+    border: none;
+    background-color: #c6c6c6; }
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 80%; } }
+@media (max-width: 992px) {
+  html {
+    font-size: 70%; } }
+@media (max-width: 768px) {
+  html {
+    font-size: 65%; }
+
+  .footer-links {
+    margin-left: 0 !important; } }
+@media (max-width: 576px) {
+  html {
+    font-size: 60%; } }
 
 /*# sourceMappingURL=home.css.map */

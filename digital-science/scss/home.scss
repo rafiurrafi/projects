@@ -61,6 +61,38 @@
     font-weight: 500;
     font-size: 95%;
   }
+  .col-sm-6 div {
+    width: 80%;
+    margin-left: 10%;
+    height: 21rem;
+    flex-direction: column;
+    transition: 0.5s;
+    a {
+      position: relative;
+      margin-left: 30%;
+      display: none;
+      color: #1ab0f2;
+      &::after {
+        font-family: FontAwesome;
+        font-weight: 900;
+        content: "\f105";
+        position: absolute;
+        right: -1rem;
+        top: 0;
+        font-size: 1.5rem;
+        transition: right 0.3s;
+      }
+      &:hover::after {
+        right: -1.5rem;
+      }
+    }
+    &:hover {
+      box-shadow: 0 0 1.5rem rgba($color: #000000, $alpha: 0.2);
+      a {
+        display: block;
+      }
+    }
+  }
 }
 
 .footer {

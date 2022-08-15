@@ -2,7 +2,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   position: relative;
   font-family: "Raleway", sans-serif; }
 
@@ -85,6 +85,32 @@ body {
   .section-home-service p {
     font-weight: 500;
     font-size: 95%; }
+  .section-home-service .col-sm-6 div {
+    width: 80%;
+    margin-left: 10%;
+    height: 21rem;
+    flex-direction: column;
+    transition: 0.5s; }
+    .section-home-service .col-sm-6 div a {
+      position: relative;
+      margin-left: 30%;
+      display: none;
+      color: #1ab0f2; }
+      .section-home-service .col-sm-6 div a::after {
+        font-family: FontAwesome;
+        font-weight: 900;
+        content: "\f105";
+        position: absolute;
+        right: -1rem;
+        top: 0;
+        font-size: 1.5rem;
+        transition: right 0.3s; }
+      .section-home-service .col-sm-6 div a:hover::after {
+        right: -1.5rem; }
+    .section-home-service .col-sm-6 div:hover {
+      box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2); }
+      .section-home-service .col-sm-6 div:hover a {
+        display: block; }
 
 .footer-logo {
   height: 10.4rem; }

@@ -5,6 +5,42 @@
   left: 0;
   top: 0;
   z-index: 3;
+  .nav-link-container:hover {
+    .nav-dropdown {
+      display: block;
+      opacity: 1;
+    }
+  }
+  .nav-dropdown {
+    position: absolute;
+    background-color: white;
+    width: 22rem;
+    padding-top: 2.3rem;
+    display: none;
+    border-radius: 0 0 1rem 1rem;
+    transition: opacity 0.3s;
+    a {
+      font-size: 85%;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -0.4rem;
+        left: 0;
+        height: 3px;
+        width: 3rem;
+        background-color: #1ab0f2;
+        opacity: 0;
+        transition: 0.2s;
+      }
+      &:hover {
+        color: #1ab0f2;
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 .hero {
   &-single {
@@ -40,7 +76,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -30%;
+      bottom: -45%;
       left: 0;
       @include gradient(3px, 30vw, #1ab0f2, #080a87);
     }
@@ -140,12 +176,38 @@
   html {
     font-size: 70%;
   }
+  .nav-link-container {
+    position: relative;
+  }
+  .nav-link.text-primary.ms-5 {
+    margin-left: 1rem !important;
+  }
+  .nav-dropdown {
+    left: 7rem;
+    top: 1rem;
+    padding-top: 1rem !important;
+    padding-left: 1rem !important;
+    display: none;
+    transition: opacity 0.3s;
+    border-radius: 0 !important;
+    box-shadow: 0 0.5rem 1rem rgba(#000000, 0.15) !important;
+    z-index: 3;
+    a {
+      font-size: 1.2rem !important;
+    }
+  }
+  .section-home-service {
+    .col-sm-6 div {
+      width: 95%;
+    }
+  }
 }
 // sm
 @media (max-width: 768px) {
   html {
     font-size: 65%;
   }
+
   .footer-links {
     margin-left: 0 !important;
   }

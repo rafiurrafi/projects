@@ -63,4 +63,10 @@
       color: #00afdd;
     }
   }
+  select {
+    option {
+      color: #000 !important;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    }
+  }
 }

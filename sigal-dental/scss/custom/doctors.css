@@ -51,9 +51,6 @@
     background: #95d7f7;
     border: 1px solid #95d7f7;
     color: #00afdd; }
-.contact select option {
-  color: #000 !important;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
 
 .input {
   display: inline-block;
@@ -84,7 +81,7 @@ body {
   left: 0;
   z-index: 4; }
   .header .navbar-logo {
-    height: 7.25rem; }
+    height: 6.25rem; }
   .header .header-nav a {
     font-size: 1rem;
     font-weight: 600; }
@@ -109,7 +106,7 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: rgba(33, 33, 33, 0.67); }
+    background-color: rgba(162, 162, 162, 0.294); }
 
 .footer a {
   color: #444444; }

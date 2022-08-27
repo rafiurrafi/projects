@@ -51,8 +51,10 @@
     background: #95d7f7;
     border: 1px solid #95d7f7;
     color: #00afdd; }
-.contact select option {
-  color: #000 !important;
+.contact select {
+  color: #a9a6a6 !important; }
+.contact option:not(:first-of-type) {
+  color: black !important;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
 
 .input {

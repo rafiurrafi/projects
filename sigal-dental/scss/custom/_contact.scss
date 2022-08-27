@@ -64,9 +64,19 @@
     }
   }
   select {
-    option {
-      color: #000 !important;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-    }
+    // option[value=""][disabled] {
+    //   color: red !important;
+    // }
+    // option {
+    //   color: #000 !important;
+    //   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    // }
+  }
+  select {
+    color: #a9a6a6 !important;
+  }
+  option:not(:first-of-type) {
+    color: black !important;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
   }
 }

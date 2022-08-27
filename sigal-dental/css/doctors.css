@@ -135,6 +135,10 @@ body {
   .footer__social:hover {
     color: white !important;
     background-color: var(--color-primary); }
+.footer-map-link {
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .footer-map-link:hover {
+    color: #213e7b; }
 
 .navigation a {
   height: 1.5rem;

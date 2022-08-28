@@ -422,7 +422,10 @@ body {
     padding: 1.5rem !important; } }
 @media (max-width: 992px) {
   .hero-content button {
-    margin-top: 1.5rem; } }
+    margin-top: 1.5rem; }
+
+  #dental-body .navbar-nav .nav-link {
+    color: white !important; } }
 @media (max-width: 768px) {
   .section-about .about-left {
     min-height: 25rem; }
@@ -443,5 +446,3 @@ body {
     left: 26%; }
   .section-doctors .owl-next {
     right: 28%; } }
-
-/*# sourceMappingURL=style.css.map */

@@ -2,3 +2,26 @@
 @import "./custom/header";
 @import "./custom/custom-font";
 @import "./custom/footer";
+.section-about-hero {
+  height: 85vh;
+  position: relative;
+  .about-img-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 85%;
+    background-position: center;
+    background-size: cover;
+  }
+  .container {
+    position: relative;
+    height: inherit;
+  }
+  h1 {
+    font-size: 6rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+  }
+}

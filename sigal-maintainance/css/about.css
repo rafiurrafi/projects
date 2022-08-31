@@ -79,3 +79,23 @@ body {
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     .footer-map-link:hover {
       color: #95d7f7; }
+
+.section-about-hero {
+  height: 85vh;
+  position: relative; }
+  .section-about-hero .about-img-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 85%;
+    background-position: center;
+    background-size: cover; }
+  .section-about-hero .container {
+    position: relative;
+    height: inherit; }
+  .section-about-hero h1 {
+    font-size: 6rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 0; }

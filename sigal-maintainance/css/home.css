@@ -2,7 +2,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  color: #444; }
 
 .header-logo {
   width: 15rem; }
@@ -52,5 +53,10 @@ body {
       bottom: 5rem;
       z-index: 1;
       font-size: 5rem; }
+
+.section-short-des {
+  padding: 8rem 0;
+  font-weight: 300;
+  font-size: 2.2rem; }
 
 /*# sourceMappingURL=home.css.map */

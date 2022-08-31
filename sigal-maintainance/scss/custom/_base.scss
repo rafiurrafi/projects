@@ -3,9 +3,11 @@ $color-secondary: #0079b2;
 $footer-dark: #08142e;
 $footer-light: #95d7f7;
 $medium-secondary-color: #0badde;
+$font-color: #444;
 html {
   font-size: 62.5%; //1rem = 10px
 }
 body {
   font-size: 1.6rem;
+  color: $font-color;
 }

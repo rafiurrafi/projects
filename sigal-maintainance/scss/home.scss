@@ -1,1 +1,18 @@
 @import "./custom/base";
+@import "./custom/header";
+.single-hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .container {
+    position: relative;
+    height: inherit;
+    h1 {
+      position: absolute;
+      bottom: 4rem;
+      z-index: 1;
+      font-size: 5rem;
+    }
+  }
+}

@@ -34,4 +34,18 @@ body {
   .header-right a:first-child {
     transform: translateY(3px); }
 
+.single-hero {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .single-hero .container {
+    position: relative;
+    height: inherit; }
+    .single-hero .container h1 {
+      position: absolute;
+      bottom: 4rem;
+      z-index: 1;
+      font-size: 5rem; }
+
 /*# sourceMappingURL=home.css.map */

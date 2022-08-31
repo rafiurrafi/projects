@@ -1,6 +1,11 @@
 @import "./custom/base";
 @import "./custom/header";
 @import "./custom/custom-font";
+// Reusable
+.title-primary {
+  font-weight: 400;
+  font-size: 5.5rem;
+}
 // ====================================
 // section hero
 // ====================================
@@ -58,17 +63,108 @@
   }
 }
 // ====================================
+// section offer
+// ====================================
+.section-offer {
+  background-color: #f0f0f0;
+  padding: 8rem 0;
+
+  p {
+    font-size: 1.4rem;
+  }
+  img {
+    width: 100%;
+  }
+}
+// ====================================
+// section service
+// ====================================
+.section-service {
+  padding: 6rem 0;
+  .service-content {
+    display: flex;
+    flex-wrap: wrap;
+    div:first-child {
+      flex: 0 0 40rem;
+      margin-right: 4rem;
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    & > div:not(:first-child) {
+      position: relative;
+      color: $medium-secondary-color;
+      width: 20rem;
+      height: 13.6rem;
+      border: 1px solid $medium-secondary-color;
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+      .service-number {
+        position: absolute;
+        height: 3rem;
+        width: 3rem;
+        background-color: $color-secondary;
+        font-weight: bold;
+        text-align: center;
+        line-height: 3rem;
+        vertical-align: middle;
+        top: -1.5rem;
+        left: 1rem;
+      }
+    }
+  }
+}
+// ====================================
 // section hero
 // ====================================
 // ====================================
 // section hero
 // ====================================
 // ====================================
-// section hero
+// Responsive
 // ====================================
-// ====================================
-// section hero
-// ====================================
-// ====================================
-// section hero
-// ====================================
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+// X-Large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {
+  .service-content {
+    div:first-child {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+  html {
+    font-size: 60%;
+  }
+  .title-primary {
+    font-weight: 400;
+    font-size: 4.7rem;
+  }
+  .section-offer {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+  .section-offer {
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+}

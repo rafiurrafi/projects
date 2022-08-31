@@ -38,6 +38,10 @@ body {
 @font-face {
   font-family: segos;
   src: url("../../fonts/segos.woff"); }
+.title-primary {
+  font-weight: 400;
+  font-size: 5.5rem; }
+
 .single-hero {
   height: 83vh;
   background-size: cover;
@@ -73,5 +77,66 @@ body {
     .section-sigal-desc .sigal-desc-box div a {
       position: relative;
       color: #0079b2; }
+
+.section-offer {
+  background-color: #f0f0f0;
+  padding: 8rem 0; }
+  .section-offer p {
+    font-size: 1.4rem; }
+  .section-offer img {
+    width: 100%; }
+
+.section-service {
+  padding: 6rem 0; }
+  .section-service .service-content {
+    display: flex;
+    flex-wrap: wrap; }
+    .section-service .service-content div:first-child {
+      flex: 0 0 40rem;
+      margin-right: 4rem; }
+      .section-service .service-content div:first-child p {
+        font-size: 1.5rem; }
+    .section-service .service-content > div:not(:first-child) {
+      position: relative;
+      color: #0badde;
+      width: 20rem;
+      height: 13.6rem;
+      border: 1px solid #0badde;
+      margin-bottom: 2rem;
+      margin-right: 2rem; }
+      .section-service .service-content > div:not(:first-child) .service-number {
+        position: absolute;
+        height: 3rem;
+        width: 3rem;
+        background-color: #0079b2;
+        font-weight: bold;
+        text-align: center;
+        line-height: 3rem;
+        vertical-align: middle;
+        top: -1.5rem;
+        left: 1rem; }
+
+@media (max-width: 1200px) {
+  .service-content div:first-child {
+    flex: 0 0 100%; } }
+@media (max-width: 992px) {
+  html {
+    font-size: 60%; }
+
+  .title-primary {
+    font-weight: 400;
+    font-size: 4.7rem; }
+
+  .section-offer p {
+    font-size: 1.2rem; } }
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%; }
+
+  .section-offer p {
+    font-size: 1.4rem; } }
+@media (max-width: 576px) {
+  html {
+    font-size: 50%; } }
 
 /*# sourceMappingURL=home.css.map */

@@ -123,8 +123,33 @@
   }
 }
 // ====================================
-// section hero
+// section exclusive
 // ====================================
+.section-exclusive {
+  padding: 6rem 0;
+  height: 76rem;
+  .container {
+    position: relative;
+    height: inherit;
+  }
+  .exclusive-right {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .exclusive-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 60%;
+    z-index: 1;
+  }
+}
 // ====================================
 // section hero
 // ====================================
@@ -133,6 +158,18 @@
 // ====================================
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .section-exclusive {
+    .exclusive-right {
+      width: 55%;
+    }
+    .exclusive-left {
+      top: 25%;
+      width: 55%;
+      p {
+        font-size: 125% !important;
+      }
+    }
+  }
 }
 // X-Large devices (large desktops, 1200px and up)
 @media (max-width: 1200px) {
@@ -157,6 +194,15 @@
       font-size: 1.2rem;
     }
   }
+  .section-exclusive {
+    .exclusive-right {
+      width: 70%;
+    }
+    .exclusive-left {
+      top: 25%;
+      width: 70%;
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -167,6 +213,14 @@
   .section-offer {
     p {
       font-size: 1.4rem;
+    }
+  }
+  .section-exclusive {
+    .exclusive-right {
+      width: 90%;
+    }
+    .exclusive-left {
+      width: 90%;
     }
   }
 }

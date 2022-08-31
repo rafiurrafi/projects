@@ -106,10 +106,17 @@ body {
   .section-sigal-desc .sigal-desc-box div {
     position: absolute;
     bottom: 0.5rem;
-    right: 1rem; }
+    right: 3rem; }
     .section-sigal-desc .sigal-desc-box div a {
       position: relative;
       color: #0079b2; }
+      .section-sigal-desc .sigal-desc-box div a span {
+        transition: 0.5s;
+        display: inline-block;
+        transform-origin: left;
+        font-weight: bold; }
+      .section-sigal-desc .sigal-desc-box div a:hover span {
+        transform: scaleX(2); }
 
 .section-offer {
   background-color: #f0f0f0;

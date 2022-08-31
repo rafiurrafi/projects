@@ -55,10 +55,19 @@
     div {
       position: absolute;
       bottom: 0.5rem;
-      right: 1rem;
+      right: 3rem;
       a {
         position: relative;
         color: $color-secondary;
+        span {
+          transition: 0.5s;
+          display: inline-block;
+          transform-origin: left;
+          font-weight: bold;
+        }
+        &:hover span {
+          transform: scaleX(2);
+        }
       }
     }
   }

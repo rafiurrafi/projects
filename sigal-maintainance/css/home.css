@@ -59,4 +59,19 @@ body {
   font-weight: 300;
   font-size: 2.2rem; }
 
+.section-sigal-desc .col-sm-6:not(:first-of-type) {
+  border-left: 1px solid #0079b2; }
+.section-sigal-desc .sigal-desc-box {
+  min-height: 38rem;
+  position: relative; }
+  .section-sigal-desc .sigal-desc-box h2 {
+    font-size: 3rem; }
+  .section-sigal-desc .sigal-desc-box div {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem; }
+    .section-sigal-desc .sigal-desc-box div a {
+      position: relative;
+      color: #0079b2; }
+
 /*# sourceMappingURL=home.css.map */

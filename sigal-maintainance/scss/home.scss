@@ -35,6 +35,28 @@
 // ====================================
 // section hero
 // ====================================
+.section-sigal-desc {
+  .col-sm-6:not(:first-of-type) {
+    border-left: 1px solid $color-secondary;
+  }
+
+  .sigal-desc-box {
+    min-height: 38rem;
+    position: relative;
+    h2 {
+      font-size: 3rem;
+    }
+    div {
+      position: absolute;
+      bottom: 0.5rem;
+      right: 1rem;
+      a {
+        position: relative;
+        color: $color-secondary;
+      }
+    }
+  }
+}
 // ====================================
 // section hero
 // ====================================

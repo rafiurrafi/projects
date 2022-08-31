@@ -1,7 +1,8 @@
 @import "./custom/base";
 @import "./custom/header";
+@import "./custom/custom-font";
 .single-hero {
-  height: 90vh;
+  height: 83vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,8 +10,11 @@
     position: relative;
     height: inherit;
     h1 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      //   font-family: segos;
+      font-weight: 700;
       position: absolute;
-      bottom: 4rem;
+      bottom: 5rem;
       z-index: 1;
       font-size: 5rem;
     }

@@ -34,8 +34,11 @@ body {
   .header-right a:first-child {
     transform: translateY(3px); }
 
+@font-face {
+  font-family: segos;
+  src: url("../../fonts/segos.woff"); }
 .single-hero {
-  height: 90vh;
+  height: 83vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -43,8 +46,10 @@ body {
     position: relative;
     height: inherit; }
     .single-hero .container h1 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
       position: absolute;
-      bottom: 4rem;
+      bottom: 5rem;
       z-index: 1;
       font-size: 5rem; }
 

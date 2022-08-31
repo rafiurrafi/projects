@@ -19,7 +19,8 @@
       opacity: 0;
       transition: 0.3s 0.1s;
     }
-    &:hover {
+    &:hover,
+    &.active {
       color: $color-secondary;
       &::after {
         opacity: 1;

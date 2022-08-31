@@ -23,9 +23,9 @@ body {
     margin-left: 0.5rem;
     opacity: 0;
     transition: 0.3s 0.1s; }
-  .header .nav-link:hover {
+  .header .nav-link:hover, .header .nav-link.active {
     color: #0079b2; }
-    .header .nav-link:hover::after {
+    .header .nav-link:hover::after, .header .nav-link.active::after {
       opacity: 1; }
 .header-right a {
   color: #243673;

@@ -1,0 +1,42 @@
+// Section footer
+.footer {
+  background-color: $footer-dark;
+  a {
+    color: white;
+  }
+  h4 {
+    position: relative;
+    color: $footer-light;
+    font-size: 1.6rem;
+    &::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 2rem;
+      background-color: $footer-light;
+      position: absolute;
+      margin-top: 5px;
+    }
+  }
+  &__logo {
+    width: 70%;
+  }
+  &__social {
+    color: $footer-light !important;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid $footer-dark;
+    border-radius: 50%;
+    transition: all 0.3s;
+    &:hover {
+      color: white !important;
+      background-color: $footer-dark;
+    }
+  }
+  &-map-link {
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &:hover {
+      color: $footer-light;
+    }
+  }
+}

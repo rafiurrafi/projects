@@ -1,6 +1,7 @@
 @import "./custom/base";
 @import "./custom/header";
 @import "./custom/custom-font";
+@import "./custom/footer";
 // Reusable
 .title-primary {
   font-weight: 400;
@@ -155,6 +156,7 @@
 // ====================================
 .section-partners {
   overflow-x: hidden;
+  padding-bottom: 10rem;
 }
 .partners {
   position: relative;
@@ -180,7 +182,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -1rem;
+    bottom: -3rem;
     display: flex;
     list-style: none;
     button {
@@ -202,7 +204,7 @@
   .slick-next,
   .slick-prev {
     position: absolute;
-    bottom: -1rem;
+    bottom: -3rem;
     border: none;
     background-color: transparent;
     &:focus {
@@ -252,6 +254,11 @@
     font-weight: 400;
     font-size: 4.7rem;
   }
+  .section-sigal-desc {
+    .col-sm-6:nth-child(3) {
+      border-left: 1px solid transparent;
+    }
+  }
   .section-offer {
     p {
       font-size: 1.2rem;
@@ -291,5 +298,8 @@
 @media (max-width: 576px) {
   html {
     font-size: 50%;
+  }
+  .sigal-desc-box {
+    min-height: 30rem !important;
   }
 }

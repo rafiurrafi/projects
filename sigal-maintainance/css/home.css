@@ -38,6 +38,39 @@ body {
 @font-face {
   font-family: segos;
   src: url("../../fonts/segos.woff"); }
+.footer {
+  background-color: #08142e; }
+  .footer a {
+    color: white; }
+  .footer h4 {
+    position: relative;
+    color: #95d7f7;
+    font-size: 1.6rem; }
+    .footer h4::after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 2rem;
+      background-color: #95d7f7;
+      position: absolute;
+      margin-top: 5px; }
+  .footer__logo {
+    width: 70%; }
+  .footer__social {
+    color: #95d7f7 !important;
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid #08142e;
+    border-radius: 50%;
+    transition: all 0.3s; }
+    .footer__social:hover {
+      color: white !important;
+      background-color: #08142e; }
+  .footer-map-link {
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .footer-map-link:hover {
+      color: #95d7f7; }
+
 .title-primary {
   font-weight: 400;
   font-size: 5.5rem; }
@@ -144,7 +177,8 @@ body {
     z-index: 1; }
 
 .section-partners {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding-bottom: 10rem; }
 
 .partners {
   position: relative;
@@ -165,7 +199,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -1rem;
+    bottom: -3rem;
     display: flex;
     list-style: none; }
     .partners .slick-dots button {
@@ -182,7 +216,7 @@ body {
   .partners .slick-next,
   .partners .slick-prev {
     position: absolute;
-    bottom: -1rem;
+    bottom: -3rem;
     border: none;
     background-color: transparent; }
     .partners .slick-next:focus,
@@ -212,6 +246,9 @@ body {
     font-weight: 400;
     font-size: 4.7rem; }
 
+  .section-sigal-desc .col-sm-6:nth-child(3) {
+    border-left: 1px solid transparent; }
+
   .section-offer p {
     font-size: 1.2rem; }
 
@@ -233,6 +270,9 @@ body {
     width: 90%; } }
 @media (max-width: 576px) {
   html {
-    font-size: 50%; } }
+    font-size: 50%; }
+
+  .sigal-desc-box {
+    min-height: 30rem !important; } }
 
 /*# sourceMappingURL=home.css.map */

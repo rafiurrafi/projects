@@ -103,7 +103,13 @@ body {
       height: 13.6rem;
       border: 1px solid #0badde;
       margin-bottom: 2rem;
-      margin-right: 2rem; }
+      margin-right: 2rem;
+      transition: 0.3s; }
+      .section-service .service-content > div:not(:first-child):hover {
+        background-color: #0079b2;
+        color: white; }
+        .section-service .service-content > div:not(:first-child):hover .service-number {
+          background-color: #243673; }
       .section-service .service-content > div:not(:first-child) .service-number {
         position: absolute;
         height: 3rem;

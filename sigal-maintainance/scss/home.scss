@@ -99,6 +99,14 @@
       border: 1px solid $medium-secondary-color;
       margin-bottom: 2rem;
       margin-right: 2rem;
+      transition: 0.3s;
+      &:hover {
+        background-color: $color-secondary;
+        color: white;
+        .service-number {
+          background-color: $color-primary;
+        }
+      }
       .service-number {
         position: absolute;
         height: 3rem;

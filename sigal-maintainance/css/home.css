@@ -5,6 +5,15 @@ body {
   font-size: 1.6rem;
   color: #444; }
 
+@media (max-width: 992px) {
+  html {
+    font-size: 60%; } }
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%; } }
+@media (max-width: 576px) {
+  html {
+    font-size: 50%; } }
 .header-logo {
   width: 15rem; }
 .header .nav-link {
@@ -281,5 +290,3 @@ body {
 
   .sigal-desc-box {
     min-height: 30rem !important; } }
-
-/*# sourceMappingURL=home.css.map */

@@ -1,3 +1,50 @@
+$color-primary: #243673;
+$color-secondary: #0079b2;
 $footer-dark: #08142e;
 $footer-light: #95d7f7;
 $medium-secondary-color: #0badde;
+html {
+  font-size: 62.5%; //1rem = 10px
+}
+body {
+  font-size: 1.6rem;
+}
+.header {
+  &-logo {
+    width: 15rem;
+  }
+  .nav-link {
+    color: $color-primary;
+    font-weight: 600;
+    transition: 0.3s;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 2rem;
+      background-color: $color-secondary;
+      margin-left: 0.5rem;
+      opacity: 0;
+      transition: 0.3s 0.1s;
+    }
+    &:hover {
+      color: $color-secondary;
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+  &-right a {
+    color: $color-primary;
+    transition: 0.3s;
+    &:hover {
+      color: $color-secondary;
+    }
+    &:first-child {
+      transform: translateY(3px);
+    }
+  }
+}

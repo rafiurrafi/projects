@@ -1,3 +1,37 @@
+html {
+  font-size: 62.5%; }
 
+body {
+  font-size: 1.6rem; }
+
+.header-logo {
+  width: 15rem; }
+.header .nav-link {
+  color: #243673;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative; }
+  .header .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 2rem;
+    background-color: #0079b2;
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: 0.3s 0.1s; }
+  .header .nav-link:hover {
+    color: #0079b2; }
+    .header .nav-link:hover::after {
+      opacity: 1; }
+.header-right a {
+  color: #243673;
+  transition: 0.3s; }
+  .header-right a:hover {
+    color: #0079b2; }
+  .header-right a:first-child {
+    transform: translateY(3px); }
 
 /*# sourceMappingURL=home.css.map */

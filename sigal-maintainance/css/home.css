@@ -154,6 +154,11 @@ body {
       margin-bottom: 2rem;
       margin-right: 2rem;
       transition: 0.3s; }
+      .section-service .service-content > div:not(:first-child) p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
       .section-service .service-content > div:not(:first-child):hover {
         background-color: #0079b2;
         color: white; }
@@ -283,10 +288,26 @@ body {
   .section-exclusive .exclusive-right {
     width: 90%; }
   .section-exclusive .exclusive-left {
-    width: 90%; } }
+    width: 90%; }
+
+  .section-service .service-content {
+    display: block; }
+    .section-service .service-content div:first-child {
+      margin-bottom: 3rem !important; }
+    .section-service .service-content > div:not(:first-child) {
+      width: 30%;
+      margin-right: 1rem !important;
+      display: inline-block; } }
 @media (max-width: 576px) {
   html {
     font-size: 50%; }
 
   .sigal-desc-box {
-    min-height: 30rem !important; } }
+    min-height: 30rem !important; }
+
+  .section-service .service-content {
+    display: block; }
+    .section-service .service-content div:first-child {
+      margin-bottom: 3rem !important; }
+    .section-service .service-content > div:not(:first-child) {
+      width: 47%; } }

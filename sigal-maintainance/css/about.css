@@ -137,6 +137,41 @@ body {
   padding: 5rem 0;
   margin: 5rem 0;
   background-color: #f0f0f0; }
+  .section-about-journey .journey {
+    width: 100%;
+    position: relative;
+    margin: 10rem 0; }
+    .section-about-journey .journey-bar {
+      width: 90%;
+      margin-left: 5%;
+      height: 2px; }
+    .section-about-journey .journey-items {
+      position: absolute;
+      width: 90%;
+      margin-left: 5%;
+      top: -1.5rem;
+      left: 0;
+      display: flex;
+      justify-content: space-between; }
+    .section-about-journey .journey-item {
+      position: relative; }
+      .section-about-journey .journey-item:nth-child(even) .journey-text {
+        top: -6rem; }
+      .section-about-journey .journey-item:nth-child(6) .journey-text {
+        left: auto;
+        right: -8rem; }
+    .section-about-journey .journey-circle {
+      height: 3rem;
+      width: 3rem;
+      border: 1px solid #243673;
+      background-color: white;
+      border-radius: 50%; }
+    .section-about-journey .journey-text {
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      min-width: 15rem;
+      font-size: 80%; }
 
 @media (max-width: 992px) {
   html {
@@ -151,4 +186,39 @@ body {
   .about-mission-img,
   .about-mission-text {
     border-radius: 1.5rem;
-    overflow: hidden; } }
+    overflow: hidden; }
+
+  .section-about-journey .journey {
+    width: 15rem;
+    margin: 10rem auto; }
+    .section-about-journey .journey-bar {
+      height: 40rem;
+      width: 3px; }
+    .section-about-journey .journey-items {
+      position: absolute;
+      height: 43rem;
+      flex-direction: column; }
+    .section-about-journey .journey-item:nth-child(even) .journey-text, .section-about-journey .journey-item:nth-child(6) .journey-text {
+      text-align: right;
+      top: 0;
+      left: -20rem;
+      right: auto; }
+    .section-about-journey .journey-item:nth-child(odd) .journey-text {
+      left: 3rem; }
+    .section-about-journey .journey-circle {
+      margin-left: -1.5rem; }
+    .section-about-journey .journey-text {
+      top: 0rem; } }
+@media (max-width: 576px) {
+  .section-about-journey .journey {
+    width: 100%; }
+    .section-about-journey .journey-item:nth-child(even) .journey-text, .section-about-journey .journey-item:nth-child(6) .journey-text {
+      text-align: left;
+      top: 0;
+      left: 3rem; }
+    .section-about-journey .journey-item:nth-child(odd) .journey-text {
+      left: 3rem; }
+    .section-about-journey .journey-circle {
+      margin-left: -1.5rem; }
+    .section-about-journey .journey-text {
+      top: 0rem; } }

@@ -82,6 +82,54 @@
   padding: 5rem 0;
   margin: 5rem 0;
   background-color: #f0f0f0;
+  .journey {
+    width: 100%;
+    position: relative;
+    margin: 10rem 0;
+    &-bar {
+      width: 90%;
+      margin-left: 5%;
+      height: 2px;
+    }
+    &-items {
+      position: absolute;
+      width: 90%;
+      margin-left: 5%;
+      top: -1.5rem;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-item {
+      position: relative;
+      &:nth-child(even) {
+        .journey-text {
+          top: -6rem;
+        }
+      }
+      &:nth-child(6) {
+        .journey-text {
+          left: auto;
+          right: -8rem;
+        }
+      }
+    }
+    &-circle {
+      height: 3rem;
+      width: 3rem;
+      border: 1px solid $color-primary;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    &-text {
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      min-width: 15rem;
+      font-size: 80%;
+    }
+  }
 }
 // =================================
 // Responsive
@@ -118,7 +166,76 @@
     border-radius: 1.5rem;
     overflow: hidden;
   }
+  .section-about-journey {
+    .journey {
+      width: 15rem;
+      margin: 10rem auto;
+      &-bar {
+        height: 40rem;
+        width: 3px;
+      }
+      &-items {
+        position: absolute;
+        height: 43rem;
+        flex-direction: column;
+      }
+      &-item {
+        &:nth-child(even),
+        &:nth-child(6) {
+          .journey-text {
+            text-align: right;
+            top: 0;
+            left: -20rem;
+            right: auto;
+          }
+        }
+        &:nth-child(odd) {
+          .journey-text {
+            left: 3rem;
+          }
+        }
+        // &:nth-child(6) {
+        //   .journey-text {
+        //     left: 0;
+        //   }
+        // }
+      }
+      &-circle {
+        margin-left: -1.5rem;
+      }
+      &-text {
+        top: 0rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
+  .section-about-journey {
+    .journey {
+      width: 100%;
+
+      &-item {
+        &:nth-child(even),
+        &:nth-child(6) {
+          .journey-text {
+            text-align: left;
+            top: 0;
+            left: 3rem;
+          }
+        }
+        &:nth-child(odd) {
+          .journey-text {
+            left: 3rem;
+          }
+        }
+      }
+      &-circle {
+        margin-left: -1.5rem;
+      }
+      &-text {
+        top: 0rem;
+      }
+    }
+  }
 }

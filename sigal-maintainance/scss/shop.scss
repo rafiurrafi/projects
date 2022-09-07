@@ -1,0 +1,26 @@
+@import "./custom/base";
+@import "./custom/header";
+@import "./custom/custom-font";
+@import "./custom/footer";
+@import "./custom/drp";
+.shop-header-nav {
+  input {
+    width: 40vw;
+    font-size: 1.6rem;
+    border-radius: 1.5rem;
+  }
+}
+.header-right {
+  a:first-child {
+    transform: translateY(-1px);
+  }
+}
+.shop-banners {
+  .shop-banner {
+    img {
+      height: 60vh;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

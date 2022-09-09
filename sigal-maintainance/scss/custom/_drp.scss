@@ -2,8 +2,9 @@
   position: relative;
   &-header {
     cursor: pointer;
+    height: 3rem;
   }
-  &-header:hover + &-body {
+  &:hover &-body {
     display: block;
   }
   &-body {

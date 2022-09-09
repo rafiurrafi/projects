@@ -1,0 +1,51 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  color: #444; }
+
+@media (max-width: 992px) {
+  html {
+    font-size: 60%; } }
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%; } }
+@media (max-width: 576px) {
+  html {
+    font-size: 50%; } }
+.content {
+  height: 100vh;
+  width: 100vw; }
+
+.login-logo {
+  height: 10rem; }
+
+.login-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url("../images/1551387456455.jpg");
+  height: inherit;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .login-img-text {
+    position: absolute;
+    top: 30%;
+    left: 5%; }
+
+.login-text {
+  position: relative;
+  flex: 0 0 50%; }
+  .login-text-content {
+    width: 100%; }
+  .login-text .login-logo {
+    height: 7rem;
+    position: absolute;
+    top: 3rem;
+    left: 3rem; }
+  .login-text .login-form {
+    width: 50%;
+    margin-left: 25%; }
+    .login-text .login-form input,
+    .login-text .login-form button {
+      font-size: 1.6rem; }

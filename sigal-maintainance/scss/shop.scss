@@ -27,6 +27,7 @@
   }
 }
 .section-categories {
+  padding: 6rem 0;
   .cat-item {
     height: 17rem;
     img {
@@ -44,6 +45,8 @@
 }
 .section-new-products {
   padding: 6rem 0;
+  padding-top: 10rem;
+  background-color: #eee;
   .new-products {
     .owl-prev,
     .owl-next {
@@ -67,6 +70,10 @@
       right: -1rem;
     }
   }
+}
+.section-top-products {
+  padding: 6rem 0;
+  background-color: #eee;
 }
 @media (max-width: 768px) {
   .section-categories {

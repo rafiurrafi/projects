@@ -100,17 +100,16 @@ body {
 .box-wrapper {
   background-color: #fff;
   overflow: hidden;
-  box-shadow: 0px 5px 43px rgba(0, 0, 0, 0.48);
   padding: 0;
   text-align: center;
   position: relative; }
   .box-wrapper .sub-cat {
     position: absolute;
     top: 0;
-    left: -100%;
+    left: -50%;
     background-color: #ff0051;
     color: white;
-    transition: 0.3s ease-in-out; }
+    transition: 0.6s ease-in-out; }
   .box-wrapper:hover .sub-cat {
     left: 0; }
   .box-wrapper img {
@@ -154,7 +153,7 @@ body {
     .box-content .buy span {
       width: 70px;
       height: 70px;
-      background-color: #06d6a0;
+      background-color: #0079b2;
       display: block;
       border-radius: 50%;
       position: absolute;
@@ -191,12 +190,14 @@ body {
       left: -50px; }
     .box-content .price:after {
       right: -50px; }
-  .box-content .footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 1em 0; }
-    .box-content .footer ul li {
-      color: #efd829; }
+  .box-content .footer {
+    background-color: transparent !important; }
+    .box-content .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 1em 0; }
+      .box-content .footer ul li {
+        color: #efd829; }
 
 .shop-header-nav input {
   width: 40vw;
@@ -211,20 +212,24 @@ body {
   width: 100%;
   object-fit: cover; }
 
-.section-categories .cat-item {
-  height: 17rem;
-  transition: box-shadow 0.4s;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1); }
-  .section-categories .cat-item img {
-    height: 10rem;
-    width: 10rem;
-    object-fit: cover;
-    border-radius: 50%; }
-  .section-categories .cat-item:hover {
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
+.section-categories {
+  padding: 6rem 0; }
+  .section-categories .cat-item {
+    height: 17rem;
+    transition: box-shadow 0.4s;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1); }
+    .section-categories .cat-item img {
+      height: 10rem;
+      width: 10rem;
+      object-fit: cover;
+      border-radius: 50%; }
+    .section-categories .cat-item:hover {
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2); }
 
 .section-new-products {
-  padding: 6rem 0; }
+  padding: 6rem 0;
+  padding-top: 10rem;
+  background-color: #eee; }
   .section-new-products .new-products .owl-prev,
   .section-new-products .new-products .owl-next {
     position: absolute;
@@ -243,6 +248,10 @@ body {
     left: -1rem; }
   .section-new-products .new-products .owl-next {
     right: -1rem; }
+
+.section-top-products {
+  padding: 6rem 0;
+  background-color: #eee; }
 
 @media (max-width: 768px) {
   .section-categories .cat-item img {

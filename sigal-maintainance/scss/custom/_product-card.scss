@@ -126,14 +126,20 @@
 
   .footer {
     background-color: transparent !important;
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 1em 0;
-
-      li {
-        color: #efd829;
-      }
+    button {
+      font-size: 1.6rem;
+      border-radius: 2.5rem;
+      width: 75%;
+      margin-left: 12.5%;
     }
+    // ul {
+    //   list-style: none;
+    //   padding: 0;
+    //   margin: 1em 0;
+
+    //   li {
+    //     color: #efd829;
+    //   }
+    // }
   }
 }

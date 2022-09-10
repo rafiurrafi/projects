@@ -192,12 +192,11 @@ body {
       right: -50px; }
   .box-content .footer {
     background-color: transparent !important; }
-    .box-content .footer ul {
-      list-style: none;
-      padding: 0;
-      margin: 1em 0; }
-      .box-content .footer ul li {
-        color: #efd829; }
+    .box-content .footer button {
+      font-size: 1.6rem;
+      border-radius: 2.5rem;
+      width: 75%;
+      margin-left: 12.5%; }
 
 .shop-header-nav input {
   width: 40vw;

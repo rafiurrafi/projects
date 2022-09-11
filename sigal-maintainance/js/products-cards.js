@@ -666,30 +666,106 @@ const productItems = [
   },
 ];
 
-const topProductsContainer = document.querySelector("#top-products");
-productItems.forEach((item) => {
-  const card = document.createElement("div");
-  card.classList.add("col-sm-6");
-  card.classList.add("col-md-4");
-  card.innerHTML = `
-  <div class="box-wrapper mb-5">
-  <p class="sub-cat px-4 py-2">${item.subtitle}</p>
-  <img src="${item.image}" alt="rhcp" />
-  <div class="box-content">
-    <a class="buy" href="javascript:void(0)"
-      ><span><i class="fa fa-cart-plus"></i></span
-    ></a>
-    <div class="title">${item.name}</div>
-    <div class="desc">${item.title}</div>
-    <span class="price">${item.price}$</span>
-    <div class="footer">
-      <button class="btn btn-primary my-4 d-block text-white py-2">
-        Add to cart
-      </button>
+// const topProductsContainer = document.querySelector("#top-products");
+// productItems.forEach((item) => {
+//   const card = document.createElement("div");
+//   card.classList.add("col-sm-6");
+//   card.classList.add("col-md-4");
+//   card.innerHTML = `
+//   <div class="box-wrapper mb-5">
+//   <p class="sub-cat px-4 py-2">${item.subtitle}</p>
+//   <img src="${item.image}" alt="rhcp" />
+//   <div class="box-content">
+//     <a class="buy" href="javascript:void(0)"
+//       ><span><i class="fa fa-cart-plus"></i></span
+//     ></a>
+//     <div class="title">${item.name}</div>
+//     <div class="desc">${item.title}</div>
+//     <span class="price">${item.price}$</span>
+//     <div class="footer">
+//       <button class="btn btn-primary my-4 d-block text-white py-2">
+//         Add to cart
+//       </button>
+//     </div>
+//   </div>
+//   <div class="success"></div>
+// </div>
+//   `;
+//   topProductsContainer.appendChild(card);
+// });
+const list_element = document.getElementById("top-products");
+const pagination_element = document.getElementById("pagination");
+
+let current_page = 1;
+let rows = 12;
+
+function DisplayList(items, wrapper, rows_per_page, page) {
+  wrapper.innerHTML = "";
+  page--;
+
+  let start = rows_per_page * page;
+  let end = start + rows_per_page;
+  let paginatedItems = items.slice(start, end);
+
+  for (let i = 0; i < paginatedItems.length; i++) {
+    let item = paginatedItems[i];
+
+    let item_element = document.createElement("div");
+    item_element.classList.add("col-sm-6");
+    item_element.classList.add("col-md-4");
+    item_element.innerHTML = `
+      <div class="box-wrapper mb-5">
+      <p class="sub-cat px-4 py-2">${item.subtitle}</p>
+      <img src="${item.image}" alt="rhcp" />
+      <div class="box-content">
+        <a class="buy" href="javascript:void(0)"
+          ><span><i class="fa fa-cart-plus"></i></span
+        ></a>
+        <div class="title">${item.name}</div>
+        <div class="desc">${item.title}</div>
+        <span class="price">${item.price}$</span>
+        <div class="footer">
+          <button class="btn btn-primary my-4 d-block text-white py-2">
+            Add to cart
+          </button>
+        </div>
+      </div>
+      <div class="success"></div>
     </div>
-  </div>
-  <div class="success"></div>
-</div>
-  `;
-  topProductsContainer.appendChild(card);
-});
+      `;
+
+    wrapper.appendChild(item_element);
+  }
+}
+
+function SetupPagination(items, wrapper, rows_per_page) {
+  wrapper.innerHTML = "";
+
+  let page_count = Math.ceil(items.length / rows_per_page);
+  for (let i = 1; i < page_count + 1; i++) {
+    let btn = PaginationButton(i, items);
+    wrapper.appendChild(btn);
+  }
+}
+
+function PaginationButton(page, items) {
+  let button = document.createElement("button");
+  button.innerText = page;
+
+  if (current_page == page) button.classList.add("active");
+
+  button.addEventListener("click", function () {
+    current_page = page;
+    DisplayList(items, list_element, rows, current_page);
+
+    let current_btn = document.querySelector(".pagenumbers button.active");
+    current_btn.classList.remove("active");
+
+    button.classList.add("active");
+  });
+
+  return button;
+}
+
+DisplayList(productItems, list_element, rows, current_page);
+SetupPagination(productItems, pagination_element, rows);

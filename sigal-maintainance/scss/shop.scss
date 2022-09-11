@@ -75,6 +75,27 @@
   padding: 6rem 0;
   background-color: #eee;
 }
+.pagenumbers {
+  text-align: center;
+  margin-top: 7rem;
+  button {
+    border: none;
+    background-color: transparent;
+    border: 1px solid $medium-secondary-color;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-block;
+    margin-top: -1rem;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    &.active {
+      background-color: $medium-secondary-color;
+      color: white;
+    }
+  }
+}
 @media (max-width: 768px) {
   .section-categories {
     .cat-item {

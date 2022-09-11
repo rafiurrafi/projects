@@ -106,7 +106,7 @@ body {
   .box-wrapper .sub-cat {
     position: absolute;
     top: 0;
-    left: -50%;
+    left: -56%;
     background-color: #ff0051;
     color: white;
     transition: 0.6s ease-in-out; }
@@ -251,6 +251,24 @@ body {
 .section-top-products {
   padding: 6rem 0;
   background-color: #eee; }
+
+.pagenumbers {
+  text-align: center;
+  margin-top: 7rem; }
+  .pagenumbers button {
+    border: none;
+    background-color: transparent;
+    border: 1px solid #0badde;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-block;
+    margin-top: -1rem; }
+    .pagenumbers button:not(:last-child) {
+      margin-right: 1rem; }
+    .pagenumbers button.active {
+      background-color: #0badde;
+      color: white; }
 
 @media (max-width: 768px) {
   .section-categories .cat-item img {

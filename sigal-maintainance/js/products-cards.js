@@ -549,7 +549,7 @@ const productItems = [
     name: "αlpha Gutta-Percha Taper .04 and .06",
     title: "Endodontics Materials",
     subtitle: "Obturation Materials",
-    image: "images/products/αlpha Gutta-Percha Taper .04 and .06.jpg",
+    image: "images/products/αlpha Gutta-Percha Taper",
     price: 22.08,
   },
   {
@@ -714,24 +714,31 @@ function DisplayList(items, wrapper, rows_per_page, page) {
     item_element.classList.add("col-sm-6");
     item_element.classList.add("col-md-4");
     item_element.innerHTML = `
-      <div class="box-wrapper mb-5">
-      <p class="sub-cat px-4 py-2">${item.subtitle}</p>
-      <img src="${item.image}" alt="rhcp" />
-      <div class="box-content">
-        <a class="buy" href="javascript:void(0)"
-          ><span><i class="fa fa-cart-plus"></i></span
-        ></a>
-        <div class="title">${item.name}</div>
-        <div class="desc">${item.title}</div>
-        <span class="price">${item.price}$</span>
-        <div class="footer">
-          <button class="btn btn-primary my-4 d-block text-white py-2">
-            Add to cart
-          </button>
-        </div>
+    <div class="product-box mb-5">
+    <img src="${item.image}" alt="" />
+    <div class="p-4">
+      <h3 class="fw-bold text-primary">
+        <a href="" class="text-decoration-none"
+          >${item.name}</a
+        >
+      </h3>
+      <p class="text-muted">${item.title}</p>
+      <p>
+        <small>SAR</small>
+        <span class="fs-1 text-secondary fw-bold">${item.price}</span>
+      </p>
+      <div class="d-flex input-cart">
+        <input
+          type="number"
+          class="form-control py-2 me-2"
+          placeholder="1"
+        />
+        <a href="#" class="d-block btn btn-outline-primary py-2"
+          >Add to cart</a
+        >
       </div>
-      <div class="success"></div>
     </div>
+  </div>
       `;
 
     wrapper.appendChild(item_element);

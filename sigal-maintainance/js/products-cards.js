@@ -549,7 +549,7 @@ const productItems = [
     name: "αlpha Gutta-Percha Taper .04 and .06",
     title: "Endodontics Materials",
     subtitle: "Obturation Materials",
-    image: "images/products/αlpha Gutta-Percha Taper",
+    image: "images/products/alpha Gutta-Percha Taper.jpg",
     price: 22.08,
   },
   {

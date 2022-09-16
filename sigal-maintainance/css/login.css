@@ -49,3 +49,8 @@ body {
     .login-text .login-form input,
     .login-text .login-form button {
       font-size: 1.6rem; }
+
+.f-inline > * {
+  flex: 49%; }
+.f-inline > div:first-of-type {
+  margin-right: 1rem; }

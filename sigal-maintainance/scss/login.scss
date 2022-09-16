@@ -42,3 +42,11 @@
     }
   }
 }
+.f-inline {
+  & > * {
+    flex: 49%;
+  }
+  & > div:first-of-type {
+    margin-right: 1rem;
+  }
+}

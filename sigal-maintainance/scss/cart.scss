@@ -1,0 +1,49 @@
+@import "./custom/base";
+@import "./custom/header";
+@import "./custom/footer";
+.shop-header-nav {
+  input {
+    width: 40vw;
+    font-size: 1.6rem;
+    border-radius: 1.5rem;
+  }
+}
+
+.header-right {
+  a:first-child {
+    transform: translateY(-1px);
+  }
+}
+.section-details-banner {
+  background-image: linear-gradient(to right, rgba(#000, 0.7), rgba(#000, 0.9)),
+    url(../images/Slider-3.jpeg);
+  height: 15rem;
+  line-height: 15rem;
+  margin-bottom: 6rem;
+}
+.section-checkout {
+  input {
+    font-size: 1.6rem;
+  }
+  .f-inline {
+    & > * {
+      flex: 49%;
+    }
+    & > div:first-of-type {
+      margin-right: 1rem;
+    }
+  }
+  .checkout-product {
+    border-bottom: 1px solid #f1f1f1;
+    .checkout-img {
+      width: 7rem;
+      height: 5rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

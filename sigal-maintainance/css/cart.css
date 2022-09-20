@@ -116,3 +116,9 @@ body {
       right: -1rem;
       border-radius: 50%;
       font-size: 80%; }
+
+.cart-summary {
+  border: 1px solid #f1f1f1; }
+  .cart-summary-short {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; }

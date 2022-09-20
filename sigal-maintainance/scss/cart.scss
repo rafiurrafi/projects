@@ -57,3 +57,13 @@
     }
   }
 }
+// ===============================
+// cart
+// =================================
+.cart-summary {
+  border: 1px solid #f1f1f1;
+  &-short {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+}

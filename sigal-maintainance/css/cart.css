@@ -101,8 +101,18 @@ body {
   border-bottom: 1px solid #f1f1f1; }
   .section-checkout .checkout-product .checkout-img {
     width: 7rem;
-    height: 5rem; }
+    height: 5rem;
+    position: relative; }
     .section-checkout .checkout-product .checkout-img img {
       height: 100%;
       width: 100%;
       object-fit: cover; }
+    .section-checkout .checkout-product .checkout-img span {
+      position: absolute;
+      height: 2rem;
+      width: 2rem;
+      background-color: #ff00aa;
+      top: -1rem;
+      right: -1rem;
+      border-radius: 50%;
+      font-size: 80%; }

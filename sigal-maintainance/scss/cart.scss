@@ -38,11 +38,21 @@
     .checkout-img {
       width: 7rem;
       height: 5rem;
-
+      position: relative;
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+      }
+      span {
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        background-color: rgb(255, 0, 170);
+        top: -1rem;
+        right: -1rem;
+        border-radius: 50%;
+        font-size: 80%;
       }
     }
   }

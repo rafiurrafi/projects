@@ -62,20 +62,36 @@
     <section
       class="section-details-banner text-white d-flex justify-content-center align-items-center"
     >
-      <h2 class="display-4">Checkout</h2>
+      <h2 class="display-4">Cart</h2>
     </section>
 
     <!-- section cart  -->
     <section class="section-cart">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8">
+        <div class="row gy-5">
+          <div class="col-lg-8">
             <!-- start  -->
             <!-- ===================================== -->
+            <table>
+              <!-- <caption>
+                Statement Summary
+              </caption> -->
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr></tr>
+              </tbody>
+            </table>
             <!-- ================================== -->
             <!-- end  -->
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="cart-summary p-5">
               <h3 class="fs-1 fw-bold mb-5">Summary</h3>
               <p class="fw-bold mb-0 py-2 cart-summary-short">
@@ -86,25 +102,32 @@
                   class="d-flex justify-content-between"
                   style="border-bottom: 1px solid #f1f1f1"
                 >
-                  <p class="text-muted">Total</p>
+                  <p class="text-muted">Sub Total</p>
                   <p>SAR 445</p>
                 </div>
                 <div
                   class="d-flex justify-content-between"
                   style="border-bottom: 1px solid #f1f1f1"
                 >
-                  <p class="text-muted">discount</p>
-                  <p>10%</p>
+                  <p class="text-muted">Shipping</p>
+                  <p><small>SAR</small>200</p>
                 </div>
                 <div
                   class="d-flex justify-content-between"
                   style="border-bottom: 1px solid #f1f1f1"
                 >
-                  <p class="text-muted">Tax</p>
+                  <p class="text-muted">discount</p>
+                  <p><small>SAR</small>200</p>
+                </div>
+                <div
+                  class="d-flex justify-content-between"
+                  style="border-bottom: 1px solid #f1f1f1"
+                >
+                  <p class="text-muted">VAT</p>
                   <p>SAR 0.0</p>
                 </div>
                 <div class="d-flex justify-content-between py-3">
-                  <p class="fw-bold">Order Total</p>
+                  <p class="fw-bold">Total</p>
                   <p class="fs-2 fw-bold">SAR 500.0</p>
                 </div>
               </div>
@@ -230,6 +253,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <script src="js/vendors/jquery.introducing.js"></script>
+    <script src="js/cart.js"></script>
     <script>
       $("#header-search").introducing();
     </script>

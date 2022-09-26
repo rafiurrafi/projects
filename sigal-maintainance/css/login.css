@@ -5,6 +5,9 @@ body {
   font-size: 1.6rem;
   color: #444; }
 
+.btn {
+  font-size: 1.6rem !important; }
+
 @media (max-width: 992px) {
   html {
     font-size: 60%; } }

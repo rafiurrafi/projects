@@ -5,6 +5,9 @@ body {
   font-size: 1.6rem;
   color: #444; }
 
+.btn {
+  font-size: 1.6rem !important; }
+
 @media (max-width: 992px) {
   html {
     font-size: 60%; } }
@@ -207,3 +210,14 @@ tbody td:first-of-type {
   .cart-summary-short {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd; }
+
+.section-information {
+  padding-bottom: 8rem; }
+  .section-information input {
+    font-size: 1.6rem !important; }
+  .section-information .nav-link {
+    color: #243673 !important; }
+  .section-information .nav-pills .nav-link.active,
+  .section-information .nav-pills .show > .nav-link {
+    color: white !important;
+    background-color: #243673 !important; }

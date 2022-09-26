@@ -29,9 +29,9 @@ function createRow(item) {
   <td data-label="Price">${item.price}</td>
   <td data-label="Quantity">
     <div class="d-flex justify-content-around table-quantity">
-      <div class="p-2" id = "incrementQuantity" onclick = "increment(${item})">+</div>
+      <div class="p-2" id = "incrementQuantity" >+</div>
       <div class="px-3 py-2">${item.quantity}</div>
-      <div class="p-2" id = "decrementQuantity" onclick = "decrement(${item})">-</div>
+      <div class="p-2" id = "decrementQuantity" ">-</div>
     </div>
   </td>
   <td data-label="Subtotal">${item.price * item.quantity}</td>
@@ -39,7 +39,3 @@ function createRow(item) {
   tableBody.append(row);
 }
 cart.forEach(createRow);
-
-function increment(item) {
-  console.log(item);
-}

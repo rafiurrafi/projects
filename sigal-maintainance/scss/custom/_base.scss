@@ -11,6 +11,9 @@ body {
   font-size: 1.6rem;
   color: $font-color;
 }
+.btn {
+  font-size: 1.6rem !important;
+}
 
 // X-Large devices (large desktops, 1200px and up)
 @media (max-width: 1200px) {

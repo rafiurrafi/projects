@@ -145,3 +145,70 @@ input {
   transform: translateY(40%);
   transition: all 0.3s;
 }
+
+.section-blog-page {
+  padding: 6rem;
+  .button-group {
+    button {
+      display: block;
+      border: none;
+      background-color: transparent;
+      position: relative;
+      opacity: 0.8;
+      &.active {
+        opacity: 1;
+        color: $color-secondary;
+      }
+      &.active::after {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 20px;
+        background-color: $color-primary;
+        bottom: 5px;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .single-post {
+    height: 20rem;
+    position: relative;
+    width: 48%;
+    margin-bottom: 2rem;
+    background-color: #000000;
+    &:nth-child(odd) {
+      margin-right: 2%;
+    }
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      opacity: 0.7;
+    }
+    .post-redirect {
+      color: white;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      z-index: 2;
+    }
+    h3,
+    span {
+      position: absolute;
+      left: 2rem;
+      z-index: 2;
+    }
+    h3 {
+      bottom: 2rem;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    span {
+      top: 2rem;
+    }
+  }
+}

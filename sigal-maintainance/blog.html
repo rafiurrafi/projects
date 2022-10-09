@@ -106,29 +106,98 @@
         <div class="row">
           <div class="col-md-3">
             <div class="button-group filter-button-group">
-              <button data-filter="*">All</button>
-              <button data-filter=".metal">metal</button>
-              <button data-filter=".transition">transition</button>
-              <button data-filter=".alkali, .alkaline-earth">
-                alkali & alkaline-earth
+              <button class="my-3 fw-bold active" data-filter="*">
+                All Specialization
               </button>
-              <button data-filter=":not(.transition)">not transition</button>
-              <button data-filter=".metal:not(.transition)">
-                metal but not transition
+              <button class="my-3 fw-bold" data-filter=".Orthodontic">
+                Orthodontic
+              </button>
+              <button class="my-3 fw-bold" data-filter=".Endodontic">
+                Endodontic
+              </button>
+              <button class="my-3 fw-bold" data-filter=".Implantology">
+                Implantology
+              </button>
+              <button class="my-3 fw-bold" data-filter=".Preventive">
+                Preventive Dentistry
+              </button>
+              <button class="my-3 fw-bold" data-filter=".Surgery">
+                Surgery
+              </button>
+              <button class="my-3 fw-bold" data-filter=".Pedodontics">
+                Pedodontics
+              </button>
+              <button class="my-3 fw-bold" data-filter=".Prosthodontics">
+                Prosthodontics
+              </button>
+              <button class="my-3 fw-bold" data-filter=".Diagnostics">
+                Diagnostics
+              </button>
+              <button class="my-3 fw-bold" data-filter=".Maxillofacial">
+                Maxillofacial Surgery
               </button>
             </div>
           </div>
           <div class="col-md-9">
-            <div class="grid">
-              <div class="element-item transition metal">1...</div>
-              <div class="element-item post-transition metal">2...</div>
-              <div class="element-item alkali metal">3...</div>
-              <div class="element-item transition metal">...</div>
-              <div class="element-item lanthanoid metal inner-transition">
-                4...
+            <div class="posts">
+              <!-- single post  -->
+              <div class="single-post Orthodontic Diagnostics">
+                <a href="" class="post-redirect"><i class="fa fa-share"></i></a>
+                <img src="images/products/2Seal easymiX.jpg" alt="" />
+                <h3 class="text-white">Lorem ipsum dolor sit.</h3>
+                <span class="post-time text-white"
+                  ><small>3 hours age</small></span
+                >
               </div>
-              <div class="element-item halogen nonmetal">5...</div>
-              <div class="element-item alkaline-earth metal">6...</div>
+              <!-- single post  -->
+              <div class="single-post Endodontic Preventive Pedodontics">
+                <a href="" class="post-redirect"><i class="fa fa-share"></i></a>
+                <img src="images/products/2Seal easymiX.jpg" alt="" />
+                <h3 class="text-white">Lorem ipsum dolor sit.</h3>
+                <span class="post-time text-white"
+                  ><small>3 hours age</small></span
+                >
+              </div>
+              <!-- single post  -->
+              <div
+                class="single-post Orthodontic Endodontic Surgery Maxillofacial"
+              >
+                <a href="" class="post-redirect"><i class="fa fa-share"></i></a>
+                <img src="images/products/2Seal easymiX.jpg" alt="" />
+                <h3 class="text-white">Lorem ipsum dolor sit.</h3>
+                <span class="post-time text-white"
+                  ><small>3 hours age</small></span
+                >
+              </div>
+              <!-- single post  -->
+              <div
+                class="single-post Endodontic Implantology Preventive Maxillofacial"
+              >
+                <a href="" class="post-redirect"><i class="fa fa-share"></i></a>
+                <img src="images/products/2Seal easymiX.jpg" alt="" />
+                <h3 class="text-white">Lorem ipsum dolor sit.</h3>
+                <span class="post-time text-white"
+                  ><small>3 hours age</small></span
+                >
+              </div>
+              <!-- single post  -->
+              <div class="single-post Implantology Pedodontics Prosthodontics">
+                <a href="" class="post-redirect"><i class="fa fa-share"></i></a>
+                <img src="images/products/2Seal easymiX.jpg" alt="" />
+                <h3 class="text-white">Lorem ipsum dolor sit.</h3>
+                <span class="post-time text-white"
+                  ><small>3 hours age</small></span
+                >
+              </div>
+              <!-- single post  -->
+              <div class="single-post Orthodontic Implantology Prosthodontics">
+                <a href="" class="post-redirect"><i class="fa fa-share"></i></a>
+                <img src="images/products/2Seal easymiX.jpg" alt="" />
+                <h3 class="text-white">Lorem ipsum dolor sit.</h3>
+                <span class="post-time text-white"
+                  ><small>3 hours age</small></span
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -247,13 +316,22 @@
     <script src="js/vendors/isotop.min.js"></script>
     <script>
       // init Isotope
-      var $grid = $(".grid").isotope({
+      var $grid = $(".posts").isotope({
         // options
       });
       // filter items on button click
       $(".filter-button-group").on("click", "button", function () {
         var filterValue = $(this).attr("data-filter");
         $grid.isotope({ filter: filterValue });
+      });
+      const buttons = document.querySelectorAll(".button-group button");
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          buttons.forEach((btn) => {
+            btn.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
       });
     </script>
   </body>

@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/blog.css" />
     <title>Sigal - blog</title>
   </head>
   <body>
@@ -58,19 +58,78 @@
         </div>
       </nav>
     </header>
-    <section class="section-blog-filter">
+    <section class="section-blog-header">
+      <div class="container">
+        <div class="rows">
+          <div class="blog-header">
+            <div class="blog-header__content">
+              <h3 class="heading-3 heading-3--under">
+                Lorem ipsum dolor sit amet consectetur.
+              </h3>
+              <a href="#" class="btnn btnn--learn">
+                Learn more
+                <span class="rarr">></span>
+              </a>
+              <span class="blog-header__hot">
+                <img src="images/fire-1.png" alt="" />
+                Hot deals
+                <span class="blog-header__views">792 views</span>
+              </span>
+            </div>
+            <div class="blog-header__img">
+              <img src="images/products/BeeFill 2in1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-blog-filter py-5">
       <div class="container">
         <div class="row">
+          <div class="col-3"></div>
           <div class="col-9">
             <form>
               <div class="form-group">
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control py-2"
                   placeholder="Search..."
                 />
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-blog-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="button-group filter-button-group">
+              <button data-filter="*">All</button>
+              <button data-filter=".metal">metal</button>
+              <button data-filter=".transition">transition</button>
+              <button data-filter=".alkali, .alkaline-earth">
+                alkali & alkaline-earth
+              </button>
+              <button data-filter=":not(.transition)">not transition</button>
+              <button data-filter=".metal:not(.transition)">
+                metal but not transition
+              </button>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="grid">
+              <div class="element-item transition metal">1...</div>
+              <div class="element-item post-transition metal">2...</div>
+              <div class="element-item alkali metal">3...</div>
+              <div class="element-item transition metal">...</div>
+              <div class="element-item lanthanoid metal inner-transition">
+                4...
+              </div>
+              <div class="element-item halogen nonmetal">5...</div>
+              <div class="element-item alkaline-earth metal">6...</div>
+            </div>
           </div>
         </div>
       </div>
@@ -185,5 +244,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     <script src="js/vendors/jquery.introducing.js"></script>
+    <script src="js/vendors/isotop.min.js"></script>
+    <script>
+      // init Isotope
+      var $grid = $(".grid").isotope({
+        // options
+      });
+      // filter items on button click
+      $(".filter-button-group").on("click", "button", function () {
+        var filterValue = $(this).attr("data-filter");
+        $grid.isotope({ filter: filterValue });
+      });
+    </script>
   </body>
 </html>

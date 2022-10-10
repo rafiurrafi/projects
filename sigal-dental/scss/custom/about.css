@@ -51,6 +51,11 @@
     background: #95d7f7;
     border: 1px solid #95d7f7;
     color: #00afdd; }
+.contact select {
+  color: #a9a6a6 !important; }
+.contact option:not(:first-of-type) {
+  color: black !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4); }
 
 .input {
   display: inline-block;
@@ -81,7 +86,7 @@ body {
   left: 0;
   z-index: 4; }
   .header .navbar-logo {
-    height: 6.25rem; }
+    height: 7.25rem; }
   .header .header-nav a {
     font-size: 1rem;
     font-weight: 600; }
@@ -106,7 +111,7 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: rgba(162, 162, 162, 0.294); }
+    background-color: rgba(33, 33, 33, 0.67); }
 
 .footer a {
   color: #444444; }
@@ -132,6 +137,10 @@ body {
   .footer__social:hover {
     color: white !important;
     background-color: var(--color-primary); }
+.footer-map-link {
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .footer-map-link:hover {
+    color: #213e7b; }
 
 .navigation a {
   height: 1.5rem;

@@ -1,21 +1,22 @@
-@import "./custom/base";
-@import "./custom/header";
-@import "./custom/footer";
-@import "./custom/table";
+@import "./base";
+// @import "./select-box";
+html {
+  font-size: 62.5% !important;
+}
+body {
+  font-size: 1.6rem;
+}
 input {
   font-size: 1.6rem !important;
 }
-.shop-header-nav {
-  input {
-    width: 40vw;
-    font-size: 1.6rem;
-    border-radius: 1.5rem;
-  }
-}
 
-.header-right {
-  a:first-child {
-    transform: translateY(-1px);
+.section-hero {
+  &.hero-doctor-1,
+  &.hero-doctor-2,
+  &.hero-doctor-3,
+  &.hero-doctor-4,
+  &.hero-doctor-5 {
+    background-image: url("../../images/doctor-bg-1.png");
   }
 }
 
@@ -55,12 +56,12 @@ input {
     right: 3rem;
     bottom: 5rem;
     font-size: 1rem;
-    color: $color-primary;
+    color: var(--color-primary);
     vertical-align: middle;
   }
   &__views {
     display: block;
-    color: $color-primary;
+    color: var(--color-primary);
   }
 }
 // heading
@@ -69,7 +70,7 @@ input {
     content: "";
     width: $width;
     height: 5px;
-    background-color: $color-primary;
+    background-color: var(--color-primary);
     display: inline-block;
     position: absolute;
     left: 0;
@@ -105,22 +106,22 @@ input {
   &--learn {
     padding-left: 0;
     font-weight: 700;
-    color: $color-primary;
+    color: var(--color-primary);
     font-size: 2.5rem;
   }
 }
 
 .btnn:hover {
-  color: $color-secondary;
+  color: #0079b2;
 }
 
 .btnn:hover .rarr::after {
   width: 40px;
-  background-color: $color-secondary;
+  background-color: #0079b2;
 }
 
 .btnn:hover .rarr {
-  color: $color-secondary;
+  color: #0079b2;
   padding-left: 40px;
   transition: all 0.3s;
 }
@@ -157,7 +158,7 @@ input {
       opacity: 0.8;
       &.active {
         opacity: 1;
-        color: $color-secondary;
+        color: #0079b2;
       }
       &.active::after {
         position: absolute;
@@ -165,7 +166,7 @@ input {
         display: block;
         height: 2px;
         width: 20px;
-        background-color: $color-primary;
+        background-color: var(--color-primary);
         bottom: 5px;
       }
       &:focus {
@@ -204,7 +205,7 @@ input {
     h3 {
       bottom: 2rem;
       &:hover {
-        color: $color-primary;
+        color: var(--color-primary);
       }
     }
     span {

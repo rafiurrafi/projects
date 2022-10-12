@@ -355,3 +355,23 @@ input {
         color: var(--color-primary); }
     .section-blog-page .single-post span {
       top: 2rem; }
+
+#blog-body .navbar-nav .nav-link {
+  font-size: 1.6rem !important;
+  margin-left: 1.5rem !important; }
+#blog-body .heading-primary {
+  font-size: 6rem; }
+#blog-body .section-blog-header {
+  padding: 6rem; }
+#blog-body .footer__logo {
+  width: 16rem; }
+#blog-body .footer__social {
+  width: 3.2rem;
+  height: 3.2rem; }
+
+.header.header__article {
+  position: relative; }
+  .header.header__article .nav-link.text-white {
+    color: var(--color-primary) !important; }
+    .header.header__article .nav-link.text-white.active {
+      color: #0079b2 !important; }

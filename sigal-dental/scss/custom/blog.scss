@@ -213,3 +213,33 @@ input {
     }
   }
 }
+// style changed after ram
+#blog-body {
+  .navbar-nav .nav-link {
+    font-size: 1.6rem !important;
+    margin-left: 1.5rem !important;
+  }
+  .heading-primary {
+    font-size: 6rem;
+  }
+  .section-blog-header {
+    padding: 6rem;
+  }
+  .footer__logo {
+    width: 16rem;
+  }
+  .footer__social {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+// blog details
+.header.header__article {
+  position: relative;
+  .nav-link.text-white {
+    color: var(--color-primary) !important;
+    &.active {
+      color: #0079b2 !important;
+    }
+  }
+}
